@@ -11,7 +11,7 @@ tagline:          'Cogito ergo sum.'
 # description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 description:      'Cuber | Programmer | Pianist. <br/><a href="http://icyflame.github.io">@icyflame</a>'
 # url:          http://icyflame.github.io/hyde/
-baseurl:          http://icyflame.github.io/hyde/
+baseurl:          http://icyflame.github.io/blog/
 disqus_shortname: siddharthkannanblog
 
 author:
