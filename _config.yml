@@ -21,6 +21,7 @@ author:
 paginate:         5
 
 # Custom vars
+appname: 		  blog
 version:          2.1.0
 
 github:
