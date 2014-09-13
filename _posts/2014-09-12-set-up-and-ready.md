@@ -2,6 +2,7 @@
 layout: post
 title: Setup. Ready to Roll!
 comments: true
+categories: Web-Development
 ---
 
 And finally, Hyde is setup. Now, the scene looks like this. Jekyll, powering the blog, Hyde, powering everything that gets rendered, and controls how it renders, the posts themselves hosted on GitHub (of course!), and me, pushing the posts from my machine!

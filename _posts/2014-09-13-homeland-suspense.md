@@ -2,6 +2,7 @@
 layout: post
 title: Homeland. Thriller, but then, it's simply frustrating
 comments: true
+categories: TV-Series
 ---
 
 Every time that Carrie is sure that something is going to happen, that thing obviously doesn't happen, but it is basically because Brody is on both sides of the play. And he knows what's going on here. Having recently completed Season 1, and appalled at the fact that Carrie was fired from the CIA, because of something that was true, but just didn't play out as she had put it, and having seen the second episode of the second season, I believe, that this is Carrie's redemption. 

@@ -2,6 +2,7 @@
 layout: post
 title: Getting started.
 comments: true
+categories: Web-Development
 ---
 
 Moving from Wordpress to this interface was smooth, and life does become easier, when you don't have to open your browser to post on your blog.
