@@ -22,6 +22,6 @@ Of course, later, I found that there were two major reasons for this installatio
 
 - **Proxy servers.** Yeah, internet access through proxy servers, sucks, right? Nothing really is simple anymore. You need to go into that settings tab in every internet related application you download and check that checkbox saying **Proxy Setting: Manual** and enter a 10 digit IP address, that you have in your head, by the fourth day that you spend on campus!
 
-10 hours from now, I will be sitting inside an examination hall, giving the Mid Smester examination for "Science of Living Systems", and whoa! I am so excited about that! -_- (Although, I know smilies won't be rendered, I just couldn't help myself right there!)
+10 hours from now, I will be sitting inside an examination hall, giving the Mid Semester examination for "Science of Living Systems", and whoa! I am so excited about that! -_- (Although, I know smilies won't be rendered, I just couldn't help myself right there!)
 
 And ironically, I got [Ruby on Rails](https://github.com/icyflame/learn-rails) now.
