@@ -2,14 +2,14 @@
 layout: post
 title: 4 exams, three days.
 comments: true
-categories: web-development, mid-autumn-semester-2014
+categories: web-development mid-autumn-semester-2014
 ---
 
 Four exams, two of which were "Science of Living Systems" and "Environmental Science" (Who thought we would have to study these in college! :/ ). And the other two were Dynamics and Transform Calculus.
 
 Although, at the very beginning, I was pretty afraid of Dynamics, (Analysing moving parts always freaked me out!), I turned out to love Dynamics, surprisingly! Transform Calculus, has always been great!
 
-But the highlight of everything, was that, these papers were within a span of 72 hours. And in quick succession. Morning Afternoon, + 24 hours and +36 hours. Which was just bad!
+But I guess, the emphasis should be on the fact that, these papers were within a span of 72 hours. And in quick succession. Morning Afternoon, + 24 hours and +36 hours. Which was just bad!
 
 But somehow, it's over, and we are up and running again.
 
