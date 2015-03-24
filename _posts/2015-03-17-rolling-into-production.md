@@ -22,3 +22,5 @@ That's about it!
 
 Lately, I have also been writing an application in Django. It's a pretty simple application and could be developed in RoR within a couple of hours. But surprising is the fact that even in Django, which I was using for the first time, it did not take me more than 4 hours, in total to get the working application. I have not yet deployed it or open-sourced it on GitHub because there are a still a lot of refinements that I want to make and a lot of testing I want to do. (I have written the authentication system, so yeah. A helluva lot of testing is left to do!) I will probably write a post about this soon!
 
+I found [this](http://light94.github.io/2015/02/28/Setting-up-Phusion-Passenger-with-Apache-for-Running-Rails-App/) post by [Rahul Mishra](http://github.com/light94) regarding the Phusion Passenger setup!
+
