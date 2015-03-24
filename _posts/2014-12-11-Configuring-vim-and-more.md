@@ -23,13 +23,13 @@ Turning again to the web, I got the solution pretty fast. My first encounter wit
 
 After this, there is another very very common feature that almost all people who write serious code, and believe that code should look good and do great things do all the time is "AUTO-INDENT". And in Sublime Text, I had bound this to `Ctrl I`. So Indenting the whole file took just `Ctrl A` followed by `Ctrl I`. Boom, Everything was well indented.
 
-Now, The `=` operator was obviously great, or so everyone on Stack Overflow seemed to think, but it didn't work for me. Not the first time. Not the second time and not a lot of times after that. It turned out that I hadn't done turned on teh Filetype plugin which was through which teh indent operation worked.
+Now, The `=` operator was obviously great, or so everyone on Stack Overflow seemed to think, but it didn't work for me. Not the first time around, Not the second time and not a lot of times after that. It turned out that I hadn't turned on the Filetype plugin which was through how the indent operation worked.
 
-A few more tweaks and I had indentation totally cracked! I immediately patted myself on the back on having reached the first bridge ito the land of Vim Users.
+A few more tweaks and I had indentation totally cracked! I immediately patted myself on the back on having reached the first bridge to the land of Vim Users.
 
 Handily, I had a couple of web applications that I was working on, and both of them were mostly basic FrontEnd pages. And there wasn't much file navigation to be done, I struggled through an half-an-hour task for 2 hours, but made it through. Vim had thrown hell at me, and I had waded through all of that to reach the end of my first full blown task in Vim.
 
-Through the process, I had learned a lot about Vim. Pasting text properly, the weird nomenclature of calling copying text yanking and so on.
+Through the process, I had learned a lot about Vim. Pasting text properly, the weird nomenclature of calling copying text yanking and so on. (Actually, now I am starting to think that it is not really that weird or out of place, but definitely they could have called it copying! :P )
 
 I also found about Vim Shorthand. `dit` for deleting the content inside tags. And similarly, `yit`, `pit`, `vit`. And the equivalent, when replacing `t` for tags with `"` for double quotes, or basically just any character, the text between two occurences of which we wanted to change stuff.
 
