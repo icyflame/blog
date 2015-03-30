@@ -5,11 +5,11 @@ comments: true
 categories: web-development
 ---
 
-So, finally, after a long long time, during a particular project, I got the chance to get my hands dirty with the JavaScript Task Runner, GruntJS.
+So, finally, after a long long time, during a particular project, I got the chance to get my hands dirty with the JavaScript Task Runner, [GruntJS](http://gruntjs.com).
 
 Now, I have been using Sublime Text and the auto-indent function that is embedded with it for almost a year, or perhaps, more than that! But one thing that has been sub-par is definitely the quality of code that comes out of this engine. A lot of the tags are not indented properly. `head` are in the next level of indentation of `html` tags. And inside `body`, if a tag is closed in the same line, then the whole indentation breaks.
 
-This was when I remembered reading about HTMLHint. Although, I didn't really know what it meant, and was pretty clueless, I believed that like me, a lot of developers out there would obsess about well-indented HTML code, and if that was the case, then definitely there would be a tool to achieve that! And sure as that, there was!
+This was when I remembered reading about [HTMLHint](https://github.com/yaniswang/HTMLHint). Although, I didn't really know what it meant, and was pretty clueless of its utility, I believed that like me, a lot of developers out there would obsess about well-indented HTML code, and if that was the case, then definitely there would be a tool to achieve that! And sure as that, there was!
 
 Enter, GruntJS. I had read up about this some time last semester, when I was writing front-end code at Alumni Cell, I had tried using but had ditched it, because it took way too long to understand, and I was facing some setup issues as well. Now, armed with a Ubuntu 14.04 LTS machine, I conquered this again, and voila, I succeeded!
 
