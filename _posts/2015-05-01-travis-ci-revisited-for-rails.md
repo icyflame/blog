@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Travis CI : Revisited for Rails
+title: Travis CI, Revisited for Rails
 categories: web-development
 ---
 

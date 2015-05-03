@@ -1,11 +1,13 @@
 ---
 layout: post
+title: Deploying on an in-house server (RANT)
 comments: true
-title: Deploying on an inhouse server: Rant
 categories: web-development
 ---
 
 So, this is probably my first `rant` per se, on anything related to Ruby on Rails. And it's connected with a step that just can't be avoided by any Rails application: Production.
+
+Rant begin.
 
 I never thought this would be much of a problem, since I had been using Heroku almost all my time with Rails, and deploys were super quick, and super-easy! Hardly ever did I run into any walls, and even when I did, the documentation on Heroku and Stack Overflow was more than enough to get me up and running soon.
 
