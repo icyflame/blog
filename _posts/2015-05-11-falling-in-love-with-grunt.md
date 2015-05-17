@@ -23,22 +23,22 @@ So, these plugins were just the tip of the iceberg, but they reduced the buildti
 So, let's go through these plugins one-by-one.
 
 1. load grunt tasks
-
-This plugin loads all the plugins directly from the `package.json` file, this ensures that I don't have to write the `loadNpmTasks` line in the GruntFile. (with more than 10 lines, that part of the file is really just a waste of SLOC). I integrated this plugin pretty fast, and it worked pretty well too, but as I already had the Gruntfile with the `loadNpmTasks` file, there was no significant change in the build time. Starting a new project, of course, this plugin will affect stuff a lot more.
+    
+    This plugin loads all the plugins directly from the `package.json` file, this ensures that I don't have to write the `loadNpmTasks` line in the GruntFile. (with more than 10 lines, that part of the file is really just a waste of SLOC). I integrated this plugin pretty fast, and it worked pretty well too, but as I already had the Gruntfile with the `loadNpmTasks` file, there was no significant change in the build time. Starting a new project, of course, this plugin will affect stuff a lot more.
 
 2. grunt concurrent
-
-This is the one plugin that improved built times a helluva lot. Using this plugin, you can basically run the tasks that are independent of each other concurrently. The prettifying, and the minification step of all the HTML, CSS, JS files are independent of each other and thus, these three can be done concurrently. The minification step is dependent on the concatenation of the files, and this meant that I had to run the concat step in the first cycle, and the minification in the second cycle. This cut my build time by a good 3-4 seconds.
+    
+    This is the one plugin that improved built times a helluva lot. Using this plugin, you can basically run the tasks that are independent of each other concurrently. The prettifying, and the minification step of all the HTML, CSS, JS files are independent of each other and thus, these three can be done concurrently. The minification step is dependent on the concatenation of the files, and this meant that I had to run the concat step in the first cycle, and the minification in the second cycle. This cut my build time by a good 3-4 seconds.
 
 3. time-grunt
-
-This is a frontend plugin that is helping me make all the above comments about the time that the complete build and each part of the build takes. This was the first plugin that I included in the project, so I could see the improvement in the build-times. It puts out a good picture that the time that every part of a task took. The output looks something like this:
-
-![Imgur](http://i.imgur.com/wTA6efq.png)
+    
+    This is a frontend plugin that is helping me make all the above comments about the time that the complete build and each part of the build takes. This was the first plugin that I included in the project, so I could see the improvement in the build-times. It puts out a good picture that the time that every part of a task took. The output looks something like this:
+    
+    ![Imgur](http://i.imgur.com/wTA6efq.png)
 
 4. grunt newer
-
-Once the above plugins are included in the project, the build time does improve, but even then, the above plugins run the same task again and again. For even a slight change (like a change in the background color), the whole build runs again. And this is a colossal waste of time. And this plugin takes care of that. It runs only the tasks that correspond to files that have been changed. With this, for slight changes like, adding an image tag, in one HTML file, I can get build times that are as low as 7 seconds.
+    
+    Once the above plugins are included in the project, the build time does improve, but even then, the above plugins run the same task again and again. For even a slight change (like a change in the background color), the whole build runs again. And this is a colossal waste of time. And this plugin takes care of that. It runs only the tasks that correspond to files that have been changed. With this, for slight changes like, adding an image tag, in one HTML file, I can get build times that are as low as 7 seconds.
 
 So, the above list of plugins is probably the list of plugins that I will be using in every frontend project that I take on from here on out. 
 
