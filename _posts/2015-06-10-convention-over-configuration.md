@@ -14,7 +14,7 @@ So far, there has been one feature which I have added over the past couple days.
 
 This is also the first time round when I have been actively using GitHub issues to maintain this project. It is a major productivity enhancement tool, allowing us to maintain more than one component in the same application without issues. 
 
-Tea is CI is the other tool that I have used and am extremely happy with! The auto deploy feature of Travis CI is just _painless_. Once setup, (about 150 commits ago), I haven't had to change anything at all. A change in the application name, and that's about it. 
+Travis CI is the other tool that I have used and am extremely happy with! The auto deploy feature of Travis CI is just _painless_. Once setup, (about 150 commits ago), I haven't had to change anything at all. A change in the application name, and that's about it. 
 
 The apps get deployed appropriately, builds get logged. And once in a while, when you get the **Errored** email, you just have to go in and see the log!
 
