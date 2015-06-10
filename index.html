@@ -20,8 +20,7 @@ title: Home
       {% endfor %}
     </span>
 
-
-    {{ post.content }}
+    {{ post.content | truncatewords: 300 }} <a href="{{ site.github.url }}{{ post.url }}">Read More</a>
   </div>
   {% endfor %}
 </div>
