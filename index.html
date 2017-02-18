@@ -7,7 +7,7 @@ title: Home
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ site.baseurl_without_slash }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
@@ -16,11 +16,12 @@ title: Home
 
     <span class="post-date">
       {% for category in post.categories %}
-      {{ category }} &middot
+      {{ category }} &middot;
       {% endfor %}
     </span>
 
-    {{ post.content | truncatewords: 300 }} <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+    {{ post.content | truncatewords: 300 }} <a href="{{
+      site.baseurl_without_slash }}{{ post.url }}">Read More</a>
   </div>
   {% endfor %}
 </div>

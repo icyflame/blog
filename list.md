@@ -29,7 +29,7 @@ title: List of Posts
 
       <td>
 
-        <a href="{{ site.baseurl }}{{post.url}}">
+        <a href="{{ site.baseurl_without_slash }}{{post.url}}">
           {{ post.title }}
         </a>
         
