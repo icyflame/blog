@@ -29,7 +29,7 @@ title: List of Posts
 
       <td>
 
-        <a href="{{ site.github.url }}{{post.url}}">
+        <a href="{{ site.baseurl }}{{post.url}}">
           {{ post.title }}
         </a>
         
