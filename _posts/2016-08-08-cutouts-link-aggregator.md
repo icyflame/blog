@@ -2,7 +2,7 @@
 layout: post
 title: Cutouts, really Just Another Link Aggregator
 comments: true
-categories: Web-Development, projects
+categories: web-development projects
 ---
 
 ![image](/blog/public/img/cutouts-1.png)
