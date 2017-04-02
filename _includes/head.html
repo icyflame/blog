@@ -6,7 +6,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <meta name="og:image" content="https://icyflame.github.io/dp.jpg">
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
 
   <meta content="{{ site.title }}" property="og:site_name">
 
@@ -20,12 +20,6 @@
   <meta content="article" property="og:type">
   {% else %}
   <meta content="website" property="og:type">
-  {% endif %}
-
-  {% if page.description %}
-  <meta content="{{ page.content | truncatewords: 120 }}" property="og:description">
-  {% else %}
-  <meta content="{{ site.description }}" property="og:description">
   {% endif %}
 
   {% if page.url %}
