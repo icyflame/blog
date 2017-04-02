@@ -23,7 +23,7 @@
   {% endif %}
 
   {% if page.content %}
-  <meta content="{{ page.excerpt }}" property="og:description">
+  <meta content="{{ page.content | number_of_words }} words about {{ page.categories | sample }}" property="og:description">
   {% else %}
   <meta content="{{ site.description }}" property="og:description">
   {% endif %}
