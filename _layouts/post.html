@@ -15,6 +15,7 @@ layout: default
     {{ category }} &middot;
     {% endfor %}
   </span>
+  {% assign description = content | truncatewords: 120 %}
   {{ content }}
 </div>
 
