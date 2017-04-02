@@ -22,6 +22,12 @@
   <meta content="website" property="og:type">
   {% endif %}
 
+  {% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+  <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+
   {% if page.url %}
   <meta content="{{site.baseurl_without_slash}}{{ page.url }}" property="og:url">
   {% endif %}
