@@ -3,18 +3,38 @@ layout: page
 title: About
 ---
 
-Hey! I am Siddharth Kannan. I am a Sophomore student of the Mechanical Engineering Department, at the Indian Institute of Technology, Kharagpur. This is my blog, the area for my own musings!
+Hey! I am Siddharth Kannan. I am a Senior Undergraduate student of the
+Mechanical Engineering Department, at the Indian Institute of Technology,
+Kharagpur. This is my blog, the area for my own musings! I write about the books
+I read, the code I write, the articles and videos I find on the Internet, and
+(rarely) rant about my experiences with computers.
 
-My previous blog was at [WordPress](http://mylifeatiitkgp.wordpress.com), But I got pretty lazy because I had to open the browser and wait for the page to connect and login and all of that. So, I decided to come to [Jekyll](http://jekyllrb.com).
+I wrote at [various
+places](https://icyflame.github.io/blog/100daysofwriting/writing/technology/wordpress/jekyll/programming/2017/03/26/day-37/)
+before settling on this setup. Like a true content creator, I wrote a [blog
+post](https://icyflame.github.io/blog/100daysofwriting/writing/technology/wordpress/jekyll/programming/2017/03/26/day-37/)
+even about the fact that I wrote in various places using various tools.
 
-And with the help of [Hyde](http://github.com/poole/hyde), built by [@mdo](http://twitter.com/mdo), I had my blog up and running! (Read my [post](http://icyflame.github.io/blog/web-development/2014/09/12/set-up-and-ready/) about the setup process.)
+I love [Ruby on Rails](http://rubyonrails.org),
+[Android](https://www.android.com/),
+[Bootstrap](http://getbootstrap.com),[jQuery](http://jquery.com) and
+[GruntJS](http://gruntjs.com). In general, everything web, android and
+open-source. I have ported an iOS application to Native Android in the summer of
+2016\. I have been developing Rails applications since 2014, and have not looked
+for a more versatile, robust, back-end framework. I was an avid user of PHP
+before that. I have also dabbled around with Node.js: I built 24 NPM modules
+which were downloaded a [total of 14,000
+times](https://npm-stat.com/charts.html?author=icyflame&from=2016-04-06&to=2017-04-06)
+in the last 1 year. (ending April 6, 2017)
 
-I love [Ruby on Rails](http://rubyonrails.org), [Bootstrap](http://getbootstrap.com),[jQuery](http://jquery.com) and [GruntJS](http://gruntjs.com). And in general, just everything web and open-source. I am totally in love with Ruby on Rails. And have been developing Rails applications since September 2014, and have not looked for a more versatile, robust, back-end framework. I was an avid user of PHP before that. 
+Vim, tmux, git and Chrome are the major parts of my daily setup!  Ubuntu is the
+OS I have been using for the past few years. I have several gripes with it, but
+it has to do for now. I still have Windows 8 on the side for Solidworks, Ansys,
+Abaqus. I log into Windows far more frequently than I used to just two
+years ago, but that will all stop within the next year, I could not be too happy
+about that.
 
-[Git](http://git-scm.com), paired with [Sublime Text](http://www.sublimetext.com/) and [Terminator](https://launchpad.net/terminator) complete my virtual workspace! Add [Slack](http://slack.com) for Communication and [Trello](http://trello.com) for Task-lists, and I am at my productive peak. Ubuntu is my operating system of choice, although, I do have a dual-boot machine, with Windows 8 o nthe side. (Seldom does Windows get to see the light of day!)
-
-Coming to the apps that have been deployed, I have used [Heroku](http://heroku.com) for deploying Rails applications. One of the applications written in Rails is now deployed on a Phusion Passenger Module, on an Apache Server [here](http://www.mentorship.iitkgp.ernet.in).
-
-I am currently a <b>Creative Team Member</b> at the Students' Alumni Cell, IIT Kharagpur and a <b>Software Developer</b> at [Team AUV](http://github.com/iit-kgp-auv-team).
-
-Check out my open-source projects on [GitHub](http://github.com/icyflame)!
+Check out my open-source projects on [GitHub](https://github.com/icyflame). Check
+out my NPM modules at [NPM](https://npmjs.org/~icyflame). I watch too many TV
+series and incessantly talk about them on
+[Twitter](https://twitter.com/_icyflame).
