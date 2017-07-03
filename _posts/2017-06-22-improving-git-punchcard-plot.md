@@ -19,7 +19,7 @@ though. So, I put it there, (**Note 1:** Take path from the CLI if provided!)
 
 When I generated the punchcard for a repository, it looked like this:
 
-![before](/blog/public/img/punchcard-original.png)
+![before](/public/img/punchcard-original.png)
 
 It looked _okay_. The opacity was a problem. I might have made fewer commits
 during those times (this is the punchcard of [my blog
@@ -31,7 +31,7 @@ Implementing these two was rather easy. (I delved into one Cairo function and
 searched and found `os.getcwd()` and `os.chdir()`) Now the punchcard looked more
 like the one on GitHub, and pretty good:
 
-![middle](/blog/public/img/punchcard-middle.png)
+![middle](/public/img/punchcard-middle.png)
 
 I was about to open a PR to the repo, when I came across [Issue #5:
 Timezones](https://github.com/guanqun/git-punchcard-plot/issues/5). It put forth
@@ -67,7 +67,7 @@ The list of options that git-log supports is **rather extensive!**.
 That was the path I took to get the following punchcard of my 100 Days of
 Writing project on this blog:
 
-![final](/blog/public/img/punchcard-100daysofwriting.png)
+![final](/public/img/punchcard-100daysofwriting.png)
 
 Anyway, the open PR is now on
 [Github at #7](https://github.com/guanqun/git-punchcard-plot/pull/7). If you

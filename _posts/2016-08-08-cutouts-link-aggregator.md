@@ -5,7 +5,7 @@ comments: true
 categories: web-development projects
 ---
 
-![image](/blog/public/img/cutouts-1.png)
+![image](/public/img/cutouts-1.png)
 
 I use [Pocket](https://getpocket.com). And I love it, I love the offline sync
 functionality that they have. It is incredibly useful whenever you are

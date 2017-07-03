@@ -45,7 +45,7 @@ when he was composing that piece!
 And that leads me nicely into the next thing that I intend to talk about in this
 post:
 
-![day-3-1](/blog/public/img/day-3-1.png)
+![day-3-1](/public/img/day-3-1.png)
 
 The **Someday** list on all TODO List managing applications. A lot of people
 have this kind of a list somewhere: Trello, Evernote, iOS Notes, Google Docs, or
@@ -83,6 +83,6 @@ procrastinate. Because I am excited and nervous and scared and a little bit more
 scared to start planning it and take concrete steps towards doing it. Once I
 take those steps, I would have reached the:
 
-![day-3-2](/blog/public/img/day-3-2.jpg)
+![day-3-2](/public/img/day-3-2.jpg)
 
 **POST #3 is OVER**

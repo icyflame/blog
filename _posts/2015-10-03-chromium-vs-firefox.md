@@ -15,11 +15,11 @@ Lately, I had been slightly irritated with the RAM usage of Chromium. It uses ab
 
 **Mem Usage on Chromium**
 
-![chromium-top-1](/blog/public/img/chromium-top-1.png)
+![chromium-top-1](/public/img/chromium-top-1.png)
 
 **Mem Usage on Firefox**
 
-![firefox-top-1](/blog/public/img/firefox-top-1.png)
+![firefox-top-1](/public/img/firefox-top-1.png)
 
 **Test conditions** In both the above tests, all other apps on the system were closed, and pages for a logged in account of GitHub, Gmail, Facebook and Twitter were kept open. It was on Ubuntu 14.04 running 4 GB of RAM and an Intel i5 processor.
 

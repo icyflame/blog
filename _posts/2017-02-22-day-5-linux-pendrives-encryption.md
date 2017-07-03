@@ -74,7 +74,7 @@ works.
 
 This part was easy. This is how it looked inside Nautilus:
 
-![day-5-1](/blog/public/img/day-5-1.png)
+![day-5-1](/public/img/day-5-1.png)
 
 It goes without saying that LUKS + EXT4 will natively work only on Linux based
 systems. LUKS stands for [Linux Unified Key

@@ -10,7 +10,7 @@ the internship offers that it had made to 7 people in IIT Kharagpur due to inter
 the heart to remove this post because this is exactly how I felt at the end of the interview, and I want
 this to be out there for other people searching about TinyOwl.
 
-[![tinyowl-logo](/blog/public/img/tinyowl.jpg)](http://tinyowl.com/)
+[![tinyowl-logo](/public/img/tinyowl.jpg)](http://tinyowl.com/)
 
 So, this post is long overdue. On 30th August, 2015, TinyOwl visited IIT Kharagpur to recruit interns for their internship program, during the months of May-July, 2016.
 

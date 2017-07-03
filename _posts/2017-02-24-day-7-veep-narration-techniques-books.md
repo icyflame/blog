@@ -88,6 +88,6 @@ guess I should try to put more effort into this. Perhaps, I should end with 2
 scenic photos of this new lab that I am going to be working at for my bachelor's
 thesis, and the road that leads to this lab:
 
-![day71](/blog/public/img/day-7-1.jpg) ![day72](/blog/public/img/day-7-2.jpg)
+![day71](/public/img/day-7-1.jpg) ![day72](/public/img/day-7-2.jpg)
 
 **POST #7 is OVER**

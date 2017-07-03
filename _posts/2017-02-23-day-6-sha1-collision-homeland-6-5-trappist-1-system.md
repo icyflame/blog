@@ -16,7 +16,7 @@ TRAPPIST-1 discovery. All of this was right after I had just seen Homeland
 S06E05. I love the episode. I raved about it [on
 Twitter](https://twitter.com/_icyflame/status/834802184462098432).
 
-![day61](/blog/public/img/day-6-1.png)
+![day61](/public/img/day-6-1.png)
 
 SHA-1 collision was on it's way, I guess? Chrome had already almost deprecated
 SHA-1 certificates, and apparently Root CAs were no longer allowed to issue
@@ -56,7 +56,7 @@ The second thing: TRAPPIST-1. I don't know much about this, except for the
 distance that really registered in my head: 40 light years. That's huge, and
 basically, what we are seeing now was happening at these planets 40 years ago.
 
-![day62](/blog/public/img/day-6-2.jpg)
+![day62](/public/img/day-6-2.jpg)
 
 Wow, that's one generation of life! Imagine if someone could see (but not
 change) what we were doing 40 years ago, and think about how they would have

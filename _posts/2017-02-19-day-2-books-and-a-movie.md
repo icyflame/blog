@@ -14,7 +14,7 @@ and why the motivations behind why people continue to remain poor and how
 society treats poor people, and how poor people treat each other. It's like the
 unwritten rule book of poverty in the 1940s.
 
-![day-2-1](/blog/public/img/day-2-1.jpg)
+![day-2-1](/public/img/day-2-1.jpg)
 
 I took a lot of time for me to finish this book. It was a 200 page book and the
 primary reason I read it was that it was from Orwell and I wanted to read a book

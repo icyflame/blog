@@ -7,7 +7,7 @@ categories: web-development
 
 Finally, a Rails application in production. And already, we have started facing problems! Whoever said deploying and maintaining web apps is more than half of the job, was definitely right!
 
-[![mentorship](/blog/public/img/mentorship.jpg)](http://www.mentorship.iikgp.ernet.in/)
+[![mentorship](/public/img/mentorship.jpg)](http://www.mentorship.iikgp.ernet.in/)
 
 In this post, I hope to outline exactly what lead to the deployment, and how we handled it, and what lead to the present wall that we are facing.
 

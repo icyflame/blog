@@ -35,7 +35,7 @@ are always composed of! (There were 5 nested tables with a huge amount of `tr` a
 Here, Chrome Dev Tools helped out, and saved the day! I highlighted the element I wanted
 and used the `Copy CSS Path` functionality, which worked perfectly!
 
-![screenshot-1](/blog/public/img/pnr-1.png)
+![screenshot-1](/public/img/pnr-1.png)
 
 Now, I had to parse the information I wanted out of the HTML, and I all I had were
 CSS selectors. I needed something like jQuery, that would build the DOM and then, allow
