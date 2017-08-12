@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Music update: July 2017
+title: Music update - July 2017
 categories: music monthly update arcade-fire nothing-but-thieves
 ---
 
