@@ -11,7 +11,7 @@ have heard (although the albums are pretty old themselves)
 
 ### [The Suburbs - Arcade Fire - 2010](https://en.wikipedia.org/wiki/The_Suburbs_(album))
 
-![cover](/public/suburbs-album-cover.jpg)
+![cover](/public/img/suburbs-album-cover.jpg)
 
 This album won the Grammy Album of the Year award in 2010. Before this, I had
 heard only the second track, Ready to Start. That I absolutely loved, but after
@@ -61,7 +61,7 @@ especially with Regine. * _ * )
 
 ### [Nothing but Thieves - Nothing but Thieves - 2015](https://en.wikipedia.org/wiki/Nothing_but_Thieves_(album))
 
-![cover](/public/nbt-album-cover.jpg)
+![cover](/public/img/nbt-album-cover.jpg)
 
 Nothing but Thieves is fairly new and they started only in 2012 and their only
 album was released in 2015. Recently, their new song
