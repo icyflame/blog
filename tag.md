@@ -8,7 +8,11 @@ sitemap:
 
 ---
 
-Click on a tag to see relevant list of posts.
+<p>
+{{site.categories | size}} tags, {{site.posts | size }} posts.
+</p>
+
+_Click on a tag to see relevant list of posts_
 
 <table>
 {% tablerow tag in site.categories cols: 3 %}
