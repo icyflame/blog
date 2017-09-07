@@ -2,7 +2,7 @@
 layout: post
 title: Configuring Vim and more!
 comments: true
-categories: Web-Development, Programming
+categories: web-development programming
 ---
 
 The Fall semester ended on Dec 28th. And after that a lot of things have happenned. It's been a long time since I wrote a post, because I have hardly had any time, since then. I am leaving for home day after tomorrow. And now finally, all the tasks are moving into "pack-up" phase.
