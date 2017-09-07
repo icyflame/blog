@@ -2,7 +2,7 @@
 layout: post
 title: Rolling into production!
 comments: true
-categories: Web-Development
+categories: web-development
 ---
 
 Ruby on Rails <3
