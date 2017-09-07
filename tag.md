@@ -10,46 +10,15 @@ sitemap:
 
 Click on a tag to see relevant list of posts.
 
-{% assign num_cat = site.categories.size %}
-{% assign col_limit = num_cat | divided_by: 3 %}
-{% assign offset = 0 %}
-<p>{{num_cat}} tags found</p>
-<p>{{col_limit}} tags per column</p>
-<div class="container">
-  <div class="col-md-4">
-    <ul>
-    {% for tag in site.categories limit:col_limit offset:offset %}
-      {% assign t = tag | first %}
-      {% assign posts = tag | last %}
-      <li><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }} ({{ posts | size }})</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-
-  {% assign offset = offset | plus: col_limit %}
-
-  <div class="col-md-4">
-    <ul>
-    {% for tag in site.categories limit:col_limit offset:offset %}
-      {% assign t = tag | first %}
-      {% assign posts = tag | last %}
-      <li><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }} ({{ posts | size }})</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-
-  {% assign offset = offset | plus: col_limit %}
-
-  <div class="col-md-4">
-    <ul>
-    {% for tag in site.categories offset:offset %}
-      {% assign t = tag | first %}
-      {% assign posts = tag | last %}
-      <li><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }} ({{ posts | size }})</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-</div>
+<table>
+{% tablerow tag in site.categories cols: 3 %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <a href="/tag/#{{t | downcase | replace:" ","-" }}">
+    {{ t | downcase }} ({{ posts | size }})
+  </a>
+{% endtablerow %}
+</table>
 
 ---
 
