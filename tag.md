@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Posts by Tag
+title: List of Posts by Tag
 permalink: /tag/
 
 sitemap:
