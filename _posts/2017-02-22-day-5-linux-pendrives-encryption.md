@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Day 5 - Linux, Pendrives and Encryption!
-categories: 100daysofwriting writing linux encryption
+categories: 100daysofwriting writing linux cryptography
 ---
 
 The paranoia of having your hard drive crash on you is devastating, once it

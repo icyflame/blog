@@ -2,7 +2,7 @@
 layout: post
 title: The Short One.
 comments: true
-categories: mid-spring-semester-2015
+categories: spring-2015
 ---
 
 This is my first post in 2015. It is pretty weird that I have not posted anything throughout January, despite a lot of things happenning. (Especially Spring Fest, at which Farhan Akhtar performed.)

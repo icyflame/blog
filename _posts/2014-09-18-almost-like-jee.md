@@ -2,7 +2,7 @@
 layout: post
 title: 4 exams, three days.
 comments: true
-categories: web-development mid-autumn-semester-2014
+categories: web-development autumn-2014
 ---
 
 Four exams, two of which were "Science of Living Systems" and "Environmental Science" (Who thought we would have to study these in college! :/ ). And the other two were Dynamics and Transform Calculus.

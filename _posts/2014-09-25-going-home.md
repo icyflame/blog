@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Going Home
-categories: web-development mid-autumn-semester-2014
+categories: web-development autumn-2014
 ---
 
 It's that time of the Fall semester again. About 70 days ago, we came back and started second year (Yay!). And now we are going back, "The Durga Puja Vacations.", and unlike last year, (when it was a badly scheduled 5 day holiday), this year it is 5 weekdays, and with the two weekends, preceding it and succeeding it, you learn to put them all together, and get 9 days out of it! The campus is slowly emptying out, those without labs, would mostly have left the campus, ( the three days after mid-semester exams, hardly matter! :P )
