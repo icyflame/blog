@@ -11,8 +11,12 @@ layout: default
   </script>
 
   <span class="post-date">
+    {{ page.categories | sort }}
     {% for category in page.categories %}
-    {{ category }} &middot;
+    <a href="{{ site.baseurl }}tag/#{{ category }}">
+      {{ category }}
+    </a>
+    &middot;
     {% endfor %}
   </span>
   {% assign description = content | truncatewords: 120 %}
