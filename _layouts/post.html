@@ -10,14 +10,9 @@ layout: default
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   </script>
 
-  <span class="post-date">
-    {% for category in page.categories %}
-    <a href="{{ site.baseurl }}tag/#{{ category }}">
-      {{ category }}
-    </a>
-    &middot;
-    {% endfor %}
-  </span>
+  {% capture joined_cats %}{{ page.categories | join: "," }}{% endcapture %}
+  {% include categories.html categories=joined_cats %}
+
   {% assign description = content | truncatewords: 120 %}
   {{ content }}
 </div>
