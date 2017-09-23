@@ -1,0 +1,14 @@
+<span class="post-date">
+  {% assign categories = include.categories | split: "," | sort %}
+
+  <h1>Categories: {{ include.categories }}</h1>
+
+  {% for category in categories %}
+  <a href="{{site.baseurl}}tag/#{{category}}">
+    {{ category }}
+  </a>
+  {% unless category == categories.last %}
+    &middot;
+  {% endunless %}
+  {% endfor %}
+</span>
