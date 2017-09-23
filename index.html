@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {% capture joined_cats %} {{ page.categories | join: "," }}{% endcapture %}
+    {% capture joined_cats %} {{ post.categories | join: "," }}{% endcapture %}
     {% include categories.html categories=joined_cats %}
 
     {{ post.content | truncatewords: 120 }} <a href="{{
