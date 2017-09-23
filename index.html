@@ -16,7 +16,10 @@ title: Home
 
     <span class="post-date">
       {% for category in post.categories %}
-      {{ category }} &middot;
+      <a href="{{site.baseurl}}tag/#{{category}}">
+        {{ category }}
+      </a>
+      &middot;
       {% endfor %}
     </span>
 
