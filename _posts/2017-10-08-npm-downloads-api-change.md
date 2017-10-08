@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: NPM changes downloads API and informs the world 38 hours later
+title: NPM changes downloads-stats API and informs the world 38 hours later
 categories: npm api goofs software
 ---
 
