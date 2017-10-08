@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: NPM changes downloads API and informs two days after
+title: NPM changes downloads API and informs the world 38 hours later
 categories: npm api goofs software
 ---
 
@@ -9,7 +9,8 @@ There are two parts to this post. The first is about what happened,
 chronologically and the second part is about why I was so disappointed with
 this.
 
-Now, for the more verbose version:
+_Note:_ All the times in this post which are not annotated are India Standard
+Time = GMT + 5.5
 
 ## What happened?
 
@@ -20,9 +21,9 @@ Now, for the more verbose version:
 
     I was surprised. The first thing that came to mind was that NPM had deleted
     the old data leading to the downloads in 2015 being shown as 0. I
-    immediately dug a bit more and checked other packages. I also checked some
-    really famous packages like `express` and users like @sindresorhus. All of
-    their downloads were being shown as 0 in 2015.
+    immediately checked other packages. I checked some really famous packages
+    like `express` and users like @sindresorhus. All of their downloads were
+    being shown as 0 in 2015.
 
 * I dug a bit more and reached the code-base for
     [npm-stat.com](https://github.com/pvorb/npm-stat.com) and from the line on
@@ -38,8 +39,8 @@ Now, for the more verbose version:
 
     ```js
     function getDownloadsUrl(pkg, fromDate, toDate) {
-    return '/downloads/range/' + dateToDayKey(fromDate) + ':' + 
-    dateToDayKey(toDate) + '/' + encodeURIComponent(pkg);
+       return '/downloads/range/' + dateToDayKey(fromDate) + ':' + 
+                dateToDayKey(toDate) + '/' + encodeURIComponent(pkg);
     }
     ```
 
@@ -95,7 +96,7 @@ Now, for the more verbose version:
     day, on August 30, I opened [npm-stat.com #47](https://github.com/pvorb/npm-stat.com/pull/47).
 
     There was one round of back-and-forth with @pvorb before the PR was merged
-    in on September 7th, a week later.
+    on September 7th, a week later.
 
 * On August 31st 1 AM IST, 38 hours after I first noticed the problem,
   (I have no way to know exactly when the API was changed), they
@@ -116,7 +117,8 @@ Now, for the more verbose version:
     at 2:24 AM IST on August 31st.
 
     I found this from [git's blame
-    view](https://github.com/npm/registry/blame/73f3ac456e1d80ffe0d49d19a74bfccdb58b4aaf/docs/download-counts.md)
+    view](https://github.com/npm/registry/blame/73f3ac456e1d80ffe0d49d19a74bfccdb58b4aaf/docs/download-counts.md).
+    Clearly, their plan was all along to make the change and inform later.
 
 ## Why do I even care?
 
@@ -146,13 +148,19 @@ future as well, and they will only _follow-up_ with documentation:
 
 I like NPM. Irrespective of that, if you want to work with Node.js then you are
 absolutely going to HAVE to use it. There are many things that could have been
-done better here: more warning before such API changes, better choices after.
-Even something as small as a tweet an hour before the API change was deployed
-would have been notice enough, in retrospect. How about adding a field to the
-`/downloads/` api response that informed the user that the data is not for the
-complete range that they requested because of a new API change. **Explaining a
-change 38 hours after it is just not acceptable for an API that's so
-prevalent.**
+done better here: more warning before such API changes, a tweet an hour before
+the API change was deployed would have been notice enough. Or how about adding a
+field to the `/downloads` api response that informed the user that the data is
+not for the complete range that they requested because of a new API change. 
+
+They have a monthly newsletter, a Twitter account, a blog and they chose not to
+post about this anywhere. I can only guess that they were undergoing an attack
+and they had to limit the API to fight that. I can't believe anyone would have a
+planned move to limit data and not inform their users about it prior to the
+change itself.
+
+**Explaining a change 38 hours after deploying the change is just not acceptable
+for an API that's so prevalent.**
 
 ## TL; DR
 
