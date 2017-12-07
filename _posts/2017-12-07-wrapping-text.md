@@ -13,9 +13,9 @@ not do that and let the line be as long as it needs to be.
 insert a "newline" after you have typed 80 characters on a particular line. The
 cursor moves to the next line.
 
-Sample unwrapped text: http://ix.io/CRZ
+Sample unwrapped text: [Unwrapped text](http://ix.io/CRZ)
 
-Sample wrapped text: http://ix.io/CS0
+Sample wrapped text: [Wrapped text](http://ix.io/CS0)
 
 The difference between these two formats might not be obvious to some at first
 glance. The unwrapped sample will look different on different screens. If your
