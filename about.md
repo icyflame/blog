@@ -27,7 +27,7 @@ which were downloaded a [total of 14,000
 times](https://npm-stat.com/charts.html?author=icyflame&from=2016-04-06&to=2017-04-06)
 in the last 1 year. (ending April 6, 2017)
 
-Vim, tmux, git and Chrome are the major parts of my daily setup!  Ubuntu is the
+Vim, tmux, git and Firefox are the major parts of my daily setup!  Ubuntu is the
 OS I have been using for the past few years. I have several gripes with it, but
 it has to do for now. I still have Windows 8 on the side for Solidworks, Ansys,
 Abaqus. I log into Windows far more frequently than I used to just two
