@@ -42,7 +42,7 @@ What sectors and income brackets were these 10% men a part of?
 1. This is third-hand information. Scott Alexander (the blog post's author) read
    several papers and reports about the topic and composed his post. I have read
    his post and skimmed through the text and analyzed the graphs in the
-   Brookings Institute Report [1].
+   [Brookings Institute Report][1].
 
 1. My questions **will not** be the same as the questions you would like to
 answer depending on your age, field of employment, childhood etc.
@@ -93,7 +93,7 @@ Some college but no 4-year degree | 96% | 95% | 87%
 High school degree, no colege | 95% | 94% | 84%
 Less than high school | 94% | 85% | 80%
 
-_Figure 4, Brookings Institute Report_ [1]
+_Figure 4, [Brookings Institute Report][1]_
 
 **Gender:** Inconlusive
 
@@ -122,7 +122,7 @@ Year | Millions of jobs held in this sector
 2010 | 11.5
 2016 | 12.1
 
-_Figure 6, Brookings Institute Report_ [1]
+_Figure 6, [Brookings Institute Report][1]_
 
 It's worth noting that the share of manufacturing the in the GDP has remained
 fairly unchanged over this period of time.
@@ -251,6 +251,6 @@ heartedly.
 
 That's the end of my third hand information dissemination effort. As mentioned
 earlier, definitely read the SlateStarCodex post. If you have the time, then
-read the Brookings Insitute report[1]. It presents the data they have very well.
+read the [Brookings Insitute report][1]. It presents the data they have very well.
 
 [1]: https://www.brookings.edu/wp-content/uploads/2017/05/ccf_20170517_declining_labor_force_participation_sawhill1.pdf
