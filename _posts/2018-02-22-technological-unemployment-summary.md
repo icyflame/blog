@@ -17,13 +17,13 @@ presumptions and beliefs.
 
 [Technological
 Unemployment](http://slatestarcodex.com/2018/02/19/technological-unemployment-much-more-than-you-wanted-to-know/)
-is the recent post on Slate Star Codex. I have been following this blog, albeit
-without understanding much on several occasions, for the past month and I jumped
-right out of my seat when I realized what this post was about. I had recently
-had a discussion about this with my parents in the context of the (lately
-increasing) AI paranoia articles in mainstream online and offline media and on
-sources like LinkedIn where people seem to be posting stuff about this all the
-time. (Elon Musk's rather arbitrary position on this doesn't help)
+is a post on Slate Star Codex. I have been following this blog, albeit without
+understanding much on several occasions, for the past month and I jumped right
+out of my seat when I realized what this post was about. I had recently had a
+discussion about this with my parents in the context of the (lately increasing)
+AI paranoia articles in mainstream online and offline media and on sources like
+LinkedIn where people seem to be posting stuff about this all the time. (Elon
+Musk's rather arbitrary position on this doesn't help)
 
 Before I read the post, I wrote down some questions and after reading the post
 (and taking notes, _yeah._), I answered them.
@@ -31,7 +31,7 @@ Before I read the post, I wrote down some questions and after reading the post
 **Premise:**
 
 Prime Age Male Labor Force Participation Rate went from 97% in 1950 to 88% in
-2014. Where did the ~10% of men go? Why aren't they part of the workforce
+\2014. Where did the ~10% of men go? Why aren't they part of the workforce
 anymore? Were advances in technology the cause for their exit?
 
 What sectors and income brackets were these 10% men a part of?
@@ -39,11 +39,10 @@ What sectors and income brackets were these 10% men a part of?
 
 **Caveats**
 
-1. This is third-hand information. Scott Alexander (the blog post's
-author) read several papers and reports about the topic and composed his post. I
-have read his post and skimmed through the text and analyzed the graphs in the
-[Brookings Institute
-Report](https://www.brookings.edu/wp-content/uploads/2017/05/ccf_20170517_declining_labor_force_participation_sawhill1.pdf).
+1. This is third-hand information. Scott Alexander (the blog post's author) read
+   several papers and reports about the topic and composed his post. I have read
+   his post and skimmed through the text and analyzed the graphs in the
+   Brookings Institute Report [1].
 
 1. My questions **will not** be the same as the questions you would like to
 answer depending on your age, field of employment, childhood etc.
@@ -252,7 +251,6 @@ heartedly.
 
 That's the end of my third hand information dissemination effort. As mentioned
 earlier, definitely read the SlateStarCodex post. If you have the time, then
-read the Brookings Insitute report on the topic.
+read the Brookings Insitute report[1]. It presents the data they have very well.
 
-[1]: [Brookings Institute
-Report](https://www.brookings.edu/wp-content/uploads/2017/05/ccf_20170517_declining_labor_force_participation_sawhill1.pdf)
+[1]: https://www.brookings.edu/wp-content/uploads/2017/05/ccf_20170517_declining_labor_force_participation_sawhill1.pdf
