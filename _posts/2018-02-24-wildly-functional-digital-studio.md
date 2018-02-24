@@ -94,12 +94,14 @@ Component | Purpose
 [Youtube Chronological][21] | Youtube will let you show the uploads of a channel sorted by date but you can only play them sorted reverse chronologically. When you have just found a [new channel][22], almost always, you want to play the videos chronologically. I tried to look for services online that would take a playlist and reverse them, but I couldn't find any. So, I delved into the YouTube API. This Node.js script makes raw calls to the YouTube API. No API helper or anything.
 
 It has been a long while since I have seen the repository pages of some of those
-utilities. It feels great to list out all the things that I built out. Terribly
-great motivation for sure.
+utilities. It feels great to list out all the things that I built. Terribly
+great motivation.
 
 Finally, I would love to see what constitutes your digital studio. So, if you
 have written a post like this before, do drop a link to that in the comments
-below.
+below. If you haven't written anything like this yet, please, take an hour. Go
+through the list of your Github repositories and find the things that you built
+in the past and reminisce.
 
 _P.S._ I love writing blog posts. **double heart**
 
