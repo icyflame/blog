@@ -123,3 +123,5 @@ _P.S._ I love writing blog posts. **double heart**
 [17]: https://github.com/icyflame/metakgp-visualize-cli
 [18]: https://github.com/icyflame/gh-repos-creation-cal
 [19]: https://github.com/icyflame/install-from-source-tmux-2-0
+[20]: https://www.siddharthkannan.in/tls-handshake/
+[21]: https://github.com/icyflame/youtube-chronological
