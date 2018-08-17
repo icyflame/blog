@@ -5,7 +5,7 @@ title: Media and Expectations - Part 1 - TV v. Internet
 categories: news series
 ---
 
-_This is part 1 of a two part series. Part 2 hasn't been released yet_
+_This is part 1 of a two part series_
 
 I am fresh off the [Factfulness][1] dose. The authors articulate one thing about
 the news media:
