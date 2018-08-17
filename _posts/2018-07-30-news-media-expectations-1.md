@@ -7,6 +7,8 @@ categories: news series
 
 _This is part 1 of a two part series_
 
+[Part 1][5] &middot; [Part 2][6]
+
 I am fresh off the [Factfulness][1] dose. The authors articulate one thing about
 the news media:
 
@@ -160,3 +162,5 @@ minutes of your time.
 
 [1]: https://www.goodreads.com/book/show/34890015-factfulness
 [2]: /public/img/news-media-11.jpg
+[5]: https://blog.siddharthkannan.in/news/series/2018/07/30/news-media-expectations-1/
+[6]: https://blog.siddharthkannan.in/news/series/2018/08/17/news-media-expectations-2/

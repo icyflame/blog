@@ -7,6 +7,8 @@ categories: news series
 
 _This is part 2 of a two part series_
 
+[Part 1][5] &middot; [Part 2][6]
+
 As promised at the end of Part 1, I will list the number of people who were
 affected by these incidents that were heavily reported on in the Indian news
 media to the point where I was actually wondering whether it was even safe to
@@ -89,3 +91,5 @@ great story about what the business of reporting news is really about.
 [2]: http://www.who.int/violence_injury_prevention/road_safety_status/2015/GSRRS2015_data/en/
 [3]: /public/data/indian-road-safety-who-a2.pdf
 [4]: /public/data/indian-railway-accidents.ods
+[5]: https://blog.siddharthkannan.in/news/series/2018/07/30/news-media-expectations-1/
+[6]: https://blog.siddharthkannan.in/news/series/2018/08/17/news-media-expectations-2/
