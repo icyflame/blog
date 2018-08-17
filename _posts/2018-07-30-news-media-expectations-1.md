@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Media and Expectations - TV v. Internet - Part 1
+title: Media and Expectations - Part 1 - TV v. Internet
 categories: news series
 ---
 
