@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Why I include Bootsrap in every project
+title: Why I include Bootstrap in every project
 categories: bootstrap frontend html
 ---
 
@@ -42,7 +42,7 @@ frontend development.
 
 1. Bootstrap makes your website responsive. i.e. your app will look better on
    every screen no matter it's size and shape. Of course, you should use it
-   properly. But it is extremely hard to use bootsrap badly enough that it will
+   properly. But it is extremely hard to use bootstrap badly enough that it will
    look bad somehow.
 
 1. Bootstrap's Grid System. This is one of the most useful things that I have
