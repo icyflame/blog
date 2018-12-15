@@ -112,3 +112,7 @@ loved! Here are a few episodes that I highly recommend:
 
 That's it for entry 1 of this series. (Maybe the only way to keep a series up is
 to not call them "series"-es in the first place. WAIT, WHAT?)
+
+[1]: https://blog.siddharthkannan.in/tag/#100daysofwriting
+[2]: https://blog.siddharthkannan.in/pune-diaries/art/gallery/sheil/2018/07/26/pune-diaries-1/
+[3]: https://blog.siddharthkannan.in/monthly/music/update/2017/10/07/music-update-august-2017/
