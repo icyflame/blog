@@ -31,7 +31,7 @@ apparently happened. The series unwinds the complete story of the murder
 mystery, how the two men went about investigating that back in '95 and it's
 connection to the mystery at hand.
 
-~~~~~~~~~~~~~~~~
+____
 
 That's the story. There's nothing particularly remarkable about the story when
 you look at it. The way it is shot and told is extremely well-done. Although, the
@@ -49,7 +49,7 @@ ways, the murder might be the central theme of the show, but Rust is the
 driver. He decides where the show goes, he decides the _mood_ of the show. His
 quotes are legendary;
 
-~~~~~~~~~~~~~~~~~
+____
 
 If you have ever seen an impressive character on screen, you know that they are
 always charismatic, strong, and have powers that other characters on screen
