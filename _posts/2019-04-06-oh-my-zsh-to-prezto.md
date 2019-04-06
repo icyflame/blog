@@ -167,7 +167,7 @@ iTerm2 tab: **2 seconds**!
 
 That's 4 seconds saved every time I decide to open a new pane in tmux!
 
-My fork of `prezto` is [here][13]. My fork of `ys` on `prezto` is [here][14].
+My fork of `prezto` is [here][13]. The prezto equivalent of `ys` is [here][14].
 
 This is a completely new shell and I am
 surprised at how similar it feels to oh-my-zsh and I don't feel like I have to
