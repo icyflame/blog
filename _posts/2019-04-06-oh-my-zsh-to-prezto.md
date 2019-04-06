@@ -126,11 +126,13 @@ which I thought would make it work. It was actually surprisingly close to what I
 wanted. The colors were off because it seems there's a slight difference in how
 colors are formatted in oh-my-zsh prompts and prezto prompts: 
 
+{% raw %}
 - oh-my-zsh: `${$bg[white]on git:%}`
-- prezto:    `${\%F{white}on git}`
+- prezto:    `${%F{white}on git}`
 
 - oh-my-zsh: `%{$reset_color%}`
-- prezto:    `\%f`
+- prezto:    `%f`
+{% endraw %}
 
 After changing this around, things started looking very similar! In fact, the
 only thing left was the git-related info in the prompt.
@@ -200,7 +202,6 @@ ability to tweak things to be _just so_.
 [6]: https://github.com/sorin-ionescu/prezto/blob/1f4601e44c989b90dc7314b151891fa60a101251/modules/README.md#modules
 [7]: http://blog.ysmood.org/my-ys-terminal-theme/
 [8]: https://github.com/sorin-ionescu/prezto/tree/1f4601e44c989b90dc7314b151891fa60a101251/modules/prompt#prompt
-[9]:
 [10]: https://github.com/sorin-ionescu/prezto/blob/1f4601e44c989b90dc7314b151891fa60a101251/modules/git/README.md
 [11]: https://github.com/sorin-ionescu/prezto/blob/1f4601e44c989b90dc7314b151891fa60a101251/modules/prompt/functions/prompt_minimal_setup
 [12]: https://github.com/sorin-ionescu/prezto/blob/1f4601e44c989b90dc7314b151891fa60a101251/modules/prompt/functions/prompt_sorin_setup
