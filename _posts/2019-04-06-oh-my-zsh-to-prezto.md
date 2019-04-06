@@ -117,10 +117,9 @@ just as gratifying as the green tick mark. The red "x" is almost
 indistinguishable from the red UTF8 "x" mark. One of the main reasons I chose
 `ys` was because it has only ASCII characters. That ensures that it looks good
 everywhere: Ubuntu, Mac OS, even Windows would have worked fine (if I had ever
-tried to make it work there). There was no `ys` clone for prezto (which was
-quite surprising actually; I was confident I would be able to get away
-copying some text around without having to understand how prompts are
-written. Hard luck there!)
+tried to make it work there). There was no `ys` clone for prezto, which was
+quite surprising; I was confident I would be able to get away copying some text
+around without having to understand how prompts are written. Hard luck there!
 
 So, I started writing this prompt. I copied `ys`'s [code][7] over to a file
 which I thought would make it work. It was actually surprisingly close to what I
@@ -128,10 +127,10 @@ wanted. The colors were off because it seems there's a slight difference in how
 colors are formatted in oh-my-zsh prompts and prezto prompts: 
 
 - oh-my-zsh: `${$bg[white]on git:%}`
-- prezto:    `${%F{white}on git}`
+- prezto:    `${\%F{white}on git}`
 
 - oh-my-zsh: `%{$reset_color%}`
-- prezto:    `%f`
+- prezto:    `\%f`
 
 After changing this around, things started looking very similar! In fact, the
 only thing left was the git-related info in the prompt.
