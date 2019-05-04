@@ -126,6 +126,10 @@ users was on IRC and they shared their certificates for the `uMatrix` extension
 some sort of quick workaround which helped them make browsers ignore the results
 of the add-on verification test.
 
+**Edit:** I was enlightened by a user on IRC that the fix they deployed was a
+Study. These can be seen inside `about:studies` and this particular hotfix is
+called `hotfix-reset-xpi-verification-timestamp-1548973`! Nifty!
+
 **P.S.** I wrote a post a few months ago about how cool `openssl` is! I was finally
 able to use it in the wild with this issue! Check out the post [here][5].
 
