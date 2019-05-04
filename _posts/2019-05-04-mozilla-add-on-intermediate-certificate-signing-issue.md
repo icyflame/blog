@@ -82,7 +82,7 @@ that was the first thing I noticed when I was looking for one.
 1. Use `openssl` to inspect the certificates!
 
 ```sh
-$ openssl pkcs7 -in META-INF/mozilla.rsa -inform DER -print_certs -text
+openssl pkcs7 -in META-INF/mozilla.rsa -inform DER -print_certs -text
 ```
 
 You can find the output of this for the uBlock extension [here][6].
