@@ -7,8 +7,8 @@ permalink:        pretty
 
 # Setup
 title:            Siddharth Kannan's Blog
-tagline:          'Cogito ergo sum.'
-description:      'Cuber | Programmer | Pianist. <br/><a href="http://icyflame.github.io">@icyflame</a>'
+tagline:          'Cogito ergo sum'
+description:      'Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a>'
 # baseurl: /
 # baseurl_without_slash: ''
 baseurl:          https://blog.siddharthkannan.in/
