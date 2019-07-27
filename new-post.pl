@@ -28,4 +28,4 @@ open (my $pipe, ">", $file_name);
 print $pipe $post_template;
 close($pipe);
 
-print "Wrote to file\n$file_name\n";
+print "Wrote template to file\n$file_name\n";
