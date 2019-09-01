@@ -124,7 +124,7 @@ submit my add-on and voila, there my extension was! No review process to get
 things on the Chrome Extensions store. That would make me squeamish, if I was
 using Chrome as my daily-driver and had a couple shady extensions.
 
-- [Firefox Add-on][14] (Link won't work until the bundle has been approved)
+- [Firefox Add-on][14]
 - [Chrome Extension][12]
 - [GitHub Repository][13]
 
