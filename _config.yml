@@ -9,10 +9,15 @@ permalink:        pretty
 title:            Siddharth Kannan's Blog
 tagline:          'Cogito ergo sum'
 description:      'Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a>'
+
+# Development
 # baseurl: /
 # baseurl_without_slash: ''
+
+# Production
 baseurl:          https://blog.siddharthkannan.in/
 baseurl_without_slash: https://blog.siddharthkannan.in
+
 disqus_shortname: siddharthkannanblog
 
 author:
@@ -27,3 +32,6 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/icyflame/blog
+
+plugins:
+  - jekyll-paginate
