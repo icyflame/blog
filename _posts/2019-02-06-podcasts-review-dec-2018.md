@@ -26,6 +26,8 @@ Let's dive in!
     very well be defined by our acceptance or rejection of these ground breaking
     events.
 
+<!--more-->
+
 * **The Daily** - **The Business of Selling Your Location**
 
     Nothing new here for anyone who has given thought to how conglomerates like

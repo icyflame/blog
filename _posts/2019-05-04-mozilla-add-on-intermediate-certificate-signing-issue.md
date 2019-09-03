@@ -18,6 +18,8 @@ just fine just a few hours ago. (Some people had theirs stop working during on
         ongoing session!) This led to the opening of a [GitHub issue][2] and a
 bug on Mozilla's bug tracker for Firefox, [Bugzilla][3].
 
+<!--more-->
+
 I ran into this as soon as I woke up this morning and opened my work computer to
 start my on-call shift. I didn't know I had a pretty interesting on-call session
 in front of me. On a 12-hour on-call shift, I didn't have much to do anyway. So,

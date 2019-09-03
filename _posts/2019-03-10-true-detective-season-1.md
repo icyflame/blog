@@ -16,14 +16,18 @@ into what's great about that season.
 A murder mystery in Louisiana that is being investigated by two _very_ different
 detectives: Rust and Marty. Marty is every man's man; he has a family, two
 daughters and some mistakes in his character. He mingles with people well and
-has a good rapport with the people he works with. Rust is single, he has a
-mysterious past and no one really knows what he did before coming here. He waxes
-philosophical almost all the time.  Most of the people that Rust works with
-don't really like him and are unsettled by him. Early on in the series, we are
-shown how Rust has insomnia and works through the night a lot of days. He is
-also an excellent detective with an uncanny ability to look through people and
-situations. One of his most iconic quotes: "I've never been in a room more than
-5 minutes and not known whether they did it or not. How long does it take you?"
+has a good rapport with the people he works with. 
+
+<!--more-->
+
+Rust is single, he has a mysterious past and no one really knows what he did
+before coming here. He waxes philosophical almost all the time.  Most of the
+people that Rust works with don't really like him and are unsettled by him.
+Early on in the series, we are shown how Rust has insomnia and works through the
+night a lot of days. He is also an excellent detective with an uncanny ability
+to look through people and situations. One of his most iconic quotes: "I've
+never been in a room more than 5 minutes and not known whether they did it or
+not. How long does it take you?"
 
 The original murder mystery happens in 1995. The two men are being interviewed
 in the current time (~2012) about this mystery because something similar has

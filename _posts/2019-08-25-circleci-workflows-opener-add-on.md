@@ -17,8 +17,10 @@ page and click on "Releases", create a new release (a Git tag) and then again go
 to the readme to go back and wait for the Release CI to finish.
 
 Once that is done, I open Spinnaker and wait some more for that to get
-triggered. For reason, [Spinnaker][1] takes about 10 minutes to detect that a
-new image with a tag matching a provided regex was pushed to GCR.
+triggered. For some reason, [Spinnaker][1] takes about 10 minutes to detect that
+a new image with a tag matching a provided regex was pushed to GCR.
+
+<!--more-->
 
 In any case, you might have noticed that I switch between GitHub and CircleCI a
 lot. Now, most repositories at work have a CircleCI indicator at the top. If

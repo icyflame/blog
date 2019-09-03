@@ -23,6 +23,8 @@ Happy New Year! Let's jump right in!
     life is lived around it_ When put like that, we really see how much power
     walls have! An absolutely amazing episode!
 
+<!--more-->
+
 * **The Slow Burn** - **Season 1: Watergate**
 
     The Watergate scandal is something that was shrouded in a lot of mystery

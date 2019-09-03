@@ -25,6 +25,8 @@ people start with the story and the `TL;DR` comes at the end of the blog post. I
 _strongly_ believe that the `TL;DR` of all blog posts and long text-filled posts
 should be at the top of the piece.
 
+<!--more-->
+
 I started compiling `vim` from source a few months ago. See, I needed to get an
 extension called [vim-search-me][1]. This extension was calling a function
 called `trim()` but only newer versions of vim had this function. I opened a

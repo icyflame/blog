@@ -21,6 +21,8 @@ listening to the serious Ezra Klein Show at a point where I had run out of Daily
 (NYT) episodes. The Daily (NYT) has a huge list of episodes that I absolutely
 loved! Here are a few episodes that I highly recommend:
 
+<!--more-->
+
 * **The Daily** - **The War Inside the Catholic Church**
 
     This is the epic fight between the people who like the current pope (for his

@@ -23,6 +23,8 @@ politics related stuff this month.
     change in a process, inside any institution, can't be overnight even if it
     has provably better results.
 
+<!--more-->
+
 * **The Impact** - **The Opiod Crisis**
 
     There are several podcasts out there about the Opiod crisis in the US right

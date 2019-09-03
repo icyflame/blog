@@ -19,6 +19,8 @@ shell took to start up again. It was ... interesting: **6 seconds**.
 YUP. 6 seconds on a machine with an SSD, 16 GB of RAM and an i7 processor. So,
 what is the problem here?
 
+<!--more-->
+
 ## The Search
 
 I have a [zshrc][2] that sources several other files when it loads. Going
