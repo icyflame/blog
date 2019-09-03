@@ -12,8 +12,8 @@ sudo apt-get install -y python3-distutils python3-dev
 git clone https://github.com/vim/vim.git
 cd vim
 ./configure --prefix=/usr/local \
-                     --enable-python3interp \
-                     --with-python3-config-dir=/usr/lib/python3.6/config-*
+     --enable-python3interp \
+     --with-python3-config-dir=/usr/lib/python3.6/config-*
 make
 sudo make install
 ```
@@ -26,7 +26,7 @@ _strongly_ believe that the `TL;DR` of all blog posts and long text-filled posts
 should be at the top of the piece.
 
 I started compiling `vim` from source a few months ago. See, I needed to get an
-extension called [`vim-search-me`][1]. This extension was calling a function
+extension called [vim-search-me][1]. This extension was calling a function
 called `trim()` but only newer versions of vim had this function. I opened a
 [PR][2] on the original repository to ensure that the call wasn't made if the
 function didn't exist, but I also wanted a version of vim which actually had
@@ -104,11 +104,14 @@ Python installation. [This][5] StackOverflow answer pointed me to a
 configuration script flag which allowed me to explicitly specify the path to my
 Python configuration directory.
 
-The third error I ran into was stranger: `Unable to find the Python.h file
-inside the python configuration directory`. And it was showing an `#include
-<Python.h>` line from some file containing C code. The above answer also had a
-line about having to install the `python2-dev` package using `apt-get` because
-it isn't pre-packaged inside the Ubuntu installation.
+The third error I ran into was stranger:
+
+> Unable to find the Python.h file inside the python configuration directory 
+
+And it was showing an `#include <Python.h>` line from some file containing C
+code. The above answer also had a line about having to install the `python2-dev`
+package using `apt-get` because it isn't pre-packaged inside the Ubuntu
+installation.
 
 > On Ubuntu 10.04 you have to install 'python2.6-dev'
 
