@@ -17,8 +17,14 @@ title: Home
     {% capture joined_cats %} {{ post.categories | join: "," }}{% endcapture %}
     {% include categories.html categories=joined_cats %}
 
-    {{ post.content | truncatewords: 120 }} <a href="{{
-      site.baseurl_without_slash }}{{ post.url }}">Read More</a>
+    {% if post.content contains '<!--more-->' %}
+        {{ post.content | split:'<!--more-->' | first }}
+    {% else %}
+        {{ post.content | truncatewords: 120 }} 
+    {% endif %}
+
+
+    <a href="{{site.baseurl_without_slash }}{{ post.url }}">Read More</a>
   </div>
   {% endfor %}
 </div>
