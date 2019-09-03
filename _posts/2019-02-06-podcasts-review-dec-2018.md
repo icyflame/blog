@@ -10,7 +10,7 @@ was stored as a note on my iPhone with a set of links. I have added a short
 summary of each podcast and why I liked like it other posts in this series.
 Let's dive in!
 
-* **The Daily** - **Ethics of Geneticall Editing Babies**
+* **The Daily** - **Ethics of Genetically Editing Babies**
 
     This is related to the story where a Chinese scientist [claimed][1] to have
     created / helped make (what even is the right word?) the world's first
