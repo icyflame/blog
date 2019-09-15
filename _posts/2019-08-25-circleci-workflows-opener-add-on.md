@@ -130,6 +130,11 @@ using Chrome as my daily-driver and had a couple shady extensions.
 - [Chrome Extension][12]
 - [GitHub Repository][13]
 
+**Edit 2019-09-15**
+
+Firefox 69 was released a few days ago! Now, bookmarklets to change the URL of a
+website [work][15]!
+
 [1]: https://www.spinnaker.io/concepts/
 [2]: /public/img/github-bookmarklet-image.png
 [3]: https://github.blog/2013-04-19-content-security-policy/#bookmarklets
@@ -144,3 +149,4 @@ using Chrome as my daily-driver and had a couple shady extensions.
 [12]: https://chrome.google.com/webstore/detail/open-circleci-workflows/fcjcanbkalgfniilkedfjgaglfgdjlcb
 [13]: https://github.com/icyflame/open-circleci-workflows-firefox
 [14]: https://addons.mozilla.org/en-US/firefox/addon/open-circleci-workflows/
+[15]: https://twitter.com/_icyflame/status/1173258404220948481
