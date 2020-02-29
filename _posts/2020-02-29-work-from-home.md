@@ -18,6 +18,8 @@ space of 25 square meters (about 250 sq. feet). There's a living space of about
 150 sq.m and the rest is a kitchen, a bathroom and space for a refrigerator and
 a washing machine.
 
+<!--more-->
+
 Work from home has been going fairly well, I believe. I was working on a project
 with about 4 other engineers. Understandably, communication has gotten slightly
 harder because we don't sit 3 feet from each other 8 hours every day but
