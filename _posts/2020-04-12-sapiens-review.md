@@ -289,5 +289,11 @@ For posterity, the arguments given in Lever of Riches (Mokyr) _are_ convincing.
 The least the author could do was at least point the reader to another book
 which would summarize those theories.
 
+***
+
+P.S. I wrote about this on Twitter as I was reading the book:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’ve been putting off reading Sapiens for a while now. I just read a profile of the author in The New Yorker and I absolutely am going to start reading this weekend. The whole “author with no concrete opinion, book with no overarching story, footnotes about legends” got me</p>&mdash; Siddharth Kannan (@_icyflame) <a href="https://twitter.com/_icyflame/status/1248560823628214272?ref_src=twsrc%5Etfw">April 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 [1]: https://www.newyorker.com/magazine/2020/02/17/yuval-noah-harari-gives-the-really-big-picture
 [2]: https://unsplash.com/photos/c-qqleQ8REk
