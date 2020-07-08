@@ -35,3 +35,6 @@ github:
 
 plugins:
   - jekyll-paginate
+
+# Don't put categories at the top of the links
+# permalink: /:year/:month/:day/:title
