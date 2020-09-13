@@ -21,4 +21,6 @@ comments: true
 title:
 categories:
 ---
+
+<!--more-->
 EOF
