@@ -1,5 +1,5 @@
 <span class="post-date">
-  {% assign categories = include.categories | split: "," | sort %}
+  {% assign categories = include.categories | strip | split: "," | sort %}
 
   {% for category in categories %}
   <a href="{{site.baseurl}}tag/#{{category}}">
