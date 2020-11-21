@@ -5,6 +5,12 @@ title: Configuring Emacs - 7 months later - Act 1
 categories: emacs editors tools configuration
 ---
 
+_Note:_ This is the first post in a series of 3 posts about my experience configuring Emacs over 7
+months, starting from scratch. ([Post 1][1], [Post 2][2])
+
+[1]: /emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1
+[2]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2
+
 My first commit to [icyflame/.emacs.d](https://github.com/icyflame/.emacs.d), the repository with my Emacs configuration, was in April this
 year (7 months ago). Now, I have reached a point at which I have cleaned up my configuration enough
 to feel okay about making it open source. In this post and the two posts after this one, I will go

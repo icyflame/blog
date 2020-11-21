@@ -5,6 +5,12 @@ title: Act 2: Keybindings and Package Integration
 categories: emacs editors tools configuration
 ---
 
+_Note:_ This is the second in a series of 3 posts about my experience configuring Emacs over 7
+months, starting from scratch. ([Post 1][1], [Post 2][2])
+
+[1]: /emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1
+[2]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2
+
 - [Act 2: Keybindings and Package Integration](#orgec4b729)
   - [Navigation using `Ctrl + H/J/K/L`](#org54cf0c5)
   - [Keybindings to comment code](#orgc1a4811)
