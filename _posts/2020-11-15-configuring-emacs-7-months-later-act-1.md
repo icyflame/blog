@@ -6,7 +6,10 @@ categories: emacs editors tools configuration
 ---
 
 _Note:_ This is the first post in a series of 3 posts about my experience configuring Emacs over 7
-months, starting from scratch. ([Post 1][1], [Post 2][2])
+months, starting from scratch.
+
+- [Post 1: Fundamentals][1]
+- [Post 2: Keybindings and Package Integration][2]
 
 [1]: /emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1
 [2]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2
@@ -39,12 +42,12 @@ things I discovered about Emacs Lisp, a language that is equal parts fascinating
 That said, if you plan to use parts of my configuration and are unable to figure out why something
 is not working, I would love to hear your questions and help with figuring out the reason!
 
-
 - [Act 1: Fundamentals](#org8b8b4a0)
   - [Package Management](#orgc8426a7)
   - [Evil mode and general.el](#orgff92eb3)
   - [Don't install Helm](#org9b39a7b)
   - [Org mode](#org9dc088c)
+
 
 <a id="org8b8b4a0"></a>
 

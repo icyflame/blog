@@ -1,21 +1,18 @@
 ---
 layout: post
 comments: true
-title: Act 2: Keybindings and Package Integration
+title: Configuring Emacs - 7 months later - Act 2
 categories: emacs editors tools configuration
 ---
 
 _Note:_ This is the second in a series of 3 posts about my experience configuring Emacs over 7
-months, starting from scratch. ([Post 1][1], [Post 2][2])
+months, starting from scratch.
+
+- [Post 1: Fundamentals][1]
+- [Post 2: Keybindings and Package Integration][2]
 
 [1]: /emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1
 [2]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2
-
-- [Act 2: Keybindings and Package Integration](#orgec4b729)
-  - [Navigation using `Ctrl + H/J/K/L`](#org54cf0c5)
-  - [Keybindings to comment code](#orgc1a4811)
-  - [Hooks](#org05e0dfd)
-  - [Mode maps for Keybindings](#orge17068c)
 
 
 <a id="orgec4b729"></a>
@@ -34,6 +31,11 @@ attempt at the installation of these modes was terrible and I had a very bad exp
 giving up for a short period of time, I returned to the problem once again and figured it out the
 second time around. This story is longer and I want to keep it for another blog post.
 
+- [Act 2: Keybindings and Package Integration](#orgec4b729)
+  - [Navigation using `Ctrl + H/J/K/L`](#org54cf0c5)
+  - [Keybindings to comment code](#orgc1a4811)
+  - [Hooks](#org05e0dfd)
+  - [Mode maps for Keybindings](#orge17068c)
 
 <a id="org54cf0c5"></a>
 
