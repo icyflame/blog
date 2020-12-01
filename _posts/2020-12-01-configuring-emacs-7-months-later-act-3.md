@@ -14,7 +14,7 @@ months, starting from scratch.
 
 [1]: /emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1
 [2]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2
-[3]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-3
+[3]: /emacs/editors/tools/configuration/2020/12/01/configuring-emacs-7-months-later-act-3
 
 <a id="org8af0131"></a>
 

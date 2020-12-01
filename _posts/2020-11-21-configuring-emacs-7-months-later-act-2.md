@@ -10,9 +10,11 @@ months, starting from scratch.
 
 - [Post 1: Fundamentals][1]
 - [Post 2: Keybindings and Package Integration][2]
+- [Post 3: Writing Emacs Lisp Functions][3]
 
 [1]: /emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1
 [2]: /emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2
+[3]: /emacs/editors/tools/configuration/2020/12/01/configuring-emacs-7-months-later-act-3
 
 
 <a id="orgec4b729"></a>
