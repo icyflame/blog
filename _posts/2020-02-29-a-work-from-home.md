@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Work from Home
-categories: work coronavirus 2019-ncov
+categories: work coronavirus covid19
 ---
 
 Mercari [announced][2] on 18th February, 2020 that they will be implementing a
