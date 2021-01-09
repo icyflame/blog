@@ -1,0 +1,17 @@
+#+TITLE: %^{Title of the article}
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: %\1
+categories: %^{Categories for this post}
+---
+#+end_export
+
+%?
+
+#+begin_export html
+<!--more-->
+#+end_export
