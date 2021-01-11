@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+weight: 1
 ---
 
 Hey! I am Siddharth Kannan. I am a Software Engineer at Mercari in Tokyo, Japan.

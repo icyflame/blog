@@ -1,6 +1,7 @@
 ---
 layout: page
 title: List of Posts
+weight: 10
 ---
 
 <style>
@@ -32,22 +33,22 @@ title: List of Posts
         <a href="{{ site.baseurl_without_slash }}{{post.url}}">
           {{ post.title }}
         </a>
-        
+
       </td>
-      
+
       <td>
-        
+
         <span style="float: right; ">
           {{ post.date | date_to_string }}
-          
+
         </span>
-        
+
       </td>
-      
+
     </tr>
-    
+
     {% endfor %}
-    
+
   </table>
 
 </div>

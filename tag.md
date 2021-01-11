@@ -3,6 +3,8 @@ layout: page
 title: List of Posts by Tag
 permalink: /tag/
 
+weight: 100
+
 sitemap:
   priority: .5
 
