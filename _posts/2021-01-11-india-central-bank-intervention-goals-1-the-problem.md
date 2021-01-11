@@ -9,7 +9,7 @@ In December 2020, I came across several articles about India's Central Bank, the
 India, intervening in the open market to maintain excess liquidity of the Indian Rupee in the
 market. With my elementary understanding of currencies, I understood that this excess liquidity of
 INR in the market, would keep the currency weak against other currencies, and this seemed
-undesirable. In this post and the next one, I will delve into the complicated reasoning behind the
+undesirable. In this post and [the next one](file:///central-banks/economic-theory/economy/governments/india/2021/01/11/india-central-bank-interventions-goals-2-the-reasoning/), I will delve into the complicated reasoning behind the
 RBI's choices and their delicate balancing act which seems to be associated with a high but
 manageable amount of risk.
 
@@ -86,11 +86,11 @@ closed. There was a push to ensure that the supply of essential goods and trucke
 unaffected, but this didn't work well enough and the bureaucratic system to grant permits to
 truckers most probably took more time than the government initially anticipated.
 
-This sudden supply-side shock had an expected impact on the Cost-Push Inflation across the
-country. Food inflation started [shooting up](https://www.reuters.com/article/india-economy-inflation-idINKBN27T20U?edition-redirect=in) from April, but the expectation of a good harvest kept
-fears low initially. As October rolled around, untimely rains in Maharashtra (a major farming state)
-lead to the food inflation going up to 11.07%, an all-time high for this number. Overall inflation
-also kept going up, and ended up at around 7.6% by early December.
+This sudden supply-side shock had an expected impact on the CPI Inflation across the country. Food
+inflation started [shooting up](https://www.reuters.com/article/india-economy-inflation-idINKBN27T20U?edition-redirect=in) from April, but the expectation of a good harvest kept fears low
+initially. As October rolled around, untimely rains in Maharashtra (a major farming state) lead to
+the food inflation going up to 11.07%, an all-time high for this number. Overall inflation also kept
+going up, and ended up at around 7.6% by early December.
 
 The key finding here is that this inflation is <span class="underline">not</span> connected to any of RBI's monetary policies. In
 fact, according RBI's assessment, they confidently claim that the effect of their currency
