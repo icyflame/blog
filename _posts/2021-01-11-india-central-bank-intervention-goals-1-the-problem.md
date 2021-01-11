@@ -9,7 +9,7 @@ In December 2020, I came across several articles about India's Central Bank, the
 India, intervening in the open market to maintain excess liquidity of the Indian Rupee in the
 market. With my elementary understanding of currencies, I understood that this excess liquidity of
 INR in the market, would keep the currency weak against other currencies, and this seemed
-undesirable. In this post and [the next one](file:///central-banks/economic-theory/economy/governments/india/2021/01/11/india-central-bank-interventions-goals-2-the-reasoning/), I will delve into the complicated reasoning behind the
+undesirable. In this post and [the next one](/central-banks/economic-theory/economy/governments/india/2021/01/11/india-central-bank-interventions-goals-2-the-reasoning/), I will delve into the complicated reasoning behind the
 RBI's choices and their delicate balancing act which seems to be associated with a high but
 manageable amount of risk.
 

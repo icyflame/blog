@@ -5,7 +5,7 @@ title: Reserve Bank of India's Interventions to maintain excess liquidity - Part
 categories: central-banks economic-theory economy governments india
 ---
 
-In [the previous post](file:///economy/india/economic-theory/governments/central-banks/2021/01/11/india-central-bank-intervention-goals-1-the-problem/), we looked at what the RBI has been doing over the 2020 calendar year. The
+In [the previous post](/economy/india/economic-theory/governments/central-banks/2021/01/11/india-central-bank-intervention-goals-1-the-problem/), we looked at what the RBI has been doing over the 2020 calendar year. The
 over-all effect of RBI's interventions have been that the exchange rate (INR to USD ratio) has
 remained within a narrow window, despite the unprecedented capital inflows into the Indian equity
 market. This is by design, and the RBI has tried to explain their policy a few times in various
