@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: True Detective Season 1
-categories: true-detective tv-series
+categories: true-detective tv-shows
 ---
 
 _This post does not have spoilers about True Detective Season 1_
