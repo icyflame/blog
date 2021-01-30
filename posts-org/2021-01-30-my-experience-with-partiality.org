@@ -1,11 +1,11 @@
-#+TITLE: My experience with partiality in school
+#+TITLE: My experience with partiality in school sports
 #+OPTIONS: author:nil toc:nil ^:nil
 
 #+begin_export html
 ---
 layout: post
 comments: true
-title: My experience with partiality in school
+title: My experience with partiality in school sports
 categories: bias life childhood
 ---
 #+end_export

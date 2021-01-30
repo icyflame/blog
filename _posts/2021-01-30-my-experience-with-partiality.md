@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: My experience with partiality in school
+title: My experience with partiality in school sports
 categories: bias life childhood
 ---
 
