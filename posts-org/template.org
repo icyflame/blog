@@ -1,11 +1,10 @@
-#+TITLE: %^{Title of the article}
 #+OPTIONS: author:nil toc:nil ^:nil
 
 #+begin_export html
 ---
 layout: post
 comments: true
-title: %\1
+title: %^{Title of the article}
 categories: %^{Categories for this post}
 ---
 #+end_export
