@@ -198,6 +198,12 @@ bets that institutional investors can sustain. I don't think this is anything ev
 market being rigged. In fact, it simply points to the fact that the market rewards expertise and
 that capitalism rewards capital.
 
+For most retail investors, the [[https://www.businessinsider.com/personal-finance/warren-buffett-recommends-index-funds-for-most-investors?op=1][suggested]] investment strategy is to invest in "Index funds". Now,
+considering that most normal people will do something like that, I think the "market is rigged
+against normal people" thesis loses even more ground because it is rarely in the interest of average
+investors to pick individual stocks and invest in them, rather than investing in Index funds *(Not
+investment advice)*.
+
 (A useful example for this might be to ask yourself if something else is rigged, by this same
 logic. *For e.g.* Someone who wants to play Tennis or Golf will have a big advantage if their
 parents have the time and money to go to various tournaments, hire a good coach, buy the right
