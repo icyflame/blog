@@ -1,0 +1,224 @@
+---
+layout: post
+comments: true
+title: Financial Markets are Complex
+categories: stock-market complexity gamestop
+---
+
+The [Gamestop stock](https://www.bloomberg.com/quote/GME:US) started 2021 at a modest $17.25. It then went up to $347.51 on 27th January. It
+went back down to $53.50 on 4th February. It closed on February 17th at $45.94, about 2.66 times
+it's price at the start of the year. Millions of words and thousands of column inches have been
+devoted to explaining what happened, why it happened, and who was hurt. I wanted to write about a
+few peculiar things I noticed in the past few days that were the bizarre side shows to the main
+event: politicians (and Elon Musk) posturing for publicity by saying things about other things that
+they know nothing about, truth not prevailing no matter how much effort is spent on explanation,
+general disapproval of complexity in a system and societal conviction that the stock market is
+"rigged".
+
+![img](/public/img/game-stop-early-2021-stock.png)
+
+<!--more-->
+
+
+# Politicians posturing for publicity
+
+Politicians in the US tweeted about this and claimed to fight for the "little guy" and question
+Robinhood. Surprisingly (for me), they didn't do their homework and were caught saying things that
+made little sense. Elizabeth Warren was a notable exception and no wonder; a veteran policy maker
+with deep knowledge of the stock market, she made a very good case in [her letter to the SEC](https://www.warren.senate.gov/imo/media/doc/01.29.2021%20Letter%20from%20Senator%20Warren%20to%20Acting%20Chair%20Lee.pdf). Elon
+Musk is not a politician, but his posturing for publicity is no different from other politicians,
+and he was able to fuel the mania effectively.
+
+This might not come as a surprise to some readers. Politicians say outrageous things because it gets
+them air time. Reality shows are a close parallel that might help us understand this phenomenon and
+**teach us how to correct our reaction** for this "posturing bias". Indian reality shows like
+Splitsvilla and Roadies often have contestants whining about another contestant "grabbing
+footage". These reality shows are inspired by American reality shows like The Bachelor and Roadies
+USA. The motivation for most people who go on these shows is to become famous or to make it in the
+Indian film industry. Their most effective way of doing that is by doing something outrageous and
+getting noticed by producers and casting directors who are skimming through thousands of portfolios
+to find the person who will play the lead or supporting role in their next venture. These shows are
+notoriously bad at turning contestants into actors: The only person who can be considered a success
+for the Roadies => Film industry path was Ayushmann Khurana, in the more than nearly 15 years that
+these shows have been running on television. This low success rate has dampened the popularity of
+these shows, but they continue to live on as zombie versions of their old popular selves.
+
+One of the effective strategies to correct for posturing bias can be seen in action in reality
+shows, when other contestants wake up to the footage grabbing behavior of one of their
+co-contestants and begin to isolate them from their plotting. This inevitably leads to a loud
+showdown between various factions of contestants and ends with some people getting "eliminated" from
+the show. Now, irrespective of whether the footage-grabbing contestant left the show, this sudden
+blow-up changes the dynamics and the group re-aligns around some other contestant. As a viewer, this
+is a great "reset point".
+
+We can apply this strategy to politicians: **tune out their opinions and look at their past
+actions**. This is hard to do because the number of mediums that politicians can use to reach people
+has grown exponentially; talking heads on TV can talk about any subject for hours on end because
+there is no real expertise that is required for their job and their lack of such expertise allows
+them to talk with unflinching confidence even when they know nothing about the topic. Most media
+coverage does not cover what politicians did, rather preferring to cover the process that they were
+using or what groups they are aligned with or what their latest speech said.
+
+So, if one wants to figure out what a politician actually did, one really has to dig into their
+legislative record. Personally, I have found this process of digging around to find out how a
+politician has performed to be rewarding as it has helped clear up my misguided beliefs. (**E.g.**
+Since Kejriwal got elected as the Chief minister of Delhi about 5 years ago, I was a staunch
+believer that he was an ineffective leader and that he had failed the people of Delhi. I believed
+this without any evidence or lived experience. When he won re-election, I was forced to challenge my
+views. This lead to the [discovery](https://thewire.in/government/how-fiscally-prudent-is-delhis-aap-government-really) that I had been **completely wrong** in my belief)
+
+The process of researching the politicians past actions and figuring out how much of what they talk
+about has turned into action is time consuming and requires you to break down some of the internal
+barriers that give information that is learned earlier more importance that information that is
+added later on. Nevertheless, this is an effective method to reject propaganda and attention-seeking
+statements.
+
+
+# Truth does not "eventually" prevail
+
+Contrary to popular belief that truth will eventually prevail, the past 5 years have been proof that
+that is not a feature of the world that we now inhabit. With respect to GameStop, this was clearly
+in the information about [clearing houses](https://www.bloomberg.com/opinion/articles/2021-01-29/reddit-traders-on-robinhood-are-on-both-sides-of-gamestop) demanding collateral from Robinhood not getting through to
+anyone, even people who were closely tracking the developments. When the mania started to die down
+and politicians shifted into their "posture by claiming to do something" mode, contention started
+going around about [payment for order flow](https://www.bloomberg.com/opinion/articles/2021-02-05/robinhood-gamestop-saga-pressures-payment-for-order-flow) and what it meant. Everyone disregarded the explanation
+that people who had worked in the financial markets were trying to communicate to others and instead
+started rallying against it, despite it being the reason that brokers like Robinhood were able to
+give trading services at 0 trading fee to their users.
+
+This problem is harder to effectively solve; while one might be tempted to offer up "Do your own
+research" as a strategy, I am skeptical that the truth can actually prevail when we are talking
+about binary representations (truth/lie) of complex situations. Particularly, depending on the case,
+the two situations could be so close to each other that it is hard for a rational observer to parse
+the facts and reach the same conclusion every single time. 13 years removed from the Economic crisis
+of 2008, we can say with a fair amount of certainty that the folks at Standard & Poor were not
+rating the financial instruments they were seeing fairly. But this is simply one piece of the
+puzzle; within the complexity of the financial system, several other players and forces are hidden
+and one person would not be able to understand the full scope despite spending unreasonable amounts
+of time reading / researching the topic.
+
+Although, that is not to say that I am defeatist on this. The strategy that I have found useful is
+to limit your media diet: Focus on secondary sources that you trust as sources of **verifiable
+information** and depend on primary sources as **sources of detailed information** about the
+topic. **E.g.** News reports on Bloomberg would be sources of verifiable information about the state of
+the economy in a given country, but if I wanted to find out about unemployment or the reasons for
+unemployment in a particular sector of the economy, I would have to read research papers, surveys
+and government reports which can be considered primary sources because they are much closer to
+reality than News reports.
+
+
+# General disapproval of complexity
+
+Occam's razor provides an articulate argument for rejecting complexity:
+
+> Among competing hypotheses that predict equally well, the one with the fewest assumptions should be
+> selected
+> &#x2013; <https://github.com/icyflame/awesome-social-science#occams-razor>
+
+At my day job as a software engineer, I eschew complexity at every step along the way. I have heard
+that this is a good principle when designing large, distributed systems which tend to have several
+points of failure and an increase in complexity compounds the various causes of failure and prevents
+effective investigation, despite one's certainty that there **is** a problem that needs to be fixed.
+
+Fortunately, the <span class="underline">real world</span> is not a software engineering design problem. There is no limit to the
+complexity that can be attained with fairly simple systems whose dynamics are linear and well
+understood in some cases, but can quickly become non-linear and chaotic (**E.g.** pendulums that enter
+a chaotic state when the forcing frequency is slightly different from the natural frequency). So,
+one of the contracts that we must maintain with the real world is **the active acceptance of
+complexity in the systems that we interact with**: bureaucracies, economy, healthcare, education. All
+of these systems includes hundreds of thousands of people and to expect any of those systems to be
+something that can be explained in a news article, YouTube video, or book is irrational.
+
+The Gamestop episode has shown that complexity is not palatable to most people. In particular, the
+minority of minds that are vulnerable to conspiracy theories look at the workings of a complex
+system, that is way beyond the comprehension of a single person and see a vast conspiracy that is
+making the system do things that it was not "meant" to do (like a large bureaucracy with intertwined
+departments). Admittedly, they have little evidence about what the conspiracy is or who is pulling
+the levers, but they have a convenient and rational escape for this line of reasoning: The system
+itself is keeping the "truth" from observers because it is in the system's interest to do so. Once
+the initial threshold of irrationality is crossed, the line of reasoning becomes rational and easy
+to accept.
+
+Once again, this problem is hard to solve, even on a personal level. I am not sure how to correct
+for this anti-complexity bias when the problem is known to be complex (**E.g.** Global warming). The
+urge to assign blame to invisible sources is quite high and everyone has to struggle with the
+uncomfortable state of accepting that a system that one is participating in is beyond one's
+comprehension or accepting the "simpler" solution of a conspiracy that explains the complexity as an
+orchestrated illusion. I advocate for the former.
+
+
+# Conviction that the market is "rigged"
+
+This amazing quote from a recent article perfectly summarizes this conviction:
+
+> "It's another episode similar to those past ones of the public feeling like there are multiple
+> things wrong here — not really knowing what is exactly wrong, but just feeling like something is not
+> working. It's just a general popular sense that a system wherein this kind of scenario can come to
+> pass, just fundamentally doesn't work for the public and it is 'rigged,' or something else, but they
+> know something is wrong."
+>
+> &#x2013; Graham Steele, senior fellow at the American Economic Liberties Project
+> &#x2013; <https://www.businessinsider.com/reddit-wallstreetbets-traders-failed-war-wall-street-proves-system-rigged-2021-2?amp>
+
+What happened with Gamestop is a variation of the widely known "pump-and-dump" scheme: People buy a
+stock they know is worthless, pushing it's price to a value that doesn't make any fundamental
+sense. In a classic pump-and-dump scheme, the people who pushed the value up will dump the stock at
+a peak point that they pick. In this scheme, most of the buyers have held on to their stock. Their
+reasons seem to be a mix of ["It was fun and I wanted to be a part of it"](https://archive.vn/afl44#selection-2814.0-2814.1), ["It's like gambling. Also,
+YOLO (You Only Live Once)"](https://archive.vn/l6U6s#selection-5248.0-5248.1) and ["I get Reddit Karma when I post a photo that shows losses"](https://archive.vn/2021.02.02-233313/https://www.washingtonpost.com/technology/2021/02/02/gamestop-stock-plunge-losers/#selection-735.143-735.289). Putting
+that aside for a bit, what happened with Gamestop is not a revolutionary insight into market
+operation. It is a mundane methodology which can be used to push the price of any instrument up
+(Musk is at it with BTC: BTC is at [a new all-time high](https://finance.yahoo.com/quote/BTC-USD), **again**).
+
+That said, now, what is the argument behind the "market is rigged" thesis? As far as I can tell, it
+is a variation of the argument that retail investors are not as good at making money as
+institutional investors. Colloquially known as "the house always wins". I don't think this is
+true. I will analyze it from two points of view: Process and Resources.
+
+**Process:** Retail investors, who have money that they want to invest into the stock market, can
+invest just as institutional investors do. Buffett's principle of "Value Investing" is one theory of
+doing that: One can look at a public company's financial reports, recent news, governance structures
+etc and decide whether one wants to invest in it. The process is **not different for institutional
+and retail investors**. Now, retail investors are unable to do some things like "shorting a stock" or
+purchasing government bonds from foreign governments directly. But these are mostly related to a
+particular instrument and not a feature of the market itself (i.e. Institutions don't want to let
+retail investors short stock because if the retail investor doesn't pay or is unable to pay to buy
+the stock back at a later date, the institutional investor will be on the hook for this money).
+
+**Resources:** Institutional investors have a major advantage at buying and selling on the stock
+market: It is **their job**. People who work at investment banks and hedge funds have spent several
+years understanding how markets work and how to turn a profit using that knowledge. To begrudge them
+their expertise seems unwise and petty. In terms of resources, they clearly beat the retail
+investor: A retail investor clearly has less time **and** they have much less money to take the risky
+bets that institutional investors can sustain. I don't think this is anything even **close to** the
+market being rigged. In fact, it simply points to the fact that the market rewards expertise and
+that capitalism rewards capital.
+
+(A useful example for this might be to ask yourself if something else is rigged, by this same
+logic. **For e.g.** Someone who wants to play Tennis or Golf will have a big advantage if their
+parents have the time and money to go to various tournaments, hire a good coach, buy the right
+equipment, regularly drive them to practice sessions and so on, their chances of success at the
+sport go up exponentially. Does this mean that the sport is rigged against people who don't have
+these resources? In my opinion, the answer is YES; I just don't feel as strongly about leveling that
+playing field as strongly as I feel about something like poverty in various countries.
+
+<hr/>
+
+I would like to end this analysis of the various players in the landscape today with a quote from
+the journalist Matt Levine. His newsletter "Money Stuff" has been an incredibly valuable resource as
+I have tried to understand what really happened, and why it is only history repeating itself and not
+some [unprecedented](https://blog.siddharthkannan.in/take/history/covid19/2021/02/12/the-previous-year-take/) event.
+
+> I don’t think, however many days we are into this nonsense, that GameStop is a particularly
+> important story (though of course it’s a fun one!), or that it points to any deep problems in the
+> financial markets. There have been bubbles, and corners, and short squeezes, and pump-and-dumps
+> before. It happens; stuff goes up and then it goes down; prices are irrational for a while;
+> financial capitalism survives.
+>
+> &#x2013; Matt Levine, the "Money Stuff" newsletter
+> &#x2013; <https://www.bloomberg.com/opinion/articles/2021-02-01/gamestop-gme-is-old-news-after-reddit-discovers-silver-futures>
+
+**P.S. 1:** One of the articles linked above is a dailymail.co.uk article. I couldn't find a similar
+article on other websites so I decided to bite the bullet and link an archived version of that
+article. If possible, you should ignore the bar on the right side on that page or consider opening
+the page in the Reader mode on your browser. (Daily Mail is a gossip website, similar to TMZ)
