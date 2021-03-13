@@ -73,10 +73,9 @@ I chose 13 popular news websites and took a screenshot of their home page at 1 p
 10th February, 2021. I added Vox to the list some time later, so that screenshot was taken at 2 pm UTC
 on 7th March, 2021.
 
-- The screenshots were taken on a sufficiently wide screen, which
-ensured that most websites didn't use all the horizontal space available
-- I opened the websites on Firefox with the [[https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/][Ublock extension]] for blocking ads and the [[https://addons.mozilla.org/en-US/firefox/addon/ghostery/][Ghostery extension]] for blocking analytics
-enabled
+- The screenshots were taken on a sufficiently wide screen, which ensured that most websites didn't use all the horizontal space available
+- I opened the websites on Firefox with the [[https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/][Ublock extension]] for blocking ads and the [[https://addons.mozilla.org/en-US/firefox/addon/ghostery/][Ghostery
+  extension]] for blocking analytics enabled
 - I didn't look at any "popular website" ranking to arrive at this list and simply chose the top
   websites that were at the top of my mind when I thought of "news website comparison"
 - You can check the screenshots that I took through the Screenshot column in the following table

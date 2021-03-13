@@ -69,14 +69,12 @@ I chose 13 popular news websites and took a screenshot of their home page at 1 p
 10th February, 2021. I added Vox to the list some time later, so that screenshot was taken at 2 pm UTC
 on 7th March, 2021.
 
--   The screenshots were taken on a sufficiently wide screen, which
-
-ensured that most websites didn't use all the horizontal space available
-
--   I opened the websites on Firefox with the [Ublock extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) for blocking ads and the [Ghostery extension](https://addons.mozilla.org/en-US/firefox/addon/ghostery/) for blocking analytics
-
-enabled
-
+-   The screenshots were taken on a sufficiently wide screen, which ensured that most websites
+    didn't use all the horizontal space available
+-   I opened the websites on Firefox with the [Ublock
+    extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) for blocking ads and
+    the [Ghostery extension](https://addons.mozilla.org/en-US/firefox/addon/ghostery/) for blocking
+    analytics enabled
 -   I didn't look at any "popular website" ranking to arrive at this list and simply chose the top
     websites that were at the top of my mind when I thought of "news website comparison"
 -   You can check the screenshots that I took through the Screenshot column in the following table
@@ -84,19 +82,19 @@ enabled
 
 | News website                                  | Country | Type of organization | Screenshot                                                                                                           |
 |-----------------------------------------------|---------|----------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Bloomberg](https://bloomberg.com)            | US      | Large, traditional   | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/Bloomberg.png)      |
-| [CNN](https://cnn.com)                        | US      | Large, traditional   | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/CNN.png)            |
-| [NDTV](https://ndtv.com)                      | India   | Traditional          | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/NDTV.png)           |
-| [News18](https://news18.com)                  | India   | Traditional          | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/News18.png)         |
-| [Newslaundry](https://newslaundry.com)        | India   | New-age              | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/Newslaundry.png)    |
-| [New York Times](https://NYT.com)             | US      | Traditional          | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/NewYorkTimes.png)   |
-| [Republic TV](https://republicworld.com)      | India   | New-age              | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/RepublicTV.png)     |
-| [Reuters](https://Reuters.com)                | US      | Wire service         | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/Reuters.png)        |
-| [The Print](https://ThePrint.in)              | India   | New-age              | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/ThePrint.png)       |
-| [The Wire](https://TheWire.in)                | India   | New-age              | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/TheWire.png)        |
-| [Times Now](https://TimesNowNews.com)         | India   | Traditional          | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/TimesNow.png)       |
-| [Vox](https://vox.com)                        | US      | New-age              | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/Vox.png)            |
-| [Washington Post](https://washingtonpost.com) | US      | Large, traditional   | [Image](file:///home/siddharth/personal/blog/public/img/unscientific-comparison-of-news-websites/WashingtonPost.png) |
+| [Bloomberg](https://bloomberg.com)            | US      | Large, traditional   | [Image](/public/img/unscientific-comparison-of-news-websites/Bloomberg.png)      |
+| [CNN](https://cnn.com)                        | US      | Large, traditional   | [Image](/public/img/unscientific-comparison-of-news-websites/CNN.png)            |
+| [NDTV](https://ndtv.com)                      | India   | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/NDTV.png)           |
+| [News18](https://news18.com)                  | India   | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/News18.png)         |
+| [Newslaundry](https://newslaundry.com)        | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/Newslaundry.png)    |
+| [New York Times](https://NYT.com)             | US      | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/NewYorkTimes.png)   |
+| [Republic TV](https://republicworld.com)      | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/RepublicTV.png)     |
+| [Reuters](https://Reuters.com)                | US      | Wire service         | [Image](/public/img/unscientific-comparison-of-news-websites/Reuters.png)        |
+| [The Print](https://ThePrint.in)              | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/ThePrint.png)       |
+| [The Wire](https://TheWire.in)                | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/TheWire.png)        |
+| [Times Now](https://TimesNowNews.com)         | India   | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/TimesNow.png)       |
+| [Vox](https://vox.com)                        | US      | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/Vox.png)            |
+| [Washington Post](https://washingtonpost.com) | US      | Large, traditional   | [Image](/public/img/unscientific-comparison-of-news-websites/WashingtonPost.png) |
 
 Traditional news organizations are the ones that have been around for a relatively long period of
 time and have an approach to news that has remained largely unchanged for the past 40-50 years, even
