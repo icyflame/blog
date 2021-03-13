@@ -88,7 +88,7 @@ on 7th March, 2021.
 | [News18](https://news18.com)                  | India   | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/News18.png)         |
 | [Newslaundry](https://newslaundry.com)        | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/Newslaundry.png)    |
 | [New York Times](https://NYT.com)             | US      | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/NewYorkTimes.png)   |
-| [Republic TV](https://republicworld.com)      | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/RepublicTV.png)     |
+| [Republic TV](https://republicworld.com)      | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/RepublicTV.jpg)     |
 | [Reuters](https://Reuters.com)                | US      | Wire service         | [Image](/public/img/unscientific-comparison-of-news-websites/Reuters.png)        |
 | [The Print](https://ThePrint.in)              | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/ThePrint.png)       |
 | [The Wire](https://TheWire.in)                | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/TheWire.png)        |
