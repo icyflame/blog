@@ -1,3 +1,2 @@
 posts-org/*
 !posts-org/*.org
-!posts-org/published/*.org
