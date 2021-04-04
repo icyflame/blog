@@ -69,12 +69,10 @@ I chose 13 popular news websites and took a screenshot of their home page at 1 p
 10th February, 2021. I added Vox to the list some time later, so that screenshot was taken at 2 pm UTC
 on 7th March, 2021.
 
--   The screenshots were taken on a sufficiently wide screen, which ensured that most websites
-    didn't use all the horizontal space available
--   I opened the websites on Firefox with the [Ublock
-    extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) for blocking ads and
-    the [Ghostery extension](https://addons.mozilla.org/en-US/firefox/addon/ghostery/) for blocking
-    analytics enabled
+-   The screenshots were taken on a sufficiently wide screen, which ensured that most websites didn't
+    use all the horizontal space available
+-   I opened the websites on Firefox with the [Ublock extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) for blocking ads and the [Ghostery
+    extension](https://addons.mozilla.org/en-US/firefox/addon/ghostery/) for blocking analytics enabled
 -   I didn't look at any "popular website" ranking to arrive at this list and simply chose the top
     websites that were at the top of my mind when I thought of "news website comparison"
 -   You can check the screenshots that I took through the Screenshot column in the following table
@@ -87,8 +85,8 @@ on 7th March, 2021.
 | [NDTV](https://ndtv.com)                      | India   | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/NDTV.png)           |
 | [News18](https://news18.com)                  | India   | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/News18.png)         |
 | [Newslaundry](https://newslaundry.com)        | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/Newslaundry.png)    |
-| [New York Times](https://NYT.com)             | US      | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/NewYorkTimes.png)   |
-| [Republic TV](https://republicworld.com)      | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/RepublicTV.jpg)     |
+| [New York Times](https://NYT.com)             | US      | Traditional          | [Image](/public/img/unscientific-comparison-of-news-websites/NYT.png)            |
+| [Republic TV](https://republicworld.com)      | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/RepublicTV.png)     |
 | [Reuters](https://Reuters.com)                | US      | Wire service         | [Image](/public/img/unscientific-comparison-of-news-websites/Reuters.png)        |
 | [The Print](https://ThePrint.in)              | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/ThePrint.png)       |
 | [The Wire](https://TheWire.in)                | India   | New-age              | [Image](/public/img/unscientific-comparison-of-news-websites/TheWire.png)        |

@@ -73,7 +73,8 @@ I chose 13 popular news websites and took a screenshot of their home page at 1 p
 10th February, 2021. I added Vox to the list some time later, so that screenshot was taken at 2 pm UTC
 on 7th March, 2021.
 
-- The screenshots were taken on a sufficiently wide screen, which ensured that most websites didn't use all the horizontal space available
+- The screenshots were taken on a sufficiently wide screen, which ensured that most websites didn't
+  use all the horizontal space available
 - I opened the websites on Firefox with the [[https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/][Ublock extension]] for blocking ads and the [[https://addons.mozilla.org/en-US/firefox/addon/ghostery/][Ghostery
   extension]] for blocking analytics enabled
 - I didn't look at any "popular website" ranking to arrive at this list and simply chose the top
@@ -88,7 +89,7 @@ on 7th March, 2021.
 | [[https://ndtv.com][NDTV]]            | India   | Traditional          | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/NDTV.png][Image]]      |
 | [[https://news18.com][News18]]          | India   | Traditional          | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/News18.png][Image]]      |
 | [[https://newslaundry.com][Newslaundry]]     | India   | New-age              | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/Newslaundry.png][Image]]      |
-| [[https://NYT.com][New York Times]]  | US      | Traditional          | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/NewYorkTimes.png][Image]]      |
+| [[https://NYT.com][New York Times]]  | US      | Traditional          | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/NYT.png][Image]]      |
 | [[https://republicworld.com][Republic TV]]     | India   | New-age              | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/RepublicTV.png][Image]]      |
 | [[https://Reuters.com][Reuters]]         | US      | Wire service         | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/Reuters.png][Image]]      |
 | [[https://ThePrint.in][The Print]]       | India   | New-age              | [[file:~/personal/blog/public/img/unscientific-comparison-of-news-websites/ThePrint.png][Image]]      |
