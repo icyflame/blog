@@ -54,7 +54,7 @@ Graph Theory)
 
 That's about all the evidence I have. I don't see the point of surprise quizzes
 at all. But apart from being useless, I think they are _harmful_ because they
-award the wrong set of people: basically, a random set of people.
+reward the wrong set of people: basically, a random set of people.
 
 Surprise quizzes are often conducted by professors who don't take daily
 attendance in their classes. Instead, they keep saying "There could be a
@@ -63,9 +63,9 @@ enough to come to every class. Even if a student is scared, something might
 happen that leads to the student missing a class. I have missed at least 5 8 am
 classes where a surprise test was conducted in a course where I attended most of
 the other classes; I am talking not attending 5-6 classes in the whole 4 month
-semester. 
+semester.
 
-So, basically, surprise tests as a proxy for attendance award the wrong set of
+So, basically, surprise tests as a proxy for attendance reward the wrong set of
 people. And they eliminate the reward for the people who should get it. I feel
 bad about getting the answers right because if the teacher had taken attendance,
 I wouldn't have gotten those marks and that would have been fair.
