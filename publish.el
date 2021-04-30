@@ -15,14 +15,18 @@ Adapted from jethro/publish: https://github.com/jethrokuan/braindump/blob/master
 		 (rename-file exported-file-name output-file-name)
 
 		 (with-current-buffer (find-file-noselect output-file-name)
-		   (setq file-stub-path (concat '"file://" (expand-file-name "..")))
-		   (print file-stub-path)
+		   (setq blog-folder-path (expand-file-name ".."))
+		   (print blog-folder-path)
 
-		   (print "STEP 2: Fixing image and file links by removing file:///... prefix")
-		   (while (search-forward file-stub-path nil t)
+		   (print "STEP 2: Fixing image and file links by removing the current path of the blog folder")
+		   (while (search-forward blog-folder-path nil t)
 			 (replace-match '"" nil t))
 
-		   (print "STEP 3: Fixing footnotes by removing fn: prefix")
+		   (print "STEP 3: Fixing image and file links by removing file:///... prefix")
+		   (while (search-forward "file://" nil t)
+			 (replace-match '"" nil t))
+
+		   (print "STEP 4: Fixing footnotes by removing fn: prefix")
 		   (while (search-forward '"[^fn:" nil t)
 			 (replace-match '"[^" nil t))
 		   (save-buffer))))
