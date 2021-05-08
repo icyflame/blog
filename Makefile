@@ -10,7 +10,11 @@ help: ## Show this help
 
 .PHONY: serve-dev
 serve-dev: ## Start a server with development configuration
-	jekyll serve --watch --future --config _config.yml,_config_dev.yml
+	jekyll serve --watch --future --config _config.yml,_config_dev.yml &
+
+.PHONY: stop-serve-dev
+stop-serve-dev: ## Stop the development server
+	kill -9 $$(ps aux | grep "jekyll" | grep -v grep | awk '{ print $$2 }')
 
 .PHONY: clean
 clean: ## Clean-up temporary files (such as Emacs tmp files)
