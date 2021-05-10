@@ -18,14 +18,17 @@ Adapted from jethro/publish: https://github.com/jethrokuan/braindump/blob/master
 		   (setq blog-folder-path (expand-file-name ".."))
 		   (print blog-folder-path)
 
+		   (goto-char 0)
 		   (print "STEP 2: Fixing image and file links by removing the current path of the blog folder")
 		   (while (search-forward blog-folder-path nil t)
 			 (replace-match '"" nil t))
 
+		   (goto-char 0)
 		   (print "STEP 3: Fixing image and file links by removing file:///... prefix")
 		   (while (search-forward "file://" nil t)
 			 (replace-match '"" nil t))
 
+		   (goto-char 0)
 		   (print "STEP 4: Fixing footnotes by removing fn: prefix")
 		   (while (search-forward '"[^fn:" nil t)
 			 (replace-match '"[^" nil t))
