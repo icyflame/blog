@@ -14,7 +14,7 @@ breeze that Indian news media desperately [needs](https://www.youtube.com/watch?
 their daily news briefing podcast had a story which was read out with none of the required
 context. This symbolizes the problems media organizations face and have left unresolved. I will
 continue to read the work that Newslaundry produces, albeit with lowered expectations when compared
-to what I have for the [New York Times](https://www3.nhk.or.jp/news/), [NHK](https://www3.nhk.or.jp/news/) or [Bloomberg](https://www.bloomberg.com/).
+to what I have for the [New York Times](https://www.nytimes.com/), [NHK](https://www3.nhk.or.jp/news/) or [Bloomberg](https://www.bloomberg.com/).
 
 <!--more-->
 
