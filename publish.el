@@ -32,4 +32,10 @@ Adapted from jethro/publish: https://github.com/jethrokuan/braindump/blob/master
 		   (print "STEP 4: Fixing footnotes by removing fn: prefix")
 		   (while (search-forward '"[^fn:" nil t)
 			 (replace-match '"[^" nil t))
+
+		   (goto-char 0)
+		   (print "STEP 5: Fixing links to other blog posts by replacing [http://localhost:[0-9]+/ prefix with /")
+		   (while (search-forward-regexp "\(http://localhost:\[0-9\]+/" nil t)
+			 (replace-match '"(/" nil t))
+
 		   (save-buffer))))
