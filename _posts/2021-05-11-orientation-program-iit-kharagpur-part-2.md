@@ -170,7 +170,7 @@ UTC (4:30 pm India, 8 pm Japan).
 | Post                                                                                                                                                                  | Date           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
 | [The Curious Case of the Dweller Who Wouldn't Move Out](/iit-kgp/india/orientation-program/2021/05/10/orientation-program-iit-kharagpur-part-1/) | 10th May, 2021 |
-| [The Sermon in the Common Room](/iit-kgp/india/orientation-program/2021/05/10/orientation-program-iit-kharagpur-part-2/)                         | 11th May, 2021 |
+| [The Sermon in the Common Room](/iit-kgp/india/orientation-program/2021/05/11/orientation-program-iit-kharagpur-part-2/)                         | 11th May, 2021 |
 | Victorian-era Dining Hall Etiquette                                                                                                                                   | 12th May, 2021 |
 | The Midnight Assemblies                                                                                                                                               | 13th May, 2021 |
 
