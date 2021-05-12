@@ -136,8 +136,7 @@ nature of the upcoming twist in the road.
 
 -----
 
-*Programming note:* This is the first part of a 4-part series. New posts will be published at 11 am
-UTC (4:30 pm India, 8 pm Japan).
+*Programming note:* This is the first part of a 4-part series.
 
 | Post                                                  | Date           |
 |-------------------------------------------------------+----------------|

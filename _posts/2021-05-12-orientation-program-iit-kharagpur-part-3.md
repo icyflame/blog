@@ -91,8 +91,7 @@ night, while fifth-years and even some alumni discoursed at them from the first-
 
 ---
 
-**Programming note:** This is the third part of a 4-part series. New posts will be published at 11 am
-UTC (4:30 pm India, 8 pm Japan).
+**Programming note:** This is the third part of a 4-part series.
 
 | Post                                                                                                                                                                  | Date           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|

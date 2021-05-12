@@ -140,8 +140,7 @@ complete. In 2014, O.P. at Nehru Hall was a resounding success.
 
 -----
 
-*Programming note:* This is the fourth and final part of a 4-part series. New posts will be
-published at 11 am UTC (4:30 pm India, 8 pm Japan).
+*Programming note:* This is the fourth and final part of a 4-part series.
 
 | Post                                                  | Date           |
 |-------------------------------------------------------+----------------|
