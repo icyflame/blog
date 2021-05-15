@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Series
-permalink: /random-permalink/
+title: List of Series
+permalink: /series
 
 weight: 500
 
