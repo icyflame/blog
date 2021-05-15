@@ -38,12 +38,13 @@ series:
 
 ### {{ series_detail.name }}
 
-{% assign first_post = series.items | first %}
-{% assign last_post = series.items | last %}
-<i><span class="date">{{ first_post.date | date: "%B %-d, %Y"  }}</span>
+{% assign latest_post = series.items | first %}
+{% assign earliest_post = series.items | last %}
+<i>
+<span class="date">{{ earliest_post.date | date: "%B %-d, %Y"  }}</span>
 to
-<span class="date">{{ last_post.date | date: "%B %-d, %Y"  }}</span></i>
-
+<span class="date">{{ latest_post.date | date: "%B %-d, %Y"  }}</span>
+</i>
 
 {{ series_detail.description }}
 
@@ -53,7 +54,6 @@ to
 {% for post in series_posts %}
 <li>
 <a href="{{ post.url }}">{{ post.title }}</a>
-<span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
 </li>
 {% endfor %}
 </ul>
