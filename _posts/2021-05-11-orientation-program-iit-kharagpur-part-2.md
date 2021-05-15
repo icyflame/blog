@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: The Sermon in the Common Room
 categories: iit-kgp india orientation-program
+series_id: orientation-program-at-iit-kgp
 ---
 
 As a second year student at IIT Kharagpur, the 2.5 months between July and September 2014 were

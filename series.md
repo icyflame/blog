@@ -16,6 +16,11 @@ series:
       around the world. The comparison is based on objective metrics such as number of articles
       shown and subjective metrics such as scores for ease-of-use and the number of distracting
       elements on the websites.
+  orientation-program-at-iit-kgp:
+    name: "Orientation Program at IIT Kharagpur"
+    description: |
+      Hazing at IIT Kharagpur is referred to by the euphemism Orientation Program, or simply, O.P. I
+      recount my experience of O.P. at IIT Kharagpur during 2013-2018.
 ---
 
 {% assign posts_in_series = site.posts | where_exp: "p", "p.series_id != nil" %}

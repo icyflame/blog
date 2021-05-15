@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Victorian-era Dining Hall Etiquette
 categories: iit-kgp india orientation-program
+series_id: orientation-program-at-iit-kgp
 ---
 
 Food holds a special importance in everyday life. A lot of memories are connected to it and
