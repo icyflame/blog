@@ -95,6 +95,14 @@ travelers would be unable to explain to their relatively temporally close counte
 
 ---
 
+![img](/public/img/monthly-recommendations-2021-05-comic-fleeting-moments-panckeri.jpg)
+
+"I see fleeting moments of happiness in between extended periods of boredom and stress."
+
+[New Yorker](https://www.newyorker.com/cartoon/a23189)
+
+---
+
 [^1]: This Newslaundry video has a good interview of what happened and the workarounds that were used by ingenious doctors and nurses to prolong their Oxygen supply. Unfortunately, the camera work is inexplicably _shaky_. The doctor says something that is disturbing for any healthcare consumer: "I am sitting here with narrow coronaries &#x2026; I don't know if I am supposed to be concentrating on treatment of patients or trying to get Oxygen [using Twitter and talking to officials]".
 [^2]: A reference from the TV show Downton Abbey and novels like The Remains of the Day (Ishiguro).
 [^3]: If you want to spend more time listening to someone talk about loneliness dispassionately, then I recommend [Marilynne Robinson's interview](https://www.vox.com/2020/10/15/21517358/democracy-neoliberalism-predestination-loneliness-the-ezra-klein-show) on the Ezra Klein Show.
