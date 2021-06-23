@@ -277,4 +277,26 @@ Karenin, the Countess and a clairvoyant in St. Petersburg, I could only see how 
 really was[^1]. His conduct towards his son Seryozha does not inspire, while Seryozha's confusion
 at his only remaining parent's detachment is heart breaking.
 
-[^1]: My notes from when I was reading the book are rather harsh towards Karenin. After the Oblonsky meeting: "That he acted the way he did in front of Oblonsky was a fucking disgrace - You are pathetic, Karenin". _Rather_ harsh. For Vronsky, I felt contempt at his apparent entitlement and incredulity at his shifting nature. His love for Anna is human for he feels it strongly but still wants some distance for his own pursuits. Anna's love for Vronsky is never ending and is defined by the reality that Vronsky has all the power in their relationship, both in her mind and in society's opinion of their transgression; when they return to St. Petersburg, Vronsky goes out to the theater but implores Anna to not accompany him for fear of her "being disgraced". Anna goes nevertheless and what Vronsky feared ends up happening. This section was not in vain because Vronsky comes to the stunning realization that the doors of elite society have closed for Anna and there was precious little he could do; I felt sympathy for this Vronsky. Right after, Vronsky shows that, as cavalier he might portray himself to his friends, he _needs_ this elite society in his daily life. And for that Vronsky, I felt only pity, for he knew not what he had, in a lover as devoted as Anna. And finally, for Anna, I felt a mix of love, hate, and pity. It would be accurate to say that I felt every possible emotion towards her character because she changes significantly during each phase of her life depicted in the book. Her initial introduction and her time with Kitty is charming; her time outside Russia paints her as impatient and _needy_; her time back in Russia enhances her inability to understand the realities of her new position in society. The way she lashes out at Vronsky and her friend Princess Betsy shows the petty parts of her nature. Eventually, she becomes paranoid and obsesses over unanswered notes that she _knows_ have not yet reached her lover, Vronsky. Anna ends up terribly, terribly alone. Consequently, Vronsky stares down the barrel of a similar fate.
+For Vronsky, I felt contempt at his apparent entitlement and incredulity at his shifting nature. His
+love for Anna is human for he feels it strongly but still wants some distance for his own
+pursuits. Anna's love for Vronsky is never ending and is defined by the reality that Vronsky has all
+the power in their relationship, both in her mind and in society's opinion of their transgression;
+when they return to St. Petersburg, Vronsky goes out to the theater but implores Anna to not
+accompany him for fear of her "being disgraced". Anna goes nevertheless and what Vronsky feared ends
+up happening. This section was not in vain because Vronsky comes to the stunning realization that
+the doors of elite society have closed for Anna and there was precious little he could do; I felt
+sympathy for this Vronsky. Right after, Vronsky shows that, as cavalier he might portray himself to
+his friends, he _needs_ this elite society in his daily life. And for that Vronsky, I felt only
+pity, for he knew not what he had, in a lover as devoted as Anna.
+
+And finally, for Anna, I felt a mix of love, hate, and pity. It would be accurate to say that I felt
+every possible emotion towards her character because she changes significantly during each phase of
+her life depicted in the book. Her initial introduction and her time with Kitty is charming; her
+time outside Russia paints her as impatient and _needy_; her time back in Russia enhances her
+inability to understand the realities of her new position in society. The way she lashes out at
+Vronsky and her friend Princess Betsy shows the petty parts of her nature. Eventually, she becomes
+paranoid and obsesses over unanswered notes that she _knows_ have not yet reached her lover,
+Vronsky. Anna ends up terribly, terribly alone. Consequently, Vronsky stares down the barrel of a
+similar fate.
+
+[^1]: My notes from when I was reading the book are rather harsh towards Karenin. After the Oblonsky meeting: "That he acted the way he did in front of Oblonsky was a fucking disgrace - You are pathetic, Karenin". _Rather_ harsh.
