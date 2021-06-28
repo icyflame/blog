@@ -23,6 +23,14 @@ series:
       recount my experience of O.P. during my time at Nehru Hall in IIT Kharagpur between 2013-2018.
 ---
 
+# TODO
+
+- Configuring Emacs:
+  http://localhost:4000/emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1/
+- RBI interventions:
+  http://localhost:4000/economy/india/economic-theory/governments/central-banks/2021/01/11/india-central-bank-intervention-goals-1-the-problem/
+- Media and Expectations: http://localhost:4000/news/series/2018/07/30/news-media-expectations-1/
+
 {% assign posts_in_series = site.posts | where_exp: "p", "p.series_id != nil" %}
 {% assign posts_with_series = posts_in_series | group_by: "series_id" %}
 
