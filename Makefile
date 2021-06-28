@@ -14,7 +14,7 @@ serve-dev: ## Start a server with development configuration
 
 .PHONY: stop-serve-dev
 stop-serve-dev: ## Stop the development server
-	kill -9 $$(ps aux | grep "jekyll" | grep -v grep | awk '{ print $$2 }')
+	kill -9 $$(pgrep jekyll)
 
 .PHONY: clean
 clean: ## Clean-up temporary files (such as Emacs tmp files)
