@@ -24,19 +24,14 @@ them.
 
 Here's a quick comparison table of the efficacy numbers, along with their 95% confidence intervals.
 
-| Vaccine                                 | Approved countries                                                                                                                                                                                                              | Trial size                                                                                                                             | Efficacy | Confidence intervals |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------|----------------------|
-| Oxford-AstraZeneca^# (2 standard doses) | [UK](https://www.cbsnews.com/news/covid-vaccine-oxford-astrazeneca-approved-uk-emergency-use/), [India](https://time.com/5926004/india-authorizes-covid-19-vaccines/) (as Covishield)                                           | 8800, 1:1 vaccine:placebo                                                                                                              | 62.1%    | 34.7 (41, 75.7)      |
-| Pfizer                                  | [US](https://www.nytimes.com/2020/12/11/health/pfizer-vaccine-authorized.html), [UK](https://www.nytimes.com/2020/12/02/world/europe/pfizer-coronavirus-vaccine-approved-uk.html)                                               | [42,000](https://clinicaltrials.gov/ct2/show/NCT04368728?term=pfizer&cond=Covid19&cntry=US&draw=2&rank=2), 1:1 vaccine:placebo         | 95%      | 7.3 (90.3, 97.6)     |
-| Moderna                                 | [US](https://www.nytimes.com/2020/12/19/world/the-fda-approves-modernas-covid-vaccine-adding-millions-more-doses-to-the-us-supply.html), [UK](https://www.cnbc.com/2021/01/08/uk-regulator-approves-moderna-covid-vaccine.html) | [30,400](https://clinicaltrials.gov/ct2/show/NCT04470427?term=moderna&cond=Covid19&cntry=US&draw=2&rank=2), 1:1 vaccine:placebo        | 94%      | 7.5 (89.3, 96.8)     |
-| Bharat Biotech (Covaxin)                | [India](https://time.com/5926004/india-authorizes-covid-19-vaccines/)                                                                                                                                                           | Phase 2: [380](https://clinicaltrials.gov/ct2/show/NCT04471519?term=bharat+biotech&cond=Covid19&draw=2&rank=1) (1:1 vaccine1:vaccine2) | UNKNOWN  | NA                   |
+**Last updated:** _11th July, 2021_
 
-**#**: Only Interim results of the phase 3 clinical trial have been published. For the AstraZeneca
-vaccine, I am reporting the 2 Standard Doses efficacy. This trial had some peculiar mixing of a
-half-dose and a standard dose variant which had an efficiency of 70.4% (54.8, 80.6), but this is not
-the variant that will be inoculated to people. In fact, this (half-dose, standard dose) variant
-seems to have come out of an inaccurate measuring methodology, and was not a planned variant. More
-on this later.
+| Vaccine                                      | Approved countries                                                                                                                                                                                                              | Trial size                                                                                                                      | Efficacy | Confidence intervals |
+|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------|----------------------|
+| Oxford-AstraZeneca[^1] (2 standard doses) | [UK](https://www.cbsnews.com/news/covid-vaccine-oxford-astrazeneca-approved-uk-emergency-use/), [India](https://time.com/5926004/india-authorizes-covid-19-vaccines/) (as Covishield)                                           | 8800, 1:1 vaccine:placebo                                                                                                       | 62.1%    | 34.7 (41, 75.7)      |
+| Pfizer                                       | [US](https://www.nytimes.com/2020/12/11/health/pfizer-vaccine-authorized.html), [UK](https://www.nytimes.com/2020/12/02/world/europe/pfizer-coronavirus-vaccine-approved-uk.html)                                               | [42,000](https://clinicaltrials.gov/ct2/show/NCT04368728?term=pfizer&cond=Covid19&cntry=US&draw=2&rank=2), 1:1 vaccine:placebo  | 95%      | 7.3 (90.3, 97.6)     |
+| Moderna                                      | [US](https://www.nytimes.com/2020/12/19/world/the-fda-approves-modernas-covid-vaccine-adding-millions-more-doses-to-the-us-supply.html), [UK](https://www.cnbc.com/2021/01/08/uk-regulator-approves-moderna-covid-vaccine.html) | [30,400](https://clinicaltrials.gov/ct2/show/NCT04470427?term=moderna&cond=Covid19&cntry=US&draw=2&rank=2), 1:1 vaccine:placebo | 94%      | 7.5 (89.3, 96.8)     |
+| Bharat Biotech (Covaxin)[^2]              | [India](https://time.com/5926004/india-authorizes-covid-19-vaccines/)                                                                                                                                                           | [25,800](https://www.medrxiv.org/content/10.1101/2021.06.30.21259439v1.full.pdf), 1:1 vaccine:placebo                           | 77.8%    | 21.2 (65.2, 86.4)    |
 
 From just these numbers, it is abundantly clear that the Pfizer and Moderna vaccines are way ahead
 of the rest of the vaccines in this pack. The timing of the approvals in India is also worth noting:
@@ -176,11 +171,16 @@ are also reported.
 
 # Link to papers
 
-All these papers are available under OpenAccess from the journal websites:
+All these papers are available under OpenAccess from the journal websites. All the papers linked
+here are from the Phase 3 clinical trials.
 
-| Vaccine                               | Paper                                                          | NYT Vaccine Tracker                                                                                          |
-|---------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Oxford-AstraZeneca (2 standard doses) | [Voyset 2021](http://dx.doi.org/10.1016/s0140-6736(20)32661-1) | [AstraZeneca](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#astrazeneca) |
-| Pfizer                                | [Polack 2020](http://dx.doi.org/10.1056/nejmoa2034577)         | [Pfizer-BioNTech](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#pfizer)  |
-| Moderna                               | [Baden 2020](http://dx.doi.org/10.1056/nejmoa2035389)          | [Moderna](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#moderna)         |
-| Bharat Biotech (Covaxin)              | [Ella 2020](http://dx.doi.org/10.1101/2020.12.21.20248643)     | [Bharat Biotech](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#bharat)   |
+| Vaccine                               | Paper (Phase 3 results)                                         | NYT Vaccine Tracker                                                                                          |
+|---------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Oxford-AstraZeneca (2 standard doses) | [Voyset 2021](http://dx.doi.org/10.1016/s0140-6736(20)32661-1)  | [AstraZeneca](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#astrazeneca) |
+| Pfizer                                | [Polack 2020](http://dx.doi.org/10.1056/nejmoa2034577)          | [Pfizer-BioNTech](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#pfizer)  |
+| Moderna                               | [Baden 2020](http://dx.doi.org/10.1056/nejmoa2035389)           | [Moderna](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#moderna)         |
+| Bharat Biotech (Covaxin)              | [Ella 2021](https://doi.org/10.1101/2021.06.30.21259439)[^3] | [Bharat Biotech](https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html#bharat)   |
+
+[^1]: Only Interim results of the phase 3 clinical trial have been published. For the AstraZeneca vaccine, I am reporting the 2 Standard Doses efficacy. This trial had some peculiar mixing of a half-dose and a standard dose variant which had an efficiency of 70.4% (54.8, 80.6), but this is not the variant that will be inoculated to people. In fact, this (half-dose, standard dose) variant seems to have come out of an inaccurate measuring methodology, and was not a planned variant. More on this later.
+[^2]: Updated _11th July, 2021_. Phase 3 trial results were published on the preprint server medrxiv.org on 2nd July, 2021. These results were not peer reviewed when this post was last updated.
+[^3]: Phase 2 results: [Ella 2020](http://dx.doi.org/10.1101/2020.12.21.20248643)
