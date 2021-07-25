@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Media and Expectations - Part 1 - TV v. Internet
 categories: news series
+series_id: media-and-expectations
 ---
 
 _This is part 1 of a two part series_
@@ -58,7 +59,7 @@ power: I have stopped watching these news shows. I have told every single person
 who says they watch these programs about how they are run, about why they should
 stop watching these programs and instead read or watch videos on YouTube. If
 they are still interested in news, videos by channels like Vox and Vice News. If
-not, there are enough cat videos to fill your heart to the brim. 
+not, there are enough cat videos to fill your heart to the brim.
 
 **Truth:** There are always enough cat videos.
 
@@ -158,7 +159,7 @@ know what the outcome will be yet, I am still collating data. Either way, I
 think it will be a worthwhile experience.
 
 **FN1:** The talk is called _Getting Fired_ and it's a great way to spend 45
-minutes of your time. 
+minutes of your time.
 
 [1]: https://www.goodreads.com/book/show/34890015-factfulness
 [2]: /public/img/news-media-11.jpg
