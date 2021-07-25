@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: The Midnight Assemblies
 categories: iit-kgp india orientation-program
+series_id: orientation-program-at-iit-kgp
 ---
 
 "The night is dark and full of terrors" - Parents use phrases like these to put children to sleep

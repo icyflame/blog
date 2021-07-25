@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: An Unscientific Comparison of News Websites - Part 2 (Objective Analysis)
 categories: news journalism media critique
+series_id: unscientific-comparison-news-1
 ---
 
 This series of posts looks at 13 news website home pages and compares them at a single point in

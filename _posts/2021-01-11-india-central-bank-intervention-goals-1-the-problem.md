@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Reserve Bank of India's Interventions to maintain excess liquidity - Part 1
 categories: economy india economic-theory governments central-banks
+series_id: india-central-bank-interventions
 ---
 
 In December 2020, I came across several articles about India's Central Bank, the Reserve Bank of

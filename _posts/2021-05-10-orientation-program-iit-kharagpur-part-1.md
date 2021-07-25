@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: The Curious Case of the Dweller Who Wouldn't Move Out
 categories: iit-kgp india orientation-program
+series_id: orientation-program-at-iit-kgp
 ---
 
 At the end of my first year at IIT Kharagpur, an engineering college in India, I packed up

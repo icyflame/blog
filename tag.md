@@ -16,8 +16,9 @@ sitemap:
 
 _Click on a tag to see relevant list of posts_
 
-<table>
 {% assign sorted_categories = site.categories | sort %}
+
+<table>
 {% tablerow tag in sorted_categories cols: 3 %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
@@ -29,7 +30,7 @@ _Click on a tag to see relevant list of posts_
 
 ---
 
-{% for tag in site.categories %}
+{% for tag in sorted_categories %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 

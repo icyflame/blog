@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Media and Expectations - Part 2 - Indian Railway Accidents
 categories: news series
+series_id: media-and-expectations
 ---
 
 _This is part 2 of a two part series_

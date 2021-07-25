@@ -7,6 +7,7 @@ layout: post
 comments: true
 title: Reserve Bank of India's Interventions to maintain excess liquidity - Part 2
 categories: central-banks economic-theory economy governments india
+series_id: india-central-bank-interventions
 ---
 #+end_export
 

@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Configuring Emacs - 7 months later - Act 3
 categories: emacs editors tools configuration
+series_id: configuring-emacs
 ---
 
 _Note:_ This is the final post in a series of 3 posts about my experience configuring Emacs over 7
