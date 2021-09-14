@@ -151,8 +151,8 @@ Translate are freely available and easy to integrate into most browsers even for
 for the one document that you don't have with you.
 
 [fn:3] For a recent government service, I visited the website of the [[https://tnreginet.gov.in][Tamil Nadu Registrar
-Offices]]. This portal has an appointment system and is complicated enough to warrant a 59-page user
-manual. The user manual is excellent with screenshots and instructions about each step in the
-application process. But creating that user manual probably took as long as building the website
-itself. This extra cost is unnecessary and should be done away with in initial implementations of
-the token system.
+Offices]]. This portal has an appointment system and is complicated enough to warrant [[https://tnreginet.gov.in/portal/webHP?requestType=ApplicationRH&actionVal=homePage&screenId=114&UserLocaleID=en&_csrf=cb3169ad-4875-4a66-90fb-958ceb2c8d95][a user manual]]
+for each process that is offered on the portal. The user manuals are excellent with screenshots and
+instructions about each step in the application process. But creating them probably took as long as
+building the website itself. This extra cost is unnecessary and should be done away with in initial
+implementations of the token system.
