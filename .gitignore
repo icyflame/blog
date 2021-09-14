@@ -1,2 +1,3 @@
 posts-org/*
 !posts-org/*.org
+/.jekyll-cache/
