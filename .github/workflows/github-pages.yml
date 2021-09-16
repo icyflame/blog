@@ -3,7 +3,8 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - github-actions-for-jekyll-build
+      # Source branch
+      - master
 
 jobs:
   github-pages:
@@ -55,5 +56,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          # Destination branch
+          branch: published
           force: true
