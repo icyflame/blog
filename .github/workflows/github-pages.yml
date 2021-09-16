@@ -25,10 +25,10 @@ jobs:
           sudo apt-get install -qq -y rsync
           rm -rf _site _site_1 _site_2
           # Build old structure site
-          bundle exec jekyll build --config _config.yml,_config_gitlab.yml --destination _site_1
+          bundle exec jekyll build --config _config.yml,_config_github_blog_testing.yml --destination _site_1
           rsync -r _site_1/ _site
           # Build new structure site
-          bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_gitlab.yml --destination _site_2
+          bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_github_blog_testing.yml --destination _site_2
           # Overwrite common files with new site. Leave old file sites as is.
           rsync -r _site_2/ _site
           rm -rf docs
