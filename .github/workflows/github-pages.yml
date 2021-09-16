@@ -18,11 +18,11 @@ jobs:
 
       - name: Install gems and generate websites
         run: |
-          apt-get -yqq install libpq-dev
+          sudo apt-get -yqq install libpq-dev
           gem install bundler
           bundle install
-          apt-get update
-          apt-get install -qq -y rsync
+          sudo apt-get update
+          sudo apt-get install -qq -y rsync
           rm -rf _site _site_1 _site_2
           # Build old structure site
           bundle exec jekyll build --config _config.yml,_config_gitlab.yml --destination _site_1
