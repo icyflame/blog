@@ -11,16 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Ruby 2.6
-        uses: actions/setup-ruby@v1
+      - name: Set up Ruby 2.5
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.5
+          bundler-cache: true
 
       - name: Install gems and generate websites
         run: |
-          sudo apt-get -yqq install libpq-dev
-          gem install bundler
-          bundle install
           sudo apt-get update
           sudo apt-get install -qq -y rsync
           rm -rf _site _site_1 _site_2
@@ -31,6 +29,18 @@ jobs:
           bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_gitlab.yml --destination _site_2
           # Overwrite common files with new site. Leave old file sites as is.
           rsync -r _site_2/ _site
-          rm -rf public
-          mv _site public
-          find public
+          rm -rf docs
+          mv _site docs
+          find docs
+
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions-bot+icyflame@example.com"
+          git config --local user.name "github-actions[bot] + icyflame"
+          git commit -am "Generate website"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
