@@ -31,13 +31,18 @@ jobs:
           bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_domains.yml --destination _site_2
           # Overwrite common files with new site. Leave old file sites as is.
           rsync -r _site_2/ _site
+
+          # Put the generated site inside docs/
           rm -rf docs
           mv _site docs
-          find docs
+
+          # Delete everything in this folder except for docs
+          find . -type d -maxdepth 1 | grep -v -e '^.$' -e '^./.git$' -e '^./docs$' | while read p; do rm -rf "$p"; done
+          find . -type f -maxdepth 1 | grep -v -e CNAME -e '.gitignore' | xargs rm
 
       - name: Commit files
         run: |
-          git add docs
+          git add .
           git config --local user.email "github-actions-bot+icyflame@example.com"
           git config --local user.name "github-actions[bot] + icyflame"
           git commit -am "Generate website"
