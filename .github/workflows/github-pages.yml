@@ -37,6 +37,7 @@ jobs:
 
       - name: Commit files
         run: |
+          git add docs
           git config --local user.email "github-actions-bot+icyflame@example.com"
           git config --local user.name "github-actions[bot] + icyflame"
           git commit -am "Generate website"
