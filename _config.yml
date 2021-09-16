@@ -10,9 +10,6 @@ title: "Siddharth Kannan's Blog"
 tagline: 'Cogito ergo sum'
 description: 'Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a>'
 
-baseurl: https://blog.siddharthkannan.in/
-baseurl_without_slash: https://blog.siddharthkannan.in
-
 disqus_shortname: siddharthkannanblog
 
 author:
