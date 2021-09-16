@@ -21,14 +21,18 @@ jobs:
 
       - name: Install gems and generate websites
         run: |
+          # Prepare to generate two sites and merge them together
           sudo apt-get update
           sudo apt-get install -qq -y rsync
           rm -rf _site _site_1 _site_2
+
           # Build old structure site
           bundle exec jekyll build --config _config.yml,_config_domains.yml --destination _site_1
           rsync -r _site_1/ _site
+
           # Build new structure site
           bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_domains.yml --destination _site_2
+
           # Overwrite common files with new site. Leave old file sites as is.
           rsync -r _site_2/ _site
 
