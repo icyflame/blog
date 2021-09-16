@@ -1,0 +1,36 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - github-actions-for-jekyll-build
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby 2.6
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.5
+
+      - name: Install gems and generate websites
+        run: |
+          apt-get -yqq install libpq-dev
+          gem install bundler
+          bundle install
+          apt-get update
+          apt-get install -qq -y rsync
+          rm -rf _site _site_1 _site_2
+          # Build old structure site
+          bundle exec jekyll build --config _config.yml,_config_gitlab.yml --destination _site_1
+          rsync -r _site_1/ _site
+          # Build new structure site
+          bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_gitlab.yml --destination _site_2
+          # Overwrite common files with new site. Leave old file sites as is.
+          rsync -r _site_2/ _site
+          rm -rf public
+          mv _site public
+          find public
