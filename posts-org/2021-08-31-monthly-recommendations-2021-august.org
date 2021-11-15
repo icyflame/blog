@@ -1,0 +1,147 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Monthly Recommendations (August 2021)
+categories: monthly series reading
+---
+#+end_export
+
+This month's theme is *art and the artist.* I chose this theme because events in my life have
+reminded me of the value of the abstract and incomprehensible. As places around the world open up
+under varying levels of restrictions, the contemporary locations and events were art is showcased,
+namely, cinemas, theaters, live concerts and art museums, are returning to their earlier glory and
+posing an interesting question to a subset of the population that has the luxury of deciding whether
+they want to attend: *How much risk are you willing to take to see an artist perform live?* This
+month's list begins with an art critic who argues that our appreciation of art from the times when
+life expectancy was low is bound to increase, owing to our own deeper experience of mortality
+through pestilence. The list also includes articles about the perpetual search for the line between
+art and the artist and about the limits of on-screen fantasy and escape, when the spectator's real
+life is in disarray.
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+1. *Out of Time (Schjeldahl)*
+
+	[[https://www.newyorker.com/magazine/2020/04/13/mortality-and-the-old-masters][New Yorker]] ([[https://archive.is/OdohI][archived]]), 13th April, 2020
+
+	I like going to museums of all kinds: art, natural history, national artifacts, museums
+   memorializing disasters. A quote that I read in a museum in Taiwan 3 years ago has remained with
+   me: "If we seek to understand the present and predict the future, the past is our only guide."
+   Schjeldahl, a venerable art critic, writes about what differentiates the experience of seeing art
+   in person and seeing it on a computer screen or on a virtual tour. He also writes about the
+   overwhelming presence of death in ancient art; mortality was experienced an integral part of life
+   in the years when life expectancy was low and the reasons for death included even the most
+   mundane causes such as the common cold, compared to current times when it borders around the
+   periphery during normal times and when one thinks about death only as the consequence of severe
+   disease or disaster.
+
+	#+begin_export html
+	<iframe
+	  src="https://ourworldindata.org/grapher/life-expectancy?tab=chart&time=1881..2015&country=~IND"
+	  loading="lazy"
+	  style="width: 100%; height: 600px; border: 0px none;">
+	</iframe>
+	#+end_export
+
+	He also writes about our return to art museums, a topic that I am particularly interested in. I
+   have been able to go to art museums and live concerts over the past year, during the brief period
+   that the pandemic let up in Japan in September and October 2020. As the relaxation continues and
+   more people return to art museums, I wonder if their tastes have changed and if we end up being
+   more enamored with the art of the "Ancient Masters" from having suffered through daily reminders
+   of the fragility of life in the form of case numbers.
+
+2. *Fearless Pianist (Ross)*
+
+	[[https://www.newyorker.com/magazine/2020/05/18/igor-levit-is-like-no-other-pianist][New Yorker]] ([[https://archive.is/yHrdk][archived]]), 18th May, 2020
+
+	This is the profile of a German pianist who is also a political activist. It delves into the
+   question of separating the Art that is produced by the artist and the artist themselves. This
+   question has haunted both artists and spectators for a while now. Over the past year, with the
+   accusations that sprung up against comedian Louis CK and the new documentaries about musicians R
+   Kelly and Michael Jackson, the question pushed through into the mainstream and reached a
+   population that had remained insulated. The ultimate decision about whether the connection
+   between art produced by an artist and the artist's actions and opinions must be (necessarily)
+   left up to each individual. This article poses this question forcefully in the instance where the
+   artist's political opinions don't align with your own. It made me think about the artists that I
+   adore and how I would react to similar situations that involved them. I think that questioning
+   and clarifying your beliefs before the situation arises is the only way to stay /sane/ and
+   continue to patronize their art, respect the artist and defend yourself to others. Kendrick Lamar
+   poses the same question more succinctly in his song Mortal Man from the album To Pimp A
+   Butterfly:
+
+	#+begin_quote
+	If I'm tried in a court of law, if the industry cut me off
+
+	If the government want me dead, plant cocaine in my car
+
+	Would you judge me a drug-head or see me as K. Lamar?
+
+	...
+
+	When shit hit the fan, is you still a fan?
+
+	When shit hit the fan, is you still a fan?
+
+	-- [[https://genius.com/Kendrick-lamar-mortal-man-lyrics]["Mortal Man"]], Kendrick Lamar
+	#+end_quote
+
+3. *Hot and Toxic (Goodyear)*
+
+	[[https://www.newyorker.com/magazine/2020/03/16/jordan-wolfsons-edgelord-art][New Yorker]] ([[https://archive.is/Msyet][archived]]), 16th March, 2020
+
+	Following along on the separation between art and artist, this profile of the artist Wolfson
+   focuses on the provocation that he sees his art as a vessel for. In this case, the artist's
+   personal beliefs are not reflected in their art. In fact, the art is designed specifically to
+   incite the spectator into thinking about ... /something./ Being "edgy" has been an asset for
+   artists like Pollock, who thrived on abstract art with no definite interpretations. Everyone drew
+   on the canvas that Pollock had already drawn on; albeit they started with a slate that was packed
+   with material and guided their thoughts through particular paths, not letting them wander
+   aimlessly. Wolfson's art is being made in the age of the Internet and career ending mis-steps can
+   come out of the artist's inherent belief about the role of art in society. Is it safe, then, to
+   step outside the mainstream and create provocative art?
+
+4. *"All the Natalie Portmans" and The Limits of Hollywood Fantasy (Cunningham)*
+
+	[[https://www.newyorker.com/magazine/2020/03/16/all-the-natalie-portmans-and-the-limits-of-hollywood-fantasy][New Yorker]] ([[https://archive.is/RRFop][archived]]), 16th March, 2020
+
+	I liked this article on two levels. The first level was for the content: It is an amazing review
+   of a play which features a young teenager who dreams of being a screenwriter and idolizes the
+   actors who have made it big in the 2000s. The second level was for the effortless references that
+   the author draws on about Portman and her role in building a fantasy. She mentions several of
+   Portman's movies and her recent Oscar appearance. Coincidentally, I happen to be reading Dyer's
+   [[https://www.goodreads.com/book/show/351864.Heavenly_Bodies?from_search=true&from_srp=true&qid=5I51BtcxSP&rank=1][Heavenly Bodies]], an essay about how stars are made and what society really looks for in them.
+
+	*P.S.* This article introduced me to Dior ad campaign that stars Portman:
+
+	#+begin_export html
+	<iframe
+	  width="540"
+	  height="360"
+	  src="https://www.youtube.com/embed/h4s0llOpKrU"
+	  title="YouTube video player"
+	  frameborder="0"
+	  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	  allowfullscreen>
+	</iframe>
+	#+end_export
+
+5. *Chain Me Up: Harry Houdini and The Art of Escape (Denby)*
+
+	[[https://www.newyorker.com/magazine/2020/03/30/harry-houdini-and-the-art-of-escape][New Yorker]] ([[https://archive.is/31BIU][archived]]), 30th March, 2020
+
+	Houdini is a household name today. What was he escaping from? Was there some meaning to his art
+   and work? Or was it meaningless and simply the culmination of Houdini's personal desires?
+   Houdini's defiance of authority figures and the police in particular takes center stage in his
+   work. He demonstrated the crass, anti-authority culture of rebellion through an art form that
+   captivated everyone. But what he did was not sleight of hand or magic; his escapes were /real/
+   acts of strength backed by an endless amount of preparation and presented with a complete lack of
+   showmanship, which has traditionally been the mainstay for magicians.
+
+-----
+
+[[file:~/personal/blog/public/img/monthly-recommendations-2021-08-hours-of-the-day.jpg]]

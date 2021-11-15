@@ -1,0 +1,131 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Monthly Recommendations (October 2021)
+categories: monthly series reading covid19
+---
+#+end_export
+
+I have tried to stay away from COVID-19 on this blog. Most people are writing nearly constantly
+about it and I don't have many original takes on this topic. But this month, I reverted back to a
+way-of-life that was typical for me before the pandemic began. I traveled to another city to meet
+relatives; I went on a vacation; I traveled to some places in the city that I am in; I went out to
+restaurants and dined-in. These experiences signal a return to normalcy which seemed unlikely in
+March 2020, 18 months ago. These experiences also shined light on a change within myself: I have
+gotten used to *not* being among strangers. Going back to a previous lifestyle, seeing and listening
+to strangers again has been an interesting return to normal. (I am glad that the "new normal" was
+transient.) So, this month's theme is *a receding pandemic.* I look back at some of the articles
+which I read at various milestones during the pandemic, starting from the beginning of the pandemic
+in Japan last year, through the emergence of the vaccines, and right up to the most recent article
+about the long-term effects of this crisis.
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+1. *Existential Inconvenience (Dyer)*
+
+	[[https://www.newyorker.com/magazine/2020/03/23/the-existential-inconvenience-of-coronavirus][New Yorker]] ([[https://archive.md/GtiGt][archived]]), 23 March, 2020
+
+	This article was written right when the pandemic was beginning. Realizations like "knowing that
+   you will not be able to do something is better than knowing that it is still possible but
+   unlikely" seem obvious. But having them articulated at you is also clarifying. I am not sure why
+   that is the case. (I am trying to figure that one out still.) The author calls these "existential
+   inconveniences," I think that's an apt name. They don't really rise up to the level of problems
+   (For e.g., I could not see Bob Dylan perform live in Japan in April 2020 because his show got
+   canceled.) but they are at least inconveniences.
+
+2. *Memoranda (Rozzo)*
+
+	[[https://www.newyorker.com/magazine/2020/05/18/war-poems-of-the-pandemic][New Yorker]] ([[https://archive.md/BdMoB][archived]]), 18th May, 2020
+
+	War analogies are morose. But they are also effective because every war has an enemy, and all
+   wars [[https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/08/31/remarks-by-president-biden-on-the-end-of-the-war-in-afghanistan/][end]], even the ones that seem to drag on forever. These two crutches are required for
+   prolonged belief in the proverbial "light at the end of the tunnel." This article is a set of
+   poems written by a soldier who arrived in New York during the worst art of the pandemic
+   there. The soldier (who remains anonymous) was able to write poetry to capture the moment and
+   escape from it himself. The poetry is simple and beautiful; at times, it simply restates
+   facts. But I am not sure I would be able to write something this good when I need to focus on
+   crisis management; and this is the main reason I am recommending this piece. It's a reminder
+   about what's possible when one is in an unprecedented situation.
+
+3. *Weaponizing Uncertainty in COVID-19 Lab Leak Theory (Rogers)*
+
+	[[https://www.wired.com/story/covid-19-lab-leak-theory-weaponized-uncertainty/][Wired Magazine]] ([[https://archive.md/Wdx9X][archived]]), 20th May, 2021
+
+	There was [[https://www.dni.gov/files/ODNI/documents/assessments/Declassified-Assessment-on-COVID-19-Origins.pdf][a recent report]] from the US intelligence community about the origins of COVID-19. (I
+   have not read the full report; I have read the first few pages and reporting about it.) Indulge
+   me and pretend that new evidence matters. Indulge me further and pretend that new evidence has
+   the power to change already formed beliefs/opinions/facts. The report can be used to prove any
+   opinion that the reader has already arrived at. For e.g., for those who /believe/ that China is
+   not to blame for the disastrous handling of the pandemic in US, Europe, and UK, they can go to
+   this line:
+
+	#+begin_quote
+	Area of Broad Agreement: Virus not developed as biological weapon; Virus not genetically
+	engineered
+	#+end_quote
+
+	And for those who want to blame China, they can use this line:
+
+	#+begin_quote
+	China's cooperation most likely would be needed to reach a conclusive assessment of the origins
+	of COVID-19.  Beijing, however, continues to hinder the global investigation, resist sharing
+	information, and blame other countries, including the United States.
+	#+end_quote
+
+	Even though the report goes on to say that "Beijing's lack of cooperation on origins not
+   diagnostic of either hypothesis," this second point is mostly glossed over in second-hand
+   reporting of this report. It says that the report does not explicitly blames China for the virus,
+   but it does blame China for not sharing enough information. The retort that everyone is familiar
+   with rises: "If they don't have anything to hide, why are they not sharing all the information
+   that they have?"
+
+	I will not pretend to have any answer. I am fairly certain that there *is* no answer. Even if
+   there is one, this answer will not be found. So, what is the point of all this coverage of the
+   virus' origins? Biden needs to win the mid-terms; Europe needs a scapegoat for their disastrous
+   handling of the pandemic; Most other countries have upcoming democratic elections where voters
+   will demand to know why their government failed where China succeeded. This take is clearly
+   cynical; and this article supports this take from the point of view of weaponized uncertainty:
+   Not being able to find something casts suspicion on the institution which most likely has the
+   /coveted/ evidence.
+
+4. *Moderna's Next Act Is Using mRNA vs. Flu, Zika, HIV, and Cancer (Langreth)*
+
+	[[https://www.bloomberg.com/news/features/2021-07-14/moderna-mrna-targets-hiv-cancer-flu-zika-after-covid-vaccine][Bloomberg Businessweek]] ([[https://archive.md/Az4SO][archived]]), 14th July, 2021
+
+	How did we get a vaccine for the coronavirus so soon? The strategy of using a vaccine as the
+   path out of COVID-19 was considered reckless and foolhardy in March 2020. "Vaccines take years to
+   make. The earliest period of time in which we have been able to develop safe vaccines in the past
+   was 4 years." Policy makers had different reactions to these warnings from vaccine
+   scientists. Vaccine manufacturers like Pfizer and Moderna stayed quiet and worked on finding the
+   vaccine. The announcements in November 2020 about the 90+% efficacy that vaccines had shown in
+   Phase 3 clinical trials was perhaps the best piece of news in the past year. This article
+   explains why the mRNA approach to vaccines is modular and configurable, features which are at the
+   core of scalability in software, and apparently also in vaccine development. This article
+   elaborates on how mRNA could turn into the ticket out of future pandemics and existing incurable
+   diseases.
+
+5. *We're Losing Our Humanity, and the Pandemic Is To Blame (Smith)*
+
+	[[https://www.propublica.org/article/were-losing-our-humanity-and-the-pandemic-is-to-blame][ProPublica]] ([[https://archive.md/v8W8L][archived]]), 7th October, 2021
+
+	The pandemic has been the comfortable scapegoat for a lot of uncomfortable truths that have come
+   to light in the past few months. Particularly, about "losing humanity," I wonder if the changes
+   we have seen in behaviors over the past 1.5 years were just latent tendencies which were
+   triggered by the pandemic. The ongoing pandemic is a mix of three things: a once-in-a-lifetime
+   crisis, a conspiracy theory breeding ground, and an event that increases fervor about already
+   held beliefs. The period of lockdowns in 2020 was also the first time in my lifetime where I had
+   limited contact with strangers for that long a period of time. This has made returning to the
+   world and interacting with strangers again a shocking experience. Recently, returning from a
+   vacation, I found that many of the strangers around me were in an anxious and nervous state which
+   made them take actions which lacked empathy and considerateness. This was not something that I
+   was noticing for the first time; nevertheless it hit me like a rock wall and left me confused for
+   a few days. For that feeling of confusion, I am *certain* that the pandemic /is/ to blame.
+
+-----
+
+[[file:~/personal/blog/public/img/monthly-recommendations-2021-10-physical-comedy.jpg]]

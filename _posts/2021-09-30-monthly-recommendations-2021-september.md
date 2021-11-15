@@ -1,0 +1,120 @@
+---
+layout: post
+comments: true
+title: Monthly Recommendations (September 2021)
+categories: monthly series reading
+---
+
+This month's theme is **the Chinese state.** Lately, there has been a lot of news out of China. As Xi
+Jinping guides the China story towards the [inevitable conclusion](https://www.cnbc.com/2021/02/01/new-chart-shows-china-gdp-could-overtake-us-sooner-as-covid-took-its-toll.html) of overtaking the US economy in
+size, he has started announcing reforms that look unthinkable to many but deal with the key
+underlying issues in late-stage capitalism. Rising tuition fees and the unsustainable costs of
+tutoring are a key issue in India. Coaching classes that train students for the entrance exams of
+leading engineering and medical colleges cost about INR 50,000 per annum, which is a third of the
+[annual per-capita income of India](https://economictimes.indiatimes.com/markets/stocks/news/indias-per-capita-income-to-drop-by-5-4-in-fy21-report/articleshow/76532582.cms). China's crackdown to make these coaching classes [non-profits](https://www.bloomberg.com/news/articles/2021-07-25/china-to-overhaul-private-education-sector-hijacked-by-capital) is
+the most refreshing reform that I have seen imposed on this industry in the past decade. Another
+industry that has been on the rise in India is online gaming and online gambling. The rise of this
+industry has made [strange](https://www.sentinelassam.com/north-east-india-news/assam-news/online-gaming-of-minor-leads-woman-to-lose-rs-19-lakh-in-sivsagar-assam-555605) cases unusually frequent. (These cases remain the exception and not the
+norm.) China's recent regulation on [gaming time for minors](https://www.bloomberg.com/news/articles/2021-08-30/china-limits-minors-to-just-three-hours-of-online-gaming-a-week) is an ambitious step. I am not convinced
+about its utility; but I can see that drastic changes are required to curb Big Tech's unfettered
+access to data collection and the Chinese state does not balk under pressure from Big Tech
+lobbyists. This alone is encouraging to me and I hope that it convinces democratic governments to
+try something in their own jurisdiction.
+
+<!--more-->
+
+1.  **Life on Lockdown in China (Hessler)**
+
+    [New Yorker](https://www.newyorker.com/magazine/2020/03/30/life-on-lockdown-in-china) ([archived](https://archive.ph/08Piz)), 30 March, 2020
+
+     China's system works in times of crises. Societal responsibility, a collectivist mindset and
+    swift government action **was** the answer to COVID19. Every country that tried other approaches
+    failed at getting a good outcome for society. This article also shows the early opposition to
+    school closures. (Even as early as March 2020.) It also ends on a hopeful note during a short
+    period of relaxation in lockdown regulations.
+
+2.  **China Crushed Jack Ma, His Fintech Rivals Might Be Next (Chen et al)**
+
+    [Bloomberg](https://www.bloomberg.com/news/articles/2021-06-24/how-xi-and-the-ccp-turned-on-jack-ma-ant-and-china-s-fintech-companies) ([archived](https://archive.ph/0LNum)), 25 June, 2021
+
+     The action that the Chinese government took against Jack Ma (his mysterious disappearance, his
+    reappearance, his changed positions) right after he voiced his opinion about the Chinese
+    political system was a stunning reminder of the depth of state power. Just as this article
+    prophesized, the Chinese government has gone ahead with [a complete ban on cryptocurrencies](https://www.bloomberg.com/news/articles/2021-09-24/china-deems-all-crypto-related-transactions-illegal-in-crackdown)
+    (ostensibly a "Financial technology" business).
+
+3.  **China's Risky Bet on Afghanistan (Marlow, Curran)**
+
+    [Bloomberg](https://www.bloomberg.com/news/articles/2021-08-24/china-s-eyes-1-trillion-of-minerals-with-risky-bet-on-taliban) ([archived](https://archive.ph/OogSp)), 24 August, 2021
+
+     China is flexing its muscle on the global stage and warzones seem like the best place to make a
+    big profit, at a modest investment, owing to the high risk nature of the investment. This is due
+    to the chaotic nature of the post-war period in general. In the case of Afghanistan, the chaos is
+    compounded by the debacle that was the American withdrawal from its 20-year war in
+    August 2021. Biden and his administration have tried hard to reinforce the idea that 120,000
+    people were evacuated from Afghanistan during the withdrawal. They have repeatedly distanced
+    themselves from the original commitment to end the war and talked about how they were simply
+    abiding by an agreement that their predecessor had drawn up. They have also taken pains to
+    emphasize their commitment to democracy and women's rights (even as questions have risen about
+    their domestic commitment to [both](https://www.nytimes.com/2021/03/30/podcasts/the-daily/voting-rights-georgia.html) [these](https://www.nytimes.com/2021/09/02/us/politics/scotus-abortion-decision.html) issues.)
+
+     It is clear that America lost the war, left the country in shambles and handed the country over
+    to a government whose goals are unclear and whose conduct is erratic.
+
+     Strangely, Biden's [remarks about ending the war](https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/08/31/remarks-by-president-biden-on-the-end-of-the-war-in-afghanistan/) did not reflect the celebrated American
+    exceptionalism that appeared to me to be a main stay of articles and TV shows about America:
+    (such as Robinson's [Don't Give Up On America](https://www.nytimes.com/2020/10/09/opinion/sunday/america-patriotism.html)).
+
+    > To me, there are two [things] that are paramount.  First, we must set missions with clear,
+    > achievable goals — not ones we’ll never reach.
+
+     In this environment, a government with a larger appetite for risk will be able to make some
+    meaningful gains. China has taken this leap of faith.
+
+4.  **Xi Jinping May Be Leading China Into a Trap (Brooker)**
+
+    [Bloomberg](https://www.bloomberg.com/opinion/articles/2021-09-06/china-s-common-prosperity-goal-ends-in-a-middle-income-trap) ([archived](https://archive.ph/LtDLv)), 9 June, 2021
+
+     What is the West’s fear about China? It is that Xi and the Chinese Communist Party will rewrite
+    the rules of traditional economics and show that the power of markets, which is fetishized by
+    institutions such as the IMF and the World Bank, is limited and only _one_ of the many possible
+    pathways to transitioning from a lower-income economy to a higher-income economy. This article
+    crystallizes the terror that Xi's [recent](https://www.bloomberg.com/news/articles/2021-07-23/china-is-said-to-mull-turning-tutoring-firms-into-non-profits) non-capitalist reforms strike in the hearts of the
+    traditional capitalists: Capital is **not** _King_; Governments that focus on Social Reform _can_
+    succeed. Bloomberg Media is owned by Michael Bloomberg and is pro-capitalism and staffed by
+    economists who believe that the West's path out of poverty is the only path that exist and is
+    viable. Their articles criticizing Xi and the Chinese government for not accepting the power of
+    markets or institutions always provide an interesting perspective. For me, they show the height
+    of the pedestal on which these journalists and economists place markets, even though they will
+    freely admit that they are tools for development and ridden with many shortcomings.
+
+    This paragraph stood out to me:
+
+    > If Xi succeeds in steering China into the high-income bracket without undertaking the institutional
+    > reforms that have accompanied the transition in other countries, then it would rewrite the rules of
+    > conventional economics and burnish the international standing of Beijing’s authoritarian governance
+    > model. Developed democracies have hardly demonstrated their superiority in this regard recently,
+    > having failed to reverse their own decades-long trend of widening inequality (even if disparities
+    > mostly remain far narrower than in China).
+
+     This rewriting of rules spells disaster for most publications, and is a common thread I have
+    noticed in recent China coverage. Bloomberg is no exception.
+
+5.  **China's Port Shutdown Raises Fears of Closures Worldwide (Deaux, Li, Koh)**
+
+    [Bloomberg](https://www.bloomberg.com/news/articles/2021-08-12/massive-china-port-shutdown-raises-fears-of-closures-worldwide) ([archived](https://archive.ph/FWKBz)), 13 August, 2021
+
+     World trade. I have found the topic to be confusing and intractable. How can the delay of a
+    shipment in Philippines stop assembly lines halfway across the world? Now, I understand the basic
+    contours of this concept: companies set up supply chains to procure materials from around the
+    world (because they get it from the cheapest buyer) and assemble them at some central place; each
+    component that they procure has its own supply chain. This article demonstrated the fragility and
+    sensitivity of this system well. A port closure in China saw shipping volumes drop across the
+    world. Shipping prices have been spiking since last year due to unrelated reasons and both bulk
+    and container shipping prices were affected. This article is not very detailed in how the port
+    shutdown affects the prices of real-life products; Nevertheless, it is a good primer. I'll be on
+    the lookout for another article which expands on the topics covered here.
+
+---
+
+![img](/public/img/monthly-recommendations-2021-09-comic-encourage.jpg)

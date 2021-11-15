@@ -1,0 +1,103 @@
+---
+layout: post
+comments: true
+title: Monthly Recommendations (July 2021)
+categories: monthly series reading
+---
+
+This month's theme is **cities, islands and the places that we live in.** Few events in my life have
+triggered as much introspection about the city that I live in and the places that I go to as the
+ongoing pandemic. Over the past year, people have left cities and retreated into the countryside,
+finding that their work remains unaffected even if they don't go to offices and don't meet their
+coworkers in real life. But how should we account for the damage to the _city's fabric_ because of
+these exits? Optimists continue to believe that things will go back to the way they were and that
+there will be no long-term impact due to this aberration that we are living through; I count myself
+in this group, foolhardy as it might be to expect a future identical to the past. Revolutionaries
+and activists see the leveling of lifestyles between geographies as a step towards equality, a
+spiritual return to the mixed socioeconomic class communities that were fixtures of towns and
+villages up to the late 19th century. In an effort to explore this ongoing change more fully, this
+month I recommend a photo essay that documents a nurse's daily life, an article about the differing
+paths for social change depending on the average income of the district that you live in, and an
+essay about how the place that you grow up in is embedded within your personality.
+
+<!--more-->
+
+1.  **A City Nurse (photo essay) (Remnick)**
+
+    [New Yorker](https://www.newyorker.com/magazine/2020/05/04/a-city-nurse) ([archived](https://web.archive.org/web/20200509193717/https://www.newyorker.com/magazine/2020/05/04/a-city-nurse)), 4th May, 2020
+
+     As the COVID-19 pandemic started taking hold and hospitals around the world, starting with Italy
+    and then New York and then pretty much everywhere at once, dealt with a huge number of
+    hospitalizations, politicians started expressing gratitude to essential workers at the beginning
+    of all their speeches. Indian leaders started extolling these people as ["warriors."](https://www.telegraphindia.com/opinion/fallen-warriors-indias-healthcare-workers-during-covid-19/cid/1792886) These
+    rhetorical changes did not go hand-in-hand with policy changes that might alleviate unprecedented
+    pressures on underfunded healthcare systems. This photo essay details the life of a nurse who
+    went through the worst parts of the pandemic in New York. This was a powerful reminder that the
+    people working inside hospitals were put on a pedestal, but nothing was done to protect them or
+    to improve their lot by politicians **and** society at-large. The gratitude expressed never turned
+    into collective action (wearing masks, social distancing) or policy action (building large field
+    hospitals, preparation for subsequent waves). Cady Chaplin, the nurse profiles in this article,
+    reacted to the platitudes with matter-of-fact stoicism:
+
+    > Many evenings, at seven, Chaplin can hear the cheering and honking, the nightly tribute to the
+    > "essential workers" who are keeping the city alive. The sound often makes her tear up with
+    > gratitude, but she is wary when she hears platitudes about the "heroic" work of health-care
+    > professionals. She doesn't want to be glorified all of a sudden. "This is what we trained to
+    > do," she says. "This is what we do. That was true a year ago, and it will be true a year from
+    > now."
+
+2.  **Abundance of Caution (Gopnik, Montgomery)**
+
+    [New Yorker](https://www.newyorker.com/magazine/2020/03/30/the-coronavirus-crisis-reveals-new-york-at-its-best-and-worst) ([archived](https://web.archive.org/web/20200327115706/https://www.newyorker.com/magazine/2020/03/30/the-coronavirus-crisis-reveals-new-york-at-its-best-and-worst)), March 30, 2020
+
+     Working patterns have changed over the past year, and if you live in a city, you might have
+    asked yourself what it is about cities that attracts and retains people despite there being no
+    requirement to live there anymore. This is a story that is still being written; cities _might_
+    well become less popular and end up as abandoned jungles of concrete-and-glass buildings with
+    empty offices. But there is very little indication that _that_ is the direction we are headed
+    for. And so, when people return to cities from their present hiatuses (either from inside their
+    homes or from a completely different place), will the fabric that bound it together remain
+    unchanged? Or has it been damaged by the temporary abandonment? The message in this article is
+    pretty clear although it is not explicitly stated: **When the rich-and-wealthy abandon the city
+    where they made their fortune, people notice.**
+
+3.  **Men Waiting for a Train (Biespiel)**
+
+    [New Yorker](https://www.newyorker.com/magazine/2020/05/18/men-waiting-for-a-train) ([archived](https://archive.is/Np0re)), 18th May, 2020
+
+    This is a poem and it is surprisingly relatable[^1].
+
+4.  **My High-School Commute (Jost)**
+
+    [New Yorker](https://www.newyorker.com/magazine/2020/03/16/my-high-school-commute) ([archived](https://archive.ph/1MUxH)), 16th March, 2020
+
+     This article, written by SNL Weekend Update's co-host Colin Jost, is about how the cities that
+    we grow up in are special to us simply because we were there during our formative years. I catch
+    myself waxing nostalgic about how great the city that I grew up in was, even though I never
+    really knew much more of it than the neighborhoods that my house and school were in. Stranger
+    still, I sometimes vehemently defend it against any attack from people who lived there as adults
+    and saw much more of its people and their idiosyncrasies. I doubt that this feeling will ever
+    change for me and this article helped me understand its roots.
+
+5.  **Juul Finds Hell Hath No Fury Like an Army of Really Rich Parents (Etter)**
+
+    [Bloomberg Businessweek](https://www.bloomberg.com/news/features/2021-05-14/teens-addicted-to-juul-flavor-pods-have-parents-furious-devil-s-playbook) ([archived](https://web.archive.org/web/20210610092201/https://www.bloomberg.com/news/features/2021-05-14/teens-addicted-to-juul-flavor-pods-have-parents-furious-devil-s-playbook)), 14th May, 2021
+
+     The wealthy and the well-connected inhabit a world where social change comes from private
+    activities much more frequently than from the traditional route of dreary city council meetings
+    and convincing elected officials. This excerpt from a new book about the American company, Juul,
+    details the campaign against its "vaping products", a cigarette-like product that emits white
+    smoke and delivers nicotine instead of cigarette's mix of tobacco and nicotine, in one of
+    America's wealthiest districts. In these parts, acquaintances from the upper deck seats of a
+    college football stadium can lead to increased pressure on a private company from its regulatory
+    body. Things get done, undoubtedly; whether the benefits of these changes will reach people
+    outside the wealthy parts is not their concern. This article reads like a thriller and introduces
+    a train of interesting characters, each armed with a roster of powerful connections.
+
+---
+
+![img](/public/img/monthly-recommendations-2021-07-dinner-is-ready.jpg)
+
+---
+
+[^1]: This is a change in format. I generally recommend only articles that are of medium length. I also don't know much about poems, so I stay away from them for the most part. This poem was particularly impactful and evocative and thus, finds a place on this month's list.

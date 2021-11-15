@@ -1,0 +1,222 @@
+---
+layout: post
+comments: true
+title: "Notes and Review: Letters from a Stoic (Seneca) (Campbell translation)"
+categories: book-review philosophy seneca
+---
+
+I found out about this book after Sreejith wrote a [note](https://notes.ppsreejith.net/notes/book-letters-from-a-stoic/) about it. I knew vaguely about Seneca as
+being a philosopher of some kind, but I had not considered reading any of his work before seeing
+this note. Now, I have read the book and it is at the top of the list of books that I **strongly
+recommend** to everyone. In this post, I have put together some of the most insightful things that I
+think Seneca talks about in this book. This book is a perennial guide to living the life of a "wise
+person": happy, contented, and prepared for whatever fortune might throw their way.
+
+<!--more-->
+
+This book was written in the first century, some 2000 years ago. Going into the book, I expected to
+find some references to things that were simply outdated and ancient. But this was not the case at
+all: The maladies that Seneca says affect society have remained unchanged through a variety of
+events that we believe have changed the world, but which have only changed the <span class="underline">presentation</span> of
+those maladies, without getting rid of them or even altering the underlying anxieties that people
+tend to feel in society (envy, fear, contempt, etc).
+
+This is a book of letters that Seneca rights to his friend and student Lucilius. In these
+letters, Seneca gives Lucilius direct advice about how to behave and how to lead a life that is
+contented and free of the anxieties that Lucilius or the people around him have probably been
+facing. There is a tinge of mystery as we get to see only one side of the communication between
+these two men, leading to the reader having to fill in the blank about what it was that Lucilius asked
+Seneca for counsel on. This mystery did not hamper my ability to learn from this book, and identify
+the "rules" that I can apply to my own life.
+
+Seneca's writing (and Campbell's translation) is <span class="underline">fresh</span> and <span class="underline">lucid</span>. It is not the **stuffy**,
+<span class="underline">intellectual</span> writing of a philosopher who is trying to find arguments and connect dots that don't
+deserve or need to be connected to gain something new. This is addressed in one of the letters where
+Seneca says how philosophy has been reduced to philology, the study of words and how modern
+philosophers (modern when the letters were written, i.e. 1-100 AD) were splitting hairs about what a
+word means or how a syllogism is inaccurate etc. This meta-theme, "what should philosophy do for the
+reader", can be found in several letters throughout the book and it was one of the important things
+that I learned from this book.
+
+**Bonus:** He has a **really** good sense of humor.
+
+> 'Mouse is a syllable, and a mouse nibbles cheese; therefore, a syllable nibbles cheese.' Suppose for the moment
+> I can't detect the fallacy in that. What danger am I placed in by such lack of insight? What serious consequences
+> are there in it for me? What I have to fear, no doubt, is the possibility, one of these days, of my catching a
+> syllable in a mousetrap or even having my cheese eaten up by a book if I'm not careful. Unless perhaps the
+> following train of logic is a more acute one: 'Mouse is a syllable, and a syllable does not nibble cheese;
+> therefore, a mouse does not nibble cheese.' What childish fatuities these are! Is this what we philosophers
+> acquire wrinkles in our brows for? Is this what we let our beards grow long for? Is this what we teach with faces
+> grave and pale?
+>
+> &#x2013; Letter XLVIII (48)
+
+This is the kind of joke I would not be surprised to find in a Jerry Seinfeld stand-up comedy act.
+
+
+# Recurring themes
+
+There are 3 themes that recur through the book and are approached from various angles and when
+dealing with problems faced by various people.
+
+
+## Steel yourselves against misfortune
+
+As a member of the Stoic school of philosophy, Seneca is obsessed with how the "wise man" would
+react to misfortune, be it in the form of persecution, natural disasters, war, the death of a loved
+one or even his own death.
+
+His advice is deceptively simple: **Prepare to lose everything you have to the whims of fortune and
+yet, continue to live a good life despite the loss**.
+
+I know about the popularization of this principle ("prepare for the worst, hope for the best"), but
+the missing piece in the popularization is the **reason** one should prepare for the worst. Why should
+you prepare for the worst, when the worst is highly unlikely? Why should you hope for the best, when
+that is equally unlikely? Wouldn't the wise man prepare and hope for the usual? If one were to do
+that, given the utter randomness of everything, they would be well-prepared for most things and
+ill-prepared for the small minority.
+
+Seneca explains the reason eloquently:
+
+> For what is there that fortune does not when she pleases fell at the height of its powers? What is
+> there that is not the more assailed and buffeted by her the more lustrous its attraction? What is
+> there that is troublesome or difficult for her?
+>
+> &#x2013; Letter XCI (91)
+
+One can know very little about what will happen and to assume that the usual turn of events will
+continue for a long period of time is incorrect. In fact, the usual turn of events will only
+continue for a limited period of time and the worst thing that you can think of will **always** end up
+happening.
+
+So, one's **goal** should always be to remain unaffected in the face of the things that happen to them
+(good or bad) and the only way to **remain unaffected by anything that happens** to you is to foresee
+the worst possible scenario. The change in my thinking was about this goal. My previous conception
+framed the goal of "preparing for the worst" in the next part of the adage, "hope for the best": I
+am hoping for the best because my goal is to get through whatever happens unscathed, **not** to remain
+unaffected irrespective of what happens. Once again, I hand the mic over to Seneca who explains what
+our attitude should be: (emphasis added)
+
+> This is why we need to **envisage every possibility** and to strengthen the spirit to deal with the
+> things that may conceivably come about. Rehearse them in your mind: exile, torture, war,
+> shipwreck. Misfortune may snatch you away from your country, or your country away from you, may
+> banish you into some wilderness - these very surroundings in which the masses suffocate may become a
+> wilderness. **All the terms of our human lot should be before our eyes**; we should be anticipating
+> not merely all that commonly happens but all the that is **conceivably capable** of happening, if we
+> do not want to be overwhelmed and struck numb by rare events as if they were unprecedented ones;
+> fortune needs envisaging in a thoroughly comprehensive way.
+>
+> &#x2013; Letter XCI (91)
+
+This might sound pessimistic to some readers. It felt like the <span class="underline">pragmatic</span> course of action to me.
+
+
+## Study philosophy to build a better character, not a better intellect
+
+This is a meta thread of reasoning that runs through the book. (As this is a book with philosophical
+arguments, the philosophical argument for what the purpose of philosophical arguments are can be
+considered to be "meta"). Seneca is convinced that the purpose of philosophy is to **reform** people's
+characters and make them better people and that it is **not** to improve the reader's intellect or
+make them look well-read or intelligent to their friends through syllogisms, clever turns of phrase
+or "the other toys of sterile intellectual cleverness" (Letter CVIII).
+
+The purpose of the philosopher's audience is to "rid oneself of his faults and acquire a rule of
+life by which to test his character" (paraphrase from Letter CVIII).
+
+This was an enlightening concept to me: I have dabbled in the study of philosophy. I have read
+[articles](https://plato.stanford.edu/entries/nietzsche/) about the core tenets of Nietzsche, Sartre, and Socrates. Admittedly, I did that because I
+wanted to give the <span class="underline">appearance</span> of knowing about the different schools of philosophy. I was <span class="underline">not</span>
+looking for something in their arguments that would help me become a better person. I wanted to get
+the general lay of the land without any deep idea about specific characteristics of the
+landscape. The closest I came to that "active" part of philosophy was watching the TV Show "The Good
+Place" and hearing the makers talk about it on [a podcast](https://www.vox.com/podcasts/2019/12/10/21002589/the-good-place-mike-shur-moral-philosophy-the-ezra-klein-show). This was an **incorrect** approach to the
+study of philosophy. Indeed, I should have read Sartre because I wanted to understand his
+existential argument and think about how it could help me become a better person or update my
+reasons about what I should and should not do.
+
+On this point, the letters give the reader hope.
+
+> It is easy enough to arouse in a listener a desire for what is Honorable; for in every one of us
+> nature has laid the foundations or sown the seeds of the virtues. We are born to them all, all of
+> us, and when a person comes along with the necessary stimulus, then those qualities of the
+> personality are awakened, so to speak, from their slumber. Haven't you noticed how the theater
+> murmurs agreement whenever something is spoken the truth of which we generally recognize and
+> unanimously confirm?
+>
+> &#x2013; Letter CVIII (108)
+
+I believe that a person **has** come along with the necessary stimulus for me.
+
+<hr/>
+
+<span class="underline">Side note:</span> Philosophy gets a [bad rap](https://www.merriam-webster.com/words-at-play/usage-bad-rap-vs-bad-rep-vs-bad-wrap), it's students and practitioners should elevate it's name
+through their wholehearted embrace of it for the right reason: gaining the wisdom required to lead a
+life that is "better than the mob".
+
+> Avoid shabby attire, long hair, an unkempt beard, an outspoken dislike of silverware, sleeping on the ground and
+> all other misguided means to self-advertisement. The very name of philosophy, however modest the manner in
+> which it is pursued, is unpopular enough as it is: imagine what the reaction would be if we started dissociating
+> ourselves from the conventions of society.
+>
+> &#x2013; Letter V (5)
+
+
+## Don't expect a change in surroundings to <span class="underline">fix</span> you
+
+> What good does it do you to go overseas, to move from city to city? If you really want to escape the things that
+> harass you, what you’re needing is not to be in a different place but to be a different person.
+>
+> &#x2013; Letter CIV (104)
+
+There is a lot to be said about the merits of travel and going to a new place. It makes you worldly;
+it puts you in a surrounding that you haven't been before, reducing you to a child, lost and alone;
+it lets you see new mountains, landscapes and rivers.
+
+But don't expect the change in surroundings to change **you**, even if you don't put in any effort
+yourself. I don't know if a lot of people travel to get rid of anxiety in the present day. I have
+thought about doing this before: When I felt stressed out or suffocated in college, I would go to
+Kolkata for a weekend. If I was tightly wound for some reason, then the trip helped me loosen up but
+it didn't help me get rid of the underlying cause of the stress or the suffocation. I was not
+surprised by the lack of efficacy; but I was also unable to articulate the reason.
+
+The rule on this particular theme is hard to pinpoint and I think it changes depending on who you
+are and how much experience you have had. I am looking forward to thinking about what the rule is
+for me and how I can apply it in my life.
+
+
+# Not completely convinced
+
+I am not completely convinced about one point that he brings up in one of his letters. He says that
+the recounting of past sufferings and one's victory over them is a pointless exercise and serves
+only to be detrimental to one's conception of the past, that suffering and one's spirit.
+
+> What's the good of dragging up sufferings which are over, of being unhappy now just because you were then?
+> What is more, doesn't everyone add a good deal to his tale of hardships and deceive himself as well in the
+> matter? Besides, there is a pleasure in having succeeded in enduring, something the actual enduring of which
+> was very far from pleasant; when some trouble or other comes to an end the natural thing is to be glad. There are
+> two things, then, the recollecting of trouble in the past as well as the fear of troubles to come, that I have to root
+> out: the first is no longer of any concern to me and the second has yet to be so.
+>
+> &#x2013; Letter LXXVIII (78)
+
+I don't strongly advocate for thinking or recounting past sufferings. But this particular point
+seems to be at loggerheads with something that Seneca advocates for: self-analysis to improve one's
+character.
+
+> I shall put myself under observation straight away and undertake a review of my day – a course which is of the
+> utmost benefit. What really ruins our characters is the fact that none of us looks back over his life. We think
+> about what we are going to do, and only rarely of that, and fail to think about what we have done, yet any plans
+> for the future are dependent on the past.
+>
+> &#x2013; Letter LXXXIII (83)
+
+I will re-read Seneca's arguments in these two letters and think some more about what he is talking
+about. I suspect that, in the end, I will agree with him (he <span class="underline">was</span> wise, after-all), I am not
+convinced at the current juncture about it though.
+
+<hr/>
+
+**P.S.** I have used Roman numerals here because Seneca himself lived under the Roman empire and uses
+ these numerals are used throughout the book. I have put the decimal representation of the numbers
+ in parentheses because I found those easier to write and refer to when talking about the letters in
+ my notes.

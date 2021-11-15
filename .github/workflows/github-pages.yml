@@ -1,0 +1,68 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      # Source branch
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby 2.5
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.5
+          bundler-cache: true
+
+      - name: Install gems and generate websites
+        run: |
+          # Prepare to generate two sites and merge them together
+          sudo apt-get update
+          sudo apt-get install -qq -y rsync
+          rm -rf _site _site_1 _site_2
+
+          # Build old structure site
+          bundle exec jekyll build --config _config.yml,_config_domains.yml --destination _site_1
+          rsync -r _site_1/ _site
+          rm -rf _site_1
+
+          # Build new structure site with index.html files
+          bundle exec jekyll build --config _config.yml,_config_ymd_slash.yml,_config_domains.yml --destination _site_3
+          # Overwrite common files with new site. Leave old file sites as is.
+          rsync -r _site_3/ _site
+          rm -rf _site_3
+
+          # Build new structure site
+          bundle exec jekyll build --config _config.yml,_config_ymd.yml,_config_domains.yml --destination _site_2
+          # Overwrite common files with new site. Leave old file sites as is.
+          rsync -r _site_2/ _site
+          rm -rf _site_2
+
+          # Put the generated site inside docs/
+          rm -rf docs
+          mv _site docs
+
+          # Delete everything in this folder except for docs
+          find . -type d -maxdepth 1 | grep -v -e '^.$' -e '^./.git$' -e '^./docs$' | while read p; do rm -rf "$p"; done
+          find . -type f -maxdepth 1 | grep -v -e CNAME -e '.gitignore' | xargs rm
+
+      - name: Commit files
+        run: |
+          git add .
+          git config --local user.email "github-actions-bot+icyflame@example.com"
+          git config --local user.name "github-actions[bot] + icyflame"
+          git commit -am "Generate website"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Destination branch
+          branch: published
+          force: true

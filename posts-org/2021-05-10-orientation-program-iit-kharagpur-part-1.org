@@ -1,0 +1,147 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: The Curious Case of the Dweller Who Wouldn't Move Out
+categories: iit-kgp india orientation-program
+series_id: orientation-program-at-iit-kgp
+---
+#+end_export
+
+At the end of my first year at IIT Kharagpur, an engineering college in India, I packed up
+everything I owned into cardboard boxes, put them in the common room of my hostel and went back to
+my parent's home for the summer vacation. 2 months later, in the second week of July 2014, I
+returned to my new hostel, Nehru Hall. I found that my room had not been vacated yet and was not
+ready for "check-in". *This* was the beginning of hazing at IIT Kharagpur, affectionately referred
+to by the euphemism, "Orientation Program" or simply, O.P. I recount my experience of O.P in this
+4-part series. This is the first part, The Curious Case of the Dweller Who Wouldn't Move Out.
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+I studied Mechanical Engineering at IIT Kharagpur from 2013-2018. I lived in MMM hall during my
+first year, from June 2013 to April 2014. Then, I shifted to another hostel, Nehru Hall, in
+July 2014. I lived there until my graduation in May 2018.
+
+At IIT Kharagpur, hazing happens at the beginning of the second year, from August to November. Most
+colleges haze first-year students right after they arrive on campus. Clearly, at some point in the
+venerated history of the 60 year old institution that I studied at, some wise soul realized that
+tormenting 17 year old freshmen, who were living away from their parents for the first time, was
+cruel and set out to rectify the arrangement. The wise soul's motives were pure, and knowing that
+there were good people on both sides, he decreed that hazing should be /postponed/ from 1st year to
+2nd year. We *owe a great debt* to him, for his decree improved the lot of at least a few
+people. Namely, the exceedingly small percentage of people who drop-out of college after their
+freshman year.
+
+In June 2014, I learned about the hostel that I would be living at for the forthcoming 4 years
+through an Excel sheet. Arriving back on campus a month later, I proceeded to my new accommodations
+on the third floor of Nehru Hall. I saw a set of government buildings, inexplicably dark and
+ominous. Walking through the ground floor corridor, I looked for labels that would lead me to my
+room, I found none. I would later learn that labeling was frowned upon; A true "Nehruite", as the
+dwellers took to calling themselves, would /know/ where his room was, he would not have to be guided
+in any way, shape or form.
+
+I was going to share my room with 2 other second-year students, both of whom I had never met
+before. While walking up and down several flights of stairs in this unmarked building, I felt like
+the proverbial driver wandering around in a cavernous underground parking lot having forgotten where
+they had parked their car. Eventually, I arrived at my future room. The door was locked and no one
+could be found nearby.
+
+This hostel had functionaries, government officials tasked with running the mundane day-to-day
+operations. Presuming that their responsibilities included assisting new occupants, I asked them
+what the appropriate path forward was, specifically, where I was supposed to spend the
+night. Instead of getting an answer, I witnessed something remarkable. The functionaries vanished
+into thin air, leaving behind a flurry of smoke in the shape of "We have to ask the warden. Come
+back tomorrow morning at 10 am". I was left to my own devices.
+
+The presence of these functionaries is a sight for sore eyes, like the oasis seen in the desert by a
+famished traveler on a hot summer's day. Like the oasis, the closer one gets to them, the clearer
+one's understanding of their (lack of) actual powers.
+
+Facing the prospect of a night without a roof over my head, I frantically called my friends to find
+out what their plans were. Several of them had not yet returned. Those that had returned had found
+lodging with other friends. I even called up a nearby hotel, the only one in the surrounding few
+kilometers. Smartphones might be widespread in the urban world of 2021. But people were still amazed
+at the sound of a ringing telephone and scurried away from the sound back in 2014. Callers who had
+the good fortune of having their phone call answered by this hotel's /receptionist/ counted their
+blessings.
+
+Venturing further out in my network of connections, I called up a Ph.D. student I knew. He had not
+had to change his lodgings during the summer and he was willing to take me in for the night. To him,
+I am eternally grateful.
+
+The lonely and dejected "Nehruite", after being left without a room by his new hostel, had found a
+place to sleep. He nevertheless felt proud of the amazing feats that his hostel had achieved in
+years past. He had learned about them from the noticeboards in his new hostel which prominently
+displayed them. Untroubled by the fact that he had absolutely nothing to do with these past feats,
+he claimed full credit for them. He saw the bright future he had in his new "hall", which was
+incomparably superior to the mere "hostels" that were scattered all around campus. He scoffed at the
+voice in the back of his head that told him that all the hostels were identical and had no
+significance outside of being living quarters. This voice tried in vain to convince the Nehruite
+that he is /connected/ to his hostel's past as much as a traveler is connected to the past of a
+hotel where they have never spent a night. The Nehruite disregarded the nagging voice with ease and
+/saw/ meaning that was revealed only to him.
+
+A week went by. Every day during lunch time, I went to my room to see if the previous occupants had
+made an appearance. As I understood it, they were taking their sweet time to return to campus. I was
+mildly annoyed at their lack of foresight and at the indifference they had shown towards the plight
+of the future dwellers of their room. But I waited patiently for them to show up.
+
+All the second-years who were supposed to move to this hostel were in the same situation and were
+living with their friends in uncomfortably small quarters. But they found consolation in their
+dreams. Every night, they dreamed about the heights their new hostel would take them to. Especially
+during Diwali, the Indian festival of lights and a time of general merry-making, when they would be
+standing on cots /borrowed/ from their peers. These peers had happily given up this material
+pleasure and were sleeping on the ground during the cold winter month of November /without/
+any resentment towards the borrower clouding their heart.
+
+The voice dwelling in the back of my head reared its head once more and posed a /reasonable
+question/ this time. "Why had the functionaries not foreseen the eventuality of the stranded
+second-year student and the third-year student who refuses to move out?", it inquired. It did not
+give in to my diligent attempt at driving it away. Indeed, the voice was energized by the fact that
+MMM Hall, my old hostel, had foreseen this possibility and asked me to move out of my room /before/
+leaving the campus. The voice proffered, "Perhaps your new hostel is run by people who don't care
+about second-years". I was astonished at this suggestion and quickly dismissed it as absurd and
+baseless.
+
+I was further troubled by the voice because it had thought *reasonably*. This kind of rational
+thinking was a most undesirable quality when dealing with the things that happened inside Nehru
+Hall. I reminded myself that asking questions had repercussions. Questions have long been known to
+be a thorn in the side of bad planning and intentional indifference.
+
+10 days had gone by. At 5 pm on the eleventh day, I made my daily pilgrimage to my future room and
+was elated to see that the room was unlocked and that one of the occupants had shown up. Seeing as
+he was a year older than me and world-wise beyond my imagination, I felt no need to explain my
+predicament to him. Alas, on this count, I had grossly miscalculated. Much as a horse standing in
+front of a river indignantly demands to be lead up to water, so did the previous occupant demand to
+know why I had shown the impunity to show up unannounced. This Curious Character advised me to be
+humble, to wait patiently, to allow the elders to do as they saw fit and not to question their
+wisdom.
+
+Finding no purchase for arguments laden with reason or emotion with the Curious Character, I went
+back to my previous approach of waiting patiently for him to move out. I later found out that this
+occupant was one of the well-known delinquents in the hostel and it was not surprising that he had
+engaged in this strange power play by prolonging his residence in a room that wasn't his. "Knock and
+the door will be opened to you", says the [[https://www.biblehub.com/matthew/7-7.htm][good book]]. I was disheartened to find out that there is no
+verse about occupants not shifting out of their old accommodations when the period of their stay
+ends.
+
+5 days after I met him, the Curious Character finally moved out. I moved in swiftly and spent the
+remaining few days in July and the whole of August getting used to my new situation: new living
+quarters, new roommates and new neighbors. Nothing untoward appeared to be on the horizon and life
+proceeded with much abandon. Things were about to take a turn, but I was unaware of the precise
+nature of the upcoming twist in the road.
+
+-----
+
+*Programming note:* This is the first part of a 4-part series.
+
+| Post                                                  | Date           |
+|-------------------------------------------------------+----------------|
+| [[http://localhost:4000/iit-kgp/india/orientation-program/2021/05/10/orientation-program-iit-kharagpur-part-1/][The Curious Case of the Dweller Who Wouldn't Move Out]] | 10th May, 2021 |
+| [[http://localhost:4000/iit-kgp/india/orientation-program/2021/05/11/orientation-program-iit-kharagpur-part-2/][The Sermon in the Common Room]]                         | 11th May, 2021 |
+| [[http://localhost:4000/iit-kgp/india/orientation-program/2021/05/12/orientation-program-iit-kharagpur-part-3/][Victorian-era Dining Hall Etiquette]]                   | 12th May, 2021 |
+| [[http://localhost:4000/iit-kgp/india/orientation-program/2021/05/13/orientation-program-iit-kharagpur-part-4/][The Midnight Assemblies]]                               | 13th May, 2021 |

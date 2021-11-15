@@ -1,0 +1,29 @@
+* Title
+** Subtitle
+
+Normal *bold* _emphasised_ text.
+
+- Lists
+- look
+- the
+- same
+  - even with indentation
+
+| Tables | Look |
+|--------+------|
+| The    | Same |
+
+** Embedded code
+
+#+BEGIN_SRC php
+  $ docker run -it --name=php php:latest php -a
+  Interactive shell
+
+  php > $password = "t";
+  php > $h = password_hash($password, PASSWORD_DEFAULT);
+  php > echo $h;
+  $2y$10$F6exUnYVDd.W4DSs0I8fdOssGPdj57L3pvmjef5oHEg8qdoahTONS
+  php > var_dump(password_verify($password, $h));
+  bool(true)
+  php >
+#+END_SRC
