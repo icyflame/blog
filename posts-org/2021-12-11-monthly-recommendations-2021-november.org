@@ -23,7 +23,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
 <!--more-->
 #+end_export
 
-35. *Six Days in Suez: The Inside Story of the Ship That Broke Global Trade (Chellel, Campbel, Ha)*
+1. *Six Days in Suez: The Inside Story of the Ship That Broke Global Trade (Chellel, Campbel, Ha)*
 
 	[[https://www.bloomberg.com/news/features/2021-06-24/how-the-billion-dollar-ever-given-cargo-ship-got-stuck-in-the-suez-canal][Bloomberg Businessweek]] ([[https://archive.ph/PgCcw][archived]]). 24 Jun, 2021
 
@@ -65,7 +65,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
     crisis situations such as these. Their language will not hamper their communication as there is
     a set hierarchy that /must/ be followed anyway.
 
-36. *Five Oceans, Five Deeps (Taub)*
+2. *Five Oceans, Five Deeps (Taub)*
 
 	[[https://www.newyorker.com/magazine/2020/05/18/thirty-six-thousand-feet-under-the-sea][New Yorker]] ([[https://archive.ph/ET1Zz][archived]]). 18th May, 2020
 
@@ -85,7 +85,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
     that's required. To someone who believes that, setting "one of the last meaningful records"
     would definitely seem to be worth the hefty price.
 
-37. *Black, No Sugar. (Gopnik)*
+3. *Black, No Sugar. (Gopnik)*
 
 	[[https://www.newyorker.com/magazine/2020/04/27/the-war-on-coffee][New Yorker]] ([[https://archive.ph/pUeiE][archived]]). 27th April, 2020
 
@@ -100,7 +100,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
     institutions, making it a phenomenally easy commodity to trade. Gopnik uncovers such tricky
     truths in his piece.
 
-38. *The Pandemic Made Cities Quieter, But Not Less Stressful (Sullivan)*
+4. *The Pandemic Made Cities Quieter, But Not Less Stressful (Sullivan)*
 
 	[[https://www.bloomberg.com/features/2021-covid-city-noise/?srnd=businessweek-v2][Bloomberg Businessweek]] ([[https://archive.ph/II4Se][archived]]). 2nd September, 2021
 
@@ -116,7 +116,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
     to live in a relatively silent city to be less stressed. To me, [[https://www.youtube.com/watch?v=A0RDIT5-bng][the noise that runs through
     cities]] is the key to separate them from the countryside.
 
-39. *India's Air Pollution Mitigation Strategy Needs More Direction (Shah)*
+5. *India's Air Pollution Mitigation Strategy Needs More Direction (Shah)*
 
 	[[https://thewire.in/environment/indias-air-pollution-mitigation-strategy-needs-more-direction][The Wire]] ([[https://archive.ph/i5KsS][archived]]). 7th June, 2021
 
