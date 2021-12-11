@@ -19,7 +19,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
 
 1.  **Six Days in Suez: The Inside Story of the Ship That Broke Global Trade (Chellel, Campbel, Ha)**
 
-    [Bloomberg Businessweek](https://www.bloomberg.com/news/features/2021-06-24/how-the-billion-dollar-ever-given-cargo-ship-got-stuck-in-the-suez-canal) (archived). 24 Jun, 2021
+    [Bloomberg Businessweek](https://www.bloomberg.com/news/features/2021-06-24/how-the-billion-dollar-ever-given-cargo-ship-got-stuck-in-the-suez-canal) ([archived](https://archive.ph/PgCcw)). 24 Jun, 2021
 
     Great investigation and very interesting notes from the people who were deeply involved in the
     operation to dislodge the ship.
@@ -59,7 +59,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
 
 2.  **Five Oceans, Five Deeps (Taub)**
 
-    [New Yorker](https://www.newyorker.com/magazine/2020/05/18/thirty-six-thousand-feet-under-the-sea) (archived). 18th May, 2020
+    [New Yorker](https://www.newyorker.com/magazine/2020/05/18/thirty-six-thousand-feet-under-the-sea) ([archived](https://archive.ph/ET1Zz)). 18th May, 2020
 
     The incredible non-fiction piece about a team of researchers and world-record setters who
     traveled all 5 of the deepest points on the planet's oceans and descended to the bottom in their
@@ -79,7 +79,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
 
 3.  **Black, No Sugar. (Gopnik)**
 
-    [New Yorker](https://www.newyorker.com/magazine/2020/04/27/the-war-on-coffee) (archived). 27th April, 2020
+    [New Yorker](https://www.newyorker.com/magazine/2020/04/27/the-war-on-coffee) ([archived](https://archive.ph/pUeiE)). 27th April, 2020
 
     Coffee is everywhere and it's the most common drink that one finds in the newest of places.
     There is a lot of fuss over the taste of coffee; I don't have a taste palette refined enough to
@@ -94,7 +94,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
 
 4.  **The Pandemic Made Cities Quieter, But Not Less Stressful (Sullivan)**
 
-    [Bloomberg Businessweek](https://www.bloomberg.com/features/2021-covid-city-noise/?srnd=businessweek-v2) (archived). 2nd September, 2021
+    [Bloomberg Businessweek](https://www.bloomberg.com/features/2021-covid-city-noise/?srnd=businessweek-v2) ([archived](https://archive.ph/II4Se)). 2nd September, 2021
 
     Sound is everywhere but we barely notice it in most situations. When we do notice it, it is with
     either the at most pleasure or the vilest displeasure. [The Vox, Explained episode about Music](https://www.youtube.com/watch?v=Xb33zXpEgCc) is
@@ -110,7 +110,7 @@ pursuit, and the story of a government's need to do data-driven policy gone hayw
 
 5.  **India's Air Pollution Mitigation Strategy Needs More Direction (Shah)**
 
-    [The Wire](https://thewire.in/environment/indias-air-pollution-mitigation-strategy-needs-more-direction) (archived). 7th June, 2021
+    [The Wire](https://thewire.in/environment/indias-air-pollution-mitigation-strategy-needs-more-direction) ([archived](https://archive.ph/i5KsS)). 7th June, 2021
 
     Government policies take a lot of time to be drafted and even when they become bills they are
     huge documents without a straightforward explanation of their goals. This is clearly **hard;** I
