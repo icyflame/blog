@@ -74,23 +74,23 @@ The NIP's headline number was /ambitious/. The total infrastructure investment i
 preceding 5 year period from 2013 to 2018 was Rs. 46.48 lakh crores, according to the [[https://www.dea.gov.in/sites/default/files/Report%20of%20the%20Task%20Force%20National%20Infrastructure%20Pipeline%20(NIP)%20-%20volume-i_1.pdf][Department of
 Economic Affairs (DEA)]].[fn:2] In effect, Modi's plan was to double infrastructure investment.
 
-Surprisingly, I could not find any summary of how this policy is going. It is already 2 years since
-the policy's implementation period began, but there seems to be no mention of it anywhere on
-Government websites or any media coverage of how much investment has come in through this policy and
-whether the government is meeting its phasing goals for the project.
+Surprisingly, I could not find any summary of how this policy is going after 2019. The [[https://www.dea.gov.in/sites/default/files/Report%20of%20the%20Task%20Force%20National%20Infrastructure%20Pipeline%20(NIP)%20-%20volume-i_1.pdf][official
+policy document]] marks several of the important Key Performance Indicators as "TBD (To Be Decided)."
+The [[https://www.bloombergquint.com/business/budget-2021-national-infrastructure-pipeline-expanded-to-cover-7400-projects][latest mention of this policy]] was in the Budget speech in February 2021 where new projects were
+added to NIP.  It is already 2 years since the policy's implementation period began, but there seems
+to be no mention of it anywhere on Government websites or any media coverage of how much investment
+has come in through this policy and whether the government is meeting its phasing goals for the
+project.
 
-My read of the numbers is that the government is falling *severely* short of the capital expenditure
+My read of the numbers is that the government is falling short of the capital expenditure
 planned under the NIP:
 
-|  Period | Planned CapEx under NIP[fn:4] | CapEx as in Budget 2021-22[fn:5] | Percentage of CapEx achieved |
-|---------+-------------------------------+----------------------------------+------------------------------|
-| 2019-20 | 14.42 lakh cr.                | 3.35 lakh cr.[fn:8]              |                       23.23% |
-| 2020-21 | 21.53 lakh cr.                | 4.39 lakh cr.[fn:9]              |                       20.39% |
-| 2021-22 | 21.32 lakh cr.                | 5.54 lakh cr.[fn:10]             |                       25.98% |
-#+TBLFM: $4=554/21.32
-
-I can't quite believe that the government is falling /this/ short of their goals, and hence, *I
-believe that I am missing something.*
+|  Period | Planned CapEx from Centre under NIP[fn:4] | CapEx as in Budget 2021-22[fn:5] | Percentage of CapEx achieved |
+|---------+-------------------------------------------+----------------------------------+------------------------------|
+| 2019-20 | 5.62 lakh cr.                             | 3.35 lakh cr.[fn:8]              |                       59.60% |
+| 2020-21 | 8.39 lakh cr.                             | 4.39 lakh cr.[fn:9]              |                       52.32% |
+| 2021-22 | 8.31 lakh cr.                             | 5.54 lakh cr.[fn:10]             |                       66.66% |
+#+TBLFM: $2=0.39*21.32::$4=554/8.31::$5=0.39*14.42
 
 ** Comparing Expected Revenue
 
@@ -204,7 +204,8 @@ details raise questions about the government's ability to achieve their target.
 [fn:1] 1 lakh crore = 1,000,000,000,000 = 1 trillion. Rs. 6 trillion = USD 78 billion
 [fn:2] Author's calculations using Figure 7 on pg. 26 of [[https://www.dea.gov.in/sites/default/files/Report%20of%20the%20Task%20Force%20National%20Infrastructure%20Pipeline%20(NIP)%20-%20volume-i_1.pdf][NIP report from the Department of Economic
 Affairs]].
-[fn:4] Table 3 in [[https://www.dea.gov.in/sites/default/files/Report%20of%20the%20Task%20Force%20National%20Infrastructure%20Pipeline%20(NIP)%20-%20volume-i_1.pdf][DEA report]].
+[fn:4] Table 3 in [[https://www.dea.gov.in/sites/default/files/Report%20of%20the%20Task%20Force%20National%20Infrastructure%20Pipeline%20(NIP)%20-%20volume-i_1.pdf][DEA report]]. This is 39% of the planned capital expenditure, because NIP's
+investment is shared between the centre (39%), state (40%) and private sector (21%).
 [fn:5] "Budget estimates of 2021-22 as compared to actuals for 2019-20" section in [[https://prsindia.org/budgets/parliament/union-budget-2021-22-analysis][PRS India's
 Analysis of Union Budget 2021-22]]. This document was tabled on February 1, 2022.
 [fn:6] Figure 5 in the [[https://www.niti.gov.in/sites/default/files/2021-08/Vol_2_NATIONAL_MONETISATION_PIPELINE_23_Aug_2021.pdf][NMP policy document]].
