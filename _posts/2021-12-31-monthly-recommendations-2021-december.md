@@ -7,13 +7,19 @@ categories: monthly series reading
 
 There is no specific theme for this month's recommendation list. It is an assortment of the articles
 I read over the past year which had one thing in common: I wanted more people to read them and
-decide what they thought about the underlying institutions that they talked about.
+decide what they thought about the underlying institutions and people that these articles
+described. So, we have two articles about the tennis world: one about an athlete within the world
+and another about the incentive structure of the sport; one article about a non-contrarian CEO with
+some interesting ideas about running companies that he does not divulge, and another one about a
+politician with new realizations that helped him confirm 3 nominees to the US Supreme Court even
+though the confirmation of a single Supreme Court nominee was hailed as a big achievement just a few
+years ago on [the TV Show, West Wing](https://youtu.be/m-qUfg6TjG8).
 
 <!--more-->
 
 1.  **Naomi Osaka and tennis journalism’s ugly history of demeaning its players (Abad-Santos)**
 
-    [Vox](https://www.vox.com/22534957/naomi-osaka-french-open-wimbledon) (archived). 17 June, 2021.
+    [Vox](https://www.vox.com/22534957/naomi-osaka-french-open-wimbledon) ([archived](http://archive.today/2021.12.31-150413/https://www.vox.com/22534957/naomi-osaka-french-open-wimbledon)). 17 June, 2021.
 
      Naomi Osaka decided to take a break from tennis after she was fined for refusing to appear at
     post-match press conferences at the French Open. The moment she announced this was [included](https://youtu.be/EqboAI-Vk-U?t=31) in
@@ -37,7 +43,7 @@ decide what they thought about the underlying institutions that they talked abou
 
 2.  **A Few Tennis Pros Make a Fortune. Most Barely Scrape By. (Steinberger)**
 
-    [New York Times](https://www.nytimes.com/2021/06/29/magazine/tennis-players-association.html) (archived). 29 June, 2021.
+    [New York Times](https://www.nytimes.com/2021/06/29/magazine/tennis-players-association.html) ([archived](http://archive.today/2021.07.05-082124/https://www.nytimes.com/2021/06/29/magazine/tennis-players-association.html)). 29 June, 2021.
 
      The incentive structure inside the professional tennis world is messed up. There are multiple
     tiers of competitions in which professionals early in their career must compete and win to get
@@ -52,7 +58,7 @@ decide what they thought about the underlying institutions that they talked abou
 
 3.  **These Chinese Millenials Are 'Chilling,' and Beijing Isn't Happy (Chen)**
 
-    [New York Times](https://www.nytimes.com/2021/07/03/world/asia/china-slackers-tangping.html) (archived). 3 July, 2021.
+    [New York Times](https://www.nytimes.com/2021/07/03/world/asia/china-slackers-tangping.html) ([archived](http://archive.today/2021.07.10-061529/https://www.nytimes.com/2021/07/03/world/asia/china-slackers-tangping.html)). 3 July, 2021.
 
      Opting out of the rat race is not _just_ a personal choice in China. It is an interesting
     problem for a government to solve. Governments have been working to increase the workforce
@@ -68,7 +74,7 @@ decide what they thought about the underlying institutions that they talked abou
 
 4.  **Does Palantir See Too Much? (Steinberger)**
 
-    [New York Times](https://www.nytimes.com/interactive/2020/10/21/magazine/palantir-alex-karp.html) (archived). 21 Oct, 2020.
+    [New York Times](https://www.nytimes.com/interactive/2020/10/21/magazine/palantir-alex-karp.html) ([archived](http://archive.today/2020.10.30-150748/https://www.nytimes.com/interactive/2020/10/21/magazine/palantir-alex-karp.html)). 21 Oct, 2020.
 
      The present is the time of the contrarian CEO. Just look at Elon Musk and his cavalier usage of
     his Twitter account to [poke fun at regulators](https://www.bloomberg.com/news/articles/2021-12-13/tesla-ceo-elon-musk-can-t-stop-taunting-the-sec) despite being burned before. This article is a
@@ -86,7 +92,7 @@ decide what they thought about the underlying institutions that they talked abou
 
 5.  **Enabler-in-Chief (Mayer)**
 
-    [New Yorker](https://www.newyorker.com/magazine/2020/04/20/how-mitch-mcconnell-became-trumps-enabler-in-chief) (archived). 20 April, 2020.
+    [New Yorker](https://www.newyorker.com/magazine/2020/04/20/how-mitch-mcconnell-became-trumps-enabler-in-chief) ([archived](http://archive.today/2021.01.03-174602/https://www.newyorker.com/magazine/2020/04/20/how-mitch-mcconnell-became-trumps-enabler-in-chief)). 20 April, 2020.
 
      The American political system is ridden with veto points which can be exercised by [a single
     person](https://www.cnn.com/2021/12/19/politics/joe-manchin-build-back-better/index.html). This also means that a single person who is able to keep their party's policymakers
