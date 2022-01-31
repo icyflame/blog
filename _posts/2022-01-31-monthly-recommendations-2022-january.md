@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Monthly Recommendations (December 2021)
+title: Monthly Recommendations (January 2022)
 categories: monthly series reading
 ---
 
