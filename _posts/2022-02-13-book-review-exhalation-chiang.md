@@ -1,0 +1,237 @@
+---
+layout: post
+comments: true
+title: Notes and Review - Exhalation (Ted Chiang)
+categories: book-review artificial-intelligence capitalism sci-fi
+---
+
+Ted Chiang is a path breaking philosopher and fiction writer. I started saying that after reading
+his short story "Story of Your Life." His second book, "Exhalation", is a collection of short
+stories from 2019. It covers an even wider range of topics than his first collection. Chiang has the
+ability to zoom out of the present moment and write about human nature without providing solutions
+or trying to pose arguments about complex questions; instead, his writing makes the reader think
+about what they would do in that situation, and that is the primary method he uses to engage the
+reader in a discussion. This ability to inhabit someone else' life for a period of time is the
+reason I read fiction, and the characters in this collection are put in situations where you **want**
+to be riddled by the dilemmas and struggles that they are facing. The striking aspect of Chiang's
+short stories is the amount of time that one remembers their premise and key questions for. The key
+questions in a handful of his short stories have remained with me despite having last read them 3
+years ago.
+
+<!--more-->
+
+The collection has 9 short stories of varying length. The shortest story is only 4 pages, while the
+longest one is nearly 100 pages. To review this collection without giving away spoilers, I will
+focus on the recurring themes and the various ways in which Chiang approaches them.
+
+
+# Capitalism
+
+In "The Lifecycle of Software Objects," one of the problems faced by the platform that hosts virtual
+pets is that people don't spend enough money on it once the initial craze fades. This tanks
+profits. But the platform still has a small group of "dedicated users" who are always around and
+very attached to their pets. (Remember IRC?)
+
+Any "rational organization" would simply stop the platform once it stops making a profit. Or they
+would find some way to make-up for the deficit: Tiered services, advertisements. However, who wants
+virtual pets that show ads and recommend products to their owners every 3 minutes?
+
+This is the problem that is being faced by many organizations today. Platforms like Twitter,
+Instagram, Facebook, Goodreads offer free services, which are very useful. But they do not make
+enough of a profit to justify their own existence. And so, they have been infused with elements that
+no one likes and that infusion significantly degrades the experience of everyone who uses the
+platforms. This drives away even those users who think the platform is useful; worsening the doom
+loop. The network effect has been a key way to keep users using the product despite a deterioration
+in the UX through advertisements.
+
+Towards the end of the story, the virtual pets have to engage in questionable activities to sustain
+themselves. _This_ is what platforms are already doing and will continue to have to do in the
+long-term, if they are survive.
+
+
+# Time
+
+As in his previous collection, Chiang is obsessed with our experience of time and the possibilities
+that prescience or time travel would introduce[^1]. Chiang's writing has been a huge influence in
+my thinking about anxiety, excitement, and uncertainty, emotions which are byproducts of not being
+able to time travel and not being prescient.
+
+In the story "The Merchant and the Alchemist's Gate," the author poses a question that has been
+stuck in my head since I read it: \*If you could travel in time, would you travel to the past or go
+into the future? And would you travel within your lifetime or would you go outside of it to find out
+how things turned out for everyone?\*
+
+Needless to say, there is no "right" answer here. Chiang doesn't expect us or his characters to have
+a "right" answer. They think about this question and arrive at different answers depending on their
+position in life. Personally, I have found myself primarily wanting to travel to the
+future. Sometimes it is to the very end of my own life, to find out what happens and feel less
+anxious about the present. On other occasions, I don't want to travel into the future at all,
+because I am eagerly looking forward to those experiences[^2].
+
+As a bonus, he provides an analogy for loans and credit: You are stealing from your future
+self.[^3]
+
+
+# Freewill
+
+In the story "What's Expected Of Us," the author deals with his obsession over freewill. He does so
+more directly than he did in his previous collection. The story is a warning and it is incredibly
+brief: only 4 pages. The brevity of the warning is disorienting and scary because the thing that it
+warns of has consequences of colossal proportions.
+
+In Chiang's view, the age-old philosophical question about whether we have freewill or not is not
+worth thinking about because our belief that we have freewill is essential to our continued
+survival[^4]. It **is** our sole motivation. If there is no freewill, the story posits that a third
+of everyone will lose the motivation to do anything and consequently, stop feeding
+themselves. **That** is how key our conception of having freewill is, for our continued survival.
+
+Through the certainty that is projected in this story, I felt that Chiang had finally found a
+resolution for his freewill obsession. I guess we will find out if that is the case when he comes
+out with his next piece of work.
+
+
+# Conditioning
+
+"What's Expected Of Us" touches on the effects of losing a conditioning element that we have become
+used to. Namely, our belief that we have freewill.
+
+"Dacey's Patent Automatic Nanny" is an amusing story about a little boy who responds only to
+machines, after being taken care of by a mechanical nanny for a long time.
+
+In the story "Omphalos," Chiang reassures us that thinking about philosophical question such as "Who
+created us?", "What is the meaning of life?" is unnecessary because we _can_ be fulfilled by our own
+lives and we don't need to look outside ourselves. However, we _are_ conditioned to look to the
+majority for approval and breaking out of this shell and looking for fulfillment independently of
+external input is a method to answer (or, realize that we don't need to answer) these philosophical
+questions.
+
+The effect of being conditioned or losing some conditioning is different in each of the three cases,
+in turn devastating, amusing, and enriching![^5]
+
+
+# Memory
+
+The [TV show Black Mirror](https://youtu.be/3bFCqK81s7Y) introduced us[^6] to the disadvantages of having a documented record of
+_everything_ that we have ever done. What if we could record the accurate truth in one part of the
+world and continue as usual in another part, and then, compare the experiences of each community?
+Chiang tries to answer this through the story "The Truth of Fact, The Truth of Feeling."  In it, a
+tool that can maintain a "life log" is put on a parallel track with the introduction of writing into
+an oral culture. (What does not exist now but will become available in the future is put on a
+parallel track with the anthropological knowledge that human beings migrated from being a
+predominantly oral culture, to one which believed in recording knowledge on parchment.)
+
+The idea is poignant: Writing is a reliable way to document events, whereas stories are
+_unreliable_. Both of them have a purpose. Unreliable memory is not inferior to reliable memory. In
+fact, unreliable memory is good as it allows us to filter out the things that we don't want to
+remember. It allows us to tell our story with key milestones that might be misremembered without any
+malice, because these versions fit better into the larger arc of our life. (A mishap in our past
+might have put us on the path to a future success. Once we have experienced both the mishap and the
+success, it is comforting to think of the mishap as a force which was driving us towards the success
+we did achieve, rather than as an obstacle which prevented us from achieving something else.)
+
+If every experience you ever have is perfectly documented, it becomes impossible to engage in this
+self-deception. Knowing what happened accurately does not tell you what change it produced in
+you. It muddles the process of thinking of yourself as someone who has changed, as someone who has
+overcome hurdles.
+
+This story made me think about my journaling habit. Was it healthy to have a journal which
+documented contemporaneously the problems that I was facing? I concluded that since I give myself
+the physical space to write **only** 3-4 sentences each day and ensure that the journal is not
+searchable, my unreliable memory is not hindered by this reliable recounting of what happened.
+
+
+# Truth
+
+In the story "The Truth of Fact, The Truth of Feeling," Chiang theorizes that there are two types of
+truths: **What is right and what is precise.** What is right is based on principles, it is not a lie
+if the right thing doesn't match what happened in reality, it is simply the way that you experience
+something yourself. Whereas what is precise is factual, it describes what really happened and must
+be attested to by witnesses (other than the principals in an event). In cases where the documented
+record is incomplete, it will be impossible to find out the precise truth. But this should not
+hamper us from learning from the incident because we _will_ still know what was right.
+
+
+# Parenting
+
+In this collection, the story that I liked the most was "The Lifecycle of Software Objects." It is a
+story about virtual pets that fleshes out the far far future.[^7] If you are attached to a virtual
+pet (i.e. a software object) and then that virtual pet comes to inhabit a humanoid robot, what are
+your responsibilities towards it? For example, _Can_ you pause the program for a period of time, in
+an effort to _protect_ your pet from something bad? Or is this unthinkable?
+
+Whatever Chiang says in this story is applicable to parenting. The protagonist struggles with the
+same kind of dilemma that parents probably struggle with: **How do you raise children so that they
+can be a good person without telling them _exactly_ what to do at each point in life?**
+
+Surprisingly, in this story, I saw a side of Chiang's writing that I have not experienced before. He
+writes touching dialogue; reminiscent of the things children ask their parents when they are very
+young.
+
+> Later on, after she's brought the mascots back from the playground to Blue Gamma's island, Jax tells
+> her about his conversation with Tibo. "Tell him about fun we do time he gone. Tell him about field
+> trip zoo fun fun." "Was he sad he missed it?" "No he instead argue. He said field trip was mall not
+> zoo. But that trip last month." "That's because Tibo was suspended the whole time he's been gone,"
+> Ana explains, "so he thinks last month's trip was yesterday." "I say that," says Jax, surprising her
+> with his understanding, "but he not believe. He argue until Marco and Lolly too tell him. Then he
+> sad."
+>
+> &#x2026;
+>
+> "No," says Jax. He stops and walks back to her avatar. "Don't want play." "What? Sure you do." "No
+> playing. Want job." Ana laughs. "What? Why do you want to get a job?" "Get money." She realizes that
+> Jax isn't happy when he says this; his mood is glum. More seriously, she asks him, "What do you need
+> money for?" "Don't need. Give you." "Why do you want to give me money?" "You need," he says,
+> matter-of-factly. "Did I say I need money? When?" "Last week ask why you play with other digients
+> instead me. You said people pay you play with them. If have money, can pay you. Then you play with
+> me more." "Oh, Jax." She's momentarily at a loss for words. "That's very sweet of you."
+>
+> &#x2026;
+>
+> None of the digients was raised on bedtime stories, so text doesn't fascinate them the way it does
+> human children, but their general curiosity&#x2013;along with the praise of their owners&#x2013;motivates them to
+> explore the uses that text can be put to.
+>
+> &#x2013; Ted Chiang in "The Lifecycle of Software Objects"
+
+The broken English of the virtual pets here is very similar to the way children talk when they are
+learning a language. It is the most endearing section of the story.
+
+He even sneaks in a reference to the [Alignment Problem](https://fourweekmba.com/alignment-problem/) faced by people who are building artificial
+intelligence systems:
+
+> You won't believe what my Natasha did today! We were at the playground, and another digient hurt
+> himself when he fell and was crying. Natasha gave him a hug to make him feel better, and I praised
+> her to high heaven. Next thing I know, she pushes over another digient to make him cry, hugs him,
+> and looks to me for praise!
+>
+> &#x2013; Ted Chiang in "The Lifecycle of Software Objects"
+
+
+# Conclusion
+
+This short story collection is well worth the few hours that you would spend reading it, and the
+several hours after that, which you would spend thinking about the themes and subjects that Chiang
+broaches.[^8]
+
+---
+
+This is the list of short stories in Exhalation:
+
+1.  The Merchant and the Alchemist's Gate
+2.  Exhalation
+3.  What's Expected of Us
+4.  The Lifecycle of Software Objects
+5.  Dacey's Patent Automatic Nanny
+6.  The Truth of Fact, the Truth of Feeling
+7.  The Great Silence
+8.  Omphalos
+9.  Anxiety Is the Dizziness of Freedom
+
+[^1]: In fact, the first story is about this topic and it got me very excited about the rest of the collection.
+[^2]: _This_ is the kind of kooky stuff you will start thinking about once you read this collection too! "Reader, beware!" (For me, "Reader, rejoice!"
+[^3]: Although not completely fleshed out, I think the thinking goes something like this: If you could travel in time, then you would travel into the future, borrow money from your future self, come back to the present, invest in a "sure thing," and earn the money that you are going to lend to your past self.
+[^4]: Chiang explores similar themes in "Story of Your Life." These themes were muddled in the movie adaptation, Arrival (2016).
+[^5]: I realized that Chiang gave the collection a symbolic happy ending even in the order in which the effects of conditioning are presented.
+[^6]: Black Mirror episode "The Entire History of You"
+[^7]: I agonized over whether my assertion here that realistic virtual pets, as described in this short story, are not going to come about in the "near future" was a wise one. Being pessimistic about the adoption of new technology and tools though, I am willing to make this assertion. (Despite having the ability to share high quality video feeds when talking with someone, we don't use it often or for long periods of time due to the unsolved fatigue of video calls. TODO Link post here.)
+[^8]: If you like Chiang's writing, I would recommend [this conversation](https://www.nytimes.com/2021/03/30/opinion/ezra-klein-podcast-ted-chiang.html) in which he talks about climate change, fears about AI, and the overwhelming power of capitalism.
