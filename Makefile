@@ -10,7 +10,7 @@ help: ## Show this help
 
 .PHONY: serve-dev
 serve-dev: ## Start a server with development configuration
-	bundle exec jekyll serve --watch --future --config _config.yml,_config_dev.yml 2>&1 > /dev/null &
+	bundle exec jekyll serve --watch --future --config _config.yml,_config_ymd.yml,_config_dev.yml 2>&1 > /dev/null &
 
 .PHONY: stop-serve-dev
 stop-serve-dev: ## Stop the development server
