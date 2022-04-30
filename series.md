@@ -51,6 +51,22 @@ series:
       data" and "foreign exchange reserves." I had very little understanding of these things and so, I
       went down a rabbithole trying to understand the function of Central Banks, the tools that are at
       their disposal and how they deploy them at the right time.
+
+  absurd-customer-service-problem:
+    name: "Absurd Customer Service: Experiences"
+    description: |
+      Over a few months in the second half of 2021, I faced some strange customer service
+      hurdles. They came all at once and took me by surprise. I _knew_ that customer service was
+      never supposed to be a fun experience; and I was used to some of the normal struggles. But it
+      had been a long time since I had had to experience it at close quarters, and the new customer
+      service landscape of automated voice guidance, chatbots, unreplied emails, and non-existent
+      customer service phone lines left me bewildered. If you have a bad experience with a
+      representative of a modern business, the best case is now that the company will hear your
+      story completely and respond to it. What their response is has taken a backseat, as customers
+      crave for the empathetic act of listening and catharsis through it. This is a 2-part series. In
+      the 1st part, I recount 3 experiences of absurdity with different companies and different
+      industries. In the 2nd part, I list some of the suggestions which I think will make customer
+      service measurably better.
 ---
 
 {% assign posts_in_series = site.posts | where_exp: "p", "p.series_id != nil" %}

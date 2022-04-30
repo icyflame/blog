@@ -6,6 +6,7 @@ layout: post
 comments: true
 title: '"Absurd Customer Service" - Part 2, Suggestions'
 categories: experiences absurdity customer-service
+series_id: absurd-customer-service-problem
 ---
 #+end_export
 

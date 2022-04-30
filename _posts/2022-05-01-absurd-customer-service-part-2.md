@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: '"Absurd Customer Service" - Part 2, Suggestions'
 categories: experiences absurdity customer-service
+series_id: absurd-customer-service-problem
 ---
 
 I am not one to balk when it comes to writing rants and leaving it at that. However, when publishing

@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: '"Absurd Customer Service" - Part 1, The Problem'
 categories: experiences absurdity customer-service
+series_id: absurd-customer-service-problem
 ---
 
 Over a series of several occasions last year, I experienced the absurdity rife in modern customer
