@@ -46,8 +46,8 @@ post into one of three buckets. (I know this is a simplification.)
     different places and subjectivity precludes us from making any judgment about what content falls
     in this bucket. But the poster _must_ feel this accomplishment and should classify their post
     into this bucket. I posted on Instagram after graduating from university. It was 5 years of
-    struggling through a program that I did not particular like and a lot happened during that time,
-    and I wanted to share the accomplishment which I felt.
+    struggling through a program that I did not particularly like and a lot happened during that
+    time, and I wanted to share the accomplishment which I felt.
 3.  **Bragging:** Something has happened in your life and you want to brag about it. Settle down,
     this is not "Shots fired!" Showing off is just a part of how we operate. It's not some anomaly
     which needs to be tamped down on. I disagree that it is a worthwhile pursuit. But that's my
