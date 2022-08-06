@@ -1,0 +1,329 @@
+---
+layout: post
+comments: true
+title: The Keyboard Logs
+categories: computer tools hardware
+---
+
+I have been experimenting with keyboards for the past several years and in February this year, I
+switched to a keyboard which I hope will be the last keyboard I _ever_ buy. The whole point of
+switching keyboards all this while was to buy the right version of this keyboard, [the Ergodox EZ](https://ergodox-ez.com/). It
+is a split keyboard with an ortholinear layout. It is an expensive keyboard and can be customized to
+an (almost) limitless extent. It has several extra keys which can be programmed to do whatever you
+want them to such as function keys or macros. This post is a log of the keyboards I bought (and sold
+off) during this process.
+
+<!--more-->
+
+
+# Basics
+
+There are some common terms which are used **constantly** in the discussion of keyboards, and
+mechanical keyboards in particular. I don't want to re-explain these topics here.  I will link to
+short explainers about each term:
+
+1.  [Mechanical vs membrane keyboard: what's the difference and which is better? - GamesRadar+](https://www.gamesradar.com/mechanical-vs-membrane-keyboard/)
+2.  [Switch Types - Mechanical Keyboard](https://www.mechanical-keyboard.org/switch-types/)
+3.  [Choosing your key switches? Start here. - ErgoDox EZ](https://ergodox-ez.com/pages/keyswitches)
+4.  [Split Keyboards - A Complete Guide](https://keyboardsexpert.com/split-keyboards-guide/)
+5.  [Are Ortholinear (grid/matrix) Keyboards Better Than Staggered? - YouTube](https://www.youtube.com/watch?v=Ho_CFfdsmc8)
+
+
+# Goal
+
+![img](/public/img/keyboard-logs/ergodox-ez.jpg)
+
+I wanted to pick the right type of key switches for this keyboard. This keyboard can be customized
+to do a lot of things, but the key switches inside it can not be changed inexpensively. So, I wanted
+to get this key switch choice right.
+
+The keyboard uses the "split" form factor with an ortholinear layout. I wanted to find out how much
+the split layout improved my posture and comfort.
+
+Finally, the ortholinear layout itself. I wanted to understand whether having the keys directly
+above and below each other, instead of the typical staggered layout is helpful at all. Switching
+from the staggered layout to the ortholinear layout is a large investment as it requires one to
+unlearn years of muscle memory using standard staggered layout keyboards.
+
+With these goals in mind, I started searching for similar keyboards which were cheaper and could
+give me a feel for what using the Ergodox would really be like. I found out about the Ergodox EZ
+some time in 2020 when everyone started working from home and started talking _more_ about their
+work setup. My keyboard journey starts well before that.
+
+
+# First Keyboard (2014-2016)
+
+![img](/public/img/keyboard-logs/logitech-mk-270r.png)
+
+_August 14, 2014: [Logitech MK270r Wireless Combo Keyboard (Membrane)](https://www.logitech.com/en-ph/products/combos/mk270r-wireless-keyboard-mouse.920-006314.html)_[^1]
+
+Looking around for a keyboard in my second year of college, I saw that the Logitech keyboard combo
+was widely used by my peers. (I had spent the first year of college using my laptop's in-built
+keyboard. I had stayed away from my laptop for the most part of my freshman year anyway, so the
+keyboard did not matter as much.) This combo connected to the computer using a LogiTech USB dongle.
+I saw it around almost constantly, and I felt better investing in a brand which I knew about
+already.
+
+This was a membrane keyboard. This means that there is a single membrane between the switches. When
+a key is pressed, it touches an electrical contact on the membrane, which in turn touches the
+underlying circuit board and transmits the required signal. All the keys are working on the same
+membrane and bending it when they are pressed. This means that the actuation force (the force
+required to send the signal) is variable. It is also higher than mechanical keyboards (The
+membrane's resistance is quite high.) The force required to actuate each key is variable and depends
+on the quality of membrane. But the actuation force varies between [65 and 75 grams](https://deskthority.net/wiki/Membrane_keyboard#Pressure_actuation), with cheaper
+keyboards requiring more force to actuate the keys.
+
+The actuation force is the force that you must apply on each key when you are pressing it as you
+type. If you are typing a typical e-mail or a Slack message, it might be about a 100 words, which
+might be about 400-500 characters. This would mean that you have to apply about 65 grams of force
+500 times, or 32.5 kg of force for a single message. This number seems quite high. When I was not
+typing too much with my membrane keyboard, I did not have any pain in my wrist or my fingers. My
+setup in college was highly un-ergonomic and so I could not really blame my keyboard for any other
+pain that I did have. (I did not use an office chair and I was mostly sitting without any back
+rest.)
+
+Nevertheless, towards the beginning of 2016, as I finished my third-year in college and entered my
+fourth year, I started feeling the stress in my fingers. In my third-year, I prepared for interviews
+for landing internships and worked at my first remote internship. During this time, I noticed that
+the membrane keyboard was **really** taking a toll on my hand. Every time I would stop typing or take
+a break, I could clearly see that my hands were fatigued and I had to work through the pain for a
+period of time. This intense period of typing during the first half of 2016 convinced me that I
+needed a better setup and I started searching for this setup.
+
+
+# Getting On The Mechanical Keyboard Train (2016-2018)
+
+![img](/public/img/keyboard-logs/tvs-e-keyboard.png)
+
+_July 14, 2016: [TVS-e Bharat Gold PS2 Wired Keyboard (Mechanical) (Cherry MX Blue)](https://www.tvs-e.in/keyboards-and-mice/gold-bharat/)_
+
+Mechanical keyboards seemed to be the universal answer to pain in the fingers and wrist induced by
+typing. As I started looking for the models that were available in India, I started realizing that
+all of them were expensive. In fact, I could not find anything which was cheaper than INR 10,000
+during the time. I was in college and I did not want to spend so much money on a keyboard which may
+or may not solve my pain problems. So, I kept looking. About a month after starting my search, I ran
+into this TVS Electronics keyboard on Amazon. It seemed to be too cheap to be real. At INR 2000, it
+was far cheaper than anything else I had seen on Amazon or on YouTube. (The Indian tech YouTuber
+scene in 2016 was not as good as it is now, so I was able to find reviews and comparison videos only
+from American YouTubers, where mechanical keyboards had been popular for a few years.)
+
+The brand TVS is well-known inside India for making automobiles, but I have never heard about TVS
+manufacturing any computer peripherals. So, I was suspicious of this product. There was a [website](https://www.tvs-e.in/keyboards-and-mice/gold-bharat/)
+for the product which described it well. The version that was available on Amazon used the [PS/2
+port](https://en.wikipedia.org/wiki/PS/2_port), a port designed 30 years ago, in 1987! Keyboards had moved on to USB a few years ago and to
+Bluetooth in the couple years before I purchased this keyboard. So, the technology was quite old. I
+could not find many reviews on the Internet for this product.
+
+Nevertheless, it seemed to be my only bet and after confirming that I would be able to return the
+product, I ordered it off of Amazon. After using it for a couple days, I was convinced that the
+product was legit and actually did use **real** Cherry MX Blue keys. In fact, the keyboard was
+extremely good and I started using it exclusively immediately after purchasing it. I used it
+throughout my pre-final and final year when I had to type **a lot.** I typed both my Bachelors and
+Masters thesis on this keyboard. I also used it for all of my college placement preparation: writing
+CVs, practicing competitive coding questions on CodeChef, notes about my placement experience, a
+large part of this block.
+
+For nearly two years until my graduation in May 2018, I used this keyboard everyday. I was living
+alone in a hostel room for the whole of this period, so the sound that the Cherry MX Blue switches
+made was not a problem. I did not move around during this period either (Indeed, there was very
+little travel.) So, the weight of the keyboard was not a problem either. This keyboard remains one
+of my favorite keyboards to use. The product I bought in 2016 still remains in heavy use in my
+father's home office.
+
+
+# Moving to Japan (2018-2020)
+
+![img](/public/img/keyboard-logs/gamdias-hermes.jpg)
+
+_October 24, 2018: [Gamdias Hermes E2 7 color (Mechanical) (Cherry MX Blue)](https://www.amazon.com/GAMDIAS-Hermes-E2-Mechanical-Anti-ghosting/dp/B074V3XZ1Z)_
+
+As good as the TVS-e keyboard is, the one thing it is **not** is portable. Owing to the danger of
+bringing it all the way from India to Japan and damaging it **or** not finding a use for it, I left it
+at my parents' house before moving to Japan. I intended to buy a Cherry MX Blue keyboard after
+arriving in Japan.
+
+On my first payday in Japan, I went to an electronics store and bought this keyboard. It was a
+Cherry MX Blue keyboard, which I managed to figure out using the translator application on my phone
+and repeated confirmation with the store clerk. My only real consideration when buying the keyboard
+was budget. I did not know the Gamdias brand very well, and I had not read many reviews about this
+keyboard either. I decided in the store after comparing some keyboards and their prices. The other
+keyboards were mostly targeted at the gaming audience and seemed to have too many backlights, that
+could not be disabled. This keyboard also had an array of backlights, but they could be turned off
+easily and this was the reason I chose it over the other options on display.
+
+One thing about this keyboard was that it had the JIS layout (and not the typical US layout). The
+JIS layout is mostly similar to the US layout but there are some extra keys which are used only when
+typing Japanese. Through some software tweaks on Linux and Mac OS, I was able to use this keyboard
+effectively at home. Throughout 2018 and 2019, I was going to my office daily for work and I was
+unable to use this keyboard there because it was too loud. This keyboard was pretty good for typing
+at home, where I did a minority of my typing. Using this keyboard, for the first time, I realized
+that all keyboards which use the Cherry MX keys are not created equal. Indeed, a mechanical keyboard
+is made up of several parts and the keyswitch is a major one, but not the only factor to consider
+when assessing the quality of a completed product.
+
+I used a (terrible) Apple keyboard at work, where I was typing a lot. That keyboard definitely gave
+me some finger pain and I wanted to move away from that at work.
+
+I sold this keyboard on Mercari[^2] 3 years after I bought it for little lower than the price at
+which I had bought it. (I am an employee at Mercari. Future references to Mercari will include a
+footnote stating this.)
+
+
+# Experimenting With The Split Form Factor (2019-2020)
+
+![img](/public/img/keyboard-logs/kinesis-freestyle-2.jpg)
+
+_October 26, 2019: [Kinesis Freestyle 2 for Mac (Membrane)](https://kinesis-ergo.com/shop/freestyle2-mac/)_
+
+I wanted to experiment with the split form factor. The idea with the split form factor is that the
+keyboard does not have to be a single unit. It can be split into two pieces, which can be placed at
+distance. This ensures that the hands don't have to be squished close together into the typist's
+body.
+
+I was constrained to using a membrane keyboard because I wanted to use the split form factor at
+work, where I was doing a majority of my typing. (I had not started taking Smart Notes (TODO Link)
+yet in 2019.) There weren't many membrane keyboards which had the split form factor. In fact, there
+were only a couple that I can remember. Out of these, the Kinesis had good reviews. So, I bought a
+second-hand one off of Mercari[^2], a marketplace app for second-hand goods. The price was good
+and there was little risk in this purchase because if I did not like the keyboard I could simply
+sell off the keyboard on Mercari once again, at a slightly lower price.
+
+I used this keyboard at home for a couple weeks to become familiar with the layout. Getting used to
+the split form factor was hard at first. The temptation to reach for `H` or `G` on the wrong half
+was strong. (I do not do "perfect" touch typing, where typists use only the assigned fingers for
+each key. I would often "cheat" by using the left index finger for H or the right index finger for
+G. This kind of cheating is easily forgiven on a non-split form factor because the keys are close to
+each other; but it is unforgivable on a split keyboard, as it slows you down.)
+
+In a month or so of usage, I was able to type on this keyboard at the same speed as I used to type
+on previous form factors. However, there was a major flaw with the design of this keyboard: Although
+it was using the split form factor, it did not change anything from the US keyboard layout. So, all
+the modifier keys were on the extreme left of the keyboard (such as `Tab`, often used in `Ctrl+Tab`
+and `Alt+Tab` and `Esc`, mapped to `Caps`). The finger extension for my left pinky finger to reach
+these keys was very large and strained my fingers. I had to take my left hand off the home-row when
+I needed to use a modifier key. I had to take my right hand off when I wanted to use the mouse. This
+flaw made the experience of using this keyboard beyond 2 months quite painful. I went back and forth
+with this keyboard between my office and home for a few weeks each time; hoping against hope that I
+would _get used_ to the layout and perhaps even get over the pain. Neither of this happened, and
+typing on it remained a painful experience.
+
+I ended up selling this keyboard on Mercari[^2]. Things changed quite a bit in terms of my work
+environment in the beginning of 2020.
+
+
+# Trying The Cherry MX Brown Switches (2020-2022)
+
+![img](/public/img/keyboard-logs/filco-minila-air.jpg)
+
+_April 2, 2020: [Filco Minila Air (Mechanical) (Cherry MX Brown)](https://www.amazon.sg/FILCO-Majestouch-Minila-Cherry-Keyboard/dp/B00F3V81VG)_
+
+In the second week of February 2020, everyone in my office was sent home to continue working from
+home full time. I was able to use my Cherry MX Blue switches constantly now, and this was quite a
+good experience. But the loudness of the Cherry MX Blue switches created problems almost
+immediately, **even** though there was no on else in my home.
+
+Namely, I was unable to type during meetings. As it had become commonplace to have a Google Doc
+opened and present it during a meeting, where everyone could take notes, this meant that I would not
+be able to type unless I muted my own mic. So, I would not be able to type and speak at the same
+time. This was a common pattern of my work back then, especially when I was brainstorming an idea or
+a calculation with a coworker. I realized that the Cherry MX Blue switches were so loud that I could
+not use them for work.
+
+Google Meet's technology was still being improved and it did not have the "background noise
+cancellation" feature that it does in 2022. Even still, it seems unlikely that I would have been
+able to get away with typing on a Cherry MX Blue switch during a meeting. Searching for a silent
+version of the mechanical keyboard that I was using, I found the Red and Brown variants. I had heard
+a about the Cherry MX Red and the Cherry MX Brown switches.
+
+MX Red switches are linear and do not have any tactile feedback. This was a no-go for me; half the
+reason I was using a mechanical keyboard in the first place was the tactile feedback that I was
+getting when I pressed a key. This tactile feedback let me know that I did not need to press any
+longer. It had become a subconscious part of my typing experience and I did not think about it at
+all anymore. Typing without the tactile feedback, even on a linear switch, would be hard, I
+felt. The reason you need to apply a smaller actuation force on a mechanical keyboard is because you
+get feedback when the key has been typed. If you take away this feedback, you are left guessing or
+waiting for the screen to update you about whether you typed a key. This guessing process always
+ends with typing more forcefully and getting it right all the time, rather than typing less
+forcefully and not actuating the key sometimes.
+
+Looking around for a Cherry MX Brown switch keyboard, I saw several large keyboards. The Filco
+Minila Air keyboard is one that I saw at an electronics store and its small design intrigued me. Did
+I **really** need the number pad? I used to use the number pad back then, but it involved taking my
+hands away from the home row. I wanted to be a **proper** typist, if at all possible. Getting rid of
+the number pad seemed like a step in the right direction. The Minila Air had received good reviews
+and seemed like a solid keyboard from a well-known manufacturer. So, I bought it and started using
+it daily for work from home.
+
+It solved my "can not type during meetings" problem. The MX Brown switches on the Filco were silent
+enough that typing lightly during a meeting would go unnoticed. Even though it took me a few weeks
+of practice before I could really type lightly enough reliably, I could see that the MX Browns were
+significantly more silent compared to the Clicky MX Blues, which are **loud enough to rouse people in
+deep sleep with the characteristically sharp click sound.**
+
+The MX Brown switches on the Filco also **felt** better than the MX Blue switches on the cheaper
+Gamdias that I was using before. Again, I felt that the switches were not the sole component that
+mattered; the build of the keyboard and the manufacturer's experience also mattered a considerable
+amount.
+
+An added advantage with the Filco Minila Air is its **portability.** When I went back to India to work
+for 3 months from there, I took it with me from Japan to India.  I also brought it back to Japan. I
+brought the keyboard in my cabin baggage. I was afraid it would be broken in transit if I put it in
+my checked-in baggage. This meant that I had to unpack the keyboard and keep it alongside my 2
+laptops on 5 different occasions during the trip, 1 time in Japan and 4 times in India. The
+experience of doing this in India was **harrowing, to say the least.** (The severely limited supply of
+trays in airport security check queues is a genuine crisis!)
+
+After returning to Japan, I knew that I was ready for the final step in my keyboard journey: An
+ErgoDox EZ purchase with the Cherry MX Brown keys. Before going to that step though, I will digress
+slightly and explain my brief experience in the build-your-own keyboard world in Japan.
+
+
+# Sidetrack: Build-Your-Own Keyboard Misadventure (March-May 2021)
+
+![img](/public/img/keyboard-logs/soyuz.jpg)
+
+_March 20, 2021: [Custom keyboard number pad kit](https://shop.yushakobo.jp/collections/keyboard/products/soyuz)_
+
+The build-your-own keyboard world in Japan is extensive. I have a few coworkers who have "built"
+their own keyboard. The process involves buying a circuit board, a microcontroller, the key
+switches, and the key caps which will be fitted on top of the switches. Then, soldering all the
+components together yourself.
+
+I bought a small keyboard kit which, when assembled, would be a 10-key number pad. I don't have any
+use for a number pad, but I wanted a kit on which I could test whether I would be able to put
+together a real keyboard.
+
+**This went _poorly._** I had greatly overestimated my soldering skills (I thought I was "OK," it
+turned out that I was actually "terrible.") And I had greatly underestimated the complexity of
+working with hardware. In particular, the point at which I realized that soldering was not my cup of
+tea was when I started soldering the microcontroller. The microcontroller has 12 pins and these are
+small and extremely close to one another. So, one has to solder everything perfectly and ensure that
+none of the soldered points are connected to each other, which would be a short circuit and would
+hamper the microcontroller's functioning significantly.
+
+After messing it up and trying to fix it, I decided to give up. I was left with the kit and some
+soldering equipment which I had no use for anymore. The only thing I did learn from this process was
+how keyboards look like under-the-keyswitches and the effort that goes into making a single keyboard
+when they are made manually.
+
+
+# Buying The Ergodox EZ (Jan 2022)
+
+_January 22, 2022: [Ergodox EZ (Mechanical) (Cherry MX Brown)](https://ergodox-ez.com/)_
+
+So, here we are. About 7 years after starting this journey, I have finally reached a keyboard that
+is sufficiently customizable and ergonomic for sustained daily use. I am continuing with the QWERTY
+layout, despite evidence that proves that this layout is not very good and involves too much
+finger travel. The keyboard version that I have bought does not have the names of keys printed
+anyway, so the switch of the keyboard layout to something modern such as Colemak DH _might_ be in
+the cards for me. However, I am not going to spend time on it now.
+
+I have spent a considerable amount of time getting my tooling to its current shape. There have been
+misadventures along the way. They did not cost me much money, but they did take up some valuable
+time that I could have saved.
+
+Nevertheless, I am glad to have started using mechanical keyboards and **I can wholeheartedly
+recommend the Ergodox EZ keyboard** to anyone who knows which switch they want to use.
+
+[^1]: All the dates in this post are accurate and from receipts of online stores. I went back into my email to dig these out and that was quite fun.
+[^2]: I am an employee at Mercari
