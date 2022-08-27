@@ -1,0 +1,144 @@
+---
+layout: post
+comments: true
+title: 10 Common Features of Communist Regimes
+categories: communism economics history
+---
+
+The primary source for this list is Dalrymple's account of his visits to 5 Communist countries as
+described in his book [The Wilder Shores of Marx (Dalrymple)](https://www.goodreads.com/book/show/18683439-the-wilder-shores-of-marx?from_search=true&from_srp=true&qid=xMyKQN1V4c&rank=1). Dalrymple visited these countries in
+the late 1980s, and several of these countries have since turned to democracy. The 2 other major
+sources that have influenced me would be [movies](https://youtu.be/BFwGqLa_oAo) about life in Eastern Europe during or right after
+the 2nd World War (such as Pianist (2002)) and [Orwell's dystopian novel 1984](https://www.goodreads.com/book/show/40961427-1984?from_search=true&from_srp=true&qid=4UzFdW1uGJ&rank=1). More recent sources
+include [the Vox episode about Cuba released in 2015](https://www.youtube.com/watch?v=n-mUZRP-fpo) and [contemporary travel vlogs from North Korea.](https://www.youtube.com/watch?v=HbuZlTBpC7I)
+For lists such as this one, it is hard to pin point where exactly the idea originated from. I would
+say that the list is an amalgamation of the information provided by the sources I have mentioned and
+the impression they had on me about the life of ordinary people in the remaining Communist countries
+of the world. Other media has also influenced me, notably [Casey Neistat's reflections about his trip
+to Cuba](https://youtu.be/-RobJFXP3ZM?list=PLTHOlLMWEwVy52FUngq91krMkQDQBagYw&t=293), [Conan's hilarious series of shows from Cuba](https://www.youtube.com/playlist?list=PLVL8S3lUHf0QDcdBy2Vjx706EemjnE5Yg) and the Korean drama [Crash Landing on You](https://www.netflix.com/Title/81159258), in
+which the protagonist is a North Korean army officer. (An upcoming review of [McGregor's The Party](https://www.goodreads.com/book/show/11835721-the-party),
+an account of the governing system in China, will clarify _why_ China did not conform to the typical
+Communist regime expectations either when Dalrymple visited the other states or today; its curious
+mix of capitalist economics with Communist ideology has borne the greatest success story in the past
+half century.)
+
+(I structured this as a list after reading [Dynomight's post supporting lists](https://dynomight.net/lists/) as a tool for effective
+communication.)
+
+<!--more-->
+
+1.  **Rationing of Food Items:** All communist countries are forced to ration food items. Why is this?
+    Dalrymple's dry humor gives us the answer when he is in Vietnam. "After 50 years, he [the leader]
+    realized that the peasant **must** be paid a fair market price for his harvest. Realizing something
+    that obvious late in life **is** original." The "means of production" is owned by the government in
+    communist states. This means that every farm becomes a part of the large government
+    farm. Everything that is grown in these farms is the government's property by default.[^1] The
+    harvest is then split among the people in the country. The key question in this setup of communes
+    is **what motivates the farmer to produce a good harvest when they are going to get the same
+    amount no matter what they produce above the official quota?** The answer, generally, is
+    nothing. And thus, there is a severe shortage of food produced in the country and an even more
+    severe shortage of food that must be imported from other countries. (Communist countries are
+    almost uniformly shunned by trade partners.)
+2.  **The Waiter Rules:** In a country where food is scarce, the waiter holds as much sway as the bank
+    manager, with the power to sanction a loan, does in capitalist society. Repeatedly, the author
+    runs into disinterested waiters drunk on their power to apportion food among the poor customers
+    at _their_ establishment. (Remember that there is no private property in communism.)
+3.  **Local Currency is of No Value:** As the country produces little, it exports even less. This in turn
+    causes the currency to have no real value at all. When foreigners come into these countries, they
+    are forced to buy the local currency, so that the government can get its hand on foreign
+    currency, which it will use to import the minimum amount of food that is required for the members
+    of the Communist Party. Foreign currency (such as US dollars), cigarettes and cans of gasoline
+    are the usual substitutes.
+4.  **Megalomaniacs in Power:** Dalrymple excels at pointing out why megalomaniacs tend to be in
+    power in a communist country, unless interventions are made specifically to keep them out. The
+    forefathers of communist thought, Marx and Engels, repeatedly said that the human mind is weak
+    and will be attracted towards consumerism and materialism, that communism was the system through
+    which the human mind could be remade into one that appreciated the beauty of enforced equality as
+    against the ugliness of unthinkable inequality, which they predicted (rightly) would be the
+    outcome that capitalism would produce. The leaders of communist rebellions and countries strongly
+    believe that every human who has lived before them has had this weakness and that they are the
+    _first ones_ who were able to overcome it and become better men (after the masters, of course:
+    Marx, Engels, Lenin, Stalin, and to a lesser extent, Mao.[^2]) In order to believe this
+    "primacy of thought" among _all_ humans who have ever lived and to carry out actions that are
+    required to bring this dream of a "new man" to reality, one **has** to be a **megalomaniac,** with a
+    huge ego and an even larger portrait of himself at every street corner
+5.  **Grotesquely Large Roads with No Sign of Life:** There must be no private property in communist
+    states. What, then, is the purpose of an 8-lane road? Wouldn't these roads be used by private
+    cars? Surely, public transport would not require roads this big unless there were to be 8
+    parallel buses plying between 2 places? Here, Dalrymple begins pointing out the hypocrisy
+    inherent in the minds of the communist leaders of the late 20th century: Their pathway towards
+    development is different; but their idea of the finished product is the same: The acquisition of
+    material goods. By constructing roads and bragging to foreigners that they have such
+    infrastructure or that their roads are never crowded betrays their willingness to give up on
+    their ideology if it is for the (funnily noble) cause of convincing ["useful idiots"](https://quoteinvestigator.com/2019/08/22/useful-idiot/) in foreign
+    countries about their country's rejection of "backwardness" and its adoption of "modernity."
+    1.  Dalrymple points out that there is a ban on owning bicycles in North Korea. This ban [was
+        lifted in 1992](https://en.wikipedia.org/wiki/Cycling_in_North_Korea#cite_note-guardian-3). It seems that there are even [bike lanes](https://www.theguardian.com/world/2015/jul/14/north-korea-bike-lane-pyongyang?CMP=share_btn_tw) now.
+6.  **Intractable Bureaucracies:** The Communist state will require you to fill in 50 pages of
+    application forms before you can get your monthly ration. What purpose does this serve? The
+    answer is twofold. First, it keeps you **occupied.** If you are busy running around getting
+    signatures, filling forms, and understanding procedures, you might not notice that they are
+    meaningless and the forms are most likely incinerated moments after you turn them in. Dalrymple
+    argues that this is essential to a paranoid state because it will restrict the time that ordinary
+    people have to plot a rebellion. Second, it demonstrates the control that the Communist Party has
+    on every day life. Intractable bureaucracies [exist in democracies](/2020/01/18/the-trial-review) as well, but there, they serve
+    a genuine purpose (the government's purpose to help its citizens). They become intractable
+    because they are inefficiently run.[^3]
+7.  **An Irrational Fear of Rebellion:** Communist states almost always come up as rebellions. The
+    rebels overthrow a sitting government and establish their new state. This makes them paranoid
+    about the next rebellion; a government that came to power through a rebellion could just as
+    easily be overthrown by another rebellion. The lengths that the different states go to in order
+    to prevent even the rumblings of a rebellion is the scariest feature of implemented Communist
+    thought. In the police states of Eastern Europe, such as Romania, the secret police is everywhere
+    and everyone is an informer to the secret police. There are so many informers that the secret
+    police would see agents reporting on the suspicious activities of other agents, who they think
+    are civilians. In the Communist states in Asia and South America, the secret police is
+    undoubtedly there but takes over less of the daily life of ordinary people. It seemed to me that
+    the Vietnamese people that Dalrymple meets on his travels were far more open about their dislike
+    of the government than those in Europe. In [Vox' video about Cuba's homegrown network](https://www.youtube.com/watch?v=FFPjJM6yYS8), locals are
+    open about their dislike for the government's curtailing of the internet.
+8.  **Production is The End-Goal:** If consumption is evil and strengthens the hand of the capitalist,
+    production **must** not be for the sole aim of consumption. However, production is clearly
+    important and shows the state's strength and its ability to function. So, production is defined
+    as the end-goal. Production statistics for food, coal, [poetry collections, and novels](https://en.wikipedia.org/wiki/North_Korean_literature) are
+    ceaselessly announced on state television. These statistics are the tool that the government uses
+    against foreigners who might claim to locals that their country is backward. The few occasions
+    that foreigners get to interact with the locals are closely monitored. The "production
+    supremacy"-related propaganda will serve as a safety net _if_ some information about the relative
+    abundance that is the norm in foreign countries happens to get through to the locals. Orwell's
+    memorable account of the essential nature of war for a Communist nation in [his dystopian novel
+    _1984_](https://www.goodreads.com/book/show/40961427-1984?from_search=true&from_srp=true&qid=4UzFdW1uGJ&rank=1) also comes to mind in this context.[^4]
+9.  **Propaganda:** This is not surprising. Even [Authoritarian leaders](https://www.youtube.com/watch?v=5YU9djt_CQM) in democracies are weak for
+    propaganda campaigns and never miss the chance to lie about something if they can. Dictators in
+    communist countries are paranoid about a non-state-sponsored narrative about their country's
+    failures breaking through and fomenting a rebellion; a rebellion is **very** afraid of another
+    rebellion. Dalrymple, in particular, encounters various kinds of propaganda wherever he
+    goes. Perhaps the worst was the "[Juche idea](https://en.wikipedia.org/wiki/Juche)," the state ideology of North Korea. The author
+    quotes a few paragraphs from the text that was written as the definitive explanation of this
+    idea. It is clear from these few paragraphs that it is meaningless drivel, with absurd repetition
+    of words and phrases and no underlying concept worth conveying.
+10. **Single Overarching Narrative:** There is no space for confusion in a Communist state. "A thing
+    is either compulsory or prohibited," Dalrymple says. As he witnesses in Albania, tourists are
+    shepherded from one museum to the next. Each museum essentially tells the same story: a rebel
+    who rallies the country and becomes a charismatic leader in his youth, the revolution, the
+    incredible development that the country sees post-revolution. This narrative does not allow such
+    banal things as the truth to interfere with the fantasy that it is based on. Never mind that
+    most people have to stand in line for an hour to get an ice cream. Never mind that they use
+    cigarettes instead of the local currency. The narrative will always portray the leader as the
+    only possible savior and as the greatest person to have ever lived. This narrative becomes so
+    repetitive and formulaic, that Dalrymple starts making a passing reference to it in his later
+    visits. It makes little difference to him what is being said, and I suspect that the residents
+    of these countries are the same. Vietnam was perhaps the country where this was least
+    obvious. After a long guerrilla war, it was clear that there was no single person or entity to
+    glorify. Also, he makes a good observation: "The falsehoods in propaganda must be proportional
+    to the failures in the real world." Vietnam won the war; this was a truth which negated the need
+    for any other big lie. For countries like Albania, which played a minor part in World War 2 and
+    the fight against Nazis in Germany, their minor role can only be justified by larger-than-life
+    claims about their pivotal role in World War 2.
+
+---
+
+[^1]: If you like to split hairs, then you might point out that the harvest is not the government's property. In fact, it is the "property of the public." "Everyone owns everything and the government manages it for them."
+[^2]: I was surprised by Dalrymple's account of the leaders in Eastern Europe who openly criticize Mao in their writings.
+[^3]: It is worth noting that in a democracy the citizens never question that the government has absolute control over them; it would be a fool's errand for the government to go around convincing people of something that they already accept to be fact.
+[^4]: In a brief extract of a book that the main character of 1984 is reading, Orwell writes about why war is essential and to be at war constantly is a core part of the modern state that he depicts in the novel. He says that War is the only "government policy" which can support an unending consumption without creating any progress for normal people. So, to be at war is to keep society stagnant; to leave power structures intact; to conspire to stay in power eternally.
