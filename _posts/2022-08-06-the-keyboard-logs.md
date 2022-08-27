@@ -181,12 +181,12 @@ distance. This ensures that the hands don't have to be squished close together i
 body.
 
 I was constrained to using a membrane keyboard because I wanted to use the split form factor at
-work, where I was doing a majority of my typing. (I had not started taking Smart Notes (TODO Link)
-yet in 2019.) There weren't many membrane keyboards which had the split form factor. In fact, there
-were only a couple that I can remember. Out of these, the Kinesis had good reviews. So, I bought a
-second-hand one off of Mercari[^2], a marketplace app for second-hand goods. The price was good
-and there was little risk in this purchase because if I did not like the keyboard I could simply
-sell off the keyboard on Mercari once again, at a slightly lower price.
+work, where I was doing a majority of my typing. (I had not started [taking Smart Notes](/2020/07/09/book-review-take-smart-notes) yet in 2019.)
+There weren't many membrane keyboards which had the split form factor. In fact, there were only a
+couple that I can remember. Out of these, the Kinesis had good reviews. So, I bought a second-hand
+one off of Mercari[^2], a marketplace app for second-hand goods. The price was good and there was
+little risk in this purchase because if I did not like the keyboard I could simply sell off the
+keyboard on Mercari once again, at a slightly lower price.
 
 I used this keyboard at home for a couple weeks to become familiar with the layout. Getting used to
 the split form factor was hard at first. The temptation to reach for `H` or `G` on the wrong half
