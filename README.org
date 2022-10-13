@@ -38,10 +38,22 @@ merged the two folders together using =rsync=.
 :CUSTOM_ID: development
 :END:
 
+Last updated: /2022-10-13/
+
+Ruby version: *3.1.2*
+
+*** Setting up
+
+1. Install rbenv
+   1. https://github.com/rbenv/rbenv
+2. Install ruby version 3.1.2
+   1. rbenv uses [[https://github.com/rbenv/ruby-build#readme][ruby-build]] to install Ruby versions
+
 #+begin_src sh
-$ rbenv local 2.5.0
-$ gem install jekyll
-$ make serve-dev
+  $ rbenv local 3.1.2
+  $ gem install bundler
+  $ bundle install
+  $ make serve-dev
 #+end_src
 
 ** Scripts
