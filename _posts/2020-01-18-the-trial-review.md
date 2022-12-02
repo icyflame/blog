@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Notes and Review - The Trial (Kafka)
-categories: book-review dystopia
+categories: book-review dystopia kafka
 ---
 
 > The text cannot be altered, and the various opinions are often no more than an
