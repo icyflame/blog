@@ -1,0 +1,219 @@
+---
+layout: post
+comments: true
+title: Notes and Review - The Castle (Kafka)
+categories: book-review dystopia kafka
+---
+
+This novel is humorous. The characters and their interactions, the presumptions that they make about
+each other based on trivial details, the protagonist's (His name is K.) strange obsession over every
+single alphabet in the letters that he receives, characters that have a job which they do only when
+they want to. Everything in the novel is humorous. On the surface. Just underneath the surface,
+lurks the boundless struggle and omnipresent hopelessness of a life in the world that
+K. inhabits. (The world that he is in is **eerily, and perhaps intentionally** similar to our own.)
+This is not a dystopia; the bureaucratic hell that K. is subjected to is one that many are familiar
+with. The nightmare does not stop when you have procured every new document that the government has
+ever issued to its citizens; it continues, for the government takes great relish in moving the
+goalposts and confusing people; keeping them inside their Web browser until their citizens are
+exasperated enough to just close the tab and move on. The only difference between the citizens of
+our world and K. is that K. **does not** move on.
+
+<!--more-->
+
+
+# Kafkaesque Imagery
+
+As always, Kafka's imagery remains unchanged. The first room that the protagonist enters is dark and
+suffocating:
+
+> It was a large, dimly lit room. Coming in from outside, he could see nothing at first. K. staggered and nearly fell
+> over a washing-trough; a woman's hand caught him. He heard a number of children shouting in one corner.
+> Steam billowed out of another, turning the twilight into darkness. K. might have been surrounded by clouds
+
+
+## Officials in Bed During Hearings
+
+This is one of Kafka's classic images. I believe that his intention with showing officials in bed is
+to show their lethargy during work and their lack of motivation to really help the
+petitioner. During the last section of the novel, K. meets an official who hints that he might be
+partly responsible for K.'s case and that he can grant any of K.'s wishes on the spot. He says that
+the officials are overwhelmed with work and so sensitive that they can barely sleep at night and
+thus, they conduct all their hearings in the Castle Inn. But the Castle's staff thinks that the
+Officials sleep **too much,** and in fact, it is because they have so much work during the day/night
+that they are always tired.
+
+All of this contradiction and absurdity, the midnight hearings, officials in bed, people being asked
+to wait in the cold to meet officials, official summons that arrive through messengers, assistants
+who are not assisting, serves to make K.'s situation look more and more hopeless and
+pathetic.
+
+As the reader, I wanted K. to just _give up,_ on many occasions. But therein lies the rub: When I
+was stuck in a bureaucratic hell, I did not give up. I would not have even imagined it. To fight
+your way out of the mess that you are in is the only available option.
+
+
+# Officials Don't Make Mistakes
+
+An important moment in the novel is when K. finds out that he is in the village by mistake. Kafka's
+writing is deliciously absurd. I was giggling throughout this long section in which an official
+explains how officials never make mistakes, and thus when a document appears in front of them, it
+doesn't occur to them that it was due to a mistake, and thus, due to their assumption that they
+don't make mistakes they end up making mistakes and what should have been ended in a minute of
+honest doubt and humiliation drags on for years.
+
+> [The official who is speaking explains that the proposal for appointing a land surveyor was sent to
+> his department by department A. Then, the monologue continues.]
+>
+> For a start, however, I can tell you the story without files. We replied to the decree I was talking
+> about by sending our thanks, but pointing out that we didn't need a land surveyor. However, that
+> reply doesn't seem to have reached the original department, let's call it A, but by mistake went to
+> another department, B
+>
+> as often and understandably happens, and indeed should happen, in view of the meticulous nature of
+> all the official work done, the head of department was relying on us to send an answer, whereupon he
+> would either appoint the land surveyor or, if necessary, correspond with us on the subject
+> further. As a result, he neglected to look at the preliminary notes and let the whole affair lapse
+> into oblivion.
+>
+> It is a working principle of the authorities that they do not even consider the possibility of
+> mistakes being made.  The excellent organization of the whole thing justifies that principle, which
+> is necessary if tasks are to be performed with the utmost celerity
+
+When asked a simple follow up question by the protagonist about whether the supervisory authorities
+who are supposed to catch such mistakes did not succeed in their duty this time, the official comes
+up with this gold:
+
+> Only a complete stranger would ask your question. Are there supervisory authorities? There are only supervising
+> authorities. To be sure, they're not intended to detect mistakes in the vulgar sense of the word, since there are no
+> mistakes, and even if there is a mistake, as in your own case, who's to say that it's really a mistake in the long
+> run
+
+The official also describes something that has happened to me once when dealing with the government:
+
+> And now I come to a particular feature of our official mechanism. When an affair has been under
+> consideration for a very long time, and even before assessment of it is complete, it can happen that
+> something occurs to settle it, like a sudden flash of lightning at some unforeseeable point, and you
+> can't pinpoint it later. The case is thus brought to an arbitrary, if usually quite correct,
+> conclusion. It's as if the official mechanism could no longer stand up to the tension and the years
+> of attrition caused by the same factor, which in itself may be slight, and has made the decision of
+> its own accord with no need for the officials to take a hand.
+
+K.'s summary of all this? Pretty good:
+
+> **K.:** So the outcome is that everything is very confused and nothing can be solved, and I'm being
+> thrown out.
+>
+> **Mayor:** Who would venture to throw you out, my dear sir? The very lack of clarity in the earlier
+> questions assures you of the most civil treatment, but you appear to be oversensitive. No one is
+> keeping you here, but that doesn't amount to being thrown out
+
+So, you are not being thrown out. But everything **is** very confused and nothing can **ever** be solved.
+
+
+# Hierarchy is Everything to the Officials
+
+Klamm is a God-like figure to the people in this village. K. is engaged in a tussle to meet with
+this man. When he tries to do so, he is thwarted. Soon after, Klamm escapes quickly and K. and an
+official observe him through a keyhole. (Yes, 2 grown men peeping through a keyhole at Klamm.) After
+this plays out, the official gives a summary that is indicative of the absolute reverence that one
+must show when they are in a hierarchy:
+
+> K. asked: 'Has Klamm left, then?' He said it not to have what he already knew confirmed but to anticipate an
+> attack, for he rather feared he was vulnerable now. The landlady walked past him in silence, but the gentleman
+> said, from his little table: 'Yes, to be sure. Once you had left the place where you were standing guard, Klamm
+> was able to go out. But it's amazing what a sensitive gentleman he is. Did you notice, ma'am,' he asked the land-
+> lady, 'how nervously Klamm looked around?' The landlady did not seem to have noticed, but the gentleman
+> went on: 'Well, luckily there was nothing left to be seen. The driver had covered up the tracks in the snow.
+
+This is the first point at which K. shows some defiance.  This gentleman is a secretary of some sort
+to Klamm. He is working on his report for Klamm, and he wants K. to answer some questions so that he
+might be able to complete the report. But K. refuses to be questioned. There is no way to know
+whether this is a turning point in K.'s story. Kafka's implication is probably that answering his
+questions/refusing to be questioned will have little impact on the final resolution of K.'s
+case. (And when will that come? There is no final resolution to expect.)
+
+
+# Defiance and Dejection
+
+On the topic of defiance, the second protagonist of the story is Amalia, one of the messenger's
+sisters. The messenger and their family is reviled in the village. People scoff at them, and they
+treat them quite poorly. K. and the reader find out, when Amalia explains, that this is because
+Sortini (an official) called Amalia to him and Amalia refused to go. Klamm and Sortini (and other
+men associated with the Castle) are philanderers who call women to them at periodic intervals. The
+landlady and even K.'s partner, Frieda, were women who had been called by Klamm. Amalia's defiance
+to submit to Sortini's (by extension, The Castle's) wishes made her and her family a pariah in the
+village. It crushes her parents, and they **instantly** become too old and frail and need Amalia's
+constant care.
+
+The curious thing is that the Castle never gets officially involved with punishing Amalia. Indeed,
+no punishment is warranted because she did not do anything that was against the law anyway. She
+simply refused to answer a summons from a private individual, who happened to be associated with The
+Castle. However, there is a general sense that Amalia has done something wrong. The story keeps
+changing and becomes more and more extreme with every retelling ([Chinese whispers](https://en.wikipedia.org/wiki/Chinese_whispers)).
+
+When the stories have done the round, the Village is ready to forget and simply expects them to
+return to their earlier way of life. However, they don't know how to do so. So, the Villagers
+continue to believe that there is some sort of punishment and avoid them forever. When the family
+petitions the Castle to help them, the officials in the Castle (understandably) ask them what they
+must help with? What have they done? What should they be forgiven for?
+
+It is futile to ask for forgiveness for something when you have no idea what happened or what your
+mistake was. The story of the Barnabas family is one of defiance and dejection. They had done
+nothing wrong. But The Castle controlled everything. Even the appearance of defiance against such an
+absolute authority has a high cost. Despite their story, I don't think that Kafka urges the reader
+to comply. I think Kafka urges us all to be defiant of the bureaucratic hurdles that we face. But I
+think he asks us to remember that "The Village" **will** forget at some point and we must also
+**forget** then. We should not let our defiance weigh too heavily on us; so heavily that it prevents
+us from returning to normalcy when everyone else expects things to "go back to the way they were."
+
+This special case of apparent external normalcy coexisting with internal turmoil is a favorite of
+Kafka's, and he returns to it in both his other novels (The Trial and Amerika.)
+
+
+# Little Tyrannies
+
+Kafka is undoubtedly obsessed with authority. Especially the kind of authority that is conferred
+upon people who are "big fishes in small ponds." Throughout the novel, the landlady has her own
+little tyranny inside her inn, Frieda has a small one when she is barmaid, the secretary has one
+when Klamm is not around, Klamm has one that is all-encompassing and covers the whole village.
+
+The existence of these tyrannies and the attempts of the tyrants to exhibit their power inside their
+little tyranny is the root cause of the troubles that K. is facing. Indeed, it is the root cause of
+the troubles that many of us face when we deal with intractable bureaucracies. How can one deal with
+these tyrannies? Kafka gives us a clue:
+
+> That's the way it's organized; all the gentlemen from the castle have their village secretaries.'
+> Momus, who in fact had been listening much more attentively than K., added, to the landlady: 'Most
+> of the village secretaries work only for one master, but I work for two, Klamm and Vallabene.'
+> 'Yes,' said the landlady now, also remembering, and turned to K. 'Mr Momus works for two masters,
+> for Klamm and for Vallabene, so he is village secretary twice over.' **'Twice over&#x2013;fancy that,' said
+> K., nodding as you might nod to a child whom you have just heard praised** and addressing Momus, who
+> now, leaning forward, looked up at him. If there was a certain disdain in that nod, it either went
+> unnoticed or actually seemed requisite. The merits of a man from Klamm's close circle were being
+> presented at length to K. of all people, deemed unworthy even to have Klamm set eyes on him by
+> chance, and it was done with the unconcealed intention of demanding K.'s recognition and praise.
+
+Kafka indicates that we should ignore the empty boasting of tyrants and be defiant in our
+demands. Things often resolve themselves, as the mayor explained earlier, and the resolution will
+have absolutely no connection to your efforts to solve the problem or the tyrant's efforts to block
+a resolution anyway.
+
+
+# Chaos, Confusion, Mania
+
+There are 2 particular scenes which are remarkable for the amount of chaos and confusion that is
+conveyed in them:
+
+1.  K. and crew wake up in the morning in the school building: After having been appointed the school
+    janitor, K. proceeds to sleep in the school building. When he wakes up in the morning, he sees
+    himself surrounded by children waiting to enter the school building and jeering at them. Then,
+    confusion ensues as they rush around to clean the school building and try to get the place in
+    order. There is a huge cat that is bothering them. His assistants are creating their own chaos in
+    parallel. Reading this scene really feels like the author is trying very hard to put us in a
+    trance and convince us of the hopelessness of K.'s situation.
+2.  K. meets with Erlanger and the files are subsequently distributed to all the officials who are in
+    the basement rooms at the Castle Inn. Once again, the situation is one of utter chaos and
+    mania. Files are being passed around and kept at the doors of officials. When the files are kept,
+    officials greedily grab them. They ring the bells to call _someone._ This exercise ends after a
+    long description of the craziness that has ensued during a procedure that one would assume was
+    mundane, especially since it was being done every morning. Nothing is mundane in Kafka's world.
