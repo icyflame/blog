@@ -1,0 +1,99 @@
+---
+layout: post
+comments: true
+title: Notes and Review - Lost Daughter (Ferrante)
+categories: book-review fiction parenting
+---
+
+**Rating:** 5/5
+
+> One should never arrive in an unknown place at night, everything is undefined, every object is
+> easily exaggerated.
+
+This is a beautiful line. Every time I am booking a ticket to some new place, I remember this
+line. I remember the dread and uncertainty of arriving at night. Despite **knowing** that arriving at
+night is unwise, I arrived in Italy late one night in 2019. It was a timely reminder of my lack of
+wisdom; a line like this makes the lesson a memorable one. Seeing the confused characters in this
+book, my first instinct was to clamp down on their inability to decide and brand it rashly as
+immature indecisiveness; then, _gradually,_ I would see the lens fog up and doubt creep in. Were
+they really indecisive, or do they appear unclear to us only in hindsight?
+
+> It was like a slight twinge that, as you keep thinking about it, becomes an unbearable pain. I was
+> beginning to feel exasperated.
+
+<!--more-->
+
+I watched the movie adaptation before reading the book. The movie was great. Dark and ominous right
+to the last scene, the unstated parts of the movie were exquisite; the setting was great and I felt
+the irritation caused by Nina's family to Leda and Nina's inexplicable presence among them. The
+first thing I noticed about the book was that all the characters are mothers, daughters, or
+soon-to-be mothers. Leda has 2 daughters Marca and Bianca. Leda talks often about her own
+mother. Nina has a daughter Elena. Elena thinks that her doll is her daughter, and she calls her
+various names. Nina's sister-in-law is pregnant and expecting her first child. The doll is lost for
+a brief period of time; indeed, that is the central thread in the story. The doll is lost, and a
+long time later, it is found. During the intervening time, things get confusing. Leda is curious
+despite herself. She claims to have brought books and claims to want to read them, but she can't
+take her eyes off Elena and Nina. Undoubtedly, Elena reminds her of herself: the young Leda; the
+unfulfilled scholar.
+
+The one incident that haunts her is leaving her daughters for three years. She pursues the language
+of her scholarship, English. (There is an inversion in the setting of the movie and the book. In the
+book, Leda is an Italian woman and a scholar of the English language. In the movie, the situation is
+reversed: Leda is English and a scholar of the Italian language.) Recounting her experience of
+leaving her daughters, she thinks up this memorable paragraph:
+
+> After a while I heard a light knocking. Bianca came in, very serious, followed by her sister,
+> timidly. Bianca took on orange from the tray of fruit, opened a drawer, handed me a knife. I didn’t
+> understand, I was running after my own desires, I couldn’t wait to escape that house, forget it and
+> forget everything. Make a snake for us, she asked then, for herself and Marta, too, and Marta smiled
+> at me encouragingly. They sat in front of me waiting, they assumed the poses of cool and elegant
+> little ladies, in their new dresses. All right, I said, took the orange, began to cut the peel. The
+> children stared at me. I felt their gazes longing to tame me, but more brilliant was the brightness
+> of the life outside them, new colors, new bodies, new intelligence, a language to possess finally as
+> if it were my true language, and nothing, nothing that seemed to me reconcilable with that domestic
+> space from which they stared at me in expectation. Ah, to make them invisible, to no longer hear the
+> demands of their flesh as commands more pressing, more powerful than those which came from mine. I
+> finished peeling the orange and I left. From that moment, for three years, I didn’t see or hear them
+> at all.
+
+The touching scene of separation is all the more jarring for we see her in the present, being
+treated coldly by her daughters, and we see the drive in her to continue her study. She doesn't
+understand why she left them, and so she instinctively did not talk about it with her daughters. At
+the very beginning of the book, we encounter this sentence which explains why all she can do about
+this is write letters to her daughters:
+
+> At the origin was a gesture of mine that made no sense, and which, precisely because it was
+> senseless, I immediately decided not to speak of to anyone. The hardest things to talk about are the
+> ones we ourselves can't understand.
+
+If leaving did not make sense, why did she return? We get only the faintest of hints.
+
+> [Nina asks] "If you felt good why did you go back?"  I [Leda] chose my words carefully. "Because I
+> realized that I wasn't capable of creating anything of my own that could truly equal them."
+
+**This** is the driving force of this novel: characters who do not reveal <span class="underline">much;</span> characters who would
+rather speak in cliches and through letters; characters who talk about their own confusions. They
+remain shrouded in a veil and we get rare glimpses into what they really care about. Why should we
+get any clarity about what these characters want, when we can't get that kind of clarity with anyone
+else? Why should we get any clarity about what they want, when we can't even be sure that we can get
+that clarity with **ourselves?** Ferrante is soothing and brilliant.
+
+---
+
+Other memorable quotes:
+
+> That's what I was, superficial. And then that remark: children are always cause for worry. Said to a
+> woman about to bring one into the world: how stupid. Always words of contempt, skeptical or
+> ironic. Bianca had cried to me once between her tears: you always think you're best. And Marta: why
+> did you have us if all you do is complain about us? Fragments of words, mere syllables. The moment
+> arrives when your children say to you with unhappy rage, why did you give me life: I walked absorbed
+> in thought.
+
+<!--quoteend-->
+
+> That's what I was, superficial. And then that remark: children are always cause for worry. Said to a
+> woman about to bring one into the world: how stupid. Always words of contempt, skeptical or
+> ironic. Bianca had cried to me once between her tears: you always think you're best. And Marta: why
+> did you have us if all you do is complain about us? Fragments of words, mere syllables. The moment
+> arrives when your children say to you with unhappy rage, why did you give me life: I walked absorbed
+> in thought.
