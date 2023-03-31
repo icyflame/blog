@@ -1,0 +1,162 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Review - The Book of Form and Emptiness (Ozeki)
+categories: book-review capitalism consumerism
+---
+#+end_export
+
+*Rating:* 4/5
+
+Ozeki's novel is good at the beginning and good at the end. The middle drags on for a little too
+long; I had at least a mild interest in figuring out how the characters end up. However, the
+interest levels get /pretty/ low. It is a book about books, art, culture, the decline of reading,
+the increase of consumerism, capitalism, and the incredibly high number of *things* that are now a
+fixture in the lives of a few people. It is a portrayal of the present, as a dystopia, by a Book;
+that shows both the ability to buy things that jobs give people, and the precarious nature of those
+jobs in a society with no safety net. The novel is mostly sincere, but sometimes it crosses over
+into the cheesy. The novel has a character whose background is identical to Marie Kondo and whose
+philosophy is very similar (I guess) to Ozeki's.
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+The most notable thing about this novel is probably the way that it is narrated. It has a character,
+the Book, which narrates the Boy's story. And sometimes, the Boy chimes in and converses with the
+Book. The Marie Kondo character, Aikon, sometimes narrates her experience. The parts where the Book
+talks about itself, or about other books, are a _bit_ cringe-y. It is a mixture of moral panic and
+cliches. It is hard to tell if this was an intentional choice. Here is a sample:
+
+#+begin_quote
+This state-of-the-art mechanical, computerized book-sorting system was installed as part of the
+renovation, and the books were beside themselves with loathing. They longed for human hands, for
+human touch. They bristled with ire at the indignity of their situation as they were spun, flipped,
+rotated, scanned, sorted, sent sliding down rackety gravity chutes into bins or hoisted
+hydraulically onto trolleys. It was more than any book could bear, and their lamentations rose above
+the clamor of the machines—We are not units! We, who once were sacred, next to God!
+
+#+end_quote
+
+Ozeki's book is really about Capitalism and Consumerism, the unlimited desire for things and the
+economic system that manufactures everything dirt cheap and then convinces everyone that they need
+this suddenly cheap stuff to stay at the top of a completely made up hierarchy. One of the homeless
+people that Benny hangs out with is German (a stand-in for Marx, perhaps?) and theorizes quite a bit
+(sometimes boringly). There is some purely theoretical, interesting rambling from another character:
+
+#+begin_quote
+It's the fucking world we live in. It's capitalism that's crazy. It's neoliberalism, and
+materialism, and our fucked-up consumer culture that's crazy. It's the fucking meritocracy that
+tells you that feeling sad is wrong and it's your fault if you're broken, but hey, capitalism can
+fix you! Just take these miracle pills and go shopping and buy yourself some new shit! It's the
+doctors and shrinks and corporate medicine and Big Pharma, making billions of dollars telling us
+we're crazy and then peddling us their so-called cures. That's fucking crazy.
+
+#+end_quote
+
+... but the most interesting part is the empathetic way in which Ozeki portrays the disgusting
+consumerism of her characters:
+
+#+begin_quote
+She [Benny's mother] went back to the computer, typed in $50, and then sat back, feeling
+relieved. It was a bit of insurance. So as long as her maximum was the highest, she would still
+win. 3:59. Less than a minute left. She began to count down, and then, with only twenty seconds to
+go, the bid jumped to $32.45. And then it jumped again, and again! Not one, but two snipers were
+bidding on her Hansel and Gretel! She held her breath and crossed her fingers and counted--five,
+four, three, two . . . The Congratulations, You've Won! message popped on to her screen, along with
+her winning bid. $49.45. She sat back in her chair, triumphant. It felt so good to win.
+
+#+end_quote
+
+Benny's mother is a hoarder who is living in a house with a lot of things. She keeps buying things
+that she has no need for: books, craft supplies, snow globes. She keeps archives of old newspapers,
+from her job, inside the house. She doesn't take out the trash. The picture of the house that is
+painted is *astonishing,* not very different from some of the worst kept houses that you would see
+on "tidying up" TV shows like Marie Kondo's.
+
+Speaking of Marie Kondo: Aikon is a Zen monk who is /basically/ Marie Kondo, and also a stand-in for
+Ozeki's voice of reason and (one presumes) beliefs. The similarity between Kondo and this character
+in the book is quite stunning. They both write a book, tell people how to fold clothes, arrange
+things, their books become a sensation in America, they star in an American TV show. Ozeki's
+portrayal of Aikon does *not* feel lazy as a result though, because we never get inside Marie
+Kondo's mind in her shows. Aikon comes at the "problem of too many things" from a completely
+different mindset: That mindset is refreshing. She lists the things that Ozeki talks about in this
+book as things that her producers asked her not to talk about:
+
+#+begin_quote
+Of course, the solution was quite simple: people just had to stop buying so much stuff, but when she
+mentioned this on a recent call with the American producers, their response was less than
+enthusiastic, and later they followed up with a memo, asking her not to talk about topics like that
+on the pilot. When Kimi [Aikon's assistant] inquired what they meant by "topics like that," they
+sent her a list: consumerism, capitalism, materialism, commodity fetishism, online shopping, and
+credit card debt. Speaking critically of such topics was un-American, they explained. American
+viewers wanted proactive solutions. Not buying was not proactive.
+
+#+end_quote
+
+The final notable characteristic of the novel is the fact that things "speak." They express
+themselves by hissing or shouting or creating a ruckus. They are silent when they are well cared
+for. And Benny is the only one who is able to listen to them. *That* is a pretty good idea. Benny is
+meticulously clean and organized. Undoubtedly, Benny is the hero, the ideal to aspire to.
+
+I had not thought about things expressing themselves; I was assigning some feelings to them but not
+assigning a voice to them. (I have not looked at things as "just things" for quite some time
+now. Most of things I have I classify as tools, and been grateful about the ways in which they have
+made doing something easier.) The framework of thinking about things *wanting* care from their
+owners is powerful: It gets you to think about _what_ a thing's ideal state would be: why you should
+fold socks properly, why you should empty your bag each night. This *deep respect* for things and an
+acknowledgment of the role that they serve is important to me. By looking at tools as status symbols
+("Do you have the latest iPhone?") or just things to be "used and discarded" ("The headphones are
+around here, /somewhere./") diminishes them.
+
+There is a very touching recollection of Aikon's experiences working on relief efforts after the
+2011-03-11 earthquake in Japan. I have lived in Japan for 4 years now, and I know that the 3.11
+earthquake features prominently in the collective imagination of everyone who experienced that
+horrible disaster. The reminder that Japan is disaster-prone is everywhere: yearly drills, letters
+from the local government, news articles about disasters in other parts of Japan. But it is quite
+easy to believe that surely, *you* would not be affected by it. One must remain on guard against
+that complacency, as long as they live in Japan:
+
+#+begin_quote
+This was another important lesson in the impermanence of all things. Japan lies in a seismically
+active zone, so earthquakes are not uncommon. Disaster can strike at any moment, but we forget this,
+distracted by the bright, shiny comforts of our everyday lives. Wrapped in a false sense of
+security, we fall asleep, and in this dream, our life passes. The earthquake shook us awake, and the
+tsunami washed away our delusions. It caused us to question our values and our attachment to
+material possessions. When everything I think of as mine--my belongings, my family, my life--can be
+swept away in an instant, I have to ask myself, What is real? The wave reminded us that impermanence
+is real. This is waking up to our true nature. Already broken.
+
+#+end_quote
+
+-----
+
+*Other notable quotes:*
+
+Aikon talks about her book becoming a sensation:
+
+#+begin_quote
+Why was it that women could never work hard enough to quiet their nagging fear that they were not
+enough? That they were falling behind? That they could and should be better? No wonder they wanted
+simple rules to govern the way T-shirts should be folded, children raised, careers managed, lives
+lived. They needed to believe there was a right way and a wrong way--there had to be! Because if
+there was a right way, then perhaps they could find it, and if they found it and learned the rules,
+then all the pieces of their lives would fall into place and they would be happy.
+
+#+end_quote
+
+Benny's father talks about the moon landing:
+
+#+begin_quote
+It was 1969, and I was very young boy and worrying because in Japan, we have a fairy tale about a
+rabbit who lives on the moon, and I was afraid about the big American astronaut will hurt the moon
+rabbit. But everybody told me don't worry! American astronaut is very kind man. He won't hurt any
+moon rabbits! But still I was worrying." "But it was okay, right?" "It was okay. We watched on the
+old black-and-white TV set because we have no Internets back then. Then we see the first astronaut,
+Mr. Neil Armstrong, go down the ladder to the moon and say some famous words--One small footstep for
+a man. One big jump for everybody else. Something like that. You know those words? Very famous.
+
+#+end_quote
