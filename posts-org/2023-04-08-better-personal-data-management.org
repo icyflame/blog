@@ -1,0 +1,227 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Better Personal Data Management
+categories: linux compters tools data-management
+---
+#+end_export
+
+I switched from Ubuntu 22.04 to Debian 11 earlier this year. I was using Ubuntu's LTS OS versions
+for nearly 9 years before that, since 2014. The switch to Debian was because I stopped liking what
+Ubuntu had done with the OS: The GUI has become a strange mix of Ubuntu's old desktop environment
+(Unity) and the Gnome Desktop Environment, which is standard and popular. I generally use the i3
+window manager, so the Desktop environment was not *too* annoying; I could have lived with it if not
+for Snaps. The introduction and use of Snaps was a continuous thorn in my setup. Each snap sets up a
+new loop file.[fn:4] So, the output of =df= is polluted with these strange loop devices that I don't
+care about. Also, Firefox installed using Snaps does not work well with the KeepassXC Browser
+integration. So, the /recommended/ way for installing programs on Ubuntu was actively getting in my
+way. (There is also some Ubuntu bloatware but an equivalent of that is there in almost every other
+non-base distribution, so it can't really be counted against any single distribution.) I wanted to
+do a few things differently with this reinstall.
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+* Frequent OS Version Updates
+
+Over 9 years of using Ubuntu, I used only 3 LTS versions. I was hoping that I would not have to go
+through the OS installation process multiple times, which would save me a bunch of time to learn and
+set it up properly each time. But this approach was wrong. Every time that I thought I would not
+have to install the OS again for at least 5 years, my plans were thwarted and I had to install the
+OS within 3 years or less. This was due to first, a new laptop, then a crashed HDD, then a new
+laptop, then a glass of water spilled on my (spill-proof) laptop keyboard, and finally, another new
+laptop (a cheap replacement for the one that I ruined.).[fn:1] So, now my target is to update to the
+latest version of the OS every year. Of course, it comes with recent Linux Kernel versions, but also
+ensures that I am on the latest version of most packages. (I had a lot of problems running Ubuntu
+16.04 LTS on my old laptop, barely 1 year after its end of life, because a lot of the packages that
+I needed were not being packaged for that version of the OS at all. So, I had to manually build a
+*lot* of things. And each of those things had its own dependencies, which were also not packaged for
+older versions of the OS, ... and so on.)  Also, the increased speed that comes from running the
+latest software on a very old device is stunning. After upgrading from Ubuntu 16.04 (released 2016)
+to Ubuntu 22.04 (released 2022) on a 9 year old i5 Dell Inspiron machine, the computer became
+usable. It was totally fine for the normal mix of writing / reading / Netflix / YouTube. The laptop
+has a hard drive, which I suspect caused the fans to spin up when I was streaming video, but
+everything else worked well.
+
+* Decouple Data from the OS
+
+Regrettably, until a few days ago, I was blasé about managing my data properly. There were a bunch
+of folders, with a lot of files, and they were all /sort of/ required, but I never really knew which
+external hard drive to check for what files. Backups were not regular or complete. I used Dropbox
+for some use-cases, but not for others (which doesn't make much sense.) It isn't like this approach
+had not /already/ caused me problems: I have accidentally deleted and (through a painful process)
+recovered a folder containing all my files from college *twice*, and both times because I was
+/trying/ to get all this data under control, but I was doing it with the incorrect =rsync=
+command. On my computer, I was used to putting all my files inside the home directory. There were a
+few files scattered around in =~/code= and =~/personal=. It was really an unmoderated (and
+embarrassing) shit show. Linux provides the elegant concept of partitions. The =/boot= partition
+consists of your kernel and things that should be kept in plaintext, the =/ (root)= partition
+consists your OS files and =/etc=, =/var= etc: These should be the things required to
+login. Finally, there is the =/home= partition which consists of things that you would use *only*
+after logging in: SSH and GPG keys, configurations for your software, your shell configuration,
+personal files, etc. You should be able to reinstall your OS by changing *just* the =/boot= and the
+=/ (root)= partitions. The =/home= partition can be left untouched by a new OS installation, and
+should work seamlessly with the next version of the OS. I am going to better implement data
+management by using various partitions, and ensuring that all of them are encrypted properly.
+
+* Encryption
+
+As I mentioned above, every time I thought my computer was _basically_ indestructible (why did I
+think this?) and that I will not run into a situation where I would have to give it to someone else
+unlocked, I had to give it someone unlocked. The technicians who service your laptop will
+undoubtedly ask for the password of a user on the system. This is *unavoidable.*
+
+The correct way (if there is one?) would be to have a "Support" account with a documented password
+on all your computers, and keep it free of any personal files and ensure that if you have to hand
+your PC to someone else and let them connect to WiFi or inspect the PC's configuration, they can do
+so without having access to your files. Even this might not be good enough, because some times they
+might want to do things which require the administrator's password, and the administrator password
+often gives them access to your files as well.
+
+The only way to really get around this is to keep the files required to start your computer separate
+from your personal stuff. Once again, a separate encrypted partition that you manually mount on
+login seems like the best answer here. The overhead of mounting the partition on each login *is*
+tedious, but this can be gotten around by using the TPM or a FIDO device. (Note that if you use your
+TPM, which is very convenient, then the support technician can technically use the TPM To also mount
+your devices because the TPM doesn't check if *you* are the one who is mounting the device.) Using a
+FIDO device (YubiKey) is better, but inconvenient because you have to keep the device close to your
+computer. YubiKey does manufacture low profile FIDO keys which take up one USB port and stay
+connected to your device, but can be conveniently disconnected before handing the laptop unlocked
+and over to someone else. That might be a good balance. I am still figuring this out. The trade-off
+between convenience is security is not a novel debate at all. (The most popular operating system,
+Windows, gets around it using Bitlocker, which will keep the security key in your TPM and keep a
+recovery key on Microsoft servers. You can never lose your key and its *super* convenient, but
+Microsoft will have a copy of your key.)
+
+* Don't Forget How to Install Operating Systems
+
+This one is controversial and I have had different feelings about it over the past few years. For a
+while, I loved configuration and tweaking and changing my setup constantly. (The very beginning of
+my journey with Linux was just installing and uninstalling operating systems on an old
+Windows desktop machine, crossing my fingers, pressing the power button, and hoping that the
+computer boots up properly.) Then, for a long time after that (pretty much until the accident with
+my laptop last year), I craved stability and the same OS version throughout. Now, I am back on the
+configuration/tweaking part of the cycle, but I don't want to configure for the sake of configuring.
+I want to *build* a configuration which makes it easy to configure in the future.
+
+This is similar to the approach that one would take with an editor like Vim or Emacs: There is a
+period of intense configuration when you first adopt the editor. But later, things cool down and
+there is much less to configure and the time spent using the editor far outweighs the time spent
+configuring it. (One of the efforts with my latest install is that I am using Ansible, a
+configuration management system that I am familiar with, for doing almost all the installation and
+building that is required. This is already paying dividends, because I can run this
+Ansible on a new computer, and get all my software and configuration back. I was surprised at how
+easy it was to write the initial Ansible configuration, which is the most daunting. The incremental
+updates to the configuration have been quite easy.)
+
+The thing about installing operating systems on your *main* computer is that if you don't know how
+to do it well enough, you will almost definitely be scared about doing it and keep postponing
+it. With the limited time that I get, I want to use my computer to do something *now*; not configure
+it to do something *later.* However, there is a point where this logic gets inverted: You keep
+putting away installing a new operating system. So, you keep forgetting the things you learned to do
+when you installed an operating system the last time around. Eventually, you end up starting from
+the beginning and spending *way* more time installing an operating system than you saved by putting
+off the installation. I am pretty sure this is the spiral I fell into when I was installing Ubuntu
+22.04 after a 4 year hiatus from OS installation on my backup computer last year. The process took
+nearly 4 days, including all the basic setup, and was quite manual. Compared to that, the Debian
+installation last month was quick and easy.
+
+* Understand the Boot Process
+
+Not knowing what =/etc/crypttab= and =/etc/fstab= do, or how to add a new LUKS device, or how to
+remove a partition from being mounted at start-up, or how to remove the password from one of the
+LUKS keyslots, etc: These are intricate things that it is *not OK* to get wrong (because you would
+not be able to boot properly if you got them wrong.)  However, they are also not done frequently
+enough for you to remember everything. Then, you must rely on your personal notes from the last time
+you did something (The Zettelkasten system has helped a lot to keep my notes synchronized.) and the
+learned experience from the last time that you did it. Right now, the past few weeks of
+configuration updating is fresh in my head. So, I can update the =crypttab= and =fstab= file or use
+the =cryptsetup {open,close,luksFormat,luksDump}= and the =mount= / =umount= commands, without much
+hesitation. This was not the case when I originally installed Ubuntu 22.04 LTS on my backup laptop
+or when I installed Debian 11 on my current laptop.
+
+* Manage Your Data Yourself
+
+This one might seem like I am fighting the tide of the tide of the "Cloud" here. It is not *at all*
+absurd though: You need to build a system, and this takes time and admittedly inconvenient. But once
+you have it, and start refining it, you can rest easy in the knowledge that your data stays quite
+close to you and will never cost you more money because the company providing the Cloud decided it
+was a good time to increase prices.
+
+Take photos for example. They are quite important. When I first set about arranging my photo library
+early last year, I found that I had taken a lot of photos using various phones that were still stuck
+on those phones. I had never thought about moving everything over to some central place before, so
+photos from 2018 were in the phone I used then. Photos from 2019 were in the iPhone I am currently
+using without any backup. (I don't use iCloud Photos, so they were stored in *just one place.*) I
+know of people who lost a lot of their photos because their phone just refused to start up one
+day. The helplessness and regret that follows losing important data is *neither* worth the effort
+required to build a system to manage data yourselves, *nor* is it worth saving the money you would
+pay Google Photos or iCloud, if you are not interested in building your own system. Let's go back to
+the start: photos.
+
+Do you take photos with your phone? If yes, do you back up these photos? I have found that there are
+two answers to this question: The first one is "Yes, I use {iCloud/Google Photos/Dropbox} to backup
+my photos." The second one is "No, I don't backup my photos. Why do I need to? What is going to
+happen to my phone anyway?" I have found that *something always happens.*[fn:5] When something does
+happen, but *is* fixable, you go to the support center. And the first thing that
+the support person is going to ask you to do is unlock the phone and hand it over to them. This
+happened both when I gave my Nexus 5X for its motherboard to be replaced and when I went to an Apple
+Store to get an iPhone's broken display changed.[fn:6] There *might* be the option to not give them
+your password, and instead ask the
+support people to just format everything on your phone. You can't do this if you have photos on the
+phone that you want to recover. The good faith assumptions about support people not looking at your
+personal data notwithstanding, do you really want to hand over your unlocked phone with several
+years worth of personal digital data about you, your friends, and your family to someone else? I
+don't.
+
+So, I use Shotwell to store and manage my photo library.[fn:2] This applies to other parts of your
+digital life as well: Passwords, scanned data (documents like your passport), email. Taming the data
+that is created as during my life is worthy of its own blog post. I will probably do at least one
+about email and photos, because those two have been the most interesting exercise for me. During
+these, I have run into the strange patterns that keep repeating in managing data, the amazing
+ability that comes about from thinking of everything as a file, the use of GNU tools like =comm=,
+=sha256sum=, =awk=, =sed=, and much more.
+
+-----
+
+So, there it is. My rationale for switching from Ubuntu to Debian, and my rationale for frequently
+updating your operating system through a controlled process, forcing you to automate as much of the
+setup as possible. The tools are there and all of them are well-integrated into the Debian and
+Debian-based distributions.[fn:3] All you have to do is build your own system.
+
+* Footnotes
+
+[fn:6] Now, I have no idea *why* this is required: Surely, changing the display has nothing to do
+with the software itself. But I have no idea how these devices work either, so I am not going to
+second guess the professionals.
+
+[fn:5] If nothing has happened to you, that's great. But it doesn't hurt to be prepared, and that's
+what I am evangelizing here.
+
+[fn:4] Loop files are setup using =losetup=, and allow you to treat a simple file on your filesystem
+as a block device and do things with it that you would generally only do with a hard drive (which is
+seen as a block device.) So, you could set up a LUKS container inside a simple file, by setting it
+up as a loop file, creating a LUKS container on it, then creating a partition table inside it and
+multiple partitions inside that partition. All of this works because Linux is super strict with
+abstraction. For me, loop files, and their implementation in Linux, is sort of the pinnacle of great
+software design. The manual page for [[https://linux.die.net/man/8/losetup][losetup]], the command used to set up loop files, is informative
+and easy to read. Something like [[https://dyne.org/software/tomb/][Tomb]] is possible only because of loop files. It is not supported on
+Mac OS because ... well, of course anything useful would never exist on Mac OS. (I am forced to use
+a Macbook at work because of better Mobile Device Management support for that operating system, and
+MDM is a prerequisite for most IT teams: it allows them to control the company's data and wipe the
+hard disk remotely if something happens to the laptop.)
+
+[fn:3] I did not use the cryptsetup CLI tool once when setting up encrypted partitions because the
+Disks utility on Debian (=gnome-disks=) works well with LUKS1.
+
+[fn:2] The process is convoluted, but definitely worth it. I copy HEIC files from iPhone to Windows
+through the Windows Photos app; then convert them from HEIC to JPEG using [[https://www.copytrans.net/copytransheic/][CopyTrans HEIC]]; and then,
+import them into Shotwell. Transferring photos from a digital camera into Shotwell is *extremely*
+simple: Connect the camera to your computer, open Shotwell, and click "Import All."
+
+[fn:1] This happened in September 2022, and it was a /soul crushing/ incident. It overtook my previous
+"I ruined my electronic device and I can blame only myself" incident from 3 years ago.
