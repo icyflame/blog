@@ -1,0 +1,103 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Review - Darkness at Noon (Koestler)
+categories: book-review dystopia
+---
+#+end_export
+
+*Rating:* 5/5
+
+This novel starts off with an imprisoned protagonist thinking of the past where the prisoner was
+part of the very Revolution that has now imprisoned them. As the story progresses, philosophical
+ramblings come at increasingly frequent intervals and the novel reveals the most valuable plot
+point: watching the protagonist go back and forth between the belief that the "Revolution" was a
+good thing, which will eventually attain its original goals; and the belief that the Revolution was
+incorrect to say that "an individual is the product of one million divided by one million."
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+Other dystopia tell us about the villain well before the book starts: No one thinks what Big Brother
+does in 1984 is doing *could be remotely* good. No one thinks that burning books in Fahrenheit 451
+is the logical thing. The outcome is framed, forcefully and without any shred of doubt, as an
+aberration; a mistake. The author is trying to get the reader to realize the absurdity of the
+situation and the mistakes in reasoning that lead to it. While reading Darkness at Noon though, this
+is not always clear. I am fairly convinced that the Revolution did not actually change anything in
+this fictional world and that had it not happened nothing significant would have been lost. However,
+we get to see the present through Rubashov's eyes, and Rubashov himself was deeply involved in
+creating the Revolution and putting No. 1 in power. So, when Rubashov explains the reason for the
+way things were done during the Revolution, it is clear (to us and to Rubashov himself) *why*
+Rubashov himself has now been imprisoned by No. 1.
+
+The story starts off with the protagonist of this novel, Rubashov, switching relentlessly between
+the present and the past. It took me some time to understand what was going on, whose story this is,
+where we were. I managed to piece together most of this by p.70. But then, from p.73 to p.76,
+Koestler has another character read Rubashov's full biography. Nevertheless, this part of the book
+was fun. So, one thing I will say is this: *Do not obsess over the specifics of where the revolution
+is happening, what Rubashov's exact role was, how No. 1 came to power, what happened to the old
+leader, etc.* These are mostly peripheral to the main question of the plot: *Should Rubashov
+participate in his own self-sacrifice for the sake of the Revolution? Or should he "die in silence"
+and betray the Revolutionary cause, which has become increasingly unclear to him?* Just as Rubashov
+was instrumental in the death of a union member who believed the Party's ideals /too much/, now
+No. 1 has come to him and asked for his head. Should Rubashov acquiesce?
+
+During the course of the hearings, we see that Rubashov thinks everything out to the logical
+conclusion: He concludes that "the Party can never be mistaken." He decides to confess to the
+charges that are laid upon him, under considerable duress, and agrees to go to a public trial. The
+tactics used on him are (ironically) the same that worked on common peasants: sleep deprivation,
+constant interrogation with brief periods of rest of a couple hours at most, a fluid set of charges
+that are applied on him and updated on the fly depending on what *actually* confesses to.
+
+But he also ignores some key flaws in his thinking: He says that he is acting honorably, and that to
+act with honor is to "be useful without vanity." From the descriptions of what No. 1 did to his
+opponents or is now doing to Rubashov himself, it is clear that No. 1's primary characteristic *is*
+his vanity. There is no honor in what No. 1 is doing. He has lied to his population that Rubashov is
+a traitor to the Revolution; and he has lied to Rubashov (indirectly) that the population *needs* a
+traitor in order to be invigorated about the Revolution; that there will be a war soon and to give
+them a public trial is the only way to reinforce their true belief (or at least, weed out more
+"traitors"). No one benefits except No. 1, who stays in power perennially, through the application
+of this devious logic.
+
+One final thing is about revolutions themselves. The book only lightly touches on this point, but it
+felt *very* insightful to me. Rubashov was a part of the original Revolution; he was fighting
+against economic fatality; he was applying philosophy to problems in order to get the population to
+revolt against Capitalism. The generation after the Revolution's founders are also ostensibly doing
+the same thing; however, there is one key difference: *They have never seen the world before the
+Revolution.* In essence, they have no idea what they are rebelling against. They were born when the
+world had already been transformed violently; and now, they knew nothing about the transformation or
+how the world was before the transformation.  This breaks the whole setup: The Revolution is reduced
+to nothing more than a "mythical event" which is used to keep things going the same way as they
+currently are; to retain power within the same centers and the same people. There is no possibility
+for any true "Revolution" which remains both true to its original goals and in constant flux. For
+the original goals will soon be forgotten. And the flux that overthrew the old ruling class to put
+the new one in place, if allowed to continue, might be used to throw out the new ruling class and
+put an even newer one in its place.  This is the ultimate logical wrench in the wheel.
+
+Rubashov is unable to find any way to pull the wrench out. But he is hopeful:
+
+#+begin_quote
+[Rubashov thought] Soon it would be over. But when he asked himself, For what actually are you
+dying? he found no answer. It was a mistake in the system; perhaps it lay in the precept which until
+now he had held to be incontestable, in whose name he had sacrificed others and was himself being
+sacrificed: in the precept, that the end justifies the means. It was this sentence which had killed
+the great fraternity of the Revolution and made them all run amuck. What had he once written in his
+diary? 'We have thrown overboard all conventions, our sole guiding principle is that of consequent
+logica; we are sailing without ethical ballast.' Perhaps the heart of the evil lay there. Perhaps it
+did not suit mankind to sail without ballast. And perhaps reason alone was a defective compass,
+which led one on such a winding, twisted course that the goal finally disappeared in the
+mist. Perhaps now would come the time of great darkness. Perhaps later, much later, the new movement
+would arise -- with new flags, a new spirit knowing of both: of economic fatality and the 'oceanic
+sense'. Perhaps the members of the new party will wear monks' cowls, and preach that only purity of
+means can justify the ends. Perhaps they will teach that the tenet is wrong which says that a man is
+the product of one million divided by one million, and will introduce a new kind of artithmetic
+based on multiplication: on the joining of a million individuals to form a new entity which no
+longer an amorphous mass, will develop a consciousness and an individuality of its own, with an
+'oceanic feeling' increased a million fold, in unlimited yet self-contained space.
+
+-- p.206
+#+end_quote
