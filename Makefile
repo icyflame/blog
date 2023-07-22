@@ -13,6 +13,8 @@ help: ## Show this help
 
 .PHONY: serve-dev
 serve-dev: ## Start a server with development configuration
+	bundle exec jekyll serve --watch --future --config _config.yml,_config_ymd.yml,_config_dev.yml 2>&1 > /dev/null -H $(BINDTO) -P $(PORT)
+
 
 .PHONY: docker-serve-dev
 docker-serve-dev: ## Start development server by running a Docker container
