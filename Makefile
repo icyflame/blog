@@ -13,16 +13,6 @@ help: ## Show this help
 
 .PHONY: serve-dev
 serve-dev: ## Start a server with development configuration
-	bundle exec jekyll serve --watch --future --config _config.yml,_config_ymd.yml,_config_dev.yml 2>&1 > /dev/null -H $(BINDTO) -P $(PORT)
-
-.PHONY: clean
-clean: ## Clean-up temporary files (such as Emacs tmp files)
-	find . -iname "*~" -type f -delete
-	find . -iname "#*~#" -type f -delete
-
-.PHONY: publish-single
-publish-single: ## Publish a single Org file
-	bash publish-single.sh $(FILENAME)
 
 .PHONY: docker-serve-dev
 docker-serve-dev: ## Start development server by running a Docker container
@@ -35,3 +25,12 @@ docker-serve-dev: ## Start development server by running a Docker container
 .PHONY: docker-build-image
 docker-build-image: ## Build Docker image for the blog
 	docker build -t blog:latest .
+
+.PHONY: clean
+clean: ## Clean-up temporary files (such as Emacs tmp files)
+	find . -iname "*~" -type f -delete
+	find . -iname "#*~#" -type f -delete
+
+.PHONY: publish-single
+publish-single: ## Publish a single Org file
+	bash publish-single.sh $(FILENAME)
