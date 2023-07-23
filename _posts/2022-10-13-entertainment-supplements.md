@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Why Do You Read Entertainment Supplements?
-categories: media advertisements
+categories: media advertising
 ---
 
 The newspaper represents the canonical form of media. This medium is devoid of the strangeness
