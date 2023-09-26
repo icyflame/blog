@@ -19,7 +19,7 @@ ad as if it were a legitimate result.
 
 <!--more-->
 
-![img](/public/img/screenshot-2022-08-23-23-44-36.png)
+![img](/home/siddharth/personal/blog/public/img/screenshot-2022-08-23-23-44-36.png)
 
 I have gone to _frankly_ absurd lengths to ensure that advertisements are not seen on my home
 network. I have installed an ad blocking DNS server, which requires _some_ periodic maintenance. I
@@ -135,7 +135,8 @@ you to pay for more (as a subscription, of course) and you will have little choi
 initial 15 GB of data that Google gives you is so much that you would have used it with abandon and
 you no longer know what is in Google Drive, Dropbox, and One Drive.
 
-If you are unwittingly using Google Photos, then your photos are being backed up all the time.
+If you are unwittingly using Google Photos, then your photos are being backed up all the time. If
+you set up a new Android phone recently, the default is to "backup" all your photos to Google Photos.
 
 Of course, all of this is designed to make moving out of Google incredibly hard. Here is a
 hypothetical scenario:
@@ -190,7 +191,22 @@ simpler economic argument that there is no "free lunch" is slightly more effecti
 If the metaverse is where the entertainment of the future is going to come from, people will have
 little choice or say in the matter. Much as the television and the Internet changed society without
 a vote, the present status-quo will change and future technologies will all appear without any
-debate. The lack of technological progress is only going to be seen as a failure.
+debate. The [lack of technological progress](/2023/02/18/unstoppable-march-of-technology) is only going to be seen as a failure.
+
+---
+
+We don't need and should not use "upload and forget" one-click solutions. We need tools that whose
+operation is familiar and configurable:
+
+> What we need &#x2026; is tools&#x2013;not colleagues or friends. And yet technology companies learned long ago
+> that their products are far more appealing&#x2013;and more profitable&#x2013;when humans manage to bond with
+> them. As robots increasingly come to replace humans in retail and food services, these humanoid
+> touches begin to seem especially sinister. Walmart, one of the companies that recently began using
+> robots in its stores, is already implementing training programs to help their employees transition
+> into other sectors, knowing that the number of retail positions will soon decline as machines take
+> over.
+>
+> &#x2013; p.112, God, Human, Animal, Machine (O'Gieblyn, Meghan)
 
 [^1]: Some might argue that the product has actually become less easy to use in the past few years.
 [^2]: I had the chance to see this feature in action and I am stunned by how good it is at identifying pictures of babies and matching them with adults. When it worked with nearly 5 years of photographs, I could not identify a single mistake in its recognition. This feature _really_ made me feel like I was missing out on something big by not using Google Photos. I can see the power of a Photos product which can identify people and tell you about them _exactly_ when you are thinking about them.
