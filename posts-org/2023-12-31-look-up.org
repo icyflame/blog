@@ -1,0 +1,85 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Look Up
+categories: internet tools distractions
+---
+#+end_export
+
+"Look up," "Take it easy," and "Keep it real." What do these phrases mean? Their literal meaning is
+easy enough to grasp. But they are never used in the literal sense. They are touted as cures to our
+collective ills; metaphors for the actual processes which would make everyone less cynical and more
+attentive. I heard these phrases in the coda of an inane Hindi movie recently. The movie contained
+generic drivel about young people: the improbably rich MBA graduate in her 20s, the extremely
+hardworking gym trainer that luck does not favor, and the stand-up comedian who appears to be
+happy-go-lucky but is in fact hiding a dark part of his past. These characters are "finding their
+way" in the world; the typical plot of a "coming-of-age" movie. The lesson of this movie was to
+convince everyone to put their phone in a (stupid and futile) bowl, "look up," and take notice of
+the world around them. One of the characters is told to stop stalking her ex-boyfriend on Instagram;
+"I don't know [why]; *I can't stop."* It is ironic that it is this same character, a few minutes
+later in the movie, who recommends "keeping it real." What was the great revelation?
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+Much has been said about social media. This much we know: It makes everyone feel worse about
+themselves; consume more; buy things they don't need; idolize people they don't know; envy those
+that they do; and follow things that no one should spend any time on. Yet, Instagram and TikTok
+remain popular (an understatement). 10 people sitting around a table in a restaurant, each staring
+at their phones, is neither unfamiliar nor jarring. Every free moment is spent that way anyway. Why?
+
+I am not interested in the /generational answer./ The one that begins with /"Hamare zamane mein,
+..."/ ("In our time, ...") There was never a time when everyone did not complain about the young
+people of their time. It is bad form to appreciate change, after all. Writing, telegraph, radio,
+television, the Internet, email, and Whatsapp: Each brought a revolution that some adopted, most
+ignored, and everyone had to live with. The time one waits for a response has changed; the person
+waiting still remains unchanged. Do you agree?
+
+Many potential answers are left to consider. One of them is that the boredom and boundaries of
+/ordinary/ life are much to strict, and that is what everyone is escaping in the digital worlds that
+they inhabit all day. These tools provide access to facts that were never before assigned so much
+value. What was once scoffed at as caprice is now applauded in the comments-sections as
+spontaneity.
+
+The viewer's insecurity is monetized by the "influencer." In the ultimate portrayal of irony, the
+selfsame Hindi movie which triggered this line of thought in me, has this prize line of dialogue in
+response to the statement "She is an influencer."
+
+#+begin_quote
+And who is she influencing?
+#+end_quote
+
+A cursory look at the advertising industry suggests that advertising on the Internet is completely
+ineffective and that the continued investment of *actual* money is a product of group think.
+
+This effort to jump the fence is further reinforced by innovations that keep us inside a larger,
+encompassing fence. One where limitations are enforced by the service providers. The professional
+reviewers have portrayed this as a willing trade-off of freedom for convenience. "Stay in the walled
+garden, obey the platform's guidelines, and everything will be great." Have you heard that before?
+
+Someone said this long ago: "The current iteration of technology has solutions for problems which
+were created by the previous iteration." The quest to build that single super-app is essentially
+eternal.
+
+*Own your devices; find your own (open-source) tools; build your own process; do not depend on the
+whims of large companies;*
+
+-----
+
+Contributing influences:
+
+- Hindi movie (that shall not be named for fear that others might watch it out of curiosity)
+- This quote from Meghan O'Gieblyn's essay *Contemporaries* from the collection *Interior States*:
+	#+begin_quote
+	Perhaps the essential appeal of the digital world is its capacity not to distract us from the
+	present but to clench us in its maw. There is something hypnotic in its assurance that nothing
+	lies beyond the day's serving of novel minutiae. To leave this world, even for an hour, is to
+	find yourself drifting uncertainly beyond the margins of the moment. Your mind begins to wander,
+	or else you find yourself slipping uneasily into the past.
+
+	#+end_quote
+- Sacasas' work: https://theconvivialsociety.substack.com/
