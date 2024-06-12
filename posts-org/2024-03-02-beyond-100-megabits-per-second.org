@@ -129,6 +129,14 @@ any drivers to work.[fn:2]
 
 [[file:~/code/blog/public/img/usb-to-lan-adapter.jpeg]]
 
+*Note:* I do not recommend this product as the USB to LAN adapter of choice. It is the TP-Link UE300
+1Gigabet Ethernet to USB-A adapter. However, it uses the Realtek RTL8153 IC chip inside it and this
+chip appears to be unreliable and after just a few days of use, the adapter stopped working
+properly. It would start in the "connected" state with the LED light flickering, indicating that it
+was working properly. But soon after that, the LED light would stop flickering and the LAN
+connection would no longer be recognized by the OS. This problem with the RTL8153 IC chip [[https://overengineer.dev/blog/2021/04/25/usb-c-hub-madness/#user-content-fn-2][seems]] to
+be common and a reason for the unusability of many Ethernet adapters and USB-C hubs as well.
+
 Finally, I was able to get speeds higher than 100 Mbps on a wired connection:
 
 [[file:~/code/blog/public/img/internet-speed-beyond-100-megabit.png]]
