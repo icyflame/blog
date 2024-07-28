@@ -89,10 +89,4 @@ P.S. I started writing this post on 6th August and I have finished it today.
 Since then, I have also heard Vampire Weekend's Modern Vampires in the City.
 It's a 2013 cheerful, indie-rock album. It's REALLY good!
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Spotify
-discover weekly finds me something amazing, again <a
-href="https://t.co/9rMeukPYdS">pic.twitter.com/9rMeukPYdS</a></p>&mdash;
-Siddharth Kannan (@_icyflame) <a
-href="https://twitter.com/_icyflame/status/894840773572608000">August 8,
-2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+[![twitter-screenshot](/public/img/2017-08-08-twitter.png)](https://twitter.com/_icyflame/status/894840773572608000)

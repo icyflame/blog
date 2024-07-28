@@ -107,7 +107,7 @@ Most of my co-workers use Chrome and I have read a little bit about the
 WebExtensions API and how it's a standard and can be used across browsers and
 what not. So, I wanted to give it a quick try and see if I could make it work on
 Chrome with a few tweaks. It turned out to be fairly easy! The Chrome store
-forces on you several severe restrictions: 
+forces on you several severe restrictions:
 
 - A 128x128 icon which has 16 transparaent pixels on both sides
     - Why must Google force the developer? Surely, they can pad the image once
@@ -149,4 +149,4 @@ website [work][15]!
 [12]: https://chrome.google.com/webstore/detail/open-circleci-workflows/fcjcanbkalgfniilkedfjgaglfgdjlcb
 [13]: https://github.com/icyflame/open-circleci-workflows-firefox
 [14]: https://addons.mozilla.org/en-US/firefox/addon/open-circleci-workflows/
-[15]: https://twitter.com/_icyflame/status/1173258404220948481
+[15]: https://bugzilla.mozilla.org/show_bug.cgi?id=1478037

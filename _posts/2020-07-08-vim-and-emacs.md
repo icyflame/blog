@@ -146,9 +146,11 @@ this regard.
 
 ***
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I have heard a lot about Org mode in the last few months, so I finally opened a test org file and start watching a YouTube talk in another window. it&#39;s markdown on steroids, and extremely well integrated with emacs<a href="https://t.co/bYTQWzt6tc">https://t.co/bYTQWzt6tc</a><a href="https://t.co/cSYYulJyHD">https://t.co/cSYYulJyHD</a></p>&mdash; Siddharth Kannan (@_icyflame) <a href="https://twitter.com/_icyflame/status/1253337750696157185?ref_src=twsrc%5Etfw">April 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[![twitter-screenshot](/public/img/2020-04-23-twitter.png)](https://twitter.com/_icyflame/status/1253337750696157185)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Org mode for daily notes is pretty handy (especially if you get bigquery results into Emacs) if you want to quickly calculate percentages and sums! <a href="https://t.co/19MmJlhjp6">https://t.co/19MmJlhjp6</a></p>&mdash; Siddharth Kannan (@_icyflame) <a href="https://twitter.com/_icyflame/status/1253689496488439808?ref_src=twsrc%5Etfw">April 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---
+
+[![twitter-screenshot](/public/img/2020-04-24-twitter.png)](https://twitter.com/_icyflame/status/1253689496488439808)
 
 [1]: https://www.youtube.com/watch?v=JWD1Fpdd4Pc
 [2]: https://www.youtube.com/watch?v=SzA2YODtgK4

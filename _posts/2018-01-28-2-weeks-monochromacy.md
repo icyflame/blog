@@ -7,14 +7,7 @@ categories: experiments
 
 It all started with a tweet.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is
-a very interesting exercise and I am going to partake! (Atleast for a while) <a
-href="https://t.co/zzHTRdAcn7">https://t.co/zzHTRdAcn7</a></p>&mdash; Siddharth
-Kannan (@_icyflame) <a
-href="https://twitter.com/_icyflame/status/952969906315698177?ref_src=twsrc%5Etfw">January
-15, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+[![twitter-screenshot](/public/img/2018-01-28-twitter.png)](https://twitter.com/_icyflame/status/952969906315698177)
 
 My phone is now two years old and I was looking for the next thing out there
 because I am bored with my phone and I **really** don't want to buy a new phone.

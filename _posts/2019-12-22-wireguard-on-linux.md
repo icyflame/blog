@@ -5,7 +5,7 @@ title: Setting up Wireguard - Experience
 categories: wireguard linux vpn
 ---
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">So, I kind-of got wireguard working. 10.0.0.1 on my computer is the same as the public IP address of the droplet. How do I forward all the traffic though? 🤔 The guide on <a href="https://t.co/qQpkb7cnBc">https://t.co/qQpkb7cnBc</a> assumes way too much knowledge about networks: <a href="https://t.co/XkUriFogzh">https://t.co/XkUriFogzh</a></p>&mdash; Siddharth Kannan (@_icyflame) <a href="https://twitter.com/_icyflame/status/1205691360755372033?ref_src=twsrc%5Etfw">December 14, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[![twitter-screenshot](/public/img/2019-12-14-twitter.png)](https://twitter.com/_icyflame/status/1205691360755372033)
 
 **Note:** There are [several][1] [guides][2] [out][3] [there][4] which have a
 set of steps and the commands to set-up Wireguard on a Linux computer. This post

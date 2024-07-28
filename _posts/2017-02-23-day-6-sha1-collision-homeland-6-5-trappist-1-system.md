@@ -7,14 +7,14 @@ categories: 100daysofwriting writing security cryptography astronomy
 
 Well well well. That was an eventful day.
 
-I just learned from an [@eevee
-tweet](https://twitter.com/0xabad1dea/status/834802038303236097) that SHA-1
-collision was generated. That was about 40 minutes ago. Before that, another
-tweet told me showed me the cute gif that [Google
-made](https://twitter.com/GoogleDoodles/status/834574707915644929) for the
-TRAPPIST-1 discovery. All of this was right after I had just seen Homeland
-S06E05. I love the episode. I raved about it [on
-Twitter](https://twitter.com/_icyflame/status/834802184462098432).
+I just learned from an [@eevee tweet](https://twitter.com/0xabad1dea/status/834802038303236097) that
+SHA-1 collision was generated. That was about 40 minutes ago. Before that, another tweet told me
+showed me the cute gif that [Google
+made](https://twitter.com/GoogleDoodles/status/834574707915644929) for the TRAPPIST-1 discovery. All
+of this was right after I had just seen Homeland S06E05. I love the episode. I raved about it on
+Twitter.
+
+[![twitter-screenshot](/public/img/2017-02-23-twitter.png)](https://twitter.com/_icyflame/status/834802184462098432)
 
 ![day61](/public/img/day-6-1.png)
 
@@ -60,7 +60,7 @@ basically, what we are seeing now was happening at these planets 40 years ago.
 
 Wow, that's one generation of life! Imagine if someone could see (but not
 change) what we were doing 40 years ago, and think about how they would have
-felt about it. 
+felt about it.
 
 Or better still, what if someone watched what we are doing right now, 40 years
 from now. For simiplicity, you should probably assume that it is human beings

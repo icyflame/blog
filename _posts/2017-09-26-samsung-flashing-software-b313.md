@@ -7,14 +7,7 @@ categories: phones samsung software experience
 
 It all started with this tweet:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I forgot
-my Samsung B313 lock password. I am still in disbelief. 😥😥 getting thehone
-to work again is going to be a PITA. 😢 <a
-href="https://t.co/o8IwxnQdDA">pic.twitter.com/o8IwxnQdDA</a></p>&mdash;
-Siddharth Kannan (@_icyflame) <a
-href="https://twitter.com/_icyflame/status/910770407925415936">September 21,
-2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+[![twitter-screenshot](/public/img/2017-09-21-twitter.png)](https://twitter.com/_icyflame/status/910770407925415936)
 
 That's a Samsung SM-B313E/D. I forgot the password and it was actually really
 disturbing because I couldn't depend on myself to remember the several other

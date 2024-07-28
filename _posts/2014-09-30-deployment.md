@@ -5,7 +5,10 @@ title: Ship it!
 categories: web-development rails
 ---
 
-So, after the previous post, which actually [caught the attention of the people at Travis CI](https://twitter.com/_icyflame/status/516229626788454400), I am back with the next part of the application lifecycle.
+So, after the previous post, which actually caught the attention of the people at Travis CI, I am
+back with the next part of the application lifecycle.
+
+[![twitter-screenshot](/public/img/2014-09-29-travis-ci-conversation-screenshot.png)](https://twitter.com/_icyflame/status/5162296267884544000)
 
 **Shipping!** Although, the word is simple, and the process is pretty easy to understand, it was something that I obviously, had never done before, and didn't have any idea what it meant either. Because, till now, I have worked with PHP and deploying PHP is simply copying the files onto a server that supports PHP hosting (whatever that means!). Rails, though, was a different game, altogether!
 

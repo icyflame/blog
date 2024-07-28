@@ -39,7 +39,7 @@ Time = GMT + 5.5
 
     ```js
     function getDownloadsUrl(pkg, fromDate, toDate) {
-       return '/downloads/range/' + dateToDayKey(fromDate) + ':' + 
+       return '/downloads/range/' + dateToDayKey(fromDate) + ':' +
                 dateToDayKey(toDate) + '/' + encodeURIComponent(pkg);
     }
     ```
@@ -64,17 +64,7 @@ Time = GMT + 5.5
 
     (b) Tweet to [@izs](https://twitter.com/izs)
 
-    <blockquote class="twitter-tweet" data-lang="en"><p lang="en"
-    dir="ltr">Hey <a
-    href="https://twitter.com/izs?ref_src=twsrc%5Etfw">@izs</a> , looks like
-    the /downloads API changed on NPM? Range now replies only from 18 months
-    prior!<a
-    href="https://t.co/ixlGEMSBaD">https://t.co/ixlGEMSBaD</a></p>&mdash;
-    Siddharth Kannan (@_icyflame) <a
-    href="https://twitter.com/_icyflame/status/902407527702315008?ref_src=twsrc%5Etfw">August
-    29, 2017</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js"
-    charset="utf-8"></script>
+	[![twitter-screenshot](/public/img/2017-08-29-twitter.png)](https://twitter.com/_icyflame/status/902407527702315008?ref_src=twsrc%5Etfw)
 
     (c) Open an issue on
     [npm/registry](https://github.com/npm/registry/issues/206). Here again, the
@@ -151,7 +141,7 @@ absolutely going to HAVE to use it. There are many things that could have been
 done better here: more warning before such API changes, a tweet an hour before
 the API change was deployed would have been notice enough. Or how about adding a
 field to the `/downloads` api response that informed the user that the data is
-not for the complete range that they requested because of a new API change. 
+not for the complete range that they requested because of a new API change.
 
 They have a monthly newsletter, a Twitter account, a blog and they chose not to
 post about this anywhere. I can only guess that they were undergoing an attack

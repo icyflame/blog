@@ -11,17 +11,7 @@ those novels is nearly 600 pages long. She rarely gives any interviews.
 
 ***
 
-<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p
-lang="en" dir="ltr">I am finally done with all three of Tartt&#39;s books and I
-am really torn between choosing The Little Friend and The Secret History as my
-favorite. She is such an amazing author!<br><br>Per her schedule, her next book
-should come out in 2022. Hopefully, it does! <a
-href="https://t.co/aATVTdUZWP">pic.twitter.com/aATVTdUZWP</a></p>&mdash;
-Siddharth Kannan (@_icyflame) <a
-href="https://twitter.com/_icyflame/status/1013102545999310848?ref_src=twsrc%5Etfw">June
-30, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+[![twitter-screenshot](/public/img/2018-07-01-twitter.png)](https://twitter.com/_icyflame/status/1013102545999310848)
 
 This was one of my major goals for this summer. I had already read The Secret
 History by Tartt and after reading that book, I seriously believed that she was

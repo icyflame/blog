@@ -30,7 +30,4 @@ Pursuit. That game has worked on every Windows PC I have tried to run it on,
 and it's a no-bells-and-whistles racing game. I have stuck with it for a few
 years, and probably will for a few more!
 
-Check out my open-source projects on [GitHub](https://github.com/icyflame). Check
-out my NPM modules at [NPM](https://npmjs.org/~icyflame). I watch too many TV
-series and incessantly talk about them on
-[Twitter](https://twitter.com/_icyflame).
+Check out my open-source projects on [GitHub](https://github.com/icyflame).
