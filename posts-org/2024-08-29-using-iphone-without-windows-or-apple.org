@@ -1,0 +1,196 @@
+#+OPTIONS: author:nil toc:nil ^:nil
+
+#+begin_export html
+---
+layout: post
+comments: true
+title: Using an iPhone Without Windows or Apple Computers
+categories: apple linux
+---
+#+end_export
+
+I bought an iPhone 5 years ago. Admittedly, it was a strange choice: I don't like proprietary
+software that one can not customize. I knew that iPhones work well only if one was willing to pay
+for subscription services like iCloud and Apple Music. The fights that Epic Games and Spotify have
+started in court over Apple's attempts to block their native integration into iOS is
+well-known. /But/ I bought one anyway, because I could not get an unlocked Android phone (back then)
+in Japan, and I certainly did not want to buy a locked phone, pay for overpriced cellular network
+coverage for 2 years before the phone could be unlocked and I could switch to a different
+carrier. So, an iPhone was the /least worst option./ Over the years, I have struggled with iPhone's
+software to do basic things, such as writing a text file, transferring photos to a hard drive,
+understanding how exactly WhatsApp and other such apps store their pictures within the phone,
+optimizing to never go past the 30% disk usage mark because flash memory becomes extremely slow
+beyond it and makes the phone unusable, and using browsers like Firefox without the ability to
+install ad or tracker blocking plugins. This post is a summary of some of the things that I have
+learned.
+
+#+begin_export html
+<!--more-->
+#+end_export
+
+One thing that is worth appreciating is that iPhone's software is rather strange and has a lot of
+features, which apparently improve security. I don't know enough to say whether that is actually the
+case. Nevertheless, most obstacles faced during the process of taking data *out* of the iPhone are
+related to intentional design choices which make interoperability impossible. Even in the cases
+where it is possible, various hoops need to be jumped through and the process is probably a
+nightmare for a layperson who just wants to get something done.
+
+* Photos And File Transfer
+
+Just the past week, I started using KDE Connect. There is an application on the iOS app store which
+serves as the client, and the Gnome Shell extension GSConnect runs on the Linux host. Photos can be
+transferred in their original HEIF format over a local WiFi connection. The installation of both
+these components is very simple.
+
+The transfer speed is very fast (the line rate of your WiFi network or the speed at which files can
+be written to your local disk, whichever is lower.) The only consideration is that the phone's
+screen should not lock during the period that the photos are being transferred. I was able to
+transfer as many as 250 files in a single transfer. I can probably transfer up to a 1000 files, but
+I have not tried it out yet. (If you have tried it, [[mailto:mail@siddharthkannan.in][tell me]] the hardware that you are using, and I
+will update this post with the information.)
+
+The same approach can be used to transfer text files (more on this in the next section) or to
+control the cursor and enter text on your computer from your phone or connected device (not sure why
+this is ever required? Slideshow?)
+
+KDE Connect works by starting a TCP/UDP server on a port on the host. (Usually the port number is
+~1716~, but check your local installation's output for the command ~ss -tulpn~ to find the actual
+port. The process name is ~gjs~ on Debian 11.) This port should be able to receive traffic on the
+local network:
+
+#+begin_src sh
+  $ ufw allow in on wlan0 proto tcp from 192.168.1.0/24 to 192.168.1.0/24 port 1716
+  Rule added
+
+  $ ufw allow in on wlan0 proto udp from 192.168.1.0/24 to 192.168.1.0/24 port 1716
+  Rule added
+
+#+end_src
+
+*Note:* One thing you should remember to do is to turn off Gnome Shell Extensions *completely* once
+you are done importing files. I have noticed that once a phone is paired, whenever both the phone
+and the computer are on the same network, they get connected automatically. I don't want that to
+happen unless I am manually connecting for some reason. There is an authorization prompt when a
+phone is paired for the first time. But that authorization is a one-time process, and things such as
+controlling the cursor of the computer /using/ the phone or entering text on the computer are
+possible once this process is completed. This is a minefield which is best avoided by turning off
+Extensions completely.
+
+** Old Process: Using Windows
+
+/If you are not able to use KDE Connect, the following process will work./ It takes more time,
+requires a recent Windows OS installation, and lot of moving files around between Windows and
+Linux. I am leaving this here as a record of my old (painful) process.
+
+About 3 years after buying the phone and taking pictures with it, I wanted to import photos to my
+hard drive and store them there, along with photos from my handheld digital camera. The motivation
+was mainly to store all my photos together in a single Shotwell database. An added advantage was
+that resetting the phone to factory defaults and starting fresh would speed it up significantly,
+increase battery life, and reduce overheating during charging.
+
+There were many hurdles. The first few hurdles were fairly simple:
+
+- Importing required a Windows OS running the horrible Windows application Windows
+  Photos. Everything is "implicit." So, you have to plug-in your phone and /hope/ that the device is
+  detected and an "Import Photos" option shows up. Apple has also seemed to have stopped maintaining
+  iTunes, an application that I used several years ago to transfer MP3 files to an iPod.
+- You can set the iPhone to import photos in the widely supported JPEG format, or in the original
+  "HEIF" format, which was hard to work with. I set the option to import as JPEG as I wanted to
+  handle JPEG photos rather than HEIF photos. (The reduced disk storage, which is a major reason for
+  using HEIF, was not a big issue for me at the time.) But if you try to import too many pictures as
+  JPEG, then the import process ... /goes kaput,/ for lack of a better phrase. There is no error
+  message and the import process just stays stuck for a period of time and then fails with the super
+  generic ~Import has failed. Please try again later.~ message. I think this must be because of the
+  "import as JPEG" option because the conversion from HEIF to JPEG must be performed on the iPhone
+  and it is probably too resource intensive to be completed on the iPhone within some timeout.
+  - Recently, packages like ~heif-gdk-pixbuf~ and ~heif-thumbnailer~ have made working with HEIF
+    files on Linux convenient. About a year ago, Shotwell also [[https://gitlab.gnome.org/GNOME/shotwell/blob/master/NEWS#L24][started supporting]] HEIF file
+    variants. You need to be on the latest stable distribution version to be able to use the latest
+    Shotwell version though. I tried to build the latest Shotwell version on a Debian 11 VM, and it
+    was ... /very hard./ I had to give up because many of the shared libraries which need to be
+    linked are not updated on older distributions.
+- Once you start importing files as HEIF files, the process works most  of the time. I have found
+  that it is unreliable if you attempt to import more than 200 photos at a time. So, I would go from
+  the past to the present and select months to import.
+- Don't make the mistake of using albums on the iPhone because this metadata is not exposed at all
+  and will be completely lost as soon as you bring the photos out of the iPhone. So, I have begun
+  doing all of my categorization *exclusively* inside Shotwell.
+- After importing the files in the HEIF format, they can be converted into JPEG using
+  [[https://www.copytrans.net/copytransheic/][CopyTransHEIC]]. This is a free piece of software for Windows. However, the free version can only
+  convert 100 photos at a time. So, you will have to select batches of 100 photos and convert them
+  to JPEG. This is also mildly annoying when working with large photo collections, such as one that
+  I worked with which had 5000 photos, everything from the first day the phone was bought to right
+  before the import. In that case, I transferred the files back to Linux, put them in 50 folders
+  each containing 99 files, and then went back to windows: ~Ctrl + A~ => ~Convert to JPEG~ => Wait
+  => Proceed to next folder.
+
+/Welcome to using computers, 2024 edition./
+
+* Plaintext
+
+Plaintext is the only truly universal file format.[fn:1] A plaintext file written in the 1960s can
+[[https://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule][still be read]] using the standard tools which are installed on every operating system, including
+mobile phones.
+
+iOS is the exception that proves the rule, of course. The OS works tirelessly to confuse users into
+believing that files do not exist and that folders are a thing of the past. The recently added Files
+app is a pretty bad application and is slower than most feature phones from the 2010s. The recent
+changes on Google Drive have a similar motivation, in my opinion. This approach has also been a
+major part of why Gmail is so popular. It encourages users to maintain a huge set of files, which
+are not categorized well. The only way to get to the file that you want is to search.
+
+First, coerce users into creating files haphazardly without thinking about where they should put a
+file. ("You need a Document? Just create it on the home screen of Google Drive!") Then, once you
+have made this a habit, sell them recurring subscriptions to software that you now *have* to use to
+make sense of all the documents which were created.
+
+The only solution I have found to this is the brilliant iOS application [[https://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule][Subtext]]. It is a *simple*
+text editor, which does not need an Internet connection to start-up. (This is a problem with Notion,
+Evernote, and Fastmail; all of which I have used briefly.) Files created using Subtext can be synced
+to any computer using KDE Connect, the method that I described for photos.
+
+Recently, I noticed that even Dropbox now has the ability to create a text file inside its
+app. Files created in the app are automatically synced to your Dropbox Cloud account and accessible
+from other devices on the same Dropbox account. This might be useful for you if you are unable to
+use KDE Connect.
+
+* SSH
+
+Being able to SSH into a remote server running Linux from an iPhone is a pretty big advantage. This
+is not an absolute requirement and I have lived without this for five years. Recently though, I wanted to
+use [[https://ledger-cli.org/][Ledger]] to keep track of some expenses while on the move. I could use Subtext to write each
+expense in Ledger's understated and simple format:
+
+#+begin_src text
+  2024-07-20 Dinner
+	Expenses:Food:Dinner  INR 450
+	Liabilities:CC
+#+end_src
+
+After entering a few expenses, in order to validate the text file and /balance the books/, I would
+need to use Ledger's CLI somewhere.
+
+[[https://apps.apple.com/us/app/termius-terminal-ssh-client/id549039908][Terminus]] is my preferred solution for this. Terminus doubles as both an SFTP client (to transfer the
+text file to the remotely running Linux machine) and as an SSH client (providing the ability to run
+commands on the Linux machine.)
+
+I did not plan this all out before leaving for my trip; and the whole idea began as a way to
+streamline the integration of expenses during the trip back into my "main" expenses file. So, while
+I was on my trip, I generated an SSH key on Terminus, added it to Digital Ocean, created a Linux VM
+there, SSH-ed in using Terminus, installed Legder and some other tools like ~ripgrep~. The whole
+process was /surprisingly smooth./ So, credit to the Digital Ocean frontend team for making a
+website which was super easy to use even from mobile Firefox. (The website was not responsive or a
+complete redesign or anything, but it was compatible with mobile Firefox completely, and used
+standard HTTP elements which work well on all browsers anyway, rather than custom JavaScript-based
+monstrosities which attempt to validate input before it is submitted or use modals for input fields,
+and seldom work well on mobile browsers.)
+
+* Footnotes
+
+[fn:1] In my opinion, it is even more universal than PDF, which still requires a PDF reader,
+is not easily searchable without one, and is impossible to edit without paid software. I have tried
+to edit PDF files by breaking them up into images, using GIMP to edit the images, and then putting
+the PDF back together, but the final PDF looked noticeable worse than the original one. Good
+software which can do native PDF editing such as [[https://www.bluebeam.com/pricing/][Bluebeam]] costs $260 per year for a single user. A
+steep price to pay. Plaintext can be edited using Geddit, Subtext, Notepad++, Notepad, and or some
+other built-in text file editor on every operating system.
