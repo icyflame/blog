@@ -50,13 +50,11 @@ this:
 > The third man - Bert Voizey - never felt comfortable in this kind of fancy
 > house. Like one of his own ferrets, he had a natural instinct for creeping
 > about in darker corners. He was not at ease with loud, confident people who
-> stared you straihgt in the eye when they talked to you.
+> stared you straight in the eye when they talked to you.
 
 We later learn that Bert posions rats for a living and he's proud of this
 because most people are freaked out by rats, but he understands them and does
-doesn't have to be scared of them. Another line 
-
-Bert is missing from the movie.
+doesn't have to be scared of them. Bert is missing from the movie.
 
 Bic is a character who's only in the movie. He's a pretty 1D character and
 there's not a lot to talk about with him.
@@ -156,7 +154,7 @@ ridiculously for her early morning runs, she wants her husband to take charge
 and ask people why they were staring at her. I would actually go as far as
 thinking that the fact that attracts her to Charlie more than anything is that
 if she were married to Charlie then **NO ONE** would have the guts to say or
-watcher her like they do. It's only because she's married to this Harvard
+watch her like they do. It's only because she's married to this Harvard
 Academic, who's never gone hunting, that she's being stared at and she has lewd
 comments passed on her.
 
@@ -191,7 +189,7 @@ would have their own take-aways for a character like her!
 ## Minor differences
 
 - It's boiling water in the book and boiling oil in the movie
-- When George first hurts Cawsey and ties him to the window, he does it with an
+- When George first hurts Cawsey and ties him to the window, he does it with
     a lot of hesitation because he is conscious of him stepping over the line
     from anger to violence. He says he despises it but realises the need for it
     and does it anyway. In the movie though, David uses a nail gun and nails
