@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="New Wireguard Peer in 10 Minutes" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1035 words about vpn" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2023/07/22/updated-wireguard-setup/" property="og:url">
+  
+
+  
+  <meta content="2023-07-22T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="wireguard" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    New Wireguard Peer in 10 Minutes &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">New Wireguard Peer in 10 Minutes</h1>
+  <span class="post-date">22 Jul 2023</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vpn">
+    vpn
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#wireguard">
+    wireguard
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I have been using Wireguard for about <a href="/2019/12/22/wireguard-on-linux">4 years now</a>. I started with the basic Wireguard setup, where I
+did everything manually and used the <code class="language-plaintext highlighter-rouge">ip link</code> and <code class="language-plaintext highlighter-rouge">ip addr</code> commands to create new links and assign
+addresses to them. The <code class="language-plaintext highlighter-rouge">wg-quick</code> utility is open-source and has built-in SystemD support. So, I
+switched to using the configuration file that <code class="language-plaintext highlighter-rouge">wg-quick</code> requires. With an ad-blocking DNS server, I
+was able to use the setup for a long time without having to change anything at all. The client
+support was excellent on Linux, Android and (even) iOS. I never really noticed whether I had my VPN
+enabled. I kept it enabled at all times except when I needed to access some geofenced
+service. However, I was still writing the wg-quick configuration files manually and most of them
+were very similar. This caused me to put off adding new peers to my network as soon as I needed to.
+Recently, I wrote <a href="https://github.com/icyflame/wireguard-configuration-generator/">a Golang CLI tool</a> which generates <code class="language-plaintext highlighter-rouge">wg-quick</code> compatible configurations for
+Wireguard peers, based on a simple JSON input file. Using this tool, I was able to add a new
+Wireguard peer and create a new network in less than 10 minutes. The path to that CLI tool is what
+this post is about.</p>
+
+<!--more-->
+
+<p>Wireguard is <strong>very</strong> simple.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Literally and conceptually. Literally, it is less than 4000 lines of
+code. The <a href="https://lkml.org/lkml/2019/11/27/266">original patch</a> that added the VPN to the Linux kernel is very small and I have always
+wanted to read it, although I have never been able to because knowledge about the Linux kernel
+networking stack is a prerequisite. Conceptually, it can be explained with a single slide. A
+rudimentary understanding of Linux syscalls is sufficient to understand this slide.</p>
+
+<p><img src="/public/img/wireguard-concept-slide.png" alt="img" /></p>
+
+<p><strong>Source:</strong> <a href="https://www.wireguard.com/presentations/#october-21-2016-codeblue-tokyo-japan">Wireguard Presentation - October 21, 2016 - Codeblue, Tokyo, Japan</a></p>
+
+<p>Given all of this simplicity, the wg-quick configuration to establish a traditional VPN is also very
+simple: It is about 10 lines of code that needs to be on every machine that is part of the VPN, and
+the 2 main differences between configuration files were the ASCII keypairs that are used to identify
+peers inside a network, and whether it is on the server (the peer which will forward all the traffic
+towards the Internet) or the client (the set of peers which will send traffic to the server asking
+it to forward it to the Internet). The configuration is so small that no tool is distributed to
+generate it.</p>
+
+<p><img src="/public/img/Wireguard-Configuration-Generator-Schematic.png" alt="img" /></p>
+
+<p>I have 2 main devices: a computer and a phone. I was able to connect them to 2 VPN servers with a
+total of 6 configuration files. The key pairs for each pair among the 3 servers for 2 different
+networks was different (intentionally); so when I was originally setting this up, I made some
+mistakes while copying the keys and pasting them around, and it took me a couple tries to get the
+setup right. Once I got the setup right, I did not bother to change it for 2 years. After that, I
+had some new requirements which this manual setup did not meet: I wanted to add new clients and new
+servers quickly, because I expected the number of clients to grow and I did not want to manage the
+keys manually anymore. As each peer had a single private key inside each network, and the public key
+could be derived from the private key, this only meant that I needed some sort of persistent map
+between 2 keys: network and client name and 1 string value: the Wireguard private key. JSON or YAML
+files are perfect for this and building a system which reads the file and writes configuration files
+to disk would be ideal and easy.</p>
+
+<p>Some more advantages of this setup was that, all of these configurations were just files. There is
+no need to introduce a new tool to manage them. If your hard drive is already encrypted, you can
+just keep the files as-is on disk, and as long as you are able to boot your computer, the file will
+always be available. If you want to keep the file on some sort of cloud storage but encrypt it
+end-to-end, then you could easily use <a href="https://dyne.org/software/tomb/">GNU Tomb</a> to create an image file, that is internally a
+LUKS-container, with an ext4 filesystem, and upload this image file to the cloud storage
+system. Most cloud storage systems have good integration with the Gnome Files or Nautilus
+applications, so syncing the files is not manual and the status of syncing can be checked easily.</p>
+
+<p>I did not get around to implementing all of this until last month, when I realized that one of my
+new devices did not have a VPN setup and I had been avoiding any use of the device that required a
+VPN. I did not want this pattern to continue.  I wanted to be able to introduce new clients and
+servers easily and without having to think too much, so I got around to writing a single-file Go
+program which would use a JSON file as input and generate configuration files on demand.</p>
+
+<p>The result of it is <a href="https://github.com/icyflame/wireguard-configuration-generator">icyflame/wireguard-configuration-generator</a>. It is not a single file application
+anymore, and I ended up adding some convenience features. My favorite one is the input file
+validator. The JSON file itself is quite small and you can probably read the whole thing in one
+glance, however, when adding a new peer, you have to ensure that the IP address that you assign it
+is unique. So, the tool will automatically read the whole file and ensure that it makes sense: That
+each peer inside a given network has a unique IP address and that the names of the peers inside a
+network are unique so that the files can be properly named.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>There are many great talks about Wireguard by the author, zx2c4. I recommend this one: <a href="https://www.youtube.com/watch?v=88GyLoZbDNw">WireGuard: Next Generation Secure Network Tunnel - YouTube</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

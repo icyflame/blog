@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Updating Node to node 4.x" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="302 words about linux" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2015/10/03/moving-to-node-4" property="og:url">
+  
+
+  
+  <meta content="2015-10-03T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="nodejs" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Updating Node to node 4.x &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Updating Node to node 4.x</h1>
+  <span class="post-date">03 Oct 2015</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#cli">
+    cli
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#linux">
+    linux
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#nodejs">
+    nodejs
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Node 4.x was released. Hmm, now that is a huge jump! I have been using Node 0.10.32
+and Node 0.12.7 for most of my time in Node till now. I have known that a fork
+called io.js has been around for some time now, and has version numbers that have reached 3.x.</p>
+
+<p>When I realised that Node had updated it’s version to 4.x, the first thing that I
+thought of was that I had to update, and then I realized another thing: Backward
+compatibility. I have written about 20 Node modules, published on <a href="http://npmjs.com/~icyflame">npm</a>
+and they probably depend on close to 60-80 modules themselves. So, for everything to work
+perfectly, all of these 100 modules need to be written in such a way that they don’t depend
+on any feature that was dropped when moving from Node 0.12.x to 4.x. Hmm, it seems
+almost impossible that that would be true.</p>
+
+<p>Well, voila, it wasn’t. In fact, one of the modules that I had recently built, <a href="https://www.npmjs.com/package/check-pnr-status">check-pnr-status</a>
+which is to check statuses of various PNRs from the terminal, didn’t work.</p>
+
+<p>I immediately installed NVM (the version manager n didn’t really seem to work for me)
+and ran the module with Node 0.12.7. And it worked.</p>
+
+<p>Now, I was confused. There were quite some dependencies for this particular module,
+most notably, <code class="language-plaintext highlighter-rouge">jsdom</code> and <code class="language-plaintext highlighter-rouge">async</code>. Running the module with Node 4 resulted in a <code class="language-plaintext highlighter-rouge">Segmentation Fault</code>
+, yeah, well, that has always been very informative!</p>
+
+<p>I have not yet gotten any time to fix this yet.</p>
+
+<p>I don’t have any idea how to fix it either.</p>
+
+<p>Changing dependencies to stuff that works on Node 4? Figure out what doesn’t work,
+drop an issue there and hope the maintainer is worried about Node 4 and fixes his/her module?</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

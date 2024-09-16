@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Generating Git Punchcard plot from the terminal" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="567 words about marathons" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/06/22/improving-git-punchcard-plot" property="og:url">
+  
+
+  
+  <meta content="2017-06-22T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="git" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Generating Git Punchcard plot from the terminal &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Generating Git Punchcard plot from the terminal</h1>
+  <span class="post-date">22 Jun 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#git">
+    git
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#marathons">
+    marathons
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#open-source">
+    open-source
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#punchcard">
+    punchcard
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Around 6 pm today, I found
+<a href="https://github.com/guanqun/git-punchcard-plot">guanqun/git-punchcard-plot</a>.</p>
+
+<p>At 10:45 pm, approximately 4 hours later (of which I spent rather less time
+writing stuff, I opened <a href="https://github.com/guanqun/git-punchcard-plot/pull/7">PR
+#7</a>.</p>
+
+<p>Once I cloned the repository, I realised that you <em>need</em> to put the
+<code class="language-plaintext highlighter-rouge">git-punchcard</code> python script in your <code class="language-plaintext highlighter-rouge">PATH</code> for it to start working as <code class="language-plaintext highlighter-rouge">git
+punchcard</code>. I didn’t need any of that, I did <em>really</em> want to see a punchcard
+though. So, I put it there, (<strong>Note 1:</strong> Take path from the CLI if provided!)</p>
+
+<p>When I generated the punchcard for a repository, it looked like this:</p>
+
+<p><img src="/public/img/punchcard-original.png" alt="before" /></p>
+
+<p>It looked <em>okay</em>. The opacity was a problem. I might have made fewer commits
+during those times (this is the punchcard of <a href="https://github.com/icyflame/blog/graphs/punch-card">my blog
+repository</a> generated using
+this utility). So, I also wanted to fix that so that the opacity of all the
+circles will be 1 and the circles will all be black.</p>
+
+<p>Implementing these two was rather easy. (I delved into one Cairo function and
+searched and found <code class="language-plaintext highlighter-rouge">os.getcwd()</code> and <code class="language-plaintext highlighter-rouge">os.chdir()</code>) Now the punchcard looked more
+like the one on GitHub, and pretty good:</p>
+
+<p><img src="/public/img/punchcard-middle.png" alt="middle" /></p>
+
+<p>I was about to open a PR to the repo, when I came across <a href="https://github.com/guanqun/git-punchcard-plot/issues/5">Issue #5:
+Timezones</a>. It put forth
+a rather interesting problem. You have collaborators working from different time
+zones and you would like to figure out when they work, so you can plan upgrades
+and also schedule meetings without asking them when they work. (decidedly more
+cumbersome, but why not?)</p>
+
+<p>This was the part that ate up the most of my time. Understanding the internals
+of the myriad utilities that Python has to work with Timestamps. There isn’t
+just one module does everything. Oh no, that would be too easy. Instead, there
+are atleast 4 modules: <code class="language-plaintext highlighter-rouge">datetime</code>, <code class="language-plaintext highlighter-rouge">time</code>, <code class="language-plaintext highlighter-rouge">email.utils</code>, <code class="language-plaintext highlighter-rouge">calendar</code>. Each of
+them has a few functions and they all seem to seemlessly interop with each
+other. It’s rather confusing and I was finally able to understand what functions
+to use after considerable amount of moving around the documentation pages of all
+these functions and an open Python shell. The code I wanted was:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">formatdate</span><span class="p">(</span><span class="nf">mktime_tz</span><span class="p">(</span><span class="nf">parsedate_tz</span><span class="p">(</span><span class="n">RFC_TIME_STR</span><span class="p">))</span> <span class="o">+</span> <span class="n">FINAL_OFFSET</span><span class="p">)</span>
+<span class="c1"># -&gt; This would give me a RFC 2882 compatible string
+</span></code></pre></div></div>
+
+<p>One final thing I added in because almost as soon as I had done all this, I
+realised that the punchcard was for the <em>whole</em> project lifetime which could be
+years in a lot of cases. I needed some way to limit the period from which the
+punchcard was being built. One look at <a href="https://www.git-scm.com/docs/git-log#_commit_limiting">git-log’s commit
+limiting</a> documentation
+made it obvious to me that tunnelling options to git would be the most flexible
+option to go forward.</p>
+
+<p>The list of options that git-log supports is <strong>rather extensive!</strong>.</p>
+
+<p>That was the path I took to get the following punchcard of my 100 Days of
+Writing project on this blog:</p>
+
+<p><img src="/public/img/punchcard-100daysofwriting.png" alt="final" /></p>
+
+<p>Anyway, the open PR is now on
+<a href="https://github.com/guanqun/git-punchcard-plot/pull/7">Github at #7</a>. If you
+have the time, download the script on that branch and make some punchcards for
+repositories that you work on or others work on. Maybe you will discover
+something interesting about your colleagues.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

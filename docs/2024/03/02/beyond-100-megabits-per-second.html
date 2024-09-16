@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Beyond 100 Megabits Per Second" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1838 words about internet" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2024/03/02/beyond-100-megabits-per-second" property="og:url">
+  
+
+  
+  <meta content="2024-03-02T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="internet" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Beyond 100 Megabits Per Second &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Beyond 100 Megabits Per Second</h1>
+  <span class="post-date">02 Mar 2024</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#hardware">
+    hardware
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#internet">
+    internet
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>After moving to a new apartment recently, I made a contract with an ISP offering a best effort 1
+Gigabit connection. At both apartments I lived in previously in Japan, an Internet connection was
+bundled with the rental agreement. As these connections had a maximum bandwidth of 100 Megabit, I
+never looked at my peripherals to see whether they were capable of Gigabit. When I bought a
+computer, I noticed (without much interest) that the computer’s motherboard was capable of Gigabit
+ethernet. When I checked my Internet speed with a Gigabit connection, I noticed that it was only
+about 93 Mbps. This post is the story of understanding my home network, the various bottlenecks
+along the way, and finally, going beyond 100 Mbps.</p>
+
+<!--more-->
+
+<h1 id="internet-in-japan">Internet in Japan</h1>
+
+<p>Before we delve into the exact setup and the various problems that I encountered during my setup, it
+will be worthwhile to explain the way broadband Internet connections work in Japan. In any Internet
+connection setup, there are two parts to the connection: The first part is the <strong>Access network</strong>
+which consists of all the wires which go from each subscriber’s home to the “Edge router” of the
+Internet service provider (ISP). The second part is the <strong>ISP’s own network</strong>, which peers with Internet
+exchanges, public and private peers to provide full route transit to users. In Japan, these two
+parts of the Internet connection are owned and administered by two different entities.</p>
+
+<p>The access network is more-or-less completely owned by Nippon Telegraph and Telephone company (NTT),
+one-third of which is owned by the Japanese government. Japan’s constitution has special laws
+regarding NTT, which started as a state monopoly, but was later privatized in 1985. Recently, other
+companies such as KDDI have also started laying their own cables to users’ homes. However, NTT still
+provides the widest coverage across the country, through their product, known technically as the
+<a href="https://www.ntt-east.co.jp/aboutus/ngn_about.html">“Next Generation Network (NGN)”</a> with the brand name “FLETS”.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> The NGN is able to provide upto
+<a href="https://flets.com/cross/">10 Gbps</a> of bandwidth to individual home Internet users.</p>
+
+<p>This separation of the access network and the ISP networks is unusual. It is the main reason for the
+large number of internet service providers for broadband Internet in Japan. The market is extremely
+competitive and there are perennial discount campaigns which are run by companies to get users to
+switch companies. As the access network itself remains unchanged no matter which ISP you sign up
+with, switching to a different ISP is as simple as signing up for a service online, receiving PPPoE
+username/password information via e-mail, and reconfiguring your router on the appropriate day and
+connecting to your new ISP.</p>
+
+<p>However, this ease of shifting companies also means that predatory practices among ISPs are
+common. The most notorious of these being the “contract termination” fees. Several popular ISPs have
+fixed term contracts, which run for 2 or 3 years. If a contract is terminated during this period,
+users are charged the contract termination fee. (Interestingly, there are discount campaigns in
+which the new ISP will refund the user the contract termination fee that was charged by their
+previous ISP.)</p>
+
+<p>In technical terms, this separation means that the equipment used to connect to the access network
+is the same, irrespective of the ISP that you choose to use. It is a small black box, called the
+“Optical Network Unit (ONU)”:</p>
+
+<p><img src="/public/img/onu.jpeg" alt="img" /></p>
+
+<p>The ONU has 1 port where one can connect a Fiber optic cable, which connects to the closest
+telephone poll, managed by NTT and connecting the ONU to the access network. On the other side, it
+has a RJ-45 Ethernet port which can be connected to the WAN port of your home network’s router.</p>
+
+<p>Another peculiar technology which is (probably) only used in Japan for home Internet access is IP
+over Ethernet (IPoE). IPoE is a technology which I could not find much documentation about at
+all. Several ISPs in Japan have recently started offering IPoE in order to connect to the IPv6
+internet. There are also IPv6 to IPv4 translation services, which are integrated directly with the
+ISPs, and allow users to use IPv4 websites from their homes (even though they do not have an IPv4
+global IP address). I have not used this because my router does not support IPoE.  However, the
+Linux kernel has native support for IPoE, which means that if I connect my computer <em>directly</em> to
+the Ethernet port on the ONU, I can use IPoE to connect to the Internet, without installing
+<strong>anything</strong> or having to configure a username and password. I have no idea how this works without
+authentication. <a href="https://www.mfeed.ad.jp/transix/overview.html">The documentation</a> that I was able to find suggests that the user’s location is
+<em>inferred</em> based on the physical cable which they use to connect to the ISP.</p>
+
+<p>The primary method for connecting to the IPv4 internet is the age-old Point-to-Point Protocol over
+Ethernet (PPPoE), which can be configured using a username and password issued by the ISP. (IPoE
+bypasses the authentication step, which removes the user’s dependence on the PPPoE authentication
+server, which is apparently a common cause for slowdown during periods of congestion.)</p>
+
+<h1 id="home-network">Home Network</h1>
+
+<p>The rooms where I had set up the ONU and the one in which I wanted to use a wired connection were
+different, and quite far apart. Fortunately, the whole house was wired with Cat 5E Ethernet
+cables. This cable is capable of Gigabit speeds.</p>
+
+<p>The rough schematic looks like this:</p>
+
+<p><img src="/public/img/home-internet-connection-schematic.png" alt="img" /></p>
+
+<p>Each room was connected, by wires running through the walls and the floor, to a closet in the living
+room. On the top shelf of this closet, was a wall-mounted Network switch, which can be used in
+addition to a router, to provide wired connections in each room in the apartment.</p>
+
+<p>A switch is a networking device which sits inside a network and increases the number of ports on a
+router. While a router sits between networks (my home network and the ISP’s network), a switch sits
+within a network and increases the number of computers that can connect to the network. A typical
+router has a single WAN (Wide-Area Network) port and multiple LAN (Local Area Network) ports. By
+connecting one of these LAN ports to a single port on the switch, any computer connected to any of
+the other ports of the switch will join the same network that is being managed by the router.
+Switches operate at Layer 2 (data link layer) and do not know about IP addresses. They only know
+about MAC addresses and send traffic to the appropriate destination based on the information that is
+contained in each packet.</p>
+
+<p>The router that I am using is old. However, it is capable of Gigabit speeds. So, from the ISP until
+the router in my house, Gigabit speeds were possible.</p>
+
+<h1 id="problems">Problems</h1>
+
+<p>The first problem I faced was with the switch that was installed in the house. It was a very old 100
+Megabit 8-port switch (like <a href="https://www.buffalo.jp/product/detail/lsw4-tx-8ns_wh.html">this one</a>). I did not really need the 8 ports in the switch because I was
+planning to use a wired connection in only one room. So, I wanted to connect the LAN cable which ran
+from that room to the top shelf of the closet directly to my router. However, this was not possible
+because the cables were wired tightly, with no “play” in them to allow extension outside the socket
+that was connected to the switch. So, I bought an RJ45 cable extender, which can be used to provide
+metallic contacts and connect two Ethernet cables head to head:</p>
+
+<p><img src="/public/img/lan-extension.jpeg" alt="img" /></p>
+
+<p>The other problem I faced was that almost all the peripheral devices that I had were devices which
+only supported 100 Megabit. This included a Raspberry Pi, which I am using as a local DNS server, an
+old laptop, which has a 100M Ethernet port, and a USB-A to Ethernet adapter, which was only USB-A
+2.0. This problem was resolved after I bought a USB-A 3.0 to Ethernet adapter, which did not require
+any drivers to work.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p><img src="/public/img/usb-to-lan-adapter.jpeg" alt="img" /></p>
+
+<p><strong>Note:</strong> I do not recommend this product as the USB to LAN adapter of choice. It is the TP-Link UE300
+1Gigabet Ethernet to USB-A adapter. However, it uses the Realtek RTL8153 IC chip inside it and this
+chip appears to be unreliable and after just a few days of use, the adapter stopped working
+properly. It would start in the “connected” state with the LED light flickering, indicating that it
+was working properly. But soon after that, the LED light would stop flickering and the LAN
+connection would no longer be recognized by the OS. This problem with the RTL8153 IC chip <a href="https://overengineer.dev/blog/2021/04/25/usb-c-hub-madness/#user-content-fn-2">seems</a> to
+be common and a reason for the unusability of many Ethernet adapters and USB-C hubs as well.</p>
+
+<p>Finally, I was able to get speeds higher than 100 Mbps on a wired connection:</p>
+
+<p><img src="/public/img/internet-speed-beyond-100-megabit.png" alt="img" /></p>
+
+<p>I tested this setup on Windows, Mac, and Linux, at various times of the day. And the speed were
+quite good, ranging from 250 Mbps to 400 Mbps. Upload speeds were even better than download speeds,
+maxing out at about 500 Mbps. (I don’t upload anything at all, so this part of the symmetric
+connection is mostly unused in my use-case.)</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This was a run-of-the-mill setup post. Practically speaking, the difference between 80 Mbps and 250
+Mbps is not particularly remarkable; I took this more as a game to get to a setup with faster
+“theoretical” speeds. Along the way, I learned about the various USB versions and their incredibly
+confusing names; information that was useful to me during future setups, where I had to choose the
+right USB versions for the other peripherals. One of the other interesting rabbitholes that I went
+down while doing this setup was the nature of USB-C and why it is reversible and how it can do so
+much, and will probably be widely adopted.</p>
+
+<p>(I have not talked much about WiFi here. Basically, my router is capable only of WiFi 5, which is
+capable of more than 100 Mbps theoretically. However, the latency of wireless connections is
+generally high, and the Intel wireless chip that is in the motherboard of my Thinkpad laptop has
+typical roundtrip times as high as 100 milliseconds. Speeds vary wildly depending on the number of
+other devices and the type of data that they are using. So, I am glad that I have a good wired
+connection.)</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I have no idea what this name means. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>There are other USB to Ethernet adapters, and some of them require drivers to be installed to get them working. If you are using Linux, and the manufacturer does not distribute drivers for Linux, then you should stay away from such adapters. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

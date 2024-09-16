@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Setting up a new Linux Machine" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="660 words about programming" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/programming/2014/12/15/setting-up-a-new-machine/" property="og:url">
+  
+
+  
+  <meta content="2014-12-15T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="programming" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Setting up a new Linux Machine &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Setting up a new Linux Machine</h1>
+  <span class="post-date">15 Dec 2014</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Soon after getting acquainted with Vim, I had to change my machine. My old Toshiba, with 3 Gigs of RAM and an Intel Pentium at it’s heart, had a broken display, and it was not cutting it anymore.</p>
+
+<p>The new machine is armed with 4 Gigs of RAM, a 4th Gen i5, and 2 GB of AMD Radeon Graphics. It came pre-installed with Windows 8.1. And when I bought it, I had all the intention required to change the operating system to something faster and much more customisable and useful for stuff like Git, Rails and all else, Of course, Ubuntu!</p>
+
+<p>My config on the old laptop was perfect and well toned. Over the past year and a half, I had tweaked each part of the machine, starting from the shell, which changed to zsh recently, right to the complicated dependencies of ROS Hydro. Also, I was moving from Ubuntu 12.04 to Ubuntu 14.04, Long Term Suppor versions of the operating systems.</p>
+
+<p>This was when I came across <a href="http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/">this post</a> by Zach Holman regarding the dotfiles tha make up a machine’s configuration.</p>
+
+<p>Further, I also looked at <a href="http://dotfiles.github.io">dotfiles.github.io</a>, which basically told me how to get started. I was not able to understand most of the resources there. And basically, how symlinks worked.</p>
+
+<p>So, I started reading up on symlinks and within an hour or so, I had a working copy of my own dotfiles repository ready. Fork it on GitHub <a href="http://github.com/icyflame/dotfiles">here</a>.</p>
+
+<p>After this, My color scheme, my vimrc (Vim being the editor in which I do most of the editing work now, See my praise for Vim in the previous post!), and my zshrc alongwith the gitconfig and global gitignore file. I also came up with an <code class="language-plaintext highlighter-rouge">install.sh</code> bash script that would copy these files and symlink them to the main files. Along the way, learning a lot about bash programming. (It’s been on my todo list for quite some time now!)</p>
+
+<p>After the configuration was setup, I set about installing all the core packages. (vim, git-core, vlc, chromium etc).</p>
+
+<p>After this, I had to setup ROS, this time, it was the indigo distribution though. Whole of AUV is moving from Hydro to Indigo, this winter. They have started working on the next release (called “Jade”). We guess it will be atleast one more year before they get ready to ship it.</p>
+
+<p>The ROS Indigo installaton was pleasant, and surprisingly, I didn’t run into any major walls. The installation was smooth, and I was able to get everything working. (The only problem was when I had to do <code class="language-plaintext highlighter-rouge">echo "source /opt/ros/indigo/setup.bash" &gt;&gt; ~/.bashrc</code>. I had to change all the occurences of bash to zsh in this line! so I had to add the line <code class="language-plaintext highlighter-rouge">source /opt/ros/indigo/setup.zsh</code> to my <code class="language-plaintext highlighter-rouge">~/.zshrc</code>. And everything was working good (Once I had configured the <code class="language-plaintext highlighter-rouge">ROS_WORKSPACE</code> and the <code class="language-plaintext highlighter-rouge">ROS_PACKAGE_PATH</code> environment variables)</p>
+
+<p>So, about 2 hours in, I was completely setup, except for a couple of problems here and there, I was more than happy with my new laptop! (The Dell Inspiron 5547, which apparently has some kind of “official” support from Canonical, because of which all the drivers were there and everything was working!)</p>
+
+<p>Along the way, we (at AUV) have started using Telegram, an open-source messenger. And as with almost all open source ventures, it has a large community of developers, who have created messenger clients for every device out there. Yes, everything. Android, iOS, Windows Phone, Windows PC, Mac OS X and Linux. So, hopefully, no more reaching to your phone to reply to that message from your colleague. (Footnote: The Android App and the Ubuntu Desktop Client are amazing. They just WORK!)</p>
+
+<p>I have been reading an <a href="http://paulmillr.com/posts/the-story-of-telegram/">interesting article</a> about why Telegram is secure and if it is secure at all, it makes for some productive discussion over coffee with people interested in Tech and Information Security!</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Using Git Flow, and why it cleans up history, A LOT!" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="537 words about programming" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/programming/git/2015/06/16/using-git-flow/" property="og:url">
+  
+
+  
+  <meta content="2015-06-16T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="programming" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Using Git Flow, and why it cleans up history, A LOT! &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Using Git Flow, and why it cleans up history, A LOT!</h1>
+  <span class="post-date">16 Jun 2015</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#git">
+    git
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I am a lover of projects with clean history. They always end up being some of the best maintained and working projects. I guess I must refer to the big Dad of all Open Source repositories, Linux when I refer to this. Looking at the history in it’s <a href="https://github.com/torvalds/linux">GitHub Repo</a>, it’s full of merge commits that make sense. You can see the changes going up the ladder, and Linus Torvalds accepting them.</p>
+
+<p>Git Flow does essentially that. Git has a lot of options that you can take, as a maintainer, you are just confused and you let the history decay. Git Flow ensures you don’t.</p>
+
+<p>The basic <em>funda</em> behind Git Flow is that there are two branches, <code class="language-plaintext highlighter-rouge">develop</code> and <code class="language-plaintext highlighter-rouge">master</code> that are always part of a project. <code class="language-plaintext highlighter-rouge">develop</code> is the branch where all the development takes place, and gets tested in a staging environment. <code class="language-plaintext highlighter-rouge">master</code> is the branch where the latest production ready version of an application resides.</p>
+
+<p>So, you branch out from <code class="language-plaintext highlighter-rouge">develop</code>, and add a feature. Once this feature is over, you can either add more features, all of which will stay on <code class="language-plaintext highlighter-rouge">develop</code>, or you can start a <code class="language-plaintext highlighter-rouge">release</code>. This branch will allow you to make some last minutes changes (bump version number in JSON files, change API keys to Environment variables, basically, remove everything that was added because you were prototyping a feature, and not building it for production.) After this, you finish the <code class="language-plaintext highlighter-rouge">release</code>, which is a major step in Git Flow, because it does a whole lot of things. It merges the release branch into master, and creates a new commit, whose message you are allowed to edit. (You can close all GitHub issues through this message). After this, it then creates a tag at the latest commit on master, you are in control of the tag message. (the name of the tag is the name of the release. There are options to not create a tag, just in case you gave a meaningful name, instead of semantic version.) And finally, the last step of the process is back-merging this tag into <code class="language-plaintext highlighter-rouge">develop</code>, to ensure that <code class="language-plaintext highlighter-rouge">master</code> and <code class="language-plaintext highlighter-rouge">develop</code> stay on the same page, immediately after a release.</p>
+
+<p>There are some other commands like <code class="language-plaintext highlighter-rouge">publishing</code> a release, which will basically push it to a server. But since, <code class="language-plaintext highlighter-rouge">git push</code> already does that, there’s no reason why it should be used, if you are comfortable with <code class="language-plaintext highlighter-rouge">git push</code>!</p>
+
+<p>The thing that I like the most about Git Flow is that it can be used independently by the maintainer of a project, regardless of whether the contributors are using it or not. You can simply pull their changes into a new feature branch, so that you are always in control of the names of the features, and the names of the releases. Often, with toolkits such as these, the whole team needs to migrate from existing tools to this particular tool, and that is not ideal!</p>
+
+<p><a href="http://danielkummer.github.io/git-flow-cheatsheet/">This</a> is the cheat sheet that gave me the confidence to get into Git Flow, almost instantaneously!</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

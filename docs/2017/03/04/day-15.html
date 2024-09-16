@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 15 - Brand new Ubuntu 16.04 LTS" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="856 words about installation" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/03/04/day-15" property="og:url">
+  
+
+  
+  <meta content="2017-03-04T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 15 - Brand new Ubuntu 16.04 LTS &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 15 - Brand new Ubuntu 16.04 LTS</h1>
+  <span class="post-date">04 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#installation">
+    installation
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#ubuntu">
+    ubuntu
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#writing">
+    writing
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>YAY! Brand new Ubuntu! The installation took a LOT of time. Most of which was
+spent in partitioning the drive properly. I had a good plan for how to do it,
+but the encryption thing really got in my way, and took up a lot of time. So,
+here’s the long and short of it.</p>
+
+<p>At first, I didn’t really know whether the <code class="language-plaintext highlighter-rouge">root</code> (<code class="language-plaintext highlighter-rouge">/</code>) partition can be
+encrypted or not. While encrypting that would have been good, I didn’t mind <code class="language-plaintext highlighter-rouge">/</code>
+being unencrypted because it mostly just had installation files and config files
+and not any personal data.</p>
+
+<p>But <a href="">a tutorial on the internet</a>, told me that I could
+actually have encrypted root partitions. I just had to give a few 100 MB to the
+<code class="language-plaintext highlighter-rouge">/boot</code> partition which would have all the files in <code class="language-plaintext highlighter-rouge">/</code> that are absolutely
+required just for booting.</p>
+
+<p>So, I followed that guide. It <strong>didn’t</strong> work. In the guide’s defense, it is
+almost 5 years old. I hoped that it would work, but after a few attempts which
+took up almost 2 hours, I had resigned to my fate and accepted that <code class="language-plaintext highlighter-rouge">/</code> couldn’t
+be encrypted.</p>
+
+<p><code class="language-plaintext highlighter-rouge">/home</code> of course could be encrypted, and in fact, there’s an option right after
+the partition table screen, so just create an <code class="language-plaintext highlighter-rouge">ext4</code> partition, choose the right
+mount point and tick the encryption option on the next screen. A breeze!</p>
+
+<p>The remaining two partitions that I wanted, LUKS + ext4 partitions were a bit
+tricky. Basically, if I selected an encrypted <code class="language-plaintext highlighter-rouge">/home</code> partition in the partition
+table screen itself, it wouldn’t let me proceed with an unencrypted <code class="language-plaintext highlighter-rouge">swap</code>
+partition. This is not <em>totally bonkers</em>, but is <em>slightly bonkers</em>. Swap is
+highly volatile, has some process information and keeps changing, it’s
+unreasonable to believe that I want an unencrypted swap. Weirdly enough, if you
+encrypt <code class="language-plaintext highlighter-rouge">/home</code> from the screen where you have to enter your username and
+password, it won’t bother you about the encrypted <code class="language-plaintext highlighter-rouge">swap</code> partition. So, maybe it
+is tied to the <code class="language-plaintext highlighter-rouge">root</code> partition’s encryption? I don’t really know exactly how
+that screen works, and I would love for it to be a little bit more presentable.</p>
+
+<p>Talking about the partition table screen, it’s horrible. I can’t maximize it for
+some reason. You have to “scroll” horizontally to see the partitions, and the
+partitions <em>crazily enough</em> have colours in the main timeline like diagram, and
+there is an index below them that is NOT EVEN aligned! My god, it was such a
+terrible screen. Why don’t they take pointers from gparted’s beautiful way of
+showing partitions? Even Windows’ Disk Manager (run <code class="language-plaintext highlighter-rouge">diskmgmt.msc</code> after
+pressing <code class="language-plaintext highlighter-rouge">WinKey+R</code>) shows partitions in a very sane fashion.</p>
+
+<p>After the partition step, you select the timezone, enter your username password, and finally, it
+starts installing. The downloading packages step took a long time, almost 2 hours, the rest of the
+part was fairly fast even on a two year old Intel i5 processor with a Hard Disk Drive (the one with
+Spindles and Sectors and moving parts! I feel like these things have become so slow these days!)</p>
+
+<p><a href="https://twitter.com/_icyflame/status/837946185528684544"><img src="/public/img/2017-03-04-twitter-2.png" alt="twitter-screenshot" /></a></p>
+
+<p>One slight scare was when I restarted the computer while it was running from the
+Live USB after having touched the GPT of the Hard Drive. This led to Grub (of
+course) not finding the operating systems, and dropping me to a Grub2 shell
+where the Flash Drive, which should have shown up as <code class="language-plaintext highlighter-rouge">hd1</code> was not showing up.
+Thankfully, I was able to get back into Bios using the designated key for my
+laptop, and boot back up using the Flash Drive, if that had not been possible, I
+don’t know what my way out would have been!</p>
+
+<p>I am yet to write the appropriate lines inside <code class="language-plaintext highlighter-rouge">/etc/crypttab</code> to make sure that
+the protected ext4 LUKS partitions are mounted at startup. That seems like an
+easy process, atleast now that I have seen one SO question on it and done
+nothing about it at all. I am pretty sure it’s not as easy as I think right now.
+More on the tomorrow!</p>
+
+<p>Big Little Lies had some major progress today. I actually ended up getting
+through 56% of the book! So, I am pretty into the story now. If you read
+yesterday’s post, know that Celeste had a reason. I don’t want to spoil the
+story again today by revealing something.</p>
+
+<p>Also, I hate Renata and Harper. Bonnie and her yogi thing and her vegan thing
+that she’s converting Abigal into is also rather irritating. There’s an Orwell
+line in one of his essays that fits perfectly for the present situation:</p>
+
+<blockquote>
+  <p>One may feel, as I do, a sort of aesthetic distaste for Bonnie, noe may reject
+the claims of sainthood made on her behalf (she never made any such claim,
+herself) by the way.</p>
+</blockquote>
+
+<p>– Reflections on Gandhi (The name “Gandhi” replaced with “Bonnie”!)</p>
+
+<p><strong>POST #15 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

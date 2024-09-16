@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Building and running GnuCash in Docker" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1264 words about docker" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/gnucash/accounting/docker/linux/build/2020/09/13/docker-and-gnucash/" property="og:url">
+  
+
+  
+  <meta content="2020-09-13T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="gnucash" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Building and running GnuCash in Docker &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Building and running GnuCash in Docker</h1>
+  <span class="post-date">13 Sep 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#accounting">
+    accounting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#build">
+    build
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#docker">
+    docker
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#gnucash">
+    gnucash
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#linux">
+    linux
+  </a>
+  
+  
+</span>
+
+
+  
+  <h2 id="introduction">Introduction</h2>
+
+<p>I have written about <a href="https://blog.siddharthkannan.in/tag/#gnucash">GnuCash</a> a few times before. I have been using GnuCash version 2.6 for
+nearly 2 years now. A lot of the features that were added after this version weren’t really useful
+for my use-case, so I never upgraded. Also, the binary that is distributed through the Ubuntu App
+store / apt-get repositories is v2.6. Versions after that were not published to the aptitude
+repositories, for some reason. (A lot of software packages do this)</p>
+
+<p>Recently, I ran into a very strange <a href="https://bugs.gnucash.org/show_bug.cgi?id=797926">bug</a>. I wanted to report this bug to the GnuCash team and
+get their feedback on if this was something that they had seen before. To avoid reporting a bug on
+an old version which was no longer being supported actively, I got the latest version of the GnuCash
+code and started a long, uphill battle to build it locally! This post is a summary of that
+experience.</p>
+
+<p>For those who are looking to run the latest version of GnuCash inside Docker, you can get this
+<a href="https://github.com/icyflame/dockerfiles/blob/master/gnucash/Dockerfile#L1-L9">Dockerfile</a> and build the Docker image. The command to run it on an Ubuntu 18.04 LTS host is
+given at the top of the Dockerfile.</p>
+
+<!--more-->
+
+<h2 id="tools">Tools</h2>
+
+<p>GnuCash has some documentation about building on Linux. It starts with <a href="https://wiki.gnucash.org/wiki/Building_On_Linux#Setting_up_to_Build_GnuCash_on_Linux">this page</a> called
+<code class="language-plaintext highlighter-rouge">Building On Linux</code>. Going from this page, I kept jumping to several subsequent pages which felt
+strange and I was soon confused about what I was looking for in the first place.</p>
+
+<p>This is the short summary of what I learnt:</p>
+
+<ol>
+  <li>GnuCash is written in C</li>
+  <li>Building the software has two distinct steps:</li>
+  <li>Configuring the build: For this, we use Cmake</li>
+  <li>Build (for real): For this, we use Make</li>
+  <li>
+    <p>The build directory must be completely separate from the source directory</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>tree <span class="nt">-n</span> <span class="nt">-A</span> <span class="nt">-L</span> 1
+ <span class="nb">.</span>
+ ├── gnucash-4.1
+ ├── gnucash-build
+</code></pre></div>    </div>
+
+    <p>This is the structure that I used. We will be running all of the commands inside the build
+ directory. In this example, <code class="language-plaintext highlighter-rouge">gnucash-build/</code></p>
+  </li>
+</ol>
+
+<h2 id="required-packages">Required packages</h2>
+
+<p>It took me quite some time to figure out exactly where all the files should go and what came first,
+etc. Once I had figured out the purposes of Cmake and Make, things got a little bit easier.</p>
+
+<p>I started with this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gnucash-build<span class="o">)</span> <span class="nv">$ </span>cmake ../gnucash-4.1
+</code></pre></div></div>
+
+<p>This command will most probably fail, unless you have all the dependencies installed. If this
+command does not fail, then you can switch to the next step: <code class="language-plaintext highlighter-rouge">Build</code>.</p>
+
+<p>For me, this command failed several times. Each time it failed, it output either an error with the
+name of a package that was missing or a warning with a particular part of GnuCash that it couldn’t
+configure properly because of missing dependencies.</p>
+
+<h3 id="warnings">Warnings</h3>
+
+<p>I had to remove two parts of GnuCash to get past the warnings: <a href="https://wiki.gnucash.org/wiki/AqBanking">AQBanking</a> and SQL support. After
+seeing the warnings, I wasn’t quite sure how to disable them. A quick look at the <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>
+file helped me figure that out. I don’t know how to read CMake files, so I just winged this part. I
+found a few mentions to the actual option and found these lines:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option <span class="o">(</span>WITH_SQL <span class="s2">"Build this project with SQL (libdbi) support"</span> ON<span class="o">)</span>
+option <span class="o">(</span>WITH_AQBANKING <span class="s2">"Build this project with aqbanking (online banking) support"</span> ON<span class="o">)</span>
+</code></pre></div></div>
+
+<p>After finding this option, I discovered that cmake takes configuration options using <code class="language-plaintext highlighter-rouge">-D</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">-D</span> &lt;var&gt;[:&lt;<span class="nb">type</span><span class="o">&gt;]=</span>&lt;value&gt;    <span class="o">=</span> Create a cmake cache entry.
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-D</code>’s description is confusing, but it’s the option we want to use.</p>
+
+<p>With this, I reached the command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gnucash-build<span class="o">)</span> <span class="nv">$ </span>cmake <span class="nt">-DWITH_AQBANKING</span><span class="o">=</span><span class="nb">false</span> <span class="nt">-DWITH_SQL</span><span class="o">=</span><span class="nb">false</span> ../gnucash-4.1
+</code></pre></div></div>
+
+<p>Running this on my Ubuntu 18.04 installation gave me an error mentioning the name of a missing
+library. I went ahead and installed the library and ran <code class="language-plaintext highlighter-rouge">cmake</code> again. I repeated this step several
+times.</p>
+
+<h3 id="errors">Errors</h3>
+
+<p>Cmake configures the build by ensuring that each library that is required is available on the host
+and is in a location that can be found by Make (or it will tell Make to find it wherever Cmake found
+the library). As I saw each warning, the name of the library I needed to install was either clear to
+me from the error or I had to run a search on <a href="https://packages.ubuntu.com">packages.ubuntu.com</a>.</p>
+
+<p>I had 22 required packages missing. The complete list of packages can be found in the final
+Dockerfile’s <code class="language-plaintext highlighter-rouge">apt-get install</code> command <a href="https://github.com/icyflame/dockerfiles/blob/53820e4377779bd4c5364b864a760828484db3cd/gnucash/Dockerfile#L16-L38">here</a>. This step took the most time at about 90
+minutes. After 4-5 steps, the process was pretty clear to me. A couple of things that I learnt
+during this process:</p>
+
+<ol>
+  <li>For building software, almost always the <code class="language-plaintext highlighter-rouge">-dev</code> versions of packages are required. For example, I
+had the package <code class="language-plaintext highlighter-rouge">libxslt1.1</code> installed. This wasn’t enough though. Cmake kept telling me that the
+<code class="language-plaintext highlighter-rouge">xsltproc</code> could not be found. This was because I didn’t have <code class="language-plaintext highlighter-rouge">libxslt1-dev</code> package. After
+installing the <code class="language-plaintext highlighter-rouge">-dev</code> version of this package, I was able to go to the next missing package.</li>
+  <li>You can check what packages are already installed using <code class="language-plaintext highlighter-rouge">dpkg -l</code>. Using a tool like <code class="language-plaintext highlighter-rouge">grep</code>
+allows you to quickly check whether a package is missing or if there’s some sort of version
+conflict: <code class="language-plaintext highlighter-rouge">dpkg -l | grep xslt</code></li>
+  <li>For most packages, I was able to install them fairly easily. For 2 packages (<code class="language-plaintext highlighter-rouge">libglib2.0-dev</code> and
+<code class="language-plaintext highlighter-rouge">libxslt</code>), I was not able to install the required package for a few minutes. After moving around
+searches, installing and removing packages, checking <code class="language-plaintext highlighter-rouge">dpkg -l</code> output, and reading the error
+message several times, I was able to install the required package.</li>
+</ol>
+
+<h2 id="build">Build</h2>
+
+<p>The actual build part of this process is extremely easy. Cmake ensures that everything that was
+required has been installed and can be found in their usual locations. If not, Cmake will tell make
+where to find them using the Makefiles that cmake generates when the configuration process is
+complete.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gnucash-build<span class="o">)</span> <span class="nv">$ </span>make
+</code></pre></div></div>
+
+<p>This command will run for a considerable amount of time. On my laptop with an i7 8th gen processor
+and 16 GB of RAM, <code class="language-plaintext highlighter-rouge">make</code> ran for about 20-30 minutes (I didn’t track this closely; I was relieved to
+have reached this stage and I didn’t really care even if this command took a few hours as I was
+probably not going to run this command again EVER)</p>
+
+<p>When <code class="language-plaintext highlighter-rouge">make</code> is done, your <code class="language-plaintext highlighter-rouge">gnucash</code> binary should be inside <code class="language-plaintext highlighter-rouge">gnucash-build/bin</code>. There will be some
+more binary files.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gnucash-build<span class="o">)</span> <span class="nv">$ </span><span class="nb">ls </span>bin
+gnc-fq-check  gnc-fq-helper  gnucash      gnucash-valgrind
+gnc-fq-dump   gnc-fq-update  gnucash-cli  jenny
+
+<span class="o">(</span>gnucash-build<span class="o">)</span> <span class="nv">$ </span>./bin/gnucash <span class="nt">--version</span>
+GnuCash 4.1
+Build ID: 4.1+<span class="o">(</span>2020-07-25<span class="o">)</span>
+</code></pre></div></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I have built most of the small utilities that I use on a daily basis (like my recent favorite,
+<a href="https://github.com/at-ishikawa/git-fzf">git-fzf</a>). GnuCash was one of the major parts of my computer usage and I am glad that I can
+actually build the software which is able to parse the huge <code class="language-plaintext highlighter-rouge">.xml.gz</code> file which contains all my
+accounting information!</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

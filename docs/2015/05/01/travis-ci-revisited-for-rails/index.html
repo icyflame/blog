@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Travis CI, Revisited for Rails" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="597 words about web-development" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2015/05/01/travis-ci-revisited-for-rails/" property="og:url">
+  
+
+  
+  <meta content="2015-05-01T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="web-development" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Travis CI, Revisited for Rails &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Travis CI, Revisited for Rails</h1>
+  <span class="post-date">01 May 2015</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#web-development">
+    web-development
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>This post is long overdue. Now, that the semester is over, I have found time to do two of the things that I intend to completely master over the summer: NodeJS and Formula 1 2014. While the first is a programming framework which has a staggering amount of possibilities, the latter is a game for the PC, that has completly taken me out.</p>
+
+<p>I started playing F1 2014 sometime around March, this year, and I found it to be really boring in the beginning. But then, I got into seeing gameplay videos of the game. And in particular, <a href="https://www.youtube.com/user/tiametmarduk1">this YouTube channel</a>, where videos are uploaded by <a href="https://www.twitter.com/tiametmarduk">this guy</a>. The gameplay videos are great! Fun to watch, but the part I love the most is the live commentary given by the player. It’s just awesome!</p>
+
+<p>Well, now, coming back to the title of this post. Travis CI!</p>
+
+<p>Some time ago (about 6 months ago), I posted <a href="http://icyflame.github.io/blog/web-development/2014/09/28/cracking-travis-ci/">this</a> about TravisCI. It was a naive post about getting Travis to work for a PHP project, I couldn’t get it to work at the end, but I had not abandoned it completely.</p>
+
+<p>Now, when I went back to travisCI for a Ruby on Rails project, well, I was dead-set to get it right, and surprisingly, all that determination and dead-set-ness was a bit anti-climactic, as the setup was painless.</p>
+
+<p>In fact, the setup was so painless, that I went on to integrate Heroku with TravisCI for automated deploys. Further, I also integrated a Slack channel into the whole scheme of things. (I am going to post about my love for Slack soon after this!)</p>
+
+<p>So, now, my stack looks like this. A Ruby on Rails project, on which two people are working. For every push, Travis builds the project and posts the status on our Team channel at Slack. This is done for every branch, every pull request etc.</p>
+
+<p>Now, coming to the auto-deploy part. Every push that I make to the staging branch is built, and if it passes the build process, then the code on that branch gets deployed to a staging Heroku application. And every push that I make to the master branch gets deployed to the production Heroku application.</p>
+
+<p>So, basically, I have a complete automated app up and runing, in which all I, as a maintainer, have to do, is check the front-end and push to staging, check the front end on the staging Heroku application, and if that checks out, I simply merge the staging branch with master, and boom! The production application on Heroku gets updated and everyone gets the changes that I had pushed.</p>
+
+<p>This is awesome! I had never really imagined that I would be able to do so much, so soon and so painlessly. This streamlines the code-to-deploy process a whole lot! No worrying about setting up heroku remotes, the Heroku account you are signed in on the CLI, pushing a wrong branch to the application.</p>
+
+<p>Or the worst, pushing changes that break the application to the production app, affecting everyone who is dependent on your application.</p>
+
+<p>So, that is TravisCI for Rails. Somehow, I think that the change in the platform that we are using PHP -&gt; Ruby on Rails, made the process so much more simpler and easier to handle. Well, I won’t forget to include this in my list of <code class="language-plaintext highlighter-rouge">Why I love Rails</code>!</p>
+
+<p>So, some housekeeping information. The project that I have been talking about is the Networking Portal Project. Find it on Github <a href="http://github.com/icyflame/networking-rails">here</a>. This project is licensed under MIT.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Why I include Bootstrap in every project" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="892 words about frontend" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/bootstrap/frontend/html/2018/09/01/using-bootstrap/" property="og:url">
+  
+
+  
+  <meta content="2018-09-01T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="bootstrap" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Why I include Bootstrap in every project &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Why I include Bootstrap in every project</h1>
+  <span class="post-date">01 Sep 2018</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#bootstrap">
+    bootstrap
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#frontend">
+    frontend
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#html">
+    html
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Here’s some unsolicited advice: <strong>Always start any project with the inclusion of
+Bootstrap</strong>. There are a few reasons I insist on this. I will go into them in
+this blog post. There are <a href="https://www.bootstrapbay.com/blog/reasons-to-use-bootstrap/">many</a> <a href="https://www.devsaran.com/blog/10-best-reasons-use-bootstrap-amazing-web-designs">such</a> <a href="https://www.sitepoint.com/11-reasons-to-use-twitter-bootstrap/">blog posts</a> on the Interweb. I
+figured that adding my own point of view on this matter will not hurt anyone.</p>
+
+<h3 id="before-we-begin">Before we begin</h3>
+
+<p>I had a really hard time understanding what Bootstrap really was. I had some
+questions in mind: Is it a library? Is it a set of CSS classes? Is it jQuery,
+but better? Why is jQuery required if it is only a set of CSS classes? I have
+figured out a very simple way to explain what Bootstrap is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bootstrap is a set of 2 components. 
+
+Bootstrap CSS is a set of CSS classes that
+can be used in any application. It does some great things by default (like using
+a good font, using margins and paddings on the `body` tag). It has 2 major
+features which are worth using in any app that aims for a simplistic polished
+look: the grid system and the classes that make forms render better
+
+Bootstrap JS is a library built on top of jQuery that provides some more
+functionality. 2 of the best features of Bootstrap JS are: tooltips and
+modals.
+</code></pre></div></div>
+
+<p>One more thing. Bootstrap has really <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction">good documentation</a>. The documentation
+is really really good. It was good already. And then they added the search
+feature with Bootstrap v4’s release. It became GREAT.</p>
+
+<h3 id="reasons">Reasons</h3>
+
+<p>These are in decreasing order of significance, as I have experienced in my
+frontend development.</p>
+
+<ol>
+  <li>
+    <p>Bootstrap makes your website responsive. i.e. your app will look better on
+every screen no matter it’s size and shape. Of course, you should use it
+properly. But it is extremely hard to use bootstrap badly enough that it will
+look bad somehow.</p>
+  </li>
+  <li>
+    <p>Bootstrap’s Grid System. This is one of the most useful things that I have
+EVER learnt in frontend development. Every line of HTML I write now is
+written in the context of <code class="language-plaintext highlighter-rouge">col-md-*</code>s and so on. Learn this grid system and
+you will forever lose your fear of center aligning text in HTML.</p>
+  </li>
+  <li>
+    <p>Bootstrap makes your site look better. The new font, the sane defaults for
+margins around various elements. These things have become standards across
+the web and including a CSS library which will take care of this is a huge
+load off your shoulder.</p>
+  </li>
+  <li>
+    <p>Bootstrap makes your forms easier to understand and fill. The rounded
+corners, the highlighting when a particular text field is selected, the
+amazing UI bump that it gives to <code class="language-plaintext highlighter-rouge">select</code> lists. All of these things can’t be
+done with custom CSS. <strong>Stand on the shoulders of giants</strong></p>
+  </li>
+  <li>
+    <p>Bootstrap’s <code class="language-plaintext highlighter-rouge">table</code>s will finally make tables better on the web. 3 classes
+that I always use with a table are the default <code class="language-plaintext highlighter-rouge">table</code>, <code class="language-plaintext highlighter-rouge">table-hover</code> and
+<code class="language-plaintext highlighter-rouge">table-striped</code>. These three classes make the table resemble an Excel sheet
+to some extent and actually make the app easier to comprehend. Tables are a
+very powerful way to show information, perhaps second only to bar charts.
+Bootstrap makes it easier for developers to make more legible tables for
+their users.</p>
+  </li>
+  <li>
+    <p>Bootstrap’s buttons convey information. Almost everything in Bootstrap comes
+in a set of colors, depending on the “alert” level. This color is extremely
+useful when developing dashboard type applications. It’s also pretty useful
+when developing normal applications that tend to have destructive actions
+(like deleting your account or deleting a cutout). I used this in a former
+intern where I was upgrading a dashboard application written using an Angular
+library and the buttons were so small that it was only the colors that any
+user even looked at. That’s how helpful this is!</p>
+  </li>
+  <li>
+    <p>Bootstrap makes your <code class="language-plaintext highlighter-rouge">blockquote</code> look better. Blockquote tags are again
+great ways to convey information especially when writing blog posts or some
+sort of a reference. Goodreads doesn’t use bootstrap and their blockqotes
+look really bad. Blockquotes look like text that has been indented, instead
+of looking like quoted text.</p>
+  </li>
+  <li>
+    <p><strong>Bonus</strong> Bootstrap gives you the ability to add a navbar quickly. The
+Bootstrap navbar is extremely toned down. I don’t like it in all settings,
+but for some apps where you can’t do away with the navbar, Bootstrap is the
+way to go. The navbar has a set of options that enable you to do anything
+with it: stick it to the bottom of the page, show only one option on mobile
+screens, anything you want really.</p>
+  </li>
+  <li>
+    <p><strong>Bonus</strong> Bootstrap Modals! I mean, this is something everyone loves. I don’t
+like modals because they are very hard to use on mobile and I tend to stay
+away from them as much as I can. I would rather enable the user to scroll
+through the page rather than have to struggle to get to the small X button at
+the top of a modal. But if you are developing an application that’s used only
+on desktop computers (like a Sales Dashboard), modals are extremely powerful
+tools to retain context and let the user edit information at the same time.</p>
+  </li>
+</ol>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

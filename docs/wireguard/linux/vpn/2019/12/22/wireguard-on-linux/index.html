@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Setting up Wireguard - Experience" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="2527 words about wireguard" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/wireguard/linux/vpn/2019/12/22/wireguard-on-linux/" property="og:url">
+  
+
+  
+  <meta content="2019-12-22T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="wireguard" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Setting up Wireguard - Experience &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Setting up Wireguard - Experience</h1>
+  <span class="post-date">22 Dec 2019</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#linux">
+    linux
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vpn">
+    vpn
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#wireguard">
+    wireguard
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><a href="https://twitter.com/_icyflame/status/1205691360755372033"><img src="/public/img/2019-12-14-twitter.png" alt="twitter-screenshot" /></a></p>
+
+<p><strong>Note:</strong> There are <a href="https://www.ckn.io/blog/2017/11/14/wireguard-vpn-typical-setup/">several</a> <a href="https://www.stavros.io/posts/how-to-configure-wireguard/">guides</a> <a href="https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard">out</a> <a href="https://hbh7.com/2018/09/30/setting-up-a-wireguard-site-to-site-vpn-between-2-edgerouters/">there</a> which have a
+set of steps and the commands to set-up Wireguard on a Linux computer. This post
+is written along those lines but takes a different approach - it focuses more on
+what one can learn about basic Linux networking by doing this setup themselves.</p>
+
+<h2 id="premise">Premise</h2>
+
+<p>I started out with a fairly clear goal: Setup a VPN server inside a Digital
+Ocean droplet to forward all local traffic through, using wireguard.</p>
+
+<p>I wanted to use Wireguard mainly because it was inside the kernel which had this
+subconscious implication that it would be blazing fast. Also, I have seen the
+video on Wireguard’s website which has Alice and Bob side by side and in about
+7 commands the video shows how <code class="language-plaintext highlighter-rouge">Bob: ping Alice</code> starts working! This was fairly
+revoutionary to me because until now I had used two kinds of VPNs:</p>
+
+<!--more-->
+
+<ol>
+  <li>
+    <p>The free apps: This includes SurfEasy, which is how I used to use Spotify in
+India before they offered their service here, CloudFlare’s new app which is
+pretty easy to use but works only on my phone for the time being.</p>
+  </li>
+  <li>
+    <p>The enterprise kind: This is for work, and it is extremely painfree. It’s
+also fast enough that I haven’t noticed a big slow down that often. I don’t
+really know how it is all set-up inside, but like every company, there are some
+professional IT engineers who have set this up so that no one wastes any time
+trying to figure this out.</p>
+  </li>
+</ol>
+
+<p>My current goal was to get something up and running which was easy to set-up,
+fast when I was using it and worked seemlessly on a Linux desktop. Wireguard
+seemed like the only choice.</p>
+
+<h3 id="sidenote-what-about-streisand">Sidenote: What about Streisand?</h3>
+
+<p>If you are into self-setup VPN servers, you might have heard of <a href="https://github.com/StreisandEffect/streisand">Streisand</a>.
+It’s a huge Ansible playbook which will take some input from the user and then
+setup a VPN server on the provider of your choice. The server that it sets up
+can be used as a Tor bridge, an OpenVPN server, a Wireguard server, an HTTP
+proxy server, SOCKS proxy or as an IPSec server. Overwhelmed?</p>
+
+<p>If you aren’t overwhelmed yet, then let me tell you how the setup works: You run
+the setup script, you enter your provider of choice, what you want (automatic
+setup of all the provided components is encouraged, although you can choose to
+install only the components you want, if you are so inclined), and then Ansible
+starts it’s job. It will start running these playbooks on the VPS server.</p>
+
+<p>Everything is pretty good until this point and at this point, the last time I
+was setting this up, I decided to leave my computer be and get some food. When I
+came back, I saw an error message that was waiting for me. I didn’t really get
+it, so I googled it found the problem, fixed it and ran the setup script again.
+Guess what? It started setting everything up from scratch. Yes. After seeing
+that, I gave up on Streisand.</p>
+
+<h3 id="sidenote-what-about-a-simple-http-proxy">Sidenote: What about a simple HTTP proxy?</h3>
+
+<p>The <a href="http://www.squid-cache.org/">Squid HTTP Proxy</a> is great. It has a simple configuration file format
+and it’s possible to run it using docker on any computer anywhere.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Prepare the configuration file</span>
+docker run <span class="nt">--rm</span> sameersbn/squid <span class="se">\</span>
+    <span class="nb">cat</span> /etc/squid/squid.conf <span class="o">&gt;</span> squid.conf
+<span class="c"># Edit the configuration file</span>
+<span class="c"># Start the proxy server using this configuration</span>
+docker run <span class="nt">--name</span> squid <span class="nt">-d</span> <span class="nt">--restart</span><span class="o">=</span>always <span class="se">\</span>
+    <span class="nt">--publish</span> 3128:3128 <span class="se">\</span>
+    <span class="nt">-v</span> <span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/squid.conf"</span>:/etc/squid/squid.conf <span class="se">\</span>
+    sameersbn/squid
+</code></pre></div></div>
+
+<p>If your goal is to only forward all your traffic, you can probably settle with
+just this proxy. External websites will see the IP address of your droplet or
+GCE instance or EC2 instance. This is extremely fast because the overhead is
+extremely small and it is very cross platform because everything supports an
+HTTP proxy.</p>
+
+<p>Only, the only thing is, I had a nagging doubt about whether my HTTPS website
+headers were put in the HTTP Connect request that was made to the proxy server.
+I don’t know much beyond what I studied in my Networks course and what I learnt
+from the TLS RFC, but I had a feeling that the <code class="language-plaintext highlighter-rouge">Host</code> header was being passed
+through and that meant the HTTP request between the proxy server and my computer
+exposed the Host header (??). I wasn’t really sure about this. I didn’t ever
+set-up Wireshark and properly look at what was going on the network. All in all,
+this nagging in the back of my head ended up being the nail in the
+use-HTTP-proxy-for-everything coffin.</p>
+
+<h2 id="enter-wireguard">Enter, Wireguard</h2>
+
+<blockquote>
+  <p>WireGuard is an extremely simple yet fast and modern VPN that utilizes
+state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more
+useful than IPsec, while avoiding the massive headache. It intends to be
+considerably more performant than OpenVPN. WireGuard is designed as a general
+purpose VPN for running on embedded interfaces and super computers alike, fit
+for many different circumstances. Initially released for the Linux kernel, it
+is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely
+deployable. It is currently under heavy development, but already <strong>it might be
+regarded as the most secure, easiest to use, and simplest VPN solution in the
+industry</strong>.
+– wireguard.com</p>
+</blockquote>
+
+<p>This sounds <em>simple</em>, deceptively <em>simple</em>. I had tried to set-up Wireguard once
+before and I had failed miserably at it. I had run some commands on my personal
+computer which ended with the computer not being able to access the internet at
+all. I panicked for a short while as I found the opposite of every single
+command I ran to at least get internet back. After this experience, I had
+realized that Wireguard operated at a layer which below the application layer
+where things can get messy really fast and it’s hard to get out a problem you
+created with a command you don’t completely understand.</p>
+
+<p>This time around, I had two advantages, I think. First, I had learnt about the
+value of taking notes and writing down every command I was running through the
+operations-type work I had done at work. And second, my personal computer was a
+Thinkpad with the latest Ubuntu and I was not worried about running into any
+hardware specific issues.</p>
+
+<h3 id="step-1-establishing-the-tunnel">Step 1: Establishing the tunnel</h3>
+
+<p>Wireguard has a <a href="https://www.wireguard.com/quickstart/">quickstart video</a>. It is a side-by-side of two peers which
+starts from scratch and ends with a tunnel that connets the two computers. The
+two peers get their own IPs on the tunnel and they can ping each other. Now, I
+didn’t know how this would help me achieve my final goal of forwarding all my
+traffic through another peer, but it seemed like the first step in understanding
+wireguard and actually figuring out how to set it up properly.</p>
+
+<p>I got a Digital Ocean droplet and I started running the two commands
+side-by-side. I was noting down the commands I was running and the output of
+each command as I went through the steps. I was also thinking about the
+resources I was adding to my personal computer and the commands that I would
+have to run to remove them. When I installed wireguard, I was asked to configure
+secure boot and restart the computer and enter the secure boot password. This
+was probably because wireguard is installed as a kernel module and secure boot
+doesn’t like additions to the kernel outside of the boot process? This is all
+complete conjecture.</p>
+
+<p>Anyway, after restarting once to set-up secure boot and once so that the network
+interface device type <code class="language-plaintext highlighter-rouge">wireguard</code> becomes available to <code class="language-plaintext highlighter-rouge">ip link</code>. After this, I
+continued to run the commands just as they are run on the side-by-side video.</p>
+
+<p>At the end of that process, I had a tunnel between my computer and the droplet.
+<code class="language-plaintext highlighter-rouge">ping 10.0.0.1</code> started working as it should. At this point, I checked the
+output of <code class="language-plaintext highlighter-rouge">ip route</code> and realized that all the traffic to <code class="language-plaintext highlighter-rouge">10.0.0.0/8</code> was being
+sent through the wg0 network interface. I realized that I could do <code class="language-plaintext highlighter-rouge">ssh
+10.0.0.1</code> to SSH into the droplet! This was my <em>first moment of epiphany</em>; I
+suddenly realized that the droplet might well be next to me in my house. My
+computer and the droplet were on a network and knew about each other as 10.0.0.1
+and 10.0.0.2. They could do things like move files across this network and it
+will all go through Wireguard’s crypto and will not be visible to anyone else on
+the network, not Digital Ocean, anyone in between or my home internet provider!</p>
+
+<p>I hadn’t configured forwarding all my traffic yet, but I at least had a skeleton
+around which I could work. Also, I had learnt a lot more about <code class="language-plaintext highlighter-rouge">ip link</code>, <code class="language-plaintext highlighter-rouge">ip
+addr</code> and <code class="language-plaintext highlighter-rouge">iptables</code>, although I didn’t understand exactly how they all worked
+together with Wireguard.</p>
+
+<p><em>Sidenote:</em> I installed docker and squid-proxy on the droplet and forwarded all
+my traffic through 10.0.0.1:3128! This worked as I expected it to and changed my
+public IP.</p>
+
+<h3 id="step-2-watching-the-wireguard-talk">Step 2: Watching the Wireguard talk</h3>
+
+<iframe width="1266" height="712" src="https://www.youtube.com/embed/CejbCQ5wS7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>It is incredibly rare that you learn more about a piece of software after
+setting up one part of it. Wireguard is one of those rare pieces of software
+that claims to achieve something so simple that you have to actually listen to
+someone explaining it to believe it.</p>
+
+<p>In this talk, <a href="https://www.zx2c4.com/">Jason (@zx2c4)</a> explains what Wireguard does and how it
+achieves the goal it was built for: establishing a tunnel between any two
+computers, as a kernel module. In particular, this diagram clarified a lot for
+me:</p>
+
+<p><img src="/public/img/wireguard_block_diagram.png" alt="img" /></p>
+
+<p>In particular:</p>
+
+<ol>
+  <li>I had read in a couple of places now that when adding the server as a peer on
+the client computer, setting <code class="language-plaintext highlighter-rouge">allowed-ips = 0.0.0.0/0</code> will forward all of your
+computer’s traffic through to the server. Now, I realized that when the packet
+reaches the wireguard interface wg0, the packet’s destination IP will be matched
+with the allowed-ips list to find the peer. If I wanted all traffic to go to the
+same peer, I would simply add a single peer and set allowed-ips = everything.</li>
+  <li>On the way back, the packet would be headed to the client computer and the
+server configuration has the appropriate configuration already to route the
+packet properly. So, no changes were required on the server side.</li>
+  <li>“Linux kernel: Ordinary routing table -&gt; wg0”: I had not done anything for
+this to be the case yet. I found <a href="https://www.wireguard.com/netns/#routing-all-your-traffic">this guide</a> on the wireguard website which
+showed me how to set up my routes so that everything would go through to the wg0
+interface. I chose to go with the second approach of adding two rules that
+forward all traffic to wg0 and then forward everything from there to the server.</li>
+  <li>The server gets all these packets on the wg0 interface which it has to then
+send outside through the eth0 interface. This is achieved using some iptables
+rules. I don’t fully understand these rules, they somehow work without
+specifying the name of the source and the destination interface.</li>
+</ol>
+
+<h3 id="step-3-forwarding-traffic-without-name-resolution">Step 3: Forwarding traffic without name resolution</h3>
+
+<p>After watching the talk, I removed my existing peer and re-added the peer with
+<code class="language-plaintext highlighter-rouge">allowed-ips = 0.0.0.0/0</code>. Then, I added the appropriate ip routes using the
+NetNS guide on wireguard.com. The final piece in this puzzle was the changes on
+the server side to move traffic from wg0 to eth0.</p>
+
+<p>After trying commands from several tutorials, I finally found the set of three
+rules that worked for me on a GitHub readme written by someone who was talking
+about a very specific use-case for wireguard!</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables <span class="nt">-A</span> FORWARD <span class="nt">-i</span> %i <span class="nt">-j</span> ACCEPT
+iptables <span class="nt">-A</span> FORWARD <span class="nt">-o</span> %i <span class="nt">-j</span> ACCEPT
+iptables <span class="nt">-t</span> nat <span class="nt">-A</span> POSTROUTING <span class="nt">-o</span> eth0 <span class="nt">-j</span> MASQUERADE
+</code></pre></div></div>
+
+<p>Now, finally, <code class="language-plaintext highlighter-rouge">curl &lt;IP-for-icanhazip.com&gt;</code> returned the IP address of the
+droplet and not my local computer. There was no DNS server that my computer
+could use just yet, so there it was not able to convert the domain’s name into
+the IP address.</p>
+
+<h3 id="step-4-dns">Step 4: DNS</h3>
+
+<p>Most of the wireguard setup guides recommend using Unbound DNS server installed
+on the VPN server. The configuration for Unbound looked long and I wanted to get
+something up and running before figuring more stuff out, so I decided to use
+Google’s DNS server. I got this command from the <a href="https://git.zx2c4.com/WireGuard/tree/src/tools/wg-quick/linux.bash?id=372152122766ad2ce8d9510cd5b6b0369a85dd75#n153"><code class="language-plaintext highlighter-rouge">wg-quick</code> utility</a> that
+is packaged with wireguard-tools.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">printf</span> <span class="s1">'nameserver %s\n'</span> <span class="s2">"8.8.8.8"</span> | resolvconf <span class="nt">-a</span> <span class="s2">"tun.wg0"</span> <span class="nt">-m</span> 0 <span class="nt">-x</span>
+</code></pre></div></div>
+
+<p><em>Sidenote:</em> There are several other useful commands in the code for this
+utility. I have been reading it in my spare time to figure out what other things
+I could do to improve my setup.</p>
+
+<p>After setting the DNS server up, <code class="language-plaintext highlighter-rouge">curl icanhazip.com</code> started working. Other
+websites also started working properly.</p>
+
+<h3 id="evaluation">Evaluation</h3>
+
+<p>Checking speeds on fast.com showed me that using the VPN caused a slowdown of
+about 20 times - down from 21 MBPS to 1 MBPS. This is pretty good. Also, as
+literally all my traffic was going through wireguard now (except for DNS), I was
+able to use all other application without any special configuration. For eg,
+<code class="language-plaintext highlighter-rouge">ssh</code> started showing the droplet’s IP as the source IP in <code class="language-plaintext highlighter-rouge">who -a</code>, <code class="language-plaintext highlighter-rouge">git push</code>
+wanted to add a new origin because the push for my SSH key was coming from a new
+computer now. In general, everything seemed to work without anything breaking
+catastrophically.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>At long last, I had a fast, working VPN solution for a Linux desktop computer.
+Wireguard is revolutionary. It creates a point-to-point tunnel between two
+computers (networked devices). What this tunnel is used for, is left to the
+user’s discretion. Wireguard simple creates the tunnel and gets out of the way.
+The only caveat is that one has to understand quite a bit about networking on
+Linux computers to use it properly. As the creator of Wireguard says in his talk
+above, “There’s no way to misconfigure wireguard and still have it work. If you
+don’t configure it right, it simply doesn’t work”</p>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>For me, these are the things I want to do from here:</p>
+
+<ul>
+  <li>Install Unbound and start using it as a DNS server</li>
+  <li>Set-up Wireguard on my phone</li>
+  <li>Set-up wireguard on an OpenWRT router which moves the layer one step away from
+the computer and makes it easier for phones to connect and use wireguard</li>
+  <li>Read the <a href="https://git.zx2c4.com/WireGuard/tree/src/tools/wg-quick/linux.bash?id=372152122766ad2ce8d9510cd5b6b0369a85dd75#n153">Wireguard whitepaper</a></li>
+</ul>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

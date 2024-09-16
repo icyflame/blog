@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="NPM changes downloads-stats API and informs the world 38 hours later" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1131 words about software" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/10/08/npm-downloads-api-change/" property="og:url">
+  
+
+  
+  <meta content="2017-10-08T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="npm" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    NPM changes downloads-stats API and informs the world 38 hours later &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">NPM changes downloads-stats API and informs the world 38 hours later</h1>
+  <span class="post-date">08 Oct 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#api">
+    api
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#goofs">
+    goofs
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#npm">
+    npm
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#software">
+    software
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>There are two parts to this post. The first is about what happened,
+chronologically and the second part is about why I was so disappointed with
+this.</p>
+
+<p><em>Note:</em> All the times in this post which are not annotated are India Standard
+Time = GMT + 5.5</p>
+
+<h2 id="what-happened">What happened?</h2>
+
+<ul>
+  <li>
+    <p>Around 10 AM on 29th August, 2017, I was proof reading my resume and clicked
+  on one of the npm-stat.com links that I have there. I reached that page and
+  realised that the number shown there was drastically low compared to the
+  number that I already knew was the real one.</p>
+
+    <p>I was surprised. The first thing that came to mind was that NPM had deleted
+  the old data leading to the downloads in 2015 being shown as 0. I
+  immediately checked other packages. I checked some really famous packages
+  like <code class="language-plaintext highlighter-rouge">express</code> and users like @sindresorhus. All of their downloads were
+  being shown as 0 in 2015.</p>
+  </li>
+  <li>
+    <p>I dug a bit more and reached the code-base for
+  <a href="https://github.com/pvorb/npm-stat.com">npm-stat.com</a> and from the line on
+  the website “All data comes directly from NPM”, I realised that the website
+  probably worked using an API from NPM itself.</p>
+
+    <p>npm-stat.com is a webpack based frontend JS app. I have some experience with
+  them and thus, I was quickly able to figure out where the API call was
+  happening.</p>
+
+    <p>It was <a href="https://github.com/pvorb/npm-stat.com/blob/b79fb8abc7a200c687c9f6985c86a46402a53792/src/charts.js#L266-L268">these 3
+  lines</a>:</p>
+
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nf">getDownloadsUrl</span><span class="p">(</span><span class="nx">pkg</span><span class="p">,</span> <span class="nx">fromDate</span><span class="p">,</span> <span class="nx">toDate</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">return</span> <span class="dl">'</span><span class="s1">/downloads/range/</span><span class="dl">'</span> <span class="o">+</span> <span class="nf">dateToDayKey</span><span class="p">(</span><span class="nx">fromDate</span><span class="p">)</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">:</span><span class="dl">'</span> <span class="o">+</span>
+              <span class="nf">dateToDayKey</span><span class="p">(</span><span class="nx">toDate</span><span class="p">)</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/</span><span class="dl">'</span> <span class="o">+</span> <span class="nf">encodeURIComponent</span><span class="p">(</span><span class="nx">pkg</span><span class="p">);</span>
+  <span class="p">}</span>
+</code></pre></div>    </div>
+
+    <p>The request is of the form: <code class="language-plaintext highlighter-rouge">/downloads/range/2015-05-01:2016-11-01/terminal-wallet</code></p>
+  </li>
+  <li>
+    <p>Now that I had found out the downloads API itself, I immediately checked if
+  the data for 2015 was there or not. I found that it was. This was a relief.
+  I immediately downloaded JSONs of everything from 2015 to that day, but this
+  was where I noticed the rate-limiting!</p>
+
+    <p>I requested data from 2015-05-01 to 2017-08-29 but it only returned data
+  starting from 2016-02-29, that’s exactly 18 months before the end date. I
+  had found the issue!</p>
+  </li>
+  <li>
+    <p>This was the first real milestone. Once I realised what was going on, I
+  immediately reached out to people:</p>
+
+    <p>(a) Open a ticket with NPM support</p>
+
+    <p><img src="/public/img/npm-blog-support.png" alt="img" /></p>
+
+    <p>(b) Tweet to <a href="https://twitter.com/izs">@izs</a></p>
+
+    <p><a href="https://twitter.com/_icyflame/status/902407527702315008?ref_src=twsrc%5Etfw"><img src="/public/img/2017-08-29-twitter.png" alt="twitter-screenshot" /></a></p>
+
+    <p>(c) Open an issue on
+  <a href="https://github.com/npm/registry/issues/206">npm/registry</a>. Here again, the
+  complete issue was explained.</p>
+
+    <p>(d) Send an email to <a href="https://github.com/pvorb">Paul Vorbach</a> who’s the
+  maintainer of npm-stat.com.</p>
+  </li>
+  <li>
+    <p>All this was going down at 11 am IST on Tuesday 29th August 2017. That’s 10:30
+  PM PDT which is the timezone NPM support seems to be operating in. So, I
+  wasn’t expecting a response from them until the next day at the least. I got
+  an official reply on the support ticket 17 hours after at 4:44 am on 30th
+  August 2017.</p>
+
+    <p><img src="/public/img/npm-blog-ticket-response.png" alt="img" /></p>
+  </li>
+  <li>
+    <p>After all this reaching out, (it was around noon already), I sat down to
+  work a patch for npm-stat.com. It took me about a day. Around 4 pm the next
+  day, on August 30, I opened <a href="https://github.com/pvorb/npm-stat.com/pull/47">npm-stat.com #47</a>.</p>
+
+    <p>There was one round of back-and-forth with @pvorb before the PR was merged
+  on September 7th, a week later.</p>
+  </li>
+  <li>
+    <p>On August 31st 1 AM IST, 38 hours after I first noticed the problem,
+(I have no way to know exactly when the API was changed), they
+announced the rate-limiting on <a href="http://blog.npmjs.org/post/164799520460/api-rate-limiting-rolling-out">their
+blog</a>.</p>
+
+    <p><img src="/public/img/npm-blog-post.png" alt="img" /></p>
+
+    <p>The documentation on npm/registry that they are talking about was added in
+  two commits:</p>
+
+    <p><a href="https://github.com/npm/registry/commit/b0adb965c15936114751377401b7f35b1f51d425">chore: document downloads api
+  limits</a>
+  at 2:08 AM IST on August 31st</p>
+
+    <p><a href="https://github.com/npm/registry/commit/73f3ac456e1d80ffe0d49d19a74bfccdb58b4aaf">fix: jan 10 not jan
+  01</a>
+  at 2:24 AM IST on August 31st.</p>
+
+    <p>I found this from <a href="https://github.com/npm/registry/blame/73f3ac456e1d80ffe0d49d19a74bfccdb58b4aaf/docs/download-counts.md">git’s blame
+  view</a>.
+  Clearly, their plan was all along to make the change and inform later.</p>
+  </li>
+</ul>
+
+<h2 id="why-do-i-even-care">Why do I even care?</h2>
+
+<blockquote>
+  <p>It’s just a downloads API, CHILL MAN.</p>
+</blockquote>
+
+<p>No one actually said that to me, but you might be wondering why this was such a
+big deal for me.</p>
+
+<p>Mainly because I have download numbers on my CV and when someone clicks on the
+link and sees a number less than the number they just saw and no apparent
+explanation, it’s a bad look. There’s almost no explanation that can be given in
+less than a few minutes time. (Hence, the request to Paul Vorbach to put a note
+on his website)</p>
+
+<p>Also because this was unprecedented! This sort of an API change (i.e. a change
+without any prior warning) leads to every tool that depends on the API
+malfunctioning! Their official stand is that they will keep doing it in the
+future as well, and they will only <em>follow-up</em> with documentation:</p>
+
+<blockquote>
+  <p>We reserve the right to further limit API usage without warning when we see a
+pattern of requests causing the API to be unusable for most callers. We’ll
+follow up with documentation in these cases. Our primary goal is to prevent
+API use from either deliberately or accidentally making the service
+unresponsive for other users.</p>
+</blockquote>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I like NPM. Irrespective of that, if you want to work with Node.js then you are
+absolutely going to HAVE to use it. There are many things that could have been
+done better here: more warning before such API changes, a tweet an hour before
+the API change was deployed would have been notice enough. Or how about adding a
+field to the <code class="language-plaintext highlighter-rouge">/downloads</code> api response that informed the user that the data is
+not for the complete range that they requested because of a new API change.</p>
+
+<p>They have a monthly newsletter, a Twitter account, a blog and they chose not to
+post about this anywhere. I can only guess that they were undergoing an attack
+and they had to limit the API to fight that. I can’t believe anyone would have a
+planned move to limit data and not inform their users about it prior to the
+change itself.</p>
+
+<p><strong>Explaining a change 38 hours after deploying the change is just not acceptable
+for an API that’s so prevalent.</strong></p>
+
+<h2 id="tl-dr">TL; DR</h2>
+
+<p>NPM limited their <code class="language-plaintext highlighter-rouge">/downloads</code> API to return data only for the last
+18 months if you request for a range more than 18 months. They informed the
+world about it 38 hours after I first noticed the change. This lead to
+npm-stat.com malfunctioning and showing drastically low numbers because of years
+of data was simply not there.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

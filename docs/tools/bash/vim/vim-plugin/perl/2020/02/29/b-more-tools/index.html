@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="More tools!" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1064 words about vim-plugin" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/tools/bash/vim/vim-plugin/perl/2020/02/29/b-more-tools/" property="og:url">
+  
+
+  
+  <meta content="2020-02-29T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="tools" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    More tools! &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">More tools!</h1>
+  <span class="post-date">29 Feb 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#bash">
+    bash
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#perl">
+    perl
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tools">
+    tools
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vim">
+    vim
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vim-plugin">
+    vim-plugin
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Here’s a list of some of the repositories I created on Github recently:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Vim plugins</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MarkdownLinks.vim</td>
+      <td>2020-02-02T03:54:14Z</td>
+    </tr>
+    <tr>
+      <td>PersistentScratch.vim</td>
+      <td>2020-01-02T09:56:07Z</td>
+    </tr>
+    <tr>
+      <td><strong>Scripts in bash / perl / etc</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>gospec</td>
+      <td>2020-01-25T12:08:24Z</td>
+    </tr>
+    <tr>
+      <td>json-where</td>
+      <td>2019-09-23T07:45:08Z</td>
+    </tr>
+    <tr>
+      <td>gnucash-xml-to-ledger-dat</td>
+      <td>2020-02-11T11:35:33Z</td>
+    </tr>
+    <tr>
+      <td>launchdarkly-prereq-graph-gen</td>
+      <td>2019-06-01T08:02:52Z</td>
+    </tr>
+    <tr>
+      <td><strong>Firefox add-ons</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>wealias-firefox-add-on</td>
+      <td>2019-02-05T13:49:12Z</td>
+    </tr>
+    <tr>
+      <td>open-circleci-workflows-firefox</td>
+      <td>2019-08-24T07:13:19Z</td>
+    </tr>
+    <tr>
+      <td><strong>Misc</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>stern</td>
+      <td>2019-03-21T14:47:12Z</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I realized that I have been building a lot of tools lately. In particular, I
+have gotten into writing Vim plugins and forking and editing the tools I use
+often so that they have the options I want, but will probably never be merged
+into the tool’s repository itself.</p>
+
+<!--more-->
+
+<p>I generated this list by making a request to the Github API:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-s</span> <span class="nt">-G</span> <span class="nt">--data-urlencode</span> <span class="s2">"sort=newest"</span> <span class="se">\</span>
+        <span class="s2">"https://api.github.com/users/icyflame/repos"</span> |<span class="se">\</span>
+        jq <span class="nt">-r</span> <span class="s1">'.[] | [ .name, .created_at ] | @tsv'</span> |<span class="se">\</span>
+        tsv-pretty
+</code></pre></div></div>
+
+<p>If you have been working on a lot of open source stuff lately, but can’t figure
+out what exactly it is you spend most of your time doing, I definitely recommend
+looking through Github’s API!</p>
+
+<h2 id="vim-plugins">Vim Plugins</h2>
+
+<p>I have been a Vim user for a few years now and I have written extensively about
+it! The one thing I hadn’t done before was write plugins. So, I started looking
+into writing a plugin with the specific goal of writing a plugin that would
+store the currently open buffer in a file somewhere on my file-system. Where the
+file was stored wasn’t really important, it didn’t even matter what the name of
+the file was, all the mattered was that it was on my persistent storage
+somewhere. If I knew that the file was stored, it would allow me to get text
+(like deployment pipelines), store them on my file-system and go ahead and edit
+them directly without having to think about where I should store it or what I
+should name them.</p>
+
+<p>It turns out that Vim’s plugin API is extremely easy to use. There are two
+particular things about it that I like a lot:</p>
+
+<ol>
+  <li><strong>Standardized file-structure</strong></li>
+</ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tree <span class="nt">--charset</span> ascii
+<span class="nb">.</span>
+|-- autoload
+|   <span class="sb">`</span><span class="nt">--</span> persistent_scratch.vim
+|-- LICENSE
+|-- plugin
+|   <span class="sb">`</span><span class="nt">--</span> persistent_scratch.vim
+<span class="sb">`</span><span class="nt">--</span> README.md
+
+2 directories, 4 files
+</code></pre></div></div>
+
+<p>Most Vim plugins are <em>very</em> similar:</p>
+
+<ul>
+  <li>An <code class="language-plaintext highlighter-rouge">autoload/plugin.vim</code> file with all the keybindings and calls out to the
+functions which implement the plugin’s functionality</li>
+  <li>A <code class="language-plaintext highlighter-rouge">plugin/plugin.vim</code> file with the plugin’s functionality and some exposed
+functions which can be called by the keybindings / commands defined in the
+autoload file</li>
+</ul>
+
+<p>This simple file structure makes it very simple to write a new plugin by looking
+at an existing plugin and trying to do the same things but for your use-case. My
+plugin reference was <a href="https://github.com/mtth/scratch.vim">mtth/scratch.vim</a>. My plugin was very similar to that
+plugin except for the part where the file is being stored on persistent storage.</p>
+
+<ol>
+  <li><strong>Easy to test</strong></li>
+</ol>
+
+<p>VimScript is an interpreted language (I think?) and one can test plugins by
+simply symlinking the plugin’s development directory to a directory inside
+<code class="language-plaintext highlighter-rouge">~/.vim/bundle</code>. After doing that, you only have to open Vim and start testing
+your commands / keybindings.</p>
+
+<hr />
+
+<p>After PersistentScratch, I migrated MarkdownLinks out from my Vimrc out to it’s
+own plugin. MarkdownLinks is a plugin which adds a hyperlink to the word that
+your cursor is on or the highlighted text and adds the template <code class="language-plaintext highlighter-rouge">[</code> around the
+word and the declaration of the link at the end of the file. I was surprised
+that something like this doesn’t already exist. I wonder how other Markdown
+writers deal with this.</p>
+
+<p><strong>Note:</strong> I actually started using Neovim instead of Vim recently. More on this
+in another blog post. <em>Hint:</em> The reasons were mostly because of my
+disillusionment with the <a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">BDFL</a> model of governance in open source projects.</p>
+
+<h2 id="bash-functions--utilities">Bash functions + Utilities</h2>
+
+<p>json-where is something that I have been working on for a while now. It has been
+extremely useful to me whenever I am reading Kubernetes manifests. (Kubernetes
+manifests are notorious for containing extremely nested keys with vital
+information) It tells you the key given a location inside a JSON buffer. This
+works perfectly from inside Vim, where you can simply run a keybinding and get
+the path to the key your cursor is on.</p>
+
+<p>gospec is the other thing that I have recently spent some time on. It’s a
+prettifier for the output produced by the <code class="language-plaintext highlighter-rouge">go test</code> command. I have been using
+it daily at work and it has reduced the time I spend using cumbersome tools
+(like <code class="language-plaintext highlighter-rouge">ag</code> + <code class="language-plaintext highlighter-rouge">sort -r</code>) when debugging tests for new code. It doesn’t do
+anything very complicated and the function itself fits within 100 lines of bash.</p>
+
+<h2 id="misc">Misc</h2>
+
+<p>I have been writing some Perl recently. Perl is a surprising language as it has
+been around for a long time and it has remained mostly unchanged. The text
+handling capacities of bash are limited, and I use Gawk whenever I have to
+change streams of text, but sometimes even Gawk is not upto the task, especially
+when JSON is in the mix. One recent example was when I wanted to list all the
+Kubernetes pods and output the namespaces which had a particular environment
+variable set to a given value. I ended up writing a NodeJS script for this, but
+I definitely wished for something faster in the moment and I have been wondering
+if Perl could have been that language.</p>
+
+<p>Perl’s is able to deal with HTTP requests, XML (some APIs are still XML), and
+JSON effortlessly. I want to start including it more in my daily scripting
+tasks. Something that I started using just yesterday:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"https://vendor.com"</span> | perl <span class="nt">-MURI</span>::Escape <span class="nt">-e</span> <span class="s2">"print uri_escape(&lt;&gt;)"</span>
+</code></pre></div></div>
+
+<p>The 2 times I had to URL escape some text, I loaded up JSBin.com and entered
+it into the console. It took me a couple minutes to find the JS function which
+escapes text. So, yeah, this approach is <em>way</em> faster.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

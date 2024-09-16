@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Discovering Org Mode" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="2181 words about org-mode" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2020/10/25/discovering-org-mode" property="og:url">
+  
+
+  
+  <meta content="2020-10-25T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="org-mode" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Discovering Org Mode &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Discovering Org Mode</h1>
+  <span class="post-date">25 Oct 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#editors">
+    editors
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#emacs">
+    emacs
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#markdown">
+    markdown
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#org-mode">
+    org-mode
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vim">
+    vim
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I talked about some of the <a href="/emacs/editors/tools/2020/07/08/vim-and-emacs/">problems with Markdown</a> that I was facing in my daily note-taking at work
+and at home. I had been looking for a replacement for my note taking system since early this
+year. Org mode seemed like a good candidate and a few people recommended it to me, so I started
+using it.</p>
+
+<p>Now, I have used Org mode for about 6 months at work and at home. In my personal life, I managed the
+move to a new apartment and switching to a new mobile phone provider entirely using a single
+sub-tree in my notes file. At work, I have used Org for a few months now as I worked on a variety of
+Search and SRE tasks; a lot of them included huge files and ad-hoc Perl scripts which were written
+almost entirely within Org and are still stored only inside Org. This post is about my experience
+with Org mode and a list of the things that I believe are the strengths and weaknesses of this
+markup language.</p>
+
+<!--more-->
+
+<p><a id="org4edb750"></a></p>
+
+<h1 id="what-is-org-mode">What is Org mode?</h1>
+
+<p>Org mode is a major mode for Emacs. A major mode is like a filetype in Vim. It has a bunch of
+special formatting logic and functions that only work in that mode. Emacs is always in a major mode.</p>
+
+<p>Org mode also refers to the mark-up language that can be written within this major mode. This
+mark-up language is a lot like Markdown if you look at the plaintext. For example, here’s a quick
+sample with some common things that markup languages can do:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Title
+** Subtitle
+
+Normal, *bold* and _emphasised_ text.
+
+- Lists
+- look
+- the
+- same
+  - even with indentation
+  - and list items with embedded code are dealt with properly
+	#+BEGIN_SRC php
+	public function getID() {
+		return $this-&gt;id;
+	}
+	#+END_SRC
+
+| Tables | Look |
+|--------+------|
+| The    | Same |
+</code></pre></div></div>
+
+<p>As the markup is similar to Markdown, it’s extremely easy to switch to Org <span class="underline">from</span> Markdown. In fact,
+you don’t even need to think a lot about whether you are writing Org or Markdown except for headings
+where the character changes from <code class="language-plaintext highlighter-rouge">#</code> to <code class="language-plaintext highlighter-rouge">*</code>. So, there’s nothing particularly special about the
+markup language.</p>
+
+<p>Opening this file in Emacs won’t be very impressive either:</p>
+
+<p><img src="/public/img/discovering-org-mode-1.png" alt="1" /></p>
+
+<p>The file looks slightly better; this is only stylized Markdown though.</p>
+
+<p>Org mode really starts differentiating itself is when you start editing it. Here’s my quick, 3-part
+pitch to get people intrigued and try it at least once:</p>
+
+<ol>
+  <li>
+    <p><strong>Lists:</strong> Org mode (the layer of code sitting between the plaintext and your editor) inherently
+understands your list. So, when you type <code class="language-plaintext highlighter-rouge">Alt + Return</code>, it will create a new list item.</p>
+
+    <ul>
+      <li>If you are in a numbered list, it will check the numbers of all your list items from the top and fix any</li>
+    </ul>
+
+    <p>discrepancies</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Alt + Up arrow</code> will move the current list item up; once again, if you are in a</li>
+    </ul>
+
+    <p>numbered list, the numbers will automatically be adjusted for all list items at that level</p>
+
+    <ul>
+      <li>If the list item you are moving has child items, they will also be moved alongwith the parent
+item!</li>
+      <li><strong>Editorial note:</strong> I was writing this blog post in Markdown, but the nested list item that I
+was trying to create using <code class="language-plaintext highlighter-rouge">Alt + Right arrow</code>, didn’t have any effect. So, I copied the text
+over to an Org file and pasted it as is. After doing that, I just had to do <code class="language-plaintext highlighter-rouge">Alt + Enter</code> to
+align the list items and start editing the text as Org mode text.</li>
+    </ul>
+  </li>
+  <li><strong>TODO list management, heading filtering:</strong> A common notes file has a lot of heirarchy and notes
+at several levels. Some of these notes will be TODO items that need to be done, or were done in
+the past. Org mode has in-built management of these lists using plaintext markers.
+    <ul>
+      <li>Like other TODO management software, there are a lot of ways to visualize the things you need to do</li>
+      <li>There are even some features that allow you to schedule TODOs in the future and then look at
+your day’s agenda (I have started using this feature recently)</li>
+    </ul>
+  </li>
+  <li><strong>Tables:</strong> Tables automatically align when you press Tab. I have not seen any application except
+Emacs which can do this so well. There are several GUI applications which can do this well, and
+theoretically, you can run them in Vim mode and get the same result.</li>
+</ol>
+
+<p><a id="org6a94b39"></a></p>
+
+<h1 id="strengths">Strengths</h1>
+
+<p>I thought about what I wanted to put here for a while. I finally decided to put the features of Org
+that I use daily. Org can do a lot of other crazy things but I have found that I don’t use them as
+much. (<strong>For eg:</strong> Org tables have a spreadsheet like feature which allows you to write formulas, but
+LibreOffice’s Calc blows this out of the water. So, I did not use that feature as much within org)</p>
+
+<p><a id="org08d0609"></a></p>
+
+<h2 id="lists-tables-todos">Lists, Tables, TODOs</h2>
+
+<p>Like I said above in my quick pitch, Org mode understands Lists and Tables. By understand, I mean
+that it understands Lists as computers understand arrays. For eg, it knows that the top element
+can’t be moved above it’s current position because it’s already at index 0! For sublists, it has
+(probably) something like a pointer inside it which lets it know that when the parent pointer is
+moved up, the sublist should also move.</p>
+
+<p>This understanding of lists allows it to do things like change the leading character of a list to
+anything that you want with a simple keybinding (<code class="language-plaintext highlighter-rouge">Shift + Left/Right arrow</code>). A program like Vim is
+working with Lists using regular expressions. These expressions are bound to run into corner cases
+which will be fixed with a more granular Regex … <span class="underline">ad infinitum</span>. My most common use-cases for
+lists:</p>
+
+<ul>
+  <li>List of PRs for a given feature (the order in which they need to be merged, etc)</li>
+  <li>Release plans (say: to be shared for review)</li>
+</ul>
+
+<p><strong>Note:</strong> Org mode is pretty good list numbering tool. If you have a list of lines with content that
+you would like to number for some reason, you can do this by prepending the whole list with <code class="language-plaintext highlighter-rouge">1.</code> and
+then using Org’s “Fix list” bindings (<code class="language-plaintext highlighter-rouge">Shift + Right/Left</code>) to number the list properly!</p>
+
+<p>With tables, this behavior is pushed even further as Org behaves with tables almost like any
+Spreadsheet software. It is better than them, in my opinion, because of it’s ability to quickly
+change the width of all columns based on the content. With spreadsheet software, one would have to
+use the mouse and extend the column manually. All of this done with the <code class="language-plaintext highlighter-rouge">TAB</code> key: Type <code class="language-plaintext highlighter-rouge">| CONTENT |
+CONTENT | &lt;TAB&gt;</code> and a table is started and each column is the width of the column with the longest
+content.</p>
+
+<p>With Vim keybindings, adding a column is done by simply highlighting the table and using block
+editing (<code class="language-plaintext highlighter-rouge">Ctrl-V</code>) to append or prepend a <code class="language-plaintext highlighter-rouge">|</code>. My most common use-cases for tables:</p>
+
+<ul>
+  <li>Pros/Cons list when comparing options / designs / implementations</li>
+  <li>Use-cases for a given feature</li>
+  <li>Comparing various external libraries/services</li>
+</ul>
+
+<p>I have also often converted between lists and tables:</p>
+
+<p><strong>From:</strong> <code class="language-plaintext highlighter-rouge">&lt;CONTENT&gt;: &lt;VALUE&gt;</code>
+<strong>To:</strong> <code class="language-plaintext highlighter-rouge">| &lt;CONTENT&gt; | &lt;VALUE&gt; |</code></p>
+
+<p>This is fairly easy if the list is not nested. As tables look better, there’s a constant temptation
+to express information properly as tables, rather than lists.</p>
+
+<p><a id="org5a03ed1"></a></p>
+
+<h2 id="embedding-code">Embedding code</h2>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#+BEGIN_SRC php
+$ docker run -it --name=php php:latest php -a
+Interactive shell
+
+php &gt; $password = "t";
+php &gt; $h = password_hash($password, PASSWORD_DEFAULT);
+php &gt; echo $h;
+$2y$10$F6exUnYVDd.W4DSs0I8fdOssGPdj57L3pvmjef5oHEg8qdoahTONS
+php &gt; var_dump(password_verify($password, $h));
+bool(true)
+php &gt;
+#+END_SRC
+</code></pre></div></div>
+
+<p>The markup for embedding code is verbose in Org. It consists of <code class="language-plaintext highlighter-rouge">#+BEGIN_SRC</code> and <code class="language-plaintext highlighter-rouge">#+END_SRC</code> along
+with the language of the code that is embedded. I am still trying to figure out if there is some way
+to embed using Markdown’s <code class="language-plaintext highlighter-rouge"></code><code class="language-plaintext highlighter-rouge"> </code>`. Looking past the markup, this code renders with the proper syntax
+highlighting for the embedded language. So, within an Org file, you can have code from any language
+and it will all be highlighted according to <span class="underline">that</span> language’s highlighting rules.</p>
+
+<p>When exporting to PDF or Markdown, the embedded code is also exported as expected. I have had some
+issues with several embedded code blocks that follow one another though.</p>
+
+<p><a id="org32b2109"></a></p>
+
+<h2 id="exporting-to-plaintext--markdown--odt--docx">Exporting to Plaintext / Markdown / ODT / Docx</h2>
+
+<p>I work in a company with a few different platforms for sharing information. We use Slack,
+Confluence, Jira and Google Docs. There is no underlying reason for the tool that will be used in
+any given meeting or project and it often varies depending on the people that I work with.</p>
+
+<p>This gives rise to the need for a documentation tool that will export to all of those formats. Here,
+Org mode blows Markdown out of the water. Exporting out to another format is a first-class feature
+in Org mode. There are some really good exporters that are included by default. Of these, I have
+found Plaintext and Docx to be the most portable!</p>
+
+<p><strong>Note:</strong> Docx files can be created using Org’s ODT export function. ODT is used as an intermediate
+format. The <code class="language-plaintext highlighter-rouge">.docx</code> file can be imported into Drive and opened using Google Docs. Google Docs now
+has a dedicated “Docx”-supported mode which allows you to collaborate and edit a Docx file!</p>
+
+<p>Org’s lists and Tables can be copied as is and pasted into Slack or Confluence in their code blocks
+section. They look good on any screen that’s not a phone screen! This allows you to export without
+any other tool, by simply copying the markup.</p>
+
+<p>For more involved exporting (like text with Embedded code), I use the Plaintext export to get a
+UTF-8 buffer which I can copy and paste into Confluence / Jira / Slack’s text snippet or embedded
+code markup object! The plaintext that comes out of the Embedded code is particularly good
+looking. Embedded code is wrapped on the left with a box made of <code class="language-plaintext highlighter-rouge">-</code> and <code class="language-plaintext highlighter-rouge">|</code> characters!</p>
+
+<p><strong>Testimonial:</strong> When I shared my notes from an important internal HR meeting widely as a plaintext
+snippet on Slack, one coworker sent this message to the channel:</p>
+
+<blockquote>
+  <p>Your notes are beautiful.</p>
+</blockquote>
+
+<p>I have shared notes written in Markdown several times before this, but I have never gotten this kind
+of a message! Clearly, the plaintext export is generating very good looking files. (<a href="/public/data/discovering-org-mode-example.txt">This</a> is the
+file generated when I exported to UTF-8 plaintext from <a href="/public/data/discovering-org-mode-example.org.txt">this example Org file</a>.)</p>
+
+<p><a id="orgf55df97"></a></p>
+
+<h1 id="weaknesses">Weaknesses</h1>
+
+<p><a id="org02abef9"></a></p>
+
+<h2 id="single-notes-file">Single notes file</h2>
+
+<p>I have been using Org mode for about 6 months now and perhaps the most annoying weakness for me is
+that I have put all my notes in a single file. Now, due to Org’s intuitive hierarchical structure,
+it will be extremely easy to move the notes to separate files by project. But I have not yet figured
+out how to get Org mode to search across several Org files. For now, as all of my notes are in a
+single file, I have to be extremely careful about destructive actions that I take within this
+file.</p>
+
+<p>I have a script which commits to Git every 15 minutes. I started doing this after I lost about 20%
+of my notes file during a bad edit in which I deleted a <code class="language-plaintext highlighter-rouge">...</code> block. When I deleted it, I had no
+clue that this ellipsis represented a block of Org and was not just something that Org added to my
+underlying text file. I am still trying to control my instinct to delete lines that have only an
+ellipsis.</p>
+
+<p><a id="orgc079228"></a></p>
+
+<h2 id="strange-export-behavior">Strange export behavior</h2>
+
+<p>There are some “properties” which can be set on every title / heading. These including some useful
+ones like <code class="language-plaintext highlighter-rouge">EXPORT_TITLE</code> and <code class="language-plaintext highlighter-rouge">EXPORT_AUTHOR</code>. Unfortunately, I haven’t really gotten them to work
+properly until now. Often, when I am trying to export a single title, it will not use the
+<code class="language-plaintext highlighter-rouge">EXPORT_TITLE</code> that is provided in the heading and instead use the title from the file’s properties!</p>
+
+<p>These Export properties are probably being used by the actual driver which handles the export from
+Org mode to the appropriate format. So, some drivers do handle this properly, whereas some don’t!
+(<strong>For e.g.:</strong> <code class="language-plaintext highlighter-rouge">EXPORT_OPTIONS</code> is a common property which can be used to turn off
+subscript/superscript support (useful when writing notes with variable names) and turn off the Table
+of contents (useful when exporting to Plaintext); this property doesn’t work with the Plaintext
+exporter)</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

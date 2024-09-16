@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="OpenSSL is extensive and amazing" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="585 words about command-line" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2018/05/25/openssl-is-awesome/" property="og:url">
+  
+
+  
+  <meta content="2018-05-25T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="openssl" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    OpenSSL is extensive and amazing &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">OpenSSL is extensive and amazing</h1>
+  <span class="post-date">25 May 2018</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#command-line">
+    command-line
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#cryptography">
+    cryptography
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#openssl">
+    openssl
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Back in August 2017, I hadn’t yet dipped my feet into OpenSSL’s command line
+yet. That’s when I ended up finding out about a set of OpenSSL commands that
+have a solution for most cryptography related requirements. Secondly, it’s a
+great way to just explore and find out about new technologies.  So, here’s a
+list of commands that absolutely floored me when I first found out about them:</p>
+
+<h2 id="1-openssl-x509">1. openssl x509</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>openssl x509 <span class="nt">-in</span> ~/Downloads/twittercom.crt <span class="nt">-text</span> | less
+</code></pre></div></div>
+
+<p>This command inspects x509 certificates from the internet. Firefox has a great
+certificate inspector, but for every field, you have to go and highlight it and
+then the value for that field will be shown in the bottom. This on the other
+hand shows up in gorgeous less and works like a charm! I have learned so much
+about TLS just reading the certificates for the top sites that I keep visiting.</p>
+
+<p>For eg: <a href="https://tools.ietf.org/html/rfc5280#section-4.2.1.9">Basic Constraints</a> and <a href="https://www.youtube.com/watch?v=5dhSN9aEljg">Moxie’s talk about defeating SSL using
+it</a>.</p>
+
+<h2 id="2-openssl-rand">2. openssl rand</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>openssl rand <span class="nt">-hex</span> 40
+<span class="nv">$ </span>openssl rand <span class="nt">-base64</span> 40
+</code></pre></div></div>
+
+<p>How many times have you wanted to generate some random bytes quickly? OpenSSL
+can do it! I don’t know what the distribution of this is, or what it uses as a
+seed or any of that, but it just seems to work and that’s great!</p>
+
+<h2 id="3-openssl-s_client">3. openssl s_client</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client <span class="nt">-connect</span> duckduckgo.com:443 <span class="nt">-tls1_2</span> <span class="nt">-showcerts</span>
+</code></pre></div></div>
+
+<p>This opens a TLS 1.2 tunnel with the destination site and then allows you to
+send some data on this newly created encrypted tunnel. This command also shows
+all the options explicitly and lets you inspect each handshake. This was pretty
+helpful when I was writing <a href="https://www.siddharthkannan.in/tls-handshake/">tls-handshake</a>.</p>
+
+<h2 id="4-openssl-enc">4. openssl enc</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># the command to encrypt a file</span>
+<span class="nv">$ </span>openssl enc <span class="nt">-in</span> 404.html <span class="nt">-out</span> 404.html.enc <span class="nt">-k</span> <span class="s2">"testing123"</span> <span class="nt">-aes-256-ctr</span>
+<span class="c"># the command to decrypt the encrypted file</span>
+<span class="nv">$ </span>openssl enc <span class="nt">-in</span> 404.html.encrypted <span class="nt">-out</span> 404.html.new <span class="nt">-k</span> <span class="s2">"testing123"</span> <span class="nt">-aes-356-ctr</span> <span class="nt">-d</span>
+</code></pre></div></div>
+
+<p>This command comes in pretty handy if you want to send a huge file to someone
+using something like Google Drive or Dropbox (a vendor that you don’t trust to
+not look into your data). Put everything in a tarball, encrypt it using AES,
+then send the encryption key to the recipient using another channel (such as
+<a href="https://signal.org/">Signal</a>) and the encrypted data using the cloud storage service. I haven’t
+really gone into it’s performance aspects, but it’s a pretty cool command.</p>
+
+<p>Of course, you could use the same cloud storage provider to share the key if you
+have the public key of the recipient. You could use something like PGP or simple
+SSH RSA keys (if they are long enough).</p>
+
+<p><strong>Bonus:</strong> You can use the <code class="language-plaintext highlighter-rouge">openssl rand</code> function to generate a secure key
+that’s a few 100 bytes long and can’t be brute forced for the forseeable future.</p>
+
+<p>One of the drawbacks of <code class="language-plaintext highlighter-rouge">openssl enc</code> is that AEAD ciphers aren’t supported in
+the version of OpenSSL I have (1.0.2g 1 March 2016) (eg: <code class="language-plaintext highlighter-rouge">aes-256-gcm</code>). There
+is <a href="https://github.com/openssl/openssl/issues/471">some</a> discussion on github about this. Also, <a href="https://github.com/openssl/openssl/issues/5048">this PR</a> that says <code class="language-plaintext highlighter-rouge">enc</code>
+will not support AEAD in the future. It says to look into the <a href="https://linux.die.net/man/1/cms"><code class="language-plaintext highlighter-rouge">cms</code></a> utility.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 5 - Linux, Pendrives and Encryption!" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1272 words about 100daysofwriting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/writing/linux/cryptography/2017/02/22/day-5-linux-pendrives-encryption/" property="og:url">
+  
+
+  
+  <meta content="2017-02-22T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 5 - Linux, Pendrives and Encryption! &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 5 - Linux, Pendrives and Encryption!</h1>
+  <span class="post-date">22 Feb 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#cryptography">
+    cryptography
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#linux">
+    linux
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#writing">
+    writing
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>The paranoia of having your hard drive crash on you is devastating, once it
+bites you. It’s the fatality and the irreversibility of it. Once a hard drive
+has crashed on you, the only thing that you can do, is take the computer to some
+repair place, and have the hard drive changed (or if you are sure it’s the hard
+drive, order a new one online and replace it yourself). Nonetheless, the data
+that you had is gone. Generally, people say <strong>Backup your data and keep it in a
+safe place</strong>.</p>
+
+<p>The problem is that for most people, the hard drives that you do have just do
+the job. There’s never enough to have 2 copies of anything. If you had that much
+space, you probably would have a hard drive that’s more reliable and you would
+not have to be as paranoid. Anyway, I think you see where I am heading with
+this.</p>
+
+<p>There are a few files on your system that are absolutely important. Files which
+when lost will wreak havoc in your life for a brief period of time, and when
+stolen will cause a lot more problems in a lot of other people’s lives too. I
+can only think of the following:</p>
+
+<ul>
+  <li>RSA keys inside <code class="language-plaintext highlighter-rouge">.ssh</code>: Added in Github, Gitlab, the like. Also on servers
+  that you might want to SSH into. If these servers host a website, well.
+  There’s a lot of trouble that a non-sudo user can create. (Fork Bomb)</li>
+  <li>PGP keys inside the keyring, accessed through <code class="language-plaintext highlighter-rouge">gpg</code> Android signing keystores,</li>
+  <li><code class="language-plaintext highlighter-rouge">.jks</code> files. Losing these will mean that you can’t
+  upload APKs to your Google Playstore app</li>
+  <li>If you use something like <code class="language-plaintext highlighter-rouge">mutt</code> or <code class="language-plaintext highlighter-rouge">msmtp</code>, then the Gmail App Passwords are
+  stored in plaintext as 600 files. No one else can read them, but if they are
+  stolen, that user can certainly read them!</li>
+</ul>
+
+<p>I think the list might be a bit longer. But the above should be enough to
+demonstrate my previous paragraph.</p>
+
+<p>So, the simplest way to get around all of this, is to use Github / Gitlab
+extensively. They provide a lot of free space, and can be used to host code,
+small files, folders that have project work, etc etc. But what about the private
+stuff? The private keys, the keystores?</p>
+
+<p>That’s where a flash drive comes in. A flash drive that has everything stored on
+it. But wait a minute: creating this small device that has all these files that
+you don’t want to be stolen on it? you MUST encrypt it!</p>
+
+<p>I had not done that till now. I was lucky enough for significantly bad things to
+not happen to me because of this flash drive being stolen. (I even took it once
+to a shop to print something out! Unbelievably stupidity!)</p>
+
+<p>Ubuntu makes creating encrypted flash drives incredibly simple. You can use a
+GUI for the most part!</p>
+
+<p>The concise version:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sh apt-fast install gparted gparted /dev/sdb # create two partitions. FAT32
+in the beginning of the space, # ext4 at the end of the space</code></p>
+
+<p>Now, open the Disks Utility, and format and create a LUKS + EXT4 system on the
+last partition. This will prompt you for a password, and that’s it! That was 2
+steps! Incredibly easy.</p>
+
+<p>And now, the pen drive works on Linux, as well as on Windows! (Because most of
+the world uses Windows, and more often than not, you are going to have to
+transfer files from Linux to Windows.)</p>
+
+<p>Windows throws an ugly error when it realises that the pendrive has an Ext4
+healthy partition that it can’t read, and says you must “Install software that
+can do that”, and I think there are Ext4 partition readers for Windows. I have
+no intention to install or use them. I went into Windows only to test that FAT32
+works.</p>
+
+<p>This part was easy. This is how it looked inside Nautilus:</p>
+
+<p><img src="/public/img/day-5-1.png" alt="day-5-1" /></p>
+
+<p>It goes without saying that LUKS + EXT4 will natively work only on Linux based
+systems. LUKS stands for <a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">Linux Unified Key
+Setup</a>, I don’t know what
+kind of encryption it uses, I intend to find out. Also,
+<a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">PBKDF2</a>, this is the
+function that is used everywhere. It’s used in LibreOffice documents, it’s used
+in LastPass, it looks simple, but reading up on it’s security and any analysis
+of that should be interesting!</p>
+
+<p>The second project for the day that I had ambitiously decided to take up was to
+create a bootable pendrive with persistent storage. Because honestly, Live CDs
+without persistent storage are so useless! I am not going to have internet all
+the time, and I am not going to have time to install vim, and my dotfiles, and
+all that each time I login at a new computer, where I probably want to quickly
+get something done!</p>
+
+<p>At the surface, this seemed like a really simple thing. I would simply get a
+pocket Linux distribution of my liking. Damn Small Linux, PocketLinux, Pen Drive
+Linux, Slax there were a few options to choose from. I chose DSL. It didn’t
+work. I did go through a set of absurd and comic situations to figure that out
+though.</p>
+
+<p>I followed the instructions on the <a href="http://www.damnsmalllinux.org/wiki/installing_to_a_usb_flash_drive.html">DSL Wiki page for
+installation</a>.
+It was a detailed instruction set, that repeatedly told me that if I didn’t use
+<code class="language-plaintext highlighter-rouge">fdisk</code> correctly, I would be in a big mess. Thanks for telling me that!</p>
+
+<p>Anyway, soon I found out that the USB had a GNU Partition Table, SysLinux was
+the bootloader, and it apparently didn’t support EFI. Because the <code class="language-plaintext highlighter-rouge">/efi</code> or
+<code class="language-plaintext highlighter-rouge">/boot/efi</code> directory, one of those, was simply missing! My computer is also
+GPT, has a Grub bootloader, and UEFI boot. (UEFI is like BIOS, but better. A lot
+more robust, can handle more number of operating systems, and some such!)</p>
+
+<p>It took me about 2 hours to realise that this was not going to work. Apart from
+SysLinux, Grub was the other choice that was mentioned on the wiki, and there
+were “notes” in that section saying “It doesn’t work in some cases”. So, clearly
+that wasn’t going to work for me.</p>
+
+<p>Eventually, I had to dump all of this and get back to Elementary OS Freya. It’s
+a great distribution which I used without Persistent storage on a pendrive for
+some time whenever I went out. I stopped taking my laptop everywhere, and it
+made a lot of sense. Until I was fed up of installing everything again and
+again, all the time.</p>
+
+<p>Ironically, Ubuntu doesn’t have one single reliable UEFI + FAT32 Live USB
+creator for Linux. That, for some reason, is incredibly amusing to me! I finally
+had to go back to Windows, and use Rufus, which worked perfectly! How weird.</p>
+
+<p>My forward plan is simple: I am going to find a small Linux distribution that
+supports UEFI, I am going to create a Live USB of it. I want a protected setup,
+so I will either have to use a LUKS + EXT4 partition for persistent data
+(because Live USBs don’t have accounts or protection of that sort).</p>
+
+<p>This post is somewhere between a bad tutorial on creating encrypted partitions
+on pendrives and a rant about Ubuntu not having a good UEFI startup disk
+creator. (The inbuilt one doesn’t work, I choose the ISO and it doesn’t do
+anything after that. Tuxboot live creator is another program which I hoped would
+work, but it doesn’t work even with distributions that support UEFI, like
+Elementary)</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

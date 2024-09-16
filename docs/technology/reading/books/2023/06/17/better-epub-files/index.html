@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Conversion from HTML to ePub Format" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1314 words about books" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/technology/reading/books/2023/06/17/better-epub-files/" property="og:url">
+  
+
+  
+  <meta content="2023-06-17T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="technology" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Conversion from HTML to ePub Format &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Conversion from HTML to ePub Format</h1>
+  <span class="post-date">17 Jun 2023</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#books">
+    books
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#reading">
+    reading
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Recently, I have taken to reading magazine articles and long newsletter posts on my Kindle by
+converting them to the ePub format, rather than reading them on the computer, where the process of
+making highlights and taking notes differs from the process that I use for all the e-books that I
+read. As I started doing this for some long articles (such as <a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">this one</a>), I realized that the best
+online options out there are not good enough. I have been using <a href="https://dotepub.com/">dotepub.com</a> which seems popular and
+converts to both the generic Epub format, and the Kindle-specific Mobi format. While it does a good
+job with all the text, this particular article was particularly heavy on images, and all the images
+were required to understand the text. When I converted the page to an Epub format, it told me that
+it would not include all the images from the article. So, I set out to write a few scripts which
+could fix that problem and actually export web pages as self-contained epub files.</p>
+
+<!--more-->
+
+<p><em>Aside:</em> You can skip this explanation and directly read the scripts <a href="https://github.com/icyflame/html-to-epub">here</a>.</p>
+
+<p>Dotepub’s hesitation to download all the images, and then include them in the epub file, is probably
+an attempt to restrict the amount of bandwidth that is consumed by each user. As a user-facing
+service, where the developer would have to spend quite some time to prevent abuse, I understand
+that. While the epub file <strong>will certainly</strong> get bigger when you include all the images from an
+article, I doubt that anyone on a broadband connection will mind that. And they have <em>anyway</em> loaded
+all the images locally on their computer once. Downloading an Epub container with the same images
+might be something that they explicitly want to do (and that’s why they are using dotepub in the
+first place.)</p>
+
+<p>Before converting the raw HTML of the webpage into an Epub file though, it is important to
+understand the structure of the Epub file itself. And to do this, I checked out <a href="https://www.blackhat.com/eu-21/briefings/schedule/#how-your-e-book-might-be-reading-you-exploiting-epub-reading-systems-24898">this talk</a> from the
+BlackHat Europe 2021 conference (<a href="https://www.youtube.com/watch?v=ixSZyuPsXNU">Talk video</a>). The talk has a clear explanation of what an Epub file
+is (just a set of HTML, JS, CSS. Sound familiar?), what are its common constituents (some manifests
+files that point to various locations with the data, the images), and the engines that ePub readers
+use to render the content of ePub files. After this, I looked at some of the real world ePub files
+that one can download from <a href="https://www.gutenberg.org/">Project Gutenberg</a> to see how these are implemented in practice. I was
+pleasantly surprised to see that the XML manifest itself was short, easy to understand, and
+well-documented; and that it had very few <strong>required</strong> fields; with most of the fields being
+optional. I guess eBook readers have to work with a huge variety of files so they impose the least
+amount of constraints possible.</p>
+
+<p>Around this time, I also found out about the <a href="https://github.com/mozilla/readability">Readability</a> library, the library that is used by
+Firefox to generate their excellent “Reader view” for pages with a lot of text. I wanted to use this
+library because it would give me a cleaner, more ebook friendly version of the text that is
+generally on webpages. Most magazine websites have sidebars, headers, and footers with links to
+other articles or sections. All of these would just be distracting on an ereader device, which is
+designed to take a blob of text and render it in a pleasant way.</p>
+
+<p>I also found the <a href="https://github.com/cure53/DOMPurify">DOMPurify</a> library, which sanitizes HTML and removes any cross-site scripting (XSS)
+vulnerabilities from HTML. This is important because, as mentioned in the Blackhat talk, e-readers
+<strong>do</strong> have the ability to run JavaScript. Even though my Kindle is not connected to a network most of
+the time, it is still possible that the JavaScript that is part of these HTML pages reaches out to
+external services (like Analytics.) I don’t want these external requests to be made from my Kindle;
+an environment which does not have the convenience of installing the <a href="https://ublockorigin.com/">uBlock Origin</a> extension.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>I experimented with some methods of downloading the webpage. I tried to download the HTML, and other
+associated resources (CSS, images) manually, using some Node.js/Go code. I gave up on this approach
+pretty quickly, because I realized that I was just re-implementing what every browser’s rendering
+engine already does well. Then, I used the “Save” feature built into Firefox. This feature is very
+good and works well when you want to save just the images on a page. But it did not work well to
+create an exact copy of the page, because many of the resources that were referred to on the webpage
+could be served from another domain (such as a webpage <code class="language-plaintext highlighter-rouge">example.com/article</code> which downloads static
+images, CSS and JavaScript from <code class="language-plaintext highlighter-rouge">static.example.com</code>.) This is a common pattern and followed by many
+websites. So, consider that <code class="language-plaintext highlighter-rouge">example.com/article</code> refers to 2 images <code class="language-plaintext highlighter-rouge">example.com/images/first.png</code>
+and <code class="language-plaintext highlighter-rouge">static.example.com/images/second.png</code>. On saving the webpage, the first path would be changed
+to <code class="language-plaintext highlighter-rouge">/images/first.png</code> and rendered properly. However, the second path would be left untouched by
+Firefox. So, the simple Save feature did not work either.</p>
+
+<p>My third attempt worked well: <a href="https://github.com/gildas-lormeau/SingleFileZ">SingleFileZ</a>. SingleFileZ is a browser extension which allows you to
+download all the resources that are required to render a webpage as a zip archive which contains an
+HTML file and its associated resources. The paths to the resources are also appropriately
+changed. As SingleFileZ attempts to create a copy of the webpage that will work without any network
+connection, it downloads everything, renames those files, and prepares a new HTML file which is
+completely self-sufficient. (It simply does not care about which domain the resource originally came
+from.) Also, files are neatly arranged based on their type; i.e. images are all put inside a single
+folder. This extension is really useful even if you plan to just re-read magazine articles directly
+on a computer.</p>
+
+<p>After downloading the HTML, and putting it through DOMPurify and Readability, I planned to use
+Pandoc (inside a Docker container) to convert the resulting HTML file into an Epub file.</p>
+
+<p>With these three pieces, the only part left was to write some Node.js code to deal with the HTML and
+some Bash script which would invoke these tools in the correct order. This was fairly simple. One of
+the hiccups that I ran into along the way was that the HTML that is produced by many websites is not
+valid (i.e. some closing tags are omitted). Pandoc expects strict HTML as input. So, I had to
+convert from HTML to XHTML using Pandoc once, and then convert from XHTML to Epub in the second
+step. This worked well and produced very readable Epub files.</p>
+
+<p>There are still <em>many</em> shortcomings in the process. The most glaring one is that there is no cover
+image for the Epub files that are generated. Although we have all the images from the webpage,
+deciding which one should be the cover image would require manual intervention. For now, I use the
+Kindle’s Library List view which shows the title of the books as a list, rather than the (visually
+pleasing) Covers view, which shows a bookshelf with book covers arranged on it.</p>
+
+<ul>
+  <li><a href="https://github.com/icyflame/html-to-epub/blob/master/batch-html-to-epub.sh">Scripts on GitHub</a></li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I know why this extension is not a default on all browsers: because it will hurt the bottom lines of the companies making the browsers, which also <em>happen</em> to be running, by complete coincidence, the biggest advertisements networks. But I don’t know why users are still using the Internet on a browser which does not have this extension installed. Install <a href="https://ublockorigin.com/">uBlock Origin</a> now! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

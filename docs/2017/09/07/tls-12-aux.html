@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Auxilliary material for TLS 1.2 - TLS Parameters - Registries" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="554 words about internet" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/09/07/tls-12-aux" property="og:url">
+  
+
+  
+  <meta content="2017-09-07T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="tls" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Auxilliary material for TLS 1.2 - TLS Parameters - Registries &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Auxilliary material for TLS 1.2 - TLS Parameters - Registries</h1>
+  <span class="post-date">07 Sep 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#https">
+    https
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#internet">
+    internet
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#security">
+    security
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tls">
+    tls
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><em>Part of the TLS explanation series: Auxilliary material</em></p>
+
+<p>After understanding the TLS handshake, there are still many moving parts that
+have still not been satisfactorily explained. Perhaps the most important in
+those is the assignment of the byte values for each of the cipher suites,
+handshake message numbers, etc to the different things that have predefined
+lists.</p>
+
+<p>These are defined in the <a href="https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml">TLS
+Parameters</a>
+document, maintained by the Internet Assigned Numbers Authority (IANA). If you
+didn’t already know, the IANA is also responsible for allocating Autonomous
+Systems on the Internet backbone which is used for routing packets around the
+network. They are the ones who have cordoned off
+<a href="https://bgp.he.net/AS22799">10.0.0.0/8</a> and some other IPs for LAN usage.</p>
+
+<p>Anyway, this document consists of several registries. I will try to cover some
+of the common ones that I understand:</p>
+
+<ul>
+  <li><strong>Cipher Suite Registry</strong></li>
+</ul>
+
+<p>Perhaps one of the most frequently changed registries, this registry keeps
+getting new Cipher Suites added to it, and the corresponding byte value for it.</p>
+
+<p>It also mentions the RFC where we can find the reference for it. The
+reference consists of a short description of the algorithm, and the associated
+Pseudo-Random Function (PRF) to be used. The PRF, as you might remember, is used
+to generate the keys for the actual Record layer message transfer.</p>
+
+<p>A common cipher suite on the web is <code class="language-plaintext highlighter-rouge">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</code>.
+It is being used on this website by the Cloudfare SSL proxy. Breaking down this
+Cipher Suite:</p>
+
+<ul>
+  <li>Key exchange is done using ECDHE</li>
+  <li>Key exchange is authenticated using ECDSA</li>
+  <li>Bulk encryption will be done using AES_128_GCM which is authenticated
+  inherently</li>
+  <li>PRF used will be the TLS PRF with SHA256 as the hash function</li>
+</ul>
+
+<p>This last point comes from <a href="https://tools.ietf.org/html/rfc5289#section-3.2">RFC 5289, section
+3.2</a>. So, for every cipher
+suite this whole thing is defined. Again, we see that the emphasis is less on
+making all the data available at the same place and more on (a) making sure
+there’s no implementation ambiguity and (b) making sure the system is massively
+extensible.</p>
+
+<ul>
+  <li><strong>Handshake Type Registry</strong></li>
+</ul>
+
+<p>If you have seen <a href="https://www.siddharthkannan.in/tls-handshake/SAMPLE_NEW.html">actual session
+negotiations</a> in
+Wireshark (or the transcript linked), you will know that each Handshake protocol
+message has 1 byte (= 8 bits) to indicate which Handshake message it is. This
+registry assigns those numbers, the <code class="language-plaintext highlighter-rouge">ClientHello</code> is fittingly 1 and <code class="language-plaintext highlighter-rouge">Finished</code>
+is 20.</p>
+
+<ul>
+  <li><strong>Signature Algorithm Registry</strong> and <strong>Hash Algorithm Registry</strong></li>
+</ul>
+
+<p>These again are single byte values which have been defined for easy reference to
+each of these algorithms, without explicitly using strings etc. NEAT! (Packet
+sniffers like Wireshark take this into account and print the algorithm in the
+human readable form for convenience!)</p>
+
+<ul>
+  <li><strong>Exporter Label Registry</strong></li>
+</ul>
+
+<p>This is yet another registry which has a <em>very, very</em> specific purpose. It
+stores the list of strings which can be used by protocols that wish to export
+TLS’s keying material to their own layers.
+<a href="https://tools.ietf.org/html/rfc5705#section-6">This section</a> neatly sums up the
+importance and the application of this registry.</p>
+
+<blockquote>
+  <p>These applications imply a need to be able to export keying material (later
+called Exported Keying Material or EKM) from TLS/DTLS to an application or
+protocol residing at an upper layer, and to securely agree on the upper-layer
+context where the keying material will be used.</p>
+</blockquote>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

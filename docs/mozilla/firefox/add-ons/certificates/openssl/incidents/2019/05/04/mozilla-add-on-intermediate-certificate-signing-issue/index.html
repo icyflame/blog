@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Ongoing issue with Firefox add-ons due to an expired certificate" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1024 words about mozilla" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/mozilla/firefox/add-ons/certificates/openssl/incidents/2019/05/04/mozilla-add-on-intermediate-certificate-signing-issue/" property="og:url">
+  
+
+  
+  <meta content="2019-05-04T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="mozilla" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Ongoing issue with Firefox add-ons due to an expired certificate &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Ongoing issue with Firefox add-ons due to an expired certificate</h1>
+  <span class="post-date">04 May 2019</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#add-ons">
+    add-ons
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#certificates">
+    certificates
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#firefox">
+    firefox
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#incidents">
+    incidents
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#mozilla">
+    mozilla
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#openssl">
+    openssl
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><strong>Note:</strong> This is an ongoing issue at the time of writing (19:30 2019-05-04
+        JST). The team at Mozilla is aware of this issue and is working hard to
+fix it as soon as they can. You can track the bug <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1548973">here</a> and on the IRC
+channel <code class="language-plaintext highlighter-rouge">#firefox</code> on <code class="language-plaintext highlighter-rouge">irc.mozilla.org</code>.</p>
+
+<h2 id="detection">Detection</h2>
+
+<p>The issue started around 6 pm PST on the 4th of May when some people noticed
+that their add-ons were disabled by the browser, though the add-ons were working
+just fine just a few hours ago. (Some people had theirs stop working during on
+        ongoing session!) This led to the opening of a <a href="https://github.com/mozilla/addons/issues/978">GitHub issue</a> and a
+bug on Mozilla’s bug tracker for Firefox, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1548983">Bugzilla</a>.</p>
+
+<!--more-->
+
+<p>I ran into this as soon as I woke up this morning and opened my work computer to
+start my on-call shift. I didn’t know I had a pretty interesting on-call session
+in front of me. On a 12-hour on-call shift, I didn’t have much to do anyway. So,
+   I ran through what the issue was, how it started happening, and what people
+   are saying about it.</p>
+
+<p><strong>Sidenote:</strong> I set up IRSSI because it felt like a lot of the discussion was
+happening on IRC and <em>not</em> on GitHub or bugzilla (mainly because the developers
+        inside Mozilla locked the GitHub issues and restricted who could comment
+        to keep those channels clear; as more and more people started to figure
+        out that what they were running into didn’t have an easy fix, these
+        pages would only have started getting more polluted and the main problem
+        would have become harder to find)</p>
+
+<p>IRC was filled with a bunch of people who were talking about where the issue
+started and why it was allowed to happen. One of the most common threads of
+conversation was: “This feels like we are using a product built inside a walled
+garden”. Firefox devs continued to tell the world that they knew about the
+problem and were working hard to fix it but what this fix was and how they were
+approaching it was not clear to anyone on IRC.</p>
+
+<p>As for the issue itself, one look at the title clarified what it was:</p>
+
+<blockquote>
+  <p>All extensions disabled due to expiration of intermediate signing cert</p>
+</blockquote>
+
+<p>Let’s delve into what exactly this means!</p>
+
+<h2 id="mozilla-add-on-signing">Mozilla Add-on signing</h2>
+
+<p>Mozilla has a great wiki on <a href="https://wiki.mozilla.org/Add-ons/Extension_Signing#Algorithm">how they sign add-ons</a>. The add-on submission
+process goes like this:</p>
+
+<ol>
+  <li>Developer submits a plaintext XPI to Mozilla Addons</li>
+  <li>Mozilla analyzes this XPI for security vulnerabilities</li>
+  <li>When approved, Mozilla signs this package
+    <ol>
+      <li>Mozilla has a root CA certificate that’s shipped with the browser (R)</li>
+      <li>Mozilla has an intermediate certificate that’s used for add-on signing
+(I)</li>
+      <li>Mozilla derives a new certificate from this intermediate certificate -
+the end-point entity certificate (E)</li>
+      <li>Mozilla signs a file with cert E</li>
+      <li>The package is shipped with this signature (from cert E), the cert E, and
+the cert I.</li>
+    </ol>
+  </li>
+  <li>After downloading an add-on, the Browser verifies this signature:
+    <ol>
+      <li>Verifies that the signature was made by cert E</li>
+      <li>Verifies that the cert E has a valid chain back to the root cert</li>
+      <li>Verifies that the files match what was signed (using a bunch of hashes)</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Our current problem: <strong>The intermediate certificate, cert I, has expired!</strong></p>
+
+<p>Now, the certificate itself is available in every single add-on, and can be
+inspected. So, that’s exactly what I did.</p>
+
+<h3 id="the-certificates">The Certificates</h3>
+
+<p>To get a certificate, you must get an add-on package; I chose uBlock because
+that was the first thing I noticed when I was looking for one.</p>
+
+<ol>
+  <li>Get the XPI for any add-on</li>
+  <li>Unzip this xpi file using <code class="language-plaintext highlighter-rouge">unzip -d extension</code></li>
+  <li>The signature is inside the file <code class="language-plaintext highlighter-rouge">META-INF/mozilla.rsa</code></li>
+  <li>Use <code class="language-plaintext highlighter-rouge">openssl</code> to inspect the certificates!</li>
+</ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl pkcs7 <span class="nt">-in</span> META-INF/mozilla.rsa <span class="nt">-inform</span> DER <span class="nt">-print_certs</span> <span class="nt">-text</span>
+</code></pre></div></div>
+
+<p>You can find the output of this for the uBlock extension <a href="/public/data/mozilla-add-on-issue-cert-details">here</a>.</p>
+
+<p>These lines inside the intermediate certificate (second certificate in the
+        certificate chain are the culprit of the present issue):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Data:
+    Version: 3 (0x2)
+    Serial Number: 1048580 (0x100004)
+Signature Algorithm: sha384WithRSAEncryption
+    Issuer: C=US, O=Mozilla Corporation, OU=Mozilla AMO Production Signing Service, CN=root-ca-production-amo
+    Validity
+        Not Before: May  4 00:09:46 2017 GMT
+        Not After : May  4 00:09:46 2019 GMT
+    Subject: C=US, O=Mozilla Corporation, OU=Mozilla AMO Production Signing Service, CN=signingca1.addons.mozilla.org/emailAddress=foxsec@mozilla.com
+</code></pre></div></div>
+
+<p>The validity of the intermediate certificate ended today. The actual expiry
+was about 1 hour ago, but this issue has been on going for nearly 9 hours now,
+    so I don’t know what that is about. Hopefully, we get a post mortem from
+    Mozilla once the issue is fixed and we can all find out exactly what the
+    issue was!</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>I haven’t worked with CA and certificate systems for quite a while now. But as
+far as I can tell, this is the solution that comes to mind:</p>
+
+<ol>
+  <li>Issue a new intermediate certificate</li>
+  <li>Re-generate and re-sign all add-on packages</li>
+  <li>Upload these new add-on packages with the signature to AMO</li>
+  <li>Get everyone to download the extensions again OR release a special patch to
+the browser which downloads the add-ons again for you.</li>
+</ol>
+
+<p>Interestingly, Mozilla was able to release a work-around for people who didn’t
+have their add-ons disabled. They said they did that <a href="https://twitter.com/mozamo/status/1124569680662777856">here</a>. One of these
+users was on IRC and they shared their certificates for the <code class="language-plaintext highlighter-rouge">uMatrix</code> extension
+<a href="https://clbin.com/PgEOF">here</a>. These still expire at the same time. So, Mozilla was able to find
+some sort of quick workaround which helped them make browsers ignore the results
+of the add-on verification test.</p>
+
+<p><strong>Edit:</strong> I was enlightened by a user on IRC that the fix they deployed was a
+Study. These can be seen inside <code class="language-plaintext highlighter-rouge">about:studies</code> and this particular hotfix is
+called <code class="language-plaintext highlighter-rouge">hotfix-reset-xpi-verification-timestamp-1548973</code>! Nifty!</p>
+
+<p><strong>P.S.</strong> I wrote a post a few months ago about how cool <code class="language-plaintext highlighter-rouge">openssl</code> is! I was finally
+able to use it in the wild with this issue! Check out the post <a href="https://blog.siddharthkannan.in/openssl/cryptography/command-line/2018/05/25/openssl-is-awesome/">here</a>.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 11 - Color Constancy, Heroku down, git patch in pu" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="446 words about heroku" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/02/28/day-11" property="og:url">
+  
+
+  
+  <meta content="2017-02-28T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 11 - Color Constancy, Heroku down, git patch in pu &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 11 - Color Constancy, Heroku down, git patch in pu</h1>
+  <span class="post-date">28 Feb 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#git">
+    git
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#heroku">
+    heroku
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Information overload. There’s been a lot going on on the Internet today. (This
+is just the last 1 hour of my time spent on Twitter reading up about “important
+things”)</p>
+
+<ol>
+  <li>
+    <p>This just broke, the color constancy thing. (This resurrects <a href="https://twitter.com/RoFlo/status/571130225884409856">The
+Dress</a>. I saw Blue and
+Black, re-tweeted this picture, and then I came back to copy the link, and I
+saw White and Gold. OH GOD.</p>
+  </li>
+  <li>
+    <p>Color constancy came back exactly 1 year after The Dress, <a href="https://twitter.com/AkiyoshiKitaoka/status/836382313160171521">The
+Strawberries</a>
+have come to haunt us. Not a single Red pixel in this picture, and yet
+everyone sees Red strawberries.
+<a href="https://motherboard.vice.com/en_us/article/this-picture-has-no-red-pixelsso-why-do-the-strawberries-still-look-red">motherboard.vice.com</a>
+decided to write a great article on this! This is a great article.</p>
+
+    <blockquote>
+      <p>You brain says, ‘the light source that I’m viewing these strawberries under
+has some blue component to it, so I’m going to subtract that automatically
+from every pixel.’ And when you take grey pixels and subtract out this blue
+bias, you end up with red</p>
+    </blockquote>
+  </li>
+  <li>
+    <p><strong>Heroku is DOWN:</strong> WHOA. I just found this when I ran a mundane <code class="language-plaintext highlighter-rouge">heroku logs
+--tail</code> and realised that Heroku was down for the first time in my life. I
+have never seen a major service Outage at Heroku. I have seen many at Github,
+because they seem to go down so often ( :-( ) A few photos to commemorate
+this momentous occasion (Not really.) From <a href="https://status.heroku.com/incidents/1059">Incident
+1059</a></p>
+
+    <p><img src="/public/img/day-11-1.png" alt="111" /></p>
+
+    <p><img src="/public/img/day-11-2.png" alt="112" /></p>
+  </li>
+</ol>
+
+<p>Also, my <a href="http://public-inbox.org/git/1488007487-12965-1-git-send-email-kannan.siddharth12@gmail.com/">patch series to
+git</a>
+which implements the “hyphen means previous branch” shorthand in log, and a
+bunch of other commands is now in “Needs review”, as per this week’s “What’s
+cooking in git.git” post.</p>
+
+<p><img src="/public/img/day-11-3.png" alt="113" /></p>
+
+<p>Apparently, patches that are in “Needs review” are reviewed by other maintainers
+who track the “What’s cooking” messages and assign work to themselves! So, I can
+expect to be waiting for review on my patch for the next couple weeks or so, and
+also make changes to it and re-roll the patches in case someone feels that is
+required. This is most certainly the easier part. Once this gets merged into
+“next”, I would definitely like to post an “archive” of sorts of the way I took
+to tackle this feature addition, and how I finally came down to the code that
+got accepted into atleast “Needs review” status.</p>
+
+<p>P.S. I realise that each day these posts are getting shorter and shorter. And
+everyday, I hope, in vain, that the next day something incredibly interesting
+would happen and I can write about it here at length. Not to be, not yet
+atleast.</p>
+
+<p><strong>POST #11 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

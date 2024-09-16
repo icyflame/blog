@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Cutouts 1.0 and the convenience of monolithic frameworks" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1062 words about versions" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2018/03/20/cutouts-revamp/" property="og:url">
+  
+
+  
+  <meta content="2018-03-20T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="cutouts" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Cutouts 1.0 and the convenience of monolithic frameworks &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Cutouts 1.0 and the convenience of monolithic frameworks</h1>
+  <span class="post-date">20 Mar 2018</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#applications">
+    applications
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#cutouts">
+    cutouts
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#rails">
+    rails
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#ruby">
+    ruby
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#versions">
+    versions
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><a href="https://github.com/icyflame/cutouts/graphs/commit-activity"><img src="/public/img/cutouts-past-year.png" alt="image" /></a></p>
+
+<p>This graph shows the commits made in the <a href="https://github.com/icyflame/cutouts">cutouts</a> repository over the past 1
+year. I have been rather dormant the whole year on this project. In fact, the
+last time this project saw some heavy development was back in October 2016 when
+I was working on adding tags to the system and making it a better product that I
+could use.</p>
+
+<p>The surge in development during February was right before the <a href="https://medium.com/metakgp/lifehacking-add-ons-and-a-better-web-for-kgp-highlights-from-demo-day-3-ffc1fd6af7b">Metakgp Demo
+Day</a> on February 15th. There were same gaping problems in Cutouts that I had
+never considered. And the main reason behind this was that there were no users
+except me. And I was using the application just as it was intended to be.</p>
+
+<p>When others starting using it, they told me that the application was crashing
+whenever they tried to add a Cutout. The logs showed me that I was doing
+<code class="language-plaintext highlighter-rouge">URI(link).host</code> for the <code class="language-plaintext highlighter-rouge">link</code> variable and there were no validations setup
+that would ensure that users could <em>only</em> add URLs in that field. This was
+probably one of the glaring problems that I found and it acted as a trigger for
+me to comb through the whole application and figure out what other assumptions I
+had made which a non-me user would not instinctively abide by.</p>
+
+<p>Adding tags was one, where new users expected tags to work differently. Another
+open feature request is that the link field shouldn’t be compulsory, instead the
+user should be allowed to add text in that field. (Reported by <a href="https://github.com/kshitij10496">Kshitij</a> who
+uses Cutouts to store quotes from books!)</p>
+
+<p>After adding a title attribute to all cutouts, life on the application has
+become far more convenient. Mentioning the charset in the downloaded HTML was
+another minor goof that has lead to a prettier exported cutouts HTML page.</p>
+
+<p>Yet another issue was with the ordering of cutouts. The default ordering
+throughout the app seemed to be chronological, when the reverse chronological
+order made a lot more sense as you would want to see the latest cutouts before
+your older cutouts.</p>
+
+<p>At this point, I was fairly happy with the quality of the application for new
+users and the application had stopped crashing whenever people tried to do
+things that weren’t standard, instead it would either give a decent error
+message or fail gracefully without crashing. This was the v1.0 point for
+Cutouts.</p>
+
+<p>A couple of other features that I wanted to implement mainly for my own benefit
+but that I figured would bring more users in (because of the network effect)
+were <em>sharing a cutout via email</em> and <em>creating a permalink for every cutout</em>.
+With the right meta tags, sharing them on Facebook and Twitter would cause more
+people to visit cutouts and hopefully become members and use the app. Using
+Rails <a href="http://guides.rubyonrails.org/action_mailer_basics.html">Action mailers</a>, this was far easier than implementing something
+similar would have been on a Node framework like Express. Creating a permalink
+was again simply creating a show method for the Cutout controller.</p>
+
+<p>During the Demo Day, <a href="https://github.com/nuwandavek">Vivek Aithal</a> gave me the suggestion of implementing a
+feed of what everyone is cutting out. This was the ultimate way to use the
+network effect to my advantage. Once again, Rails surprised me because
+implementing it was <a href="https://github.com/icyflame/cutouts/commit/23c0b3b43ff62a4a1316b9c9f6eb44b6b85c345b">incredibly easy!</a>.</p>
+
+<p>The few things where Rails wasn’t pleasant to work with were the updation of
+the Rails version itself (which I didn’t complete successfully, I am still on
+Rails 4), the updation of Bootstrap to 5 (which I completed properly, although
+it took an unreasonable amount of time to get there). The updation of the
+versions of other Gems was much simpler. The bootstrap update gave me access to
+the new color scheme that pops compared to the old, duller scheme.</p>
+
+<p>Looking back at this revamp and relaunch, I realize that Rails has been very
+very helpful whenever I have had to implement a new feature. Even if the feature
+is involved and seems daunting at first, the pieces in Rails fail into place
+very well and the implementation itself is tens of lines at most. Also, once
+you make a commitment to using a monolithic framework like Rails for a big
+project like this one, there is no going back. I don’t even want to imagine what
+sort of effort it would take for me to transfer the application as is to another
+language.</p>
+
+<p>Where Rails faces it’s most frustrating caveat is the management of the
+development environment. The different gem versions, the ruby versions, the
+rails asset pipeline: handling them is a huge pain, they don’t <em>just
+work</em><sup>TM</sup>. If you want to update a Gem, that’s a completely different
+battle and I wish you luck with fighting it.</p>
+
+<p>Node.js on the other hand would probably need a few 100 lines to build these
+features, but the dependency management in Node.js is way simpler. In fact, when
+I went through the same process on <a href="https://github.com/icyflame/cli-cube-timer/commit/45885bc0853fb39660cb91f5b8979b0f00a8d8b1">cli-cube-timer</a>, the whole process was a
+lot more pleasant and the main problem came up wherever the updated dependency
+had changed an API. That seemed like a better use of time than struggling with
+gem installations and those type of things.</p>
+
+<p>I will still say that Rails is a good framework, despite the frustration that
+has often caused me to question my choice of framework back when I started this
+project. Implementing new features takes very less time and once you get the
+hang of it, it’s fun to write code in Ruby, although I have my own gripes with
+the language. I will save them for another post. Another advantage of Rails is
+the gem library and the community around it. There are gems to do almost
+anything. But the same can be said about Node.js, so this isn’t an advantage as
+much as it is a leveller.</p>
+
+<p>Right now, there are some minor changes that are upcoming on Cutouts. The
+long term goal is to have an application that has good test coverage. The
+short-term goal is getting to v1.1. I have <a href="https://github.com/icyflame/cutouts/milestone/1">already missed the due</a> by 2
+days and rescheduled further to the end of March. I will get there, soon. I
+hugely underestimated how much I already had to accomplish in March.</p>
+
+<p><strong>P.S</strong> Cutouts now has a <a href="https://twitter.com/CutoutsApp">Twitter account: @CutoutsApp!</a> If you use
+Twitter, follow @CutoutsApp to remain posted!</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

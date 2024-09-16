@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Configuring Vim and more!" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1001 words about programming" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2014/12/11/Configuring-vim-and-more/" property="og:url">
+  
+
+  
+  <meta content="2014-12-11T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="web-development" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Configuring Vim and more! &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Configuring Vim and more!</h1>
+  <span class="post-date">11 Dec 2014</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#web-development">
+    web-development
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>The Fall semester ended on Dec 28th. And after that a lot of things have happenned. It’s been a long time since I wrote a post, because I have hardly had any time, since then. I am leaving for home day after tomorrow. And now finally, all the tasks are moving into “pack-up” phase.</p>
+
+<p>There have been many changes to my development environment in these two weeks. The most important is the integration of Vim into the scheme of things.</p>
+
+<p>For some time now, I have been trying to get into this amazing command line editor that almost everyone seems to love so much.</p>
+
+<p>Almost always, whenever I started using Vim, I got frustrated and left it to go back to my beloved Sublime Text, which was just so much easier to use and a Powerhorse in it’s own right. I obviously believed that there was no feature of Vim, that could ever trump the usage of Sublime Text as the primary editor. All the simple Keybindings. So, easy to understand. <code class="language-plaintext highlighter-rouge">Ctrl + V</code> to paste, and not the EXTRA <code class="language-plaintext highlighter-rouge">shift</code> that had to be pressed in vim. (God knows how you copy text inside a file, hell, There isn’t even an obvious way to highlight text.)</p>
+
+<p>Despite all this, This time, I was determined. I had to learn this editor which was touted as the fastest and the editor with a huge community that built plugins for it which made the editor better then everything else.</p>
+
+<p>The first thing that I set out to do with Vim, was edit HTML. Setting up the two space tab and indent size was my first great battle with Vim. I created a new list on <a href="https://kippt.com/icyflame/vim-config">Kippt</a>. This list was going to be my database where I would dump all the resources that I found regarding Vim. And this particular <a href="https://kippt.com/icyflame/vim-config/clips/23735598">clip</a> (I call it this for no better word)</p>
+
+<p>But now I was faced with an even harder problem at hand. When I was editing, the tags were automatically indented and closing tags were unindented to give a pretty format. But what about Python, the dread language that didn’t have closing tags. I am equally passionate about HTML, Python, Ruby and C++. And I wanted an editor which was a good bet for all of these.</p>
+
+<p>Turning again to the web, I got the solution pretty fast. My first encounter with Vim Plugin. The python.vim file, which I naively copied into <code class="language-plaintext highlighter-rouge">~/.vim/ftplugin</code>. I say naively because now I know that the only way to keep Vim portable is to use something like Vundle.</p>
+
+<p>After this, there is another very very common feature that almost all people who write serious code, and believe that code should look good and do great things do all the time is “AUTO-INDENT”. And in Sublime Text, I had bound this to <code class="language-plaintext highlighter-rouge">Ctrl I</code>. So Indenting the whole file took just <code class="language-plaintext highlighter-rouge">Ctrl A</code> followed by <code class="language-plaintext highlighter-rouge">Ctrl I</code>. Boom, Everything was well indented.</p>
+
+<p>Now, The <code class="language-plaintext highlighter-rouge">=</code> operator was obviously great, or so everyone on Stack Overflow seemed to think, but it didn’t work for me. Not the first time around, Not the second time and not a lot of times after that. It turned out that I hadn’t turned on the Filetype plugin which was through how the indent operation worked.</p>
+
+<p>A few more tweaks and I had indentation totally cracked! I immediately patted myself on the back on having reached the first bridge to the land of Vim Users.</p>
+
+<p>Handily, I had a couple of web applications that I was working on, and both of them were mostly basic FrontEnd pages. And there wasn’t much file navigation to be done, I struggled through an half-an-hour task for 2 hours, but made it through. Vim had thrown hell at me, and I had waded through all of that to reach the end of my first full blown task in Vim.</p>
+
+<p>Through the process, I had learned a lot about Vim. Pasting text properly, the weird nomenclature of calling copying text yanking and so on. (Actually, now I am starting to think that it is not really that weird or out of place, but definitely they could have called it copying! :P )</p>
+
+<p>I also found about Vim Shorthand. <code class="language-plaintext highlighter-rouge">dit</code> for deleting the content inside tags. And similarly, <code class="language-plaintext highlighter-rouge">yit</code>, <code class="language-plaintext highlighter-rouge">pit</code>, <code class="language-plaintext highlighter-rouge">vit</code>. And the equivalent, when replacing <code class="language-plaintext highlighter-rouge">t</code> for tags with <code class="language-plaintext highlighter-rouge">"</code> for double quotes, or basically just any character, the text between two occurences of which we wanted to change stuff.</p>
+
+<p>This was good. And I think this is one of the most powerful features of an editor. And what other editors, (Like my beloved Sublime Text) did using plugins, Vim did out of the box, and that box had a lot of computers in it (Servers, through Chromebooks with PocketLinux) (This is touted as Vim Portabality.)</p>
+
+<p>Soon after this, I started using Vim for everything from programming projects to even typing Git commit messages. (I used to type in Nano and the 72 character limit on oneline in Vim was very helpful, and I have totally fallen in love with it.)</p>
+
+<p>I also found out the great capabilities of Vim in Find-And-Replace. The <code class="language-plaintext highlighter-rouge">*</code> operator, and the usage of <code class="language-plaintext highlighter-rouge">sed</code>-like syntax from inside the editor.</p>
+
+<p>In conclusion, Vim is one of the best editors out there. It is blazing fast, and if you love the terminal, and hate having to move your hand from the home row to either a trackpad or a moust kept beside your keyboard, Vim is for you.</p>
+
+<p>If you love mouses, then you would probably not like Vim as much, but even then, it is worth a try. In fact, Vim is worth more than a try.</p>
+
+<p>Presently, I have installed Vundle, and I am preparing the <code class="language-plaintext highlighter-rouge">config</code> repository at <a href="http://github.com/icyflame/config">GitHub</a>.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

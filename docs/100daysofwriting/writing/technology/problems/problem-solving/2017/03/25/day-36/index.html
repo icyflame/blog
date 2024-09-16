@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 36 - Finding a solution to Ubuntu 16.04 LTS' "mouse not working" problem" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="882 words about 100daysofwriting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/writing/technology/problems/problem-solving/2017/03/25/day-36/" property="og:url">
+  
+
+  
+  <meta content="2017-03-25T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 36 - Finding a solution to Ubuntu 16.04 LTS' "mouse not working" problem &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 36 - Finding a solution to Ubuntu 16.04 LTS' "mouse not working" problem</h1>
+  <span class="post-date">25 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#problem-solving">
+    problem-solving
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#problems">
+    problems
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#writing">
+    writing
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I am reading <a href="https://chomsky.info/199107__/">Force and Opinion</a>, an essay that
+was posted on Metakgp Slack, when <a href="https://metakgp.slack.com/archives/C0AHUL0JE/p1490285875717038">I
+posted</a> my
+surprise at having found the Internet Shutdowns in India. I am still reading it,
+but it sounds like a solid thing to talk about in another post. I should
+maintain a TODO list of topics that I want to talk about. (I am now switching to
+Trello to create that list)</p>
+
+<p>The mouse thing happened again. This Ubuntu was started only about 3 hours ago.
+This is extremely frustrating, I don’t want to go through the pain of
+re-installing Ubuntu all over again with the right configuration and I don’t
+want to have to keep restarting the PC. That would defeat the whole purpose of
+having a GOOD COMPUTER! I need to find a solution to this problem, RIGHT NOW.</p>
+
+<p>AND FOUND IT!  <a href="http://askubuntu.com/questions/178054/laptop-usb-ports-stop-working-how-to-restart-them-without-restarting-the-pc">Restarting Laptop’s USB PORTS WITHOUT restarting
+computers</a>
+Yet another lesson in effective searching of the internet! I went through the
+<code class="language-plaintext highlighter-rouge">dmesg -w</code> output right before the mouse stopped functioning and it didn’t tell
+me anything more than I already knew. Does it ring a bell?</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>   72.058426] <span class="o">[</span>drm:intel_pipe_update_end <span class="o">[</span>i915]] <span class="k">*</span>ERROR<span class="k">*</span> Atomic update failure
+on pipe A <span class="o">(</span><span class="nv">start</span><span class="o">=</span>4851 <span class="nv">end</span><span class="o">=</span>4852<span class="o">)</span> <span class="nb">time </span>545 us, min 763, max 767, scanline start
+756, end 783
+<span class="o">[</span>  121.341228] r8169 0000:01:00.0 enp1s0: <span class="nb">link </span>up
+<span class="o">[</span>  121.341237] IPv6: ADDRCONF<span class="o">(</span>NETDEV_CHANGE<span class="o">)</span>: enp1s0: <span class="nb">link </span>becomes ready
+<span class="o">[</span>  197.470587] IPv6: ADDRCONF<span class="o">(</span>NETDEV_UP<span class="o">)</span>: wlp2s0: <span class="nb">link </span>is not ready
+<span class="o">[</span> 4505.275283] perf: interrupt took too long <span class="o">(</span>2540 <span class="o">&gt;</span> 2500<span class="o">)</span>, lowering
+kernel.perf_event_max_sample_rate to 78500
+<span class="o">[</span> 5778.702948] perf: interrupt took too long <span class="o">(</span>3259 <span class="o">&gt;</span> 3175<span class="o">)</span>, lowering
+kernel.perf_event_max_sample_rate to 61250
+<span class="o">[</span> 6937.288611] usb 1-1.3.4: USB disconnect, device number 6
+<span class="o">[</span> 6965.598679] usb 1-1.3.4: new low-speed USB device number 8 using ehci-pci
+<span class="o">[</span> 6965.710831] usb 1-1.3.4: New USB device found, <span class="nv">idVendor</span><span class="o">=</span>093a, <span class="nv">idProduct</span><span class="o">=</span>2510
+<span class="o">[</span> 6965.710835] usb 1-1.3.4: New USB device strings: <span class="nv">Mfr</span><span class="o">=</span>1, <span class="nv">Product</span><span class="o">=</span>2,
+<span class="nv">SerialNumber</span><span class="o">=</span>0
+<span class="o">[</span> 6965.710837] usb 1-1.3.4: Product: USB Optical Mouse
+<span class="o">[</span> 6965.710839] usb 1-1.3.4: Manufacturer: PixArt
+<span class="o">[</span> 6965.714332] input: PixArt USB Optical Mouse as
+/devices/pci0000:00/0000:00:1d.0/usb1/1-1/1-1.3/1-1.3.4/1-1.3.4:1.0/0003:093A:2510.0005/input/input18
+<span class="o">[</span> 6965.715236] hid-generic 0003:093A:2510.0005: input,hidraw2: USB HID v1.11
+Mouse <span class="o">[</span>PixArt USB Optical Mouse] on usb-0000:00:1d.0-1.3.4/input0
+<span class="o">[</span> 7765.071883] perf: interrupt took too long <span class="o">(</span>4134 <span class="o">&gt;</span> 4073<span class="o">)</span>, lowering
+kernel.perf_event_max_sample_rate to 48250
+<span class="o">[</span> 8994.057705] usb 2-1: reset low-speed USB device number 2 using xhci_hcd
+/[ 9175.482422] usb 1-1.3.4: USB disconnect, device number 8
+<span class="o">[</span> 9184.631763] usb 1-1.3.1: new low-speed USB device number 9 using ehci-pci
+<span class="o">[</span> 9184.748086] usb 1-1.3.1: New USB device found, <span class="nv">idVendor</span><span class="o">=</span>093a, <span class="nv">idProduct</span><span class="o">=</span>2510
+<span class="o">[</span> 9184.748089] usb 1-1.3.1: New USB device strings: <span class="nv">Mfr</span><span class="o">=</span>1, <span class="nv">Product</span><span class="o">=</span>2,
+<span class="nv">SerialNumber</span><span class="o">=</span>0
+<span class="o">[</span> 9184.748091] usb 1-1.3.1: Product: USB Optical Mouse
+<span class="o">[</span> 9184.748092] usb 1-1.3.1: Manufacturer: PixArt
+<span class="o">[</span> 9184.750943] input: PixArt USB Optical Mouse as
+/devices/pci0000:00/0000:00:1d.0/usb1/1-1/1-1.3/1-1.3.1/1-1.3.1:1.0/0003:093A:2510.0006/input/input19
+<span class="o">[</span> 9184.751181] hid-generic 0003:093A:2510.0006: input,hidraw2: USB HID v1.11
+Mouse <span class="o">[</span>PixArt USB Optical Mouse] on usb-0000:00:1d.0-1.3.1/input0
+<span class="o">[</span> 9482.951029] usbcore: deregistering interface driver usbhid
+<span class="o">[</span> 9515.715675] input: Barcode Reader  as
+/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.0/0003:13BA:0018.0007/input/input20
+<span class="o">[</span> 9515.775777] hid-generic 0003:13BA:0018.0007: input,hidraw0: USB HID v1.10
+Keyboard <span class="o">[</span>Barcode Reader <span class="o">]</span> on usb-0000:00:14.0-1/input0
+<span class="o">[</span> 9515.779015] input: Barcode Reader  as
+/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.1/0003:13BA:0018.0008/input/input21
+<span class="o">[</span> 9515.835781] hid-generic 0003:13BA:0018.0008: input,hidraw1: USB HID v1.10
+Mouse <span class="o">[</span>Barcode Reader <span class="o">]</span> on usb-0000:00:14.0-1/input1
+<span class="o">[</span> 9515.838679] input: PixArt USB Optical Mouse as
+/devices/pci0000:00/0000:00:1d.0/usb1/1-1/1-1.3/1-1.3.1/1-1.3.1:1.0/0003:093A:2510.0009/input/input22
+<span class="o">[</span> 9515.839827] hid-generic 0003:093A:2510.0009: input,hidraw2: USB HID v1.11
+Mouse <span class="o">[</span>PixArt USB Optical Mouse] on usb-0000:00:1d.0-1.3.1/input0
+<span class="o">[</span> 9515.839857] usbcore: registered new interface driver usbhid
+<span class="o">[</span> 9515.839858] usbhid: USB HID core driver
+</code></pre></div></div>
+
+<p>The point 6937.288 is where the USB stopped functioning. See how the existing
+mouse (connected as device 6) was disconnected and then reconnected as device
+number 8. This lead me to think that <em>if only</em> I could restart the USB module in
+the kernel, it would detach and reattach ALL the USB devices. That would be the
+best! I have my keyboard and the mouse connected on USB ports. A quick look at
+the <a href="http://askubuntu.com/a/178061/143446">AskUbuntu answer</a> and the <code class="language-plaintext highlighter-rouge">modprobe</code>
+man page increased my confidence in the command posted there! So, this was the
+solution I was looking for! This will go right next to my existing <a href="https://github.com/icyflame/dotfiles/blob/3a7d96774d5995e80771c5f6d0f7cb61fccfd468/zsh/system_aliases.zsh#L1-L2">restart
+network
+manager</a>
+alias in my dotfiles. GREAT, this solves a huge inconvenience. This happened
+yesterday while I was watching a movie and wanted to download the subtitles for
+that movie. It was an incredibly high and unexpected amount of pain. I didn’t
+anticipate that.</p>
+
+<p>Okay, that has itself become a long post (probably because of the dmesg output
+that I posted but it was totally necessary!) While I was writing that sentence,
+it happened again (weirdly, the frequency seems to increase after fixing it
+once. But frankly, I don’t care now, I will just continue to run <code class="language-plaintext highlighter-rouge">modprobe</code>
+while researching the problems that this could have. I can’t think of any
+really, adding and removing modules from the kernel is NOT that catastrophic
+really.</p>
+
+<p>Okay, I am really calling it here now.</p>
+
+<p><strong>POST #36 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

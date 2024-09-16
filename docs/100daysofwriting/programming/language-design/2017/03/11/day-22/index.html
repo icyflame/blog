@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 22 - Thoughts on Programming Language design" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1059 words about language-design" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/programming/language-design/2017/03/11/day-22/" property="og:url">
+  
+
+  
+  <meta content="2017-03-11T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 22 - Thoughts on Programming Language design &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 22 - Thoughts on Programming Language design</h1>
+  <span class="post-date">11 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#language-design">
+    language-design
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I was discussing Cloudbleed with my friend, <a href="https://twitter.com/SemiColonComma">Kalyan
+Kumar</a>. He had this to say about it:</p>
+
+<blockquote>
+  <p>And then … The final problem was that the generated C code didn’t have
+proper checking for the pointer that breaks the code. Now this kind of stuff
+are the biggest problems with C.</p>
+
+  <p>Secondly, most of the code currently at the core of the system is C. Take
+anything, finally it will be converted to C, or uses some code that is C.</p>
+
+  <p>I don’t understand one thing. People keep blaming C for how it manages most
+stuff. But when any kind new programming languages, structures that people
+make, they use C at their heart to work. The new things are simply wrappers
+around C.  If people are going to keep blaming C, they should invent something
+that can replace C more fundamentally, at their core.</p>
+</blockquote>
+
+<p>The last message is very interesting. In the past few weeks, and even in the
+last semester, I have been writing a <em>lot</em> of C. About 3500 lines of C, since
+the first week of January. About 2000 lines in the previous semester. All this
+code is pretty heavy with data structures(<code class="language-plaintext highlighter-rouge">malloc</code>, <code class="language-plaintext highlighter-rouge">free</code>): Float matrices, A
+collection of Float matrices in a 3D Float array, integer arrays, transforms on
+the whole table, etc etc. All of this has to be dynamically allocated on the
+basis of whatever input the user enters. So, that’s a lot of memory being
+allocated and freed in the heap.</p>
+
+<p>So, when people blame C for managing pointers and memory in general, it’s about
+the <code class="language-plaintext highlighter-rouge">SEGFAULT</code>s that people talk about. C trying to access memory that’s not
+it’s own, that hasn’t been declared by it, but just happens to be lying around
+some other memory that <strong>was</strong> declared.</p>
+
+<p>C does pointers well.</p>
+
+<ol>
+  <li>you have to think a lot about the sizes that are being allocated</li>
+  <li>you learn a lot more about design and literally how arrays of higher
+dimensions work.</li>
+  <li>you also happen to learn about how to decide what arguments should be passed
+by value, passed by reference, which ones should be pointers etc.</li>
+</ol>
+
+<p>That is invaluable. So, we have established that it’s a great language to
+“LEARN”. A great Academic tool.</p>
+
+<p>But when you have to use it somewhere in the real world, that’s when things
+become irritating. I think that languages need to be designed so that the
+details are abstracted out but we can still hang on to some performance.</p>
+
+<p><img src="/public/img/day-21-1.png" alt="img" /></p>
+
+<p>An ideal language would have a design where</p>
+
+<ol>
+  <li>It is hard to make mistakes inadvertently</li>
+  <li>The tooling around the language enforces this</li>
+</ol>
+
+<p>Java, inside Android Studio, comes pretty close to this ideal. There are
+caveats.</p>
+
+<p>Java does a good job of this by actively discouraging that you change anything
+passed as an argument, by passing everything by reference. Obviously, that isn’t
+ideal because then you have to return values and re-assign stuff and so on and
+so forth. In applications like Android, this is really annoying. Other
+approaches that the language takes towards types, object oriented design makes
+the language very very <em>long</em>. Lots of characters even for the simplest stuff.</p>
+
+<p>Consider this piece of code that calls some functions whenever a timer runs out:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mTimer</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="k">new</span> <span class="nc">TimerTask</span><span class="o">()</span> <span class="o">{</span> <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span> <span class="c1">//</span>
+<span class="n">cancel</span> <span class="n">everything</span> <span class="n">here</span> <span class="n">mTimer</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span> <span class="n">mTimer</span><span class="o">.</span><span class="na">purge</span><span class="o">();</span> <span class="nc">Helpers</span><span class="o">.</span><span class="na">debug</span><span class="o">(</span><span class="s">"timeout"</span><span class="o">,</span>
+<span class="s">"Time up for this question! MOVE ON!"</span><span class="o">);</span> <span class="o">}</span> <span class="o">},</span> <span class="o">((</span><span class="kt">long</span><span class="o">)</span> <span class="o">(</span><span class="n">mAllottedTime</span> <span class="o">*</span> <span class="mi">1000</span><span class="o">)));</span>
+</code></pre></div></div>
+
+<p>In case, the operation inside <code class="language-plaintext highlighter-rouge">run()</code> had to be done on the main thread, then it
+would be some more lines of code where you would call <code class="language-plaintext highlighter-rouge">runOnUiThread()</code> and pass
+it a <code class="language-plaintext highlighter-rouge">Runnable()</code> with some initialisation, etc etc. Incredibly verbose. And all
+we are trying to do is schedule some task. (An example of this would be having
+to touch a <code class="language-plaintext highlighter-rouge">TextView</code> or any UI element and change one of it’s fields:
+<code class="language-plaintext highlighter-rouge">mMessageForUser.setText("YOUR TIME IS UP!")</code>)</p>
+
+<p>Coming back to the point about making it hard for people to make mistakes,  Java
+tried to avoid inadvertent exceptions by forcing people to wrap blocks that might
+throw exceptions in try-catch so that no exception ever goes unhandled. This
+immediately stops all crashes. Java also forces everything to be strongly typed.
+That’s a pain every single time because APIs change, and when they do you have
+to re-think a lot of the downstream code, or you should have had the insight to
+design it in an extensible manner in the beginning itself. In either case, it’s
+time spent improving old code that was working perfectly well, when you could
+have spent that time writing new code.</p>
+
+<p>Also, another thing that’s probably useful when dealing with things like Android
+applications where the user might know about interruptions: All interruptions
+are handled seamlessly. The user doesn’t need to know that an app malfunctioned.</p>
+
+<p>App crashed? Just restart the application and show them the first screen. People
+understand, you need not go out of your way to show them that the app was not
+designed properly and an obscure test that missed their test case nets happened
+and the app crashed.</p>
+
+<p>TL;DR When writing code in IDEAL, it’s incredibly hard for programmers to make
+mistakes that could lead to crashes or catastrophic stuff like SEGFAULTS.</p>
+
+<p>In IDEAL, it will be painfully obvious what arguments are passed by reference
+and what arguments are simply passed by values in IDEAL. Memory leaks would be
+avoided in IDEAL by having a good garbage collector, which will keep RAM usage
+to the minimum. The GC part is definitely harder than it sounds, and definitely
+a part of the responsibility lies with the developer.</p>
+
+<p>IDEAL Is a hypothetical language that doesn’t exist as yet. (Or maybe it does,
+and I am too daft to have not tried it out yet)</p>
+
+<p>P.S. Kotlin sounds like Java minus all the stuff that makes it so verbose. I
+haven’t tried it, but I would like to. It looks good!</p>
+
+<p><strong>POST #21 is OVER</strong></p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

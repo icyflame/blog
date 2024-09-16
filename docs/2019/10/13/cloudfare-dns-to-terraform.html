@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Managing DNS (or any other infrastructure) using Terraform" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1601 words about dns" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2019/10/13/cloudfare-dns-to-terraform" property="og:url">
+  
+
+  
+  <meta content="2019-10-13T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="dns" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Managing DNS (or any other infrastructure) using Terraform &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Managing DNS (or any other infrastructure) using Terraform</h1>
+  <span class="post-date">13 Oct 2019</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#cloudflare">
+    cloudflare
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#dns">
+    dns
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#terraform">
+    terraform
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><strong>Note:</strong> This post ended up being a lot longer than I expected it to be! It’s a
+post about why Terraform is great, even for setups where configurations don’t
+change often and how you can use it to share the access that you have with other
+people without giving them access to the actual infrastructure account. I will
+make a separate post about the specifics of importing DNS records from
+Cloudflare into Terraform and the process I used for that.</p>
+
+<p>Terraform is great! It is a way to manage your infrastructure using a set of
+version-controlled text files with a <code class="language-plaintext highlighter-rouge">plan</code> command that tells you what is going
+to change and an <code class="language-plaintext highlighter-rouge">apply</code> command that applies the changes that the <code class="language-plaintext highlighter-rouge">plan</code> told
+you about.</p>
+
+<p>Where terraform gets really good is when you store the Terraform State file in a
+GCS bucket and run the <code class="language-plaintext highlighter-rouge">plan</code> and <code class="language-plaintext highlighter-rouge">apply</code> commands in your repository’s CI.</p>
+
+<!--more-->
+
+<p>It’s a loot of hoopla for DNS management of a personal domain. Is it worth it?
+Well, that depends on whether you have the time and motivation to set it up.
+Once you set it up though, it’s INCREDIBLY convenient.</p>
+
+<h2 id="what">What?</h2>
+
+<p>Terraform has three concepts that are pretty useful to know about:</p>
+
+<ul>
+  <li><strong>Terraform state:</strong> This is the part of your infrastructure that has been
+“imported” into Terraform. Terraform manages the state of these “resources”. If
+you change any of these resoures from the web GUI and not through terraform,
+terraform has no idea about the changes you made and the <code class="language-plaintext highlighter-rouge">plan</code> will start
+getting weird.</li>
+  <li><strong>Terraform configuration files:</strong> These are the files with the actual
+resources. Each resource has a type and an identifier inside terraform. And it
+has some arguments and attributes. Arguments are configurable and can be changed
+through these files. Attributes are read-only and generally include things like
+a generated ID which is used by the infrastructure provider to keep track of
+your resource.</li>
+  <li><strong>Terraform providers:</strong> Providers are plugin-type software packages which
+form the interface between Terraform and the infrastructure provider. As far as
+I understand, Terraform understands the 3 changes that can be done on any given
+resource: <code class="language-plaintext highlighter-rouge">create</code>, <code class="language-plaintext highlighter-rouge">update</code> and <code class="language-plaintext highlighter-rouge">delete</code>.
+    <ul>
+      <li>During <code class="language-plaintext highlighter-rouge">plan</code>
+        <ul>
+          <li>Terraform calls the provider and gives it the changes that were made
+  to the terraform configuration files</li>
+          <li>The provider then calls the API of the infrastructure provider to find
+  out what changed</li>
+          <li>The provider gives terraform the changes</li>
+        </ul>
+      </li>
+      <li>During <code class="language-plaintext highlighter-rouge">apply</code>
+        <ul>
+          <li>Terraform calls the provider and tells it the resources to <code class="language-plaintext highlighter-rouge">create</code>,
+  <code class="language-plaintext highlighter-rouge">update</code> and <code class="language-plaintext highlighter-rouge">delete</code></li>
+          <li>The provider calls the API of the infrastructure provider and makes
+  the appropriate <code class="language-plaintext highlighter-rouge">POST</code>, <code class="language-plaintext highlighter-rouge">PUT</code> and <code class="language-plaintext highlighter-rouge">DELETE</code>/<code class="language-plaintext highlighter-rouge">POST</code> requests</li>
+          <li>The provider returns to terraform the actual changes made</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Terraform backend:</strong> A backend is the location where the state file is
+stored. By default, this is <code class="language-plaintext highlighter-rouge">local</code>. You store and manage the state file
+yourself. You can also set this up to be in a cloud storage option like Digital
+Ocean Spaces or Google Cloud Storage. Storing the state file in the cloud allows
+you to give others access to run <code class="language-plaintext highlighter-rouge">plan</code> and <code class="language-plaintext highlighter-rouge">apply</code> commands.</li>
+</ul>
+
+<p>So, in this manner, terraform has completed abstracted out the actual
+infrastructure being managed from the provider that it is provided by.
+Everything is a resource in the terraform world, and there can be only three
+operations to a resource: <code class="language-plaintext highlighter-rouge">create</code>, <code class="language-plaintext highlighter-rouge">update</code> or <code class="language-plaintext highlighter-rouge">delete</code>.</p>
+
+<h2 id="how-useful-is-it">How useful is it?</h2>
+
+<p>Now, just having a log of all the changes you have made to your DNS records is
+pretty useful. You can go back and forth in time, you will never really have to
+deal with IPs again because of how easy it would be to create a new record, and
+so on.</p>
+
+<p>The other features that terraform brings to the table are:</p>
+
+<ul>
+  <li>An audit log that can be seen by <em>anyone</em> with access to the repository</li>
+  <li>Collaborators who can add records without having access to the actual
+infrastructure provider account</li>
+</ul>
+
+<p>Both the first and second are extremely useful for DNS management. I use
+Cloudfare as the DNS provider for my personal domain, and cloudfare has this
+annoying way of changing DNS credentials from one account to another account.
+You have to export the DNS records, import it into the new account and then
+change the NS records at the domain provider.</p>
+
+<p>I tried to do that once for metakgp.org (another domain that my account is
+        connected to) and it <em>did not</em> go well. Something went wrong, the
+transfer didn’t work and the website was down for about 12 hours. This wasn’t
+very catastrophic, it’s a college project and it went down at a time when very
+few people were trying to access the domain. Nevertheless, the whole point of
+that was to ensure that the DNS was being managed by someone who was in the
+college instead of someone who had graduated.</p>
+
+<p>The thing about colleges is that people keep graduating! And few people in their
+freshman or sophomore year have any clue about what DNS is or what records are
+or how to change them safely etc. I learnt most of the things I know about DNS
+in my fourth year at college. So, this would be a perennial problem.</p>
+
+<p>So, the basic thing that I was looking for from a move to terraform was a way to
+safely share access to the infrastructure provider with other people.</p>
+
+<h2 id="a-completely-local-setup">A completely local setup</h2>
+
+<p>Now, you can have a bunch of terraform configuration files in a repository
+alongwith the state file. You can run appropriate <code class="language-plaintext highlighter-rouge">terraform plan</code> and
+<code class="language-plaintext highlighter-rouge">terraform apply</code> commands manually. The state file is a file that has to be
+maintained separately from the configuration files.</p>
+
+<p>One way to do it that’s fairly manual and works for use-cases where changes are
+not very common and are centralized with a few people is to keep the state file
+checked into Git. The state file is a JSON file and can be easily stored and
+versioned. The local flow would look something like this:</p>
+
+<ul>
+  <li>You import your DNS records into the local configuration files + the state
+files</li>
+  <li>You put this repository out there</li>
+  <li>People make a pull request with the changes they want to make
+    <ul>
+      <li>You run <code class="language-plaintext highlighter-rouge">terraform plan</code> manually and post the output on the PR</li>
+    </ul>
+  </li>
+  <li>You (and others) review their PR; you merge it when they look okay</li>
+  <li>Now, you (or anyone who has access) manually run <code class="language-plaintext highlighter-rouge">terraform apply</code> and apply
+the changes that were requested</li>
+</ul>
+
+<p>This is already a great improvement on the nightmarish process of moving DNS
+management from account to account just to let others take over access. You have
+to remain involved in the process, yes, but at least others can review and all
+you have to do is run the <code class="language-plaintext highlighter-rouge">plan</code> and <code class="language-plaintext highlighter-rouge">apply</code> commands.</p>
+
+<h2 id="what-if-you-use-continuous-integration">What if you use Continuous Integration?</h2>
+
+<p>Continuous Integration (CI) makes this whole process incredibly easy. It
+de-centralizes DNS management without de-centralizing control over the provider
+account. Here’s the flow with CI:</p>
+
+<ul>
+  <li>You import your DNS records into a terraform state and into local
+configuration files</li>
+  <li>You set-up Google Cloud Storage (GCS) to act as the backend for your terraform
+state
+    <ul>
+      <li>Now, your state file is stored on GCS instead of being stored locally on
+  your computer!</li>
+      <li>Anyone with the right credentials can run the <code class="language-plaintext highlighter-rouge">plan</code> and <code class="language-plaintext highlighter-rouge">apply</code> commands
+  now!</li>
+    </ul>
+  </li>
+  <li>You set-up a CI pipeline where opening a pull-request runs the <code class="language-plaintext highlighter-rouge">plan</code> command
+and merging to <code class="language-plaintext highlighter-rouge">master</code> runs the <code class="language-plaintext highlighter-rouge">apply</code> command
+    <ul>
+      <li>You have to give the CI pipeline access to the provider and the GCS bucket
+  using a service account</li>
+      <li>Both these things are fairly easy to accomplish</li>
+    </ul>
+  </li>
+  <li>Now, you let others make Pull Requests
+    <ul>
+      <li>When someone makes a pull-request, they can go to the CI pipeline and see
+  the <code class="language-plaintext highlighter-rouge">plan</code></li>
+      <li>If the <code class="language-plaintext highlighter-rouge">plan</code> looks okay, they can request review</li>
+      <li>Others review the PR and approve it if everything looks good</li>
+      <li>Anyone with permissions to <code class="language-plaintext highlighter-rouge">merge</code> to <code class="language-plaintext highlighter-rouge">master</code> can merge the PR and have
+  the changes show up in their infrastructure right away!
+        <ul>
+          <li>Note that the person who is merging doesn’t need to have access to the
+  GCS bucket OR to the infrastructure provider! All they need to have
+  access to is the repository that is maintaining the configuration.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>This</em> is the holy grail. A single repository on which users can be added and
+removed as required.</p>
+
+<ul>
+  <li>If changes you didn’t want to merge have been merged to master, you can revert
+the PR and merge to master again. VOILA!</li>
+  <li>If something goes wrong, you can lock down access</li>
+  <li>If you fear that the CI keys have been taken by a bad actor, you can remove
+that actor and roll them</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+  <li>Terraform lets you share the ability to make changes to your infrastructure with
+a wide group of people without giving them any direct access to the
+infrastructure itself.</li>
+  <li>Terraform lets you maintain an audit log of the changes that happened to your
+infrastructure</li>
+  <li>Terraform lets you roll-back unwanted changes with a simple revert PR</li>
+</ul>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="check-pnr-status, The easiest way to track your PNR numbers" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="831 words about linux" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/cli/nodejs/linux/2015/09/19/pnr-node-cli-module/" property="og:url">
+  
+
+  
+  <meta content="2015-09-19T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="cli" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    check-pnr-status, The easiest way to track your PNR numbers &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">check-pnr-status, The easiest way to track your PNR numbers</h1>
+  <span class="post-date">19 Sep 2015</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#cli">
+    cli
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#linux">
+    linux
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#nodejs">
+    nodejs
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Mid-term exams are almost over. One more paper to go, and there’s enough time to study
+for that. So, I worked on the project that I have been working on for about a week now.</p>
+
+<p>My ultimate goal for building this CLI module was to basically ensure that I didn’t
+have to visit the <a href="http://irctc.co.in">IRCTC website</a> whenever I wanted to
+check the status of all the tickets that I have booked. (After the ARP for booking
+  tickets was extended to four months, I can book tickets for February 2016 today!)</p>
+
+<p>Thus, a lot of tickets, and a really really slow website. But there’s one thing that’s
+not slow, or atleast not as slow as the website itself. The API that the website
+consumes. So, I went out onto the open internet and started searching for a wrapper
+written in any language, but one that consumed the IRCTC API (the PNR status part, at
+  the very least), so that I could model my code as per the requests in that wrapper,
+and hence have access to the API. Searching was hard and took a significant bit of time.</p>
+
+<p>Unsurprisingly, as this was not a programming issue, but one that is India-centric,
+I didn’t find anything on Stack Overflow. What really helped me though was <a href="https://www.quora.com/Is-there-an-official-API-for-IRCTC-Indian-Railways-PNR-Status">this
+Quora question</a>.</p>
+
+<p>Going through each answer in turn, I finally ended up at <a href="https://github.com/salilpa/pnrapi-python/">this GitHub repository</a> by <a href="https://github.com/salilpa/">@salilpa</a>.</p>
+
+<p>I found out the requests I had to make to get the required data. I didn’t go into the
+detailed code of the repository, but I got the request I wanted, and yay! I was ready to parse
+the information out of the complex and completely <strong>unstructured</strong> HTML that IRCTC pages
+are always composed of! (There were 5 nested tables with a huge amount of <code class="language-plaintext highlighter-rouge">tr</code> and <code class="language-plaintext highlighter-rouge">td</code> elements
+  inside each other that made looking at the markup not even an option.)</p>
+
+<p>Here, Chrome Dev Tools helped out, and saved the day! I highlighted the element I wanted
+and used the <code class="language-plaintext highlighter-rouge">Copy CSS Path</code> functionality, which worked perfectly!</p>
+
+<p><img src="/public/img/pnr-1.png" alt="screenshot-1" /></p>
+
+<p>Now, I had to parse the information I wanted out of the HTML, and I all I had were
+CSS selectors. I needed something like jQuery, that would build the DOM and then, allow
+me to select the text / HTML of the required element. Suffice it to say that it was not as easy
+as it sounds, and certainly not as easy as in the browser (where the DOM is always available).</p>
+
+<p>I started out with <a href="https://github.com/cheeriojs/cheerio">cheerio</a>, as almost everyone loathed
+<a href="https://github.com/tmpvar/jsdom">jsdom</a> and had shifted from jsdom to cheerio. I started working with it,
+and there was some weird problem. It was working with one of the selectors which had an
+ID followed by three other <code class="language-plaintext highlighter-rouge">tr:nth-child</code> blocks. But it wasn’t working with any of the other
+three selectors. Around 45 minutes of debugging led me to a one-liner StackOverflow
+comment that said something close to:</p>
+
+<blockquote>
+  <p>JSDom has the memory leak issue since long. You should switch to Cheerio, the only
+issue being that it doesn’t support all the selectors</p>
+</blockquote>
+
+<p>Well, yeah. It would have been better if they had just mentioned that on the Cheerio
+README. There was one block about supporting all sizzle selectors, but I wasn’t really
+sure how to check if the selectors I was using were sizzle selectors or not.</p>
+
+<p>Finally, now that I had found out (the hard way) that Cheerio was not going to
+cut it, I moved to jsdom, and it worked well for one PNR. I was basically using jQuery
+and not a wrapper, so there was absolutely no issues.</p>
+
+<p>Then again, integration tests failed. JSDom has had a memory leak issue for some time now,
+and then, they fixed the issue but dropped support for Node.js 0.12, and moved to
+io.js. This was absolutely frustrating for me and I had to slightly re-structure my module
+to take this into account.</p>
+
+<p>Finally, I decided to stay with Node.js and rather, concat all the resultant HTML pieces
+together and use the <code class="language-plaintext highlighter-rouge">each</code> function in <code class="language-plaintext highlighter-rouge">jQuery</code> to get all the elements matching a particular selector.</p>
+
+<p>Here, again, I had to remove the one selector which had an ID with a generic selector. (ID
+  selectors are assumed to have only one target.)</p>
+
+<p>So, after about 4 hours of hacking around the code to fix everything, I spent another half-hour
+doing some housekeeping stuff, proper git commits, fixing debugging lines, writing the readme,
+updating the package.json file, removing unnecessary deps, etc. Once I was done with all this,
+I <code class="language-plaintext highlighter-rouge">npm version</code>-ed it and published it to NPM.</p>
+
+<p>This was my first experience working with a completely dishelved API, that had absolutely
+no structure to it.</p>
+
+<p>So, in conclusion, <em>JSON APIs</em> are awesome, but even if it’s not JSON, you can get around that with
+a some amount of effort!</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

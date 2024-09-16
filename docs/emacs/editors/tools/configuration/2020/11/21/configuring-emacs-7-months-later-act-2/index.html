@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Configuring Emacs - 7 months later - Act 2" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="904 words about tools" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2/" property="og:url">
+  
+
+  
+  <meta content="2020-11-21T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="emacs" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Configuring Emacs - 7 months later - Act 2 &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Configuring Emacs - 7 months later - Act 2</h1>
+  <span class="post-date">21 Nov 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#configuration">
+    configuration
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#editors">
+    editors
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#emacs">
+    emacs
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tools">
+    tools
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><em>Note:</em> This is the second in a series of 3 posts about my experience configuring Emacs over 7
+months, starting from scratch.</p>
+
+<ul>
+  <li><a href="/emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1">Post 1: Fundamentals</a></li>
+  <li><a href="/emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2">Post 2: Keybindings and Package Integration</a></li>
+  <li><a href="/emacs/editors/tools/configuration/2020/12/01/configuring-emacs-7-months-later-act-3">Post 3: Writing Emacs Lisp Functions</a></li>
+</ul>
+
+<p><a id="orgec4b729"></a></p>
+
+<p>After figuring out how to install packages, as you start to use the editor more, you run into cases
+where the keybindings are inconvenient or don’t exist at all. During this phase, the 3 months
+between June and August, I added a lot of keybindings. Most of them were to mimic the functionality
+that I had configured with Vim over some time. A lot of them were new keybindings which made sense
+only in the Emacs world.</p>
+
+<!--more-->
+
+<p>At this point, I was using Emacs everyday for non-code related editing. Towards the end of this
+period, I installed some major modes which allowed me to program in Go within Emacs, but my first
+attempt at the installation of these modes was terrible and I had a very bad experience. After
+giving up for a short period of time, I returned to the problem once again and figured it out the
+second time around. This story is longer and I want to keep it for another blog post.</p>
+
+<ul>
+  <li><a href="#orgec4b729">Act 2: Keybindings and Package Integration</a>
+    <ul>
+      <li><a href="#org54cf0c5">Navigation using <code class="language-plaintext highlighter-rouge">Ctrl + H/J/K/L</code></a></li>
+      <li><a href="#orgc1a4811">Keybindings to comment code</a></li>
+      <li><a href="#org05e0dfd">Hooks</a></li>
+      <li><a href="#orge17068c">Mode maps for Keybindings</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a id="org54cf0c5"></a></p>
+
+<h2 id="navigation-using-ctrl--hjkl">Navigation using <code class="language-plaintext highlighter-rouge">Ctrl + H/J/K/L</code></h2>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/c458cc48">c458cc48</a></p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nv">general-nmap</span>
+  <span class="s">"DEL"</span> <span class="ss">'evil-ex-nohighlight</span>
+  <span class="s">"C-h"</span> <span class="ss">'evil-window-left</span>
+  <span class="s">"C-j"</span> <span class="ss">'evil-window-down</span>
+  <span class="s">"C-k"</span> <span class="ss">'evil-window-up</span>
+  <span class="s">"C-l"</span> <span class="ss">'evil-window-right</span>
+  <span class="p">)</span>
+</code></pre></div></div>
+
+<p>Navigation between various splits using <code class="language-plaintext highlighter-rouge">Ctrl</code> and the Home row keys was another one of the base
+requirements for me when I started using this editor. After installing <code class="language-plaintext highlighter-rouge">general.el</code> and reading
+evil-guide 10-20 times, I was able to figure out how to add the appropriate bindings for moving
+around splits using general.</p>
+
+<p>The most confusing part of this were the quotation marks. Emacs allows functions to be specified
+with <code class="language-plaintext highlighter-rouge">#'</code> or with a simple single quote. There does not seem to be any difference and you can use
+either of those forms.</p>
+
+<p><a id="orgc1a4811"></a></p>
+
+<h2 id="keybindings-to-comment-code">Keybindings to comment code</h2>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/99683e0f">99683e0f</a></p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; 24. Keybindings that use the leader key functionality in normal and visual mode</span>
+<span class="p">(</span><span class="nv">general-create-definer</span> <span class="nv">leader-def-visual-mode</span>
+  <span class="ss">:states</span> <span class="o">'</span><span class="p">(</span><span class="nv">visual</span><span class="p">)</span>
+  <span class="ss">:prefix</span> <span class="s">","</span>
+  <span class="p">)</span>
+<span class="p">(</span><span class="nv">leader-def-visual-mode</span> <span class="s">"c SPC"</span> <span class="ss">'comment-or-uncomment-region</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nv">general-create-definer</span> <span class="nv">leader-def-normal-mode</span>
+  <span class="ss">:states</span> <span class="o">'</span><span class="p">(</span><span class="nv">normal</span><span class="p">)</span>
+  <span class="ss">:prefix</span> <span class="s">","</span>
+  <span class="p">)</span>
+<span class="p">(</span><span class="nv">leader-def-normal-mode</span> <span class="s">"c SPC"</span> <span class="ss">'comment-line</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This was the first section of the configuration which was more than just using a built-in function
+directly. I was starting to understand what these functions were doing and I was able to get the
+leader key behavior that I have always liked for commenting and un-commenting code in Vim. The
+<code class="language-plaintext highlighter-rouge">comment-or-uncomment-region</code> function is a Emacs-only feature which inherently understands the
+comment pattern for the language that is being edited.</p>
+
+<p><a id="org05e0dfd"></a></p>
+
+<h2 id="hooks">Hooks</h2>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/eae9cc91">eae9cc91</a></p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; 26. Remove trailing whitespace characters from all files</span>
+<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'before-save-hook</span> <span class="ss">'delete-trailing-whitespace</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Hooks are a major part of Emacs. Until now, I have found that they are the main pathway for
+connecting modes with each other (e.g.: Run the spell-checking mode when the file type is Org). They
+are also very useful for doing things like the above configuration block, which deletes trailing
+white spaces from all file types before saving the file to disk.</p>
+
+<p><a id="orge17068c"></a></p>
+
+<h2 id="mode-maps-for-keybindings">Mode maps for Keybindings</h2>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/71c9a782">71c9a782</a></p>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">-  ;; TODO: This should be active only in the org mode key map
+</span>   (ctrl-keybindings
+<span class="gi">+	:keymaps '(org-mode-map)
+</span>	"C-c l c" 'org-cycle-list-bullet
+<span class="gi">+   "C-c e" 'org-table-edit-formulas
+</span>	)
+<span class="err">
+</span><span class="gi">+  ;; 23. SQL format highlighted region
++  (general-evil-define-key 'visual sql-mode-map
++	"gq" 'run-sqlbeautify
++	)
+</span></code></pre></div></div>
+
+<p>This is another Emacs-only concept which was hard to understand for me when I tried to map it back
+to the knowledge I had about editor configuration already. After a few months of getting used to
+this, I am much more confident about adding new keybindings. For e.g., when I started testing
+<a href="https://github.com/skeeto/elfeed">elfeed</a> today, I added several keybindings within the first few hours of using it:</p>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/1c672f7a">1c672f7a</a></p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; Elfeed Search's default mappings work are for Insert mode only</span>
+<span class="p">(</span><span class="nv">general-evil-define-key</span> <span class="o">'</span><span class="p">(</span><span class="nv">normal</span> <span class="nv">visual</span><span class="p">)</span> <span class="nv">elfeed-search-mode-map</span>
+  <span class="s">"RET"</span> <span class="ss">'elfeed-search-show-entry</span>
+  <span class="s">"u"</span> <span class="ss">'elfeed-search-tag-all-unread</span>
+  <span class="s">"r"</span> <span class="ss">'elfeed-search-untag-all-unread</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This evolution from not understanding what a mode map means or does, to understanding and being able
+to use it properly was satisfying for me. This process takes time, and if you are switching to
+something new and are having trouble not understanding things that everyone else treats as <span class="underline">basic</span>,
+I would tell you to simply stick with it for a few more months and see if you understand it better
+then. (<a href="https://www.youtube.com/channel/UCmGSJVG3mCRXVOP4yZrU1Dw">Johnny Harris</a> has <a href="https://www.youtube.com/watch?v=zKDe094o-Q8">a great video</a> about how he figured out how to photograph far-away galaxies
+that runs along the same lines.)</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

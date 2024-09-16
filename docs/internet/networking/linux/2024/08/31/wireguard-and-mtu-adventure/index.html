@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Adventures with Wireguard and MTU" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="4280 words about internet" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/" property="og:url">
+  
+
+  
+  <meta content="2024-08-31T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="internet" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Adventures with Wireguard and MTU &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Adventures with Wireguard and MTU</h1>
+  <span class="post-date">31 Aug 2024</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#internet">
+    internet
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#linux">
+    linux
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#networking">
+    networking
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>This past weekend, I wanted to set up Miniflux, a browser-based RSS<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> reader. I have been using
+it locally for the past two weeks and it has been extremely worthwhile. It has the dual advantage of
+always being online and the ability to categorize feeds, which helps me group the feeds that I want
+to <strong>read</strong> (blogs) from those that I want to <strong>skim</strong> (news). I did not want to set up a Miniflux
+instance which would have ports open to the Internet. I wanted the instance to be available <strong>only</strong>
+inside a private network; I wanted to use Wireguard to set up the private network. I ran into a
+problem that looks extremely simple in hindsight: The packets which were being sent on the Wireguard
+interface were larger than the Max Transmission Unit of <em>some</em> router between the VPS<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> and my
+laptop. This is something that I have not run into before. It was interesting to delve through the
+various layers of Linux’ networking stack. What follows is an account of my investigation.</p>
+
+<!--more-->
+
+<p>The initial set up was very easy to get up and running.</p>
+
+<p>First, create a Wireguard network with 3 peers: the VPS, my laptop, and my phone. Inside the
+Wireguard tunnel, the VPS was at <code class="language-plaintext highlighter-rouge">192.168.1.1</code> and my laptop was at <code class="language-plaintext highlighter-rouge">192.168.1.2</code>. <code class="language-plaintext highlighter-rouge">ping
+192.168.1.1</code> on my laptop yielded the correct result; 64 byte ICMP<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> packets were being
+exchanged between the two ends of the tunnel.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ping <span class="nt">-c</span> 2 192.168.1.1
+PING 192.168.1.1 <span class="o">(</span>192.168.1.1<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+64 bytes from 192.168.1.1: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>19.4 ms
+64 bytes from 192.168.1.1: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>6.22 ms
+
+<span class="nt">---</span> 192.168.1.1 ping statistics <span class="nt">---</span>
+2 packets transmitted, 2 received, 0% packet loss, <span class="nb">time </span>1002ms
+rtt min/avg/max/mdev <span class="o">=</span> 6.215/12.810/19.406/6.595 ms
+</code></pre></div></div>
+
+<p>Next, start Miniflux using a docker container: The Docker container was listening on the host port
+<code class="language-plaintext highlighter-rouge">10443</code> (i.e. <code class="language-plaintext highlighter-rouge">127.0.0.1:10443</code>). Locally, from the VPS itself, requests to the Miniflux endpoints
+<code class="language-plaintext highlighter-rouge">/</code> (which loads the login page) and <code class="language-plaintext highlighter-rouge">/version</code> (which prints the semantic version of the running
+Miniflux) worked well. (The running database container has a port but this port is not exposed to
+the host network.)</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker ps <span class="nt">--format</span> <span class="s1">'\t'</span> | column <span class="nt">-t</span>
+miniflux/miniflux:latest  127.0.0.1:10443-&gt;8080/tcp
+postgres:15               5432/tcp
+</code></pre></div></div>
+
+<p>Finally, install and configure Nginx on the VPS. A single site was enabled with the following
+configuration:</p>
+
+<pre><code class="language-cfg">server {
+	listen 192.168.1.1:80 default_server;
+
+	charset utf-8;
+	location /healthz {
+		return 200;
+	}
+
+	location / {
+		proxy_pass http://127.0.0.1:10443;
+	}
+}
+</code></pre>
+
+<p>After restarting the <code class="language-plaintext highlighter-rouge">nginx.service</code> Systemd unit, I expected <code class="language-plaintext highlighter-rouge">curl http://192.168.1.1/healthz</code> to
+return an empty response with HTTP 200 status code. This worked. The request was logged in the Nginx
+access log. I tried <code class="language-plaintext highlighter-rouge">curl http://192.168.1.1/</code>. <strong>Here, the problem begins to make itself known:</strong> The
+request reaches Nginx and is logged in the Nginx access log. The request also reaches inside the
+Miniflux container<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>. However, no response is returned to Curl. In fact, Curl just keeps waiting
+forever. The request is handled in a few milliseconds according to Miniflux.</p>
+
+<p>This alone was not too distressing. It indicates that Nginx’ <code class="language-plaintext highlighter-rouge">proxy_pass</code> directive is not
+working. I don’t expect these kind of things to start working immediately because there is always
+some minor misconfiguration, which can only be found in a second pass over the system. Also, there
+were many parts of the setup that I had not even thought about at this point: firewall rules on my
+laptop; firewall rules on the VPS; (perhaps) the hosting provider has a separate set of firewall
+rules for outbound traffic (similar to GCP?); (perhaps) my router is not set up to accept incoming
+TCP or UDP packets. I would have cycled through these theories … had it not been for this:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl http://192.168.1.1/version
+2.2.0
+</code></pre></div></div>
+
+<p>Requests to the <code class="language-plaintext highlighter-rouge">/version</code> endpoint on <em>the same server</em> along the identical <em>network path</em> worked;
+the response was coming from Miniflux.</p>
+
+<p>One more <em>confounding variable:</em> Another member in this Wireguard mesh network was a smart phone. I
+attempted to load <code class="language-plaintext highlighter-rouge">http://192.168.1.1/</code> from that device in Firefox, and the page loaded! It showed
+the appropriate login page that I was expecting to see.</p>
+
+<p>Tethering this phone to my laptop using a USB cable and turning off WiFi, I noticed that on the 4G
+network of my phone too, the login page worked. Here is a matrix of what worked and what did not:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Network</th>
+      <th><code class="language-plaintext highlighter-rouge">/version</code> works?</th>
+      <th>Login page works?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Laptop</td>
+      <td>Home WiFi</td>
+      <td>Yes</td>
+      <td><strong>No</strong></td>
+    </tr>
+    <tr>
+      <td>Laptop</td>
+      <td>Cellular</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>iPhone</td>
+      <td>Home WiFi</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>iPhone</td>
+      <td>Cellular</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>So, what was going on here precisely? This was going to be something either very interesting and
+specific to my setup, or something fairly silly, such as a misconfiguration somewhere. Nevertheless,
+I was in for the long haul: <strong>A completely broken system is easier to fix than a partially broken
+one.</strong></p>
+
+<h1 id="iptables"><code class="language-plaintext highlighter-rouge">iptables</code></h1>
+
+<p>I have tried my best to stay away from the actual implementation and usage of iptables. I know about
+iptables and their usual use cases. I can even get away with reading rules, such as this
+implementation of a reverse proxy using <strong>only</strong> iptables (<a href="https://cloud.google.com/datastream/docs/private-connectivity">courtesy: GCP</a>):</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables -t nat -A PREROUTING -p tcp -m tcp --dport $DB_PORT -j DNAT --to-destination $DB_ADDR:$DB_PORT
+iptables -t nat -A POSTROUTING -j SNAT --to-source $LOCAL_IP_ADDR
+</code></pre></div></div>
+
+<p>I don’t think I need to explain the above. It is pretty intuitive.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup> iptables is a core feature
+of the Linux Kernel, but there are some quirks in using it “properly.” Most of the quirks can be
+demonstrated using the following diagram, taken from the Wikipedia page on iptables:</p>
+
+<p><img src="/public/img/packet-flow-wikipedia.png" alt="img" /></p>
+
+<p><em>Is the text too small to read? You’re getting the point now!</em></p>
+
+<p>Jokes apart, the design of netfilter and the frontend to netfilter, iptables, is pretty good (I have
+heard.) It makes everything possible: you can “mangle” packets, update where they come from, update
+where they go, prevent packets from entering the system, … and so on. All of it happens inside the
+kernel. Generally, I avoid <code class="language-plaintext highlighter-rouge">iptables</code> and use the simpler wrapper <code class="language-plaintext highlighter-rouge">ufw</code> (Universal Firewall). <code class="language-plaintext highlighter-rouge">ufw</code>
+adds rules to the <code class="language-plaintext highlighter-rouge">filter</code> table’s <code class="language-plaintext highlighter-rouge">INPUT</code> chain. By the way, <code class="language-plaintext highlighter-rouge">ufw</code> alone is not good enough if you
+are using Docker. See this <a href="https://github.com/chaifeng/ufw-docker#solving-ufw-and-docker-issues">well-known</a> flaw when the two are used together, which is introduced due
+to the rules that are added to iptables when Docker is installed.</p>
+
+<p>In this case, I had added only the default <code class="language-plaintext highlighter-rouge">ufw</code> rules, which deny all incoming and routed traffic,
+and allow all outgoing traffic. To take this out of the equation, I disabled UFW completely. UFW
+outputs logs whenever it blocks packets and these can be seen in the output of <code class="language-plaintext highlighter-rouge">dmesg -wT</code>. The
+packets that were supposed to make their way back from the VPS to my laptop were not showing up
+here. Interestingly, in the few minutes that the VPS did not have any firewall enabled, I saw
+several logs to Nginx from <a href="https://github.com/robertdavidgraham/masscan">masscan</a> and <a href="https://ivre.rocks/">ivre-masscan</a>. These tools are scraping the whole Internet in
+about 5 minutes: <strong>That</strong> is very cool. I have used only <code class="language-plaintext highlighter-rouge">nmap</code> for amateur port scanning (mostly to
+see whether sshd is actually listening on some port) and netcat to check for things like MySQL
+servers and SSH servers, both of which will write their version and the authentication plugin that
+they are using if you open a netcat connection with them.</p>
+
+<h1 id="docker">Docker</h1>
+
+<p>Oh, right. Docker starts virtual bridge networks which are separate from the host
+network, but are connected together through the 172.17/16 subnet. The device <code class="language-plaintext highlighter-rouge">docker0</code> takes
+every packet that is bound for this subnet by adding a route to <code class="language-plaintext highlighter-rouge">ip route</code>, and presumably,
+redirects the packet to the right container.</p>
+
+<p>All of this is fairly good. I did not have many doubts here. The requests were clearly going through
+Docker and reaching the container inside it. I started the <code class="language-plaintext highlighter-rouge">httpd</code> container; and … it worked.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># On the VPS</span>
+<span class="nv">$ </span>docker run <span class="nt">-d</span> <span class="nt">--name</span> httpd <span class="nt">-p</span> 8080:80 httpd:alpine
+88d95f2bce5bae6edbfde87ac4e57295038689790bf37cd26e65ddc04b9f79f7
+
+<span class="c"># On my laptop</span>
+<span class="nv">$ </span>curl http://192.168.1.1:8080
+&lt;html&gt;&lt;body&gt;&lt;h1&gt;It works!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+</code></pre></div></div>
+
+<p>Once again, the small response sent by <code class="language-plaintext highlighter-rouge">httpd</code> worked well, whereas the login page was still not
+working.</p>
+
+<p>To completely avoid having to deal with Docker, I downloaded the static binary of <code class="language-plaintext highlighter-rouge">miniflux</code> from
+GitHub and ran it locally. Once again, local requests to the login page worked, while remote
+requests to <code class="language-plaintext highlighter-rouge">/version</code> did not work. I was stuck with the same problem even without Docker.</p>
+
+<h1 id="ufw"><code class="language-plaintext highlighter-rouge">ufw</code></h1>
+
+<p>As I said, I did not want ports to be open on the VPS because there are large programs that are
+scanning all of the Internet a few hundred times each day. So, I had enabled <code class="language-plaintext highlighter-rouge">ufw</code> allowing only
+incoming UDP traffic on one port for Wireguard and incoming TCP traffic on another port for SSH. I
+did not expect these rules to be causing problems, and they were apparently not.</p>
+
+<p>Completely disabling UFW did not make any difference at all.</p>
+
+<p><strong>Note:</strong> One quirk of UFW is the file <code class="language-plaintext highlighter-rouge">/etc/ufw/after.rules</code>. When UFW is disabled, the iptables
+which are added by <code class="language-plaintext highlighter-rouge">ufw</code> are removed. The rules which are added to iptables from the <code class="language-plaintext highlighter-rouge">after.rules</code>
+are not reverted. I guess this is because UFW does not know how to revert these rules.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>ufw disable
+Firewall stopped and disabled on system startup
+
+<span class="nv">$ </span><span class="nb">sudo </span>iptables <span class="nt">-S</span> ufw-logging-deny
+iptables v1.8.7 <span class="o">(</span>nf_tables<span class="o">)</span>: chain <span class="sb">`</span>ufw-logging-deny<span class="s1">' in table `filter'</span> is incompatible, use <span class="s1">'nft'</span> tool.
+
+<span class="nv">$ </span><span class="nb">sudo </span>ufw <span class="nb">enable
+</span>Firewall is active and enabled on system startup
+
+<span class="nv">$ </span><span class="nb">sudo </span>iptables <span class="nt">-S</span> ufw-logging-deny
+<span class="nt">-N</span> ufw-logging-deny
+<span class="nt">-A</span> ufw-logging-deny <span class="nt">-m</span> conntrack <span class="nt">--ctstate</span> INVALID <span class="nt">-m</span> limit <span class="nt">--limit</span> 3/min <span class="nt">--limit-burst</span> 10 <span class="nt">-j</span> RETURN
+<span class="nt">-A</span> ufw-logging-deny <span class="nt">-m</span> limit <span class="nt">--limit</span> 3/min <span class="nt">--limit-burst</span> 10 <span class="nt">-j</span> LOG <span class="nt">--log-prefix</span> <span class="s2">"[UFW BLOCK] "</span>
+
+</code></pre></div></div>
+
+<h1 id="tcpdump"><code class="language-plaintext highlighter-rouge">tcpdump</code></h1>
+
+<p>I had reached the point where I would <strong>have</strong> to resort to using <code class="language-plaintext highlighter-rouge">tcpdump</code>. <code class="language-plaintext highlighter-rouge">tcpdump</code> is a great tool
+for debugging network problems. I have used it a few times when working with Istio.<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup></p>
+
+<p>With <code class="language-plaintext highlighter-rouge">tcpdump</code>, the toughest part is to get to the really useful packet dumps. For this, I began
+with the requests that worked: I chose the very simple <code class="language-plaintext highlighter-rouge">/robots.txt</code> response from Miniflux.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-vvv</span> http://192.168.1.1/robots.txt
+<span class="o">&gt;</span> GET /robots.txt HTTP/1.1
+<span class="o">&gt;</span> User-Agent: curl/7.74.0
+<span class="o">&gt;</span> Accept: <span class="k">*</span>/<span class="k">*</span>
+<span class="o">[</span>snip]
+&lt; HTTP/1.1 200 OK
+&lt; Server: nginx/1.26.2
+&lt; Date: Thu, 29 Aug 2024 05:59:25 GMT
+&lt; Content-Type: text/plain<span class="p">;</span> <span class="nv">charset</span><span class="o">=</span>utf-8
+&lt; Content-Length: 25
+&lt; Connection: keep-alive
+&lt;
+User-agent: <span class="k">*</span>
+Disallow: /%
+</code></pre></div></div>
+
+<p>The TCP dump output on both sides of the tunnel was identical. It looked like this:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>vps<span class="o">)</span> <span class="nv">$ </span>tcpdump <span class="nt">-n</span> <span class="s1">'port 50000'</span>
+<span class="o">[</span>snip]
+13:10:47.533724 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:47.533856 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 96
+13:10:47.541738 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:47.541923 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 176
+13:10:47.541966 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 96
+13:10:47.543038 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 272
+13:10:47.548850 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:47.548850 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:47.548923 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 96
+13:10:47.554451 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+</code></pre></div></div>
+
+<p>This is fairly boring. The only thing to notice here is that the length of all of these UDP packets
+sent by Wireguard is very small. (This fact was not remarkable to me <strong>during</strong> the investigation.)</p>
+
+<p>Next, the request that fails. <code class="language-plaintext highlighter-rouge">GET /</code></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>13:10:54.636017 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:54.636139 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 96
+13:10:54.641641 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:54.641641 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 176
+13:10:54.641707 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 96
+13:10:54.644767 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.644779 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.644781 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.644783 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 160
+13:10:54.645059 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.645069 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.645198 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 864
+13:10:54.650279 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:10:54.650279 IP vps.43448 <span class="o">&gt;</span> laptop.50000: UDP, length 112
+13:10:54.657194 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.657203 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.657206 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.657445 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.657450 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:54.869238 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:55.317282 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:56.181234 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:10:57.877260 IP laptop.50000 <span class="o">&gt;</span> vps.43448: UDP, length 1452
+13:11:00.840330 IP vps.44215 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+13:11:00.840525 IP laptop.50000 <span class="o">&gt;</span> vps.44215: UDP, length 96
+13:11:00.848374 IP vps.44215 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+</code></pre></div></div>
+
+<p>Immediately, I noticed that these <code class="language-plaintext highlighter-rouge">length 1452</code> packets were the ones which were not making it to
+the laptop. As I was running <code class="language-plaintext highlighter-rouge">tcpdump</code> on both sides, I could see that the smaller packets of
+various sizes (112, 96, 864) were making it through perfectly fine and in the same order. However,
+the largest of these packets, of size 1452 bytes, were not making it through.</p>
+
+<p>I continued running the same tcpdump command and now checked the request <code class="language-plaintext highlighter-rouge">GET /</code> on my iPhone with
+the WiFi network:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>13:10:30.755011 IP vps.44215 <span class="o">&gt;</span> iphone.50000: UDP, length 592
+13:10:30.755320 IP vps.44215 <span class="o">&gt;</span> iphone.50000: UDP, length 148
+13:10:30.755660 IP iphone.50000 <span class="o">&gt;</span> vps.44215: UDP, length 92
+13:10:30.763983 IP vps.44215 <span class="o">&gt;</span> iphone.50000: UDP, length 32
+13:10:30.767831 IP iphone.50000 <span class="o">&gt;</span> vps.44215: UDP, length 1312
+13:10:30.767844 IP iphone.50000 <span class="o">&gt;</span> vps.44215: UDP, length 1312
+13:10:30.767847 IP iphone.50000 <span class="o">&gt;</span> vps.44215: UDP, length 112
+13:10:30.767950 IP iphone.50000 <span class="o">&gt;</span> vps.44215: UDP, length 96
+13:10:30.778499 IP vps.44215 <span class="o">&gt;</span> iphone.50000: UDP, length 96
+13:10:30.809367 IP vps.44215 <span class="o">&gt;</span> iphone.50000: UDP, length 480
+13:10:30.811026 IP iphone.50000 <span class="o">&gt;</span> vps.44215: UDP, length 1168
+13:10:30.820942 IP vps.44215 <span class="o">&gt;</span> iphone.50000: UDP, length 96
+</code></pre></div></div>
+
+<p>Here, things got interesting, Despite being on the same network, the VPS was sending the iPhone
+smaller packets of 1312 bytes. At this point, I pretty much knew that something was off about these
+large packets and some thing was dropping them in the middle. I still did not know what or why
+though. Before we get there, a small detour through one of the other theories I had during my
+investigation.</p>
+
+<h1 id="other-theories">Other theories</h1>
+
+<p>My home network is a broadband Internet connection, which uses IPoE (Internet Protocol over
+Ethernet). This is an improvement over PPPoE<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup> with the primary merit being that there is no
+PPPoE authentication server when sending packets outside. Packets are sent directly to the ISP’s
+router which is closest to my home.  Packets are authenticated implicitly: The very fact that I am
+able to send packets to the ISP routers at a given port implies that I <strong>must</strong> be a subscriber of
+their service. It works remarkably well; with download speeds increasing at least 2X from not having
+to go to the authentication server repeatedly. IPoE is not very well documented (at least from what
+I could tell.) The only documentation I could find was an old PDF written by Juniper Networks.</p>
+
+<p>Also, my ISP is also only capable of IPv6 over IPoE. They partner with another company, which
+provides IPv4 over IPv6 transfer. This is powered by the <a href="https://en.wikipedia.org/wiki/IPv6_transition_mechanism#Dual-Stack_Lite_(DS-Lite)">Dual-Stack Lite (DS-Lite)</a> protocol. I don’t
+know much about these protocols except for a basic idea about what they are supposed to do. One of
+the disadvantages of using IPoE is that there is no static IP support anymore: I am on a local
+network which is managed by my ISP and all packets go through this partner before reaching the
+requested IPv4 destination. All of these things sounded suspicious; were hard to understand; and
+sounded very much like the root cause of my woes.</p>
+
+<p>The main difference between IPv6 and IPv4 is the size of the header: 40 bytes vs. 20 bytes. If I
+want to send an IPv4 packet inside an IPv6 packet, the header size would now be 60 bytes per packet,
+I reasoned. So, the actual data that can be transmitted over IPv4 over IPv6 networks would be 40
+bytes less than what Wireguard thought it should be.<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">8</a></sup> The packet size which was not transmitted
+(1452) and the one that was (1312) seemed to point in this direction.</p>
+
+<h1 id="answer-max-transmission-unit">Answer: Max Transmission Unit</h1>
+
+<p>Finally, I landed on MTU and started thinking about it. The only other context in which I had heard
+about MTU was that of WiFi networks. Changing the MTU of a WiFi network is supposed to make things
+faster by increasing packet sizes, and reducing the number of roundtrips on the high latency WiFi
+connection between a device and the router.</p>
+
+<p>My router’s settings page told me that the MTU which was configured for the home network
+was 1500. The MTU which had been negotiated with my ISP was 1454. This number was uncomfortably
+close to the size of the packets which were being dropped. I looked around for more information
+about MTU and landed on the precise problem that I was facing: <a href="https://community.cisco.com/t5/collaboration-knowledge-base/pmtud-blackhole/ta-p/3115561">MTU blackholing</a>. The server was
+attempting to send a packet that was too big for some link along the way. Whichever router rejects
+the packet, sends a special ICMP message back to the VPS, telling it that the packet size is too
+big, and that the data should be broken up into multiple packets. However, the VPS is either not
+listening for these ICMP packets or blocking them or something else: It does not act appropriately
+and reduce the packet size. Instead, it just keeps retrying the same packet until the underlying TCP
+connection eventually gives up, assuming that the destination is not listening anymore.</p>
+
+<p>The solution was to specify <code class="language-plaintext highlighter-rouge">MTU = 1400</code> in the <code class="language-plaintext highlighter-rouge">[Interface]</code> sections of the <code class="language-plaintext highlighter-rouge">wg-quick</code>
+configurations on both the VPS and my laptop. After restarting the Wireguard interfaces, I was able
+to confirm that the solution worked by requesting <code class="language-plaintext highlighter-rouge">http://192.168.1.1/</code> using Curl and a
+browser. The TCP dump output was interesting too:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>06:30:35.332857 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 32
+06:30:36.054528 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+06:30:36.054726 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 96
+06:30:36.060136 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+06:30:36.072759 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 608
+06:30:36.072832 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 96
+06:30:36.073642 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 1432
+06:30:36.073653 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 1168
+06:30:36.078799 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+06:30:36.078799 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+06:30:36.081931 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 176
+06:30:36.081932 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 208
+06:30:36.082073 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 96
+06:30:36.082292 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 176
+06:30:36.082369 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 176
+06:30:36.083529 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 304
+06:30:36.088139 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+06:30:36.088729 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 112
+06:30:36.088859 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 96
+06:30:36.089944 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+06:30:36.089975 IP laptop.50000 <span class="o">&gt;</span> vps.38130: UDP, length 96
+06:30:36.094581 IP vps.38130 <span class="o">&gt;</span> laptop.50000: UDP, length 96
+</code></pre></div></div>
+
+<p>The largest packet which was transmitted was 1432 bytes, despite the Wireguard link’s MTU being set
+to 1400. The 32 byte difference is <em>probably</em> because of the 16 byte header for Wireguard packets
+and the 16 byte authentication tag at the end of the UDP packet:</p>
+
+<blockquote>
+  <ul>
+    <li>20-byte IPv4 header or 40 byte IPv6 header</li>
+    <li>8-byte UDP header</li>
+    <li>4-byte type</li>
+    <li>4-byte key index</li>
+    <li>8-byte nonce</li>
+    <li>N-byte encrypted data</li>
+    <li>16-byte authentication tag</li>
+  </ul>
+
+  <p>– <a href="https://marc.info/?l=wireguard&amp;m=151295619820317">Re: [WireGuard] Header / MTU sizes for Wireguard</a></p>
+</blockquote>
+
+<hr />
+
+<p>Without the <code class="language-plaintext highlighter-rouge">MTU = 1400</code> setting, I ran <code class="language-plaintext highlighter-rouge">tracepath --mtu 192.168.1.1</code> and found that the MTU
+detected by Wireguard
+was 1420. I have a sneaking, unconfirmed suspicion that this is because of IPv4 over
+IPv6, and its additional overhead of 40 bytes per packet. The numbers don’t completely add up: 1420
+does not work, 1400 works, but the overhead of using IPv4 over IPv6 is 40 bytes (Right?)</p>
+
+<p>So, my plan to confirm this is to set up a VPS which has IPv6 connectivity and use the VPS’ public
+IPv6 address and check whether the automatically detected MTU works in that case.</p>
+
+<p>One point of proof that I have for this theory is another Wireguard network that has a VPS with IPv6
+connectivity. When using the VPS’ IPv6 public IP address, I can confirm that the MTU of 1420 works
+properly in that case:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>traceroute <span class="nt">--mtu</span> 192.168.1.1
+traceroute to 192.168.1.1 <span class="o">(</span>192.168.1.1<span class="o">)</span>, 30 hops max, 65000 byte packets
+ 1  192.168.1.1 <span class="o">(</span>192.168.1.1<span class="o">)</span>  112.788 ms <span class="nv">F</span><span class="o">=</span>1420  112.901 ms  112.854 ms
+</code></pre></div></div>
+
+<hr />
+
+<p>This investigation was a rewarding one and even though it took me nearly 3-4 hours to find all the
+components that were in the path from my laptop to the VPS, it was completely worth it to understand
+one of the fundamental systems that makes the Internet <strong>work:</strong> Path MTU detection.</p>
+
+<h1 id="further-research">Further research</h1>
+
+<ul>
+  <li>PMTUD (Path MTU Detection) is a very important protocol. ICMP messages of the type <code class="language-plaintext highlighter-rouge">Destination
+  Not Reachable</code> should not be dropped. There are some RFCs with solutions to the problem of over
+blocking of ICMP packets. I am not sure how much they have been adopted though. Perhaps the
+confusion among administrators who think that all of ICMP is bad is that ICMP is also used for
+Ping and can be used to detect the IP addresses that have any sort of running host.</li>
+  <li>TCP has its own variable Maximum Segment Size (MSS) which is decided during the TCP handshake. We
+can use <code class="language-plaintext highlighter-rouge">iptables</code> (yay!) to ensure that TCP’s MSS is <a href="https://wiki.nftables.org/wiki-nftables/index.php/Mangling_packet_headers">clamped</a> to the value of MTU.</li>
+  <li><code class="language-plaintext highlighter-rouge">tracepath --mtu $destination</code> can be used to find the actual MTU that is detected between any two
+hosts. This works only if PMTUD is supported by all the hops along the path from the source to the
+destination. I don’t know what the decided MTU is if PMTUD just fails.</li>
+</ul>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Really Simple Syndication <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Virtual Private Server <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Internet Control Message Protocol <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>I restarted the Miniflux container with <code class="language-plaintext highlighter-rouge">LOG_LEVEL=debug</code> to see access logs. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>Of course, I am joking. These two lines add rules to the <code class="language-plaintext highlighter-rouge">nat</code> table’s <code class="language-plaintext highlighter-rouge">PREROUTING</code> and <code class="language-plaintext highlighter-rouge">POSTROUTING</code> chain. The <code class="language-plaintext highlighter-rouge">PREROUTING</code> chain rule looks for TCP packets with the destination port set to some required value <code class="language-plaintext highlighter-rouge">$DB_PORT</code>. If the packet matches this rule, then we “jump” (<code class="language-plaintext highlighter-rouge">-j</code>) to the <code class="language-plaintext highlighter-rouge">DNAT</code> chain. This is a virtual state which does what we want: “It specifies that the destination address of the packet should be modified (and all future packets in this connection will also be mangled), and rules should cease being examined. It takes one type of option: –to-destination ipaddr[-ipaddr][:port-port] which can specify a single new destination IP address” (<a href="https://linux.die.net/man/8/iptables">man:iptables(8)</a>). The second rule is self-explanatory. (Again, I am joking.) <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p>It is <em>slightly funny</em> to me that I was complaining about the complexity introduced by usage of <code class="language-plaintext highlighter-rouge">iptables</code> when I use Istio on a weekly basis at work. (<a href="https://events.istio.io/istiocon-2021/sessions/istio-is-a-long-wild-river-how-to-navigate-it-safely/">Istio is a long wild river: how to navigate it safely - IstioCon 2021</a> is a talk from a coworker in the Platform team.) <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p>Point to Point Protocol over Ethernet <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8" role="doc-endnote">
+      <p>Wireguard publishes the size of their headers <a href="https://marc.info/?l=wireguard&amp;m=151295619820317">here</a>; but this assumes that a packet has <strong>only</strong> the IPv4 or the IPv6 address. <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/technology/hardware/2024/03/02/beyond-100-megabits-per-second/">
+          Beyond 100 Megabits Per Second
+          <small>02 Mar 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

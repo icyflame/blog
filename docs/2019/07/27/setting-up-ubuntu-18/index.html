@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Setting up Ubuntu 18.04 LTS on a Thinkpad" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="533 words about ubuntu" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2019/07/27/setting-up-ubuntu-18/" property="og:url">
+  
+
+  
+  <meta content="2019-07-27T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="ubuntu" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Setting up Ubuntu 18.04 LTS on a Thinkpad &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Setting up Ubuntu 18.04 LTS on a Thinkpad</h1>
+  <span class="post-date">27 Jul 2019</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#installation">
+    installation
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#setup">
+    setup
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#ubuntu">
+    ubuntu
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>It’s been a while since I have setup a brand new computer. I did set up a Mac
+when I started working in September last year, but that was more of a
+step-by-step thing where I just started with my existing dotfiles and picked up
+stuff along the way from people around me who had been working for a much longer
+time and knew of <em>so many</em> great Vim extensions and tools that I had previously
+never heard of. <a href="https://blog.siddharthkannan.in/shell/zsh/prezto/2019/04/06/oh-my-zsh-to-prezto">Prezto</a> was one of them!</p>
+
+<p>I was going to install Ubuntu 18.04 LTS on an IBM Thinkpad L390. It was released
+around December last year (or earlier this year?) and sounded like a really good
+handy laptop for travelling, particularly. I bought it with a mid-range RAM
+config of 16GB and a 512 GB SSD. For comparison, my current personal machine was
+a Dell Inspiron from 2015 with a 1TB HDD and 8 GB of RAM; so this was a pretty
+significant upgrade.</p>
+
+<p><strong>TL; DR</strong> Installing Ubuntu took about 5 minutes flat. I am not even
+kidding; I never realized that copying files and cleaning up the disk is one of
+the slowest steps in an install and is a complete bottleneck! Also, the
+partition setup was much simpler for me this time. 80 GB Windows 10, 80 GB root
+<code class="language-plaintext highlighter-rouge">/</code> and the rest for <code class="language-plaintext highlighter-rouge">/home</code>. That’s it. I decided to keep it extremely simple.</p>
+
+<p>Deciding to keep Windows 10 was a pretty big decision, and I definitely took the
+safer option. I was particularly worried about warranty issues if I nuked
+Windows because I am convinced that any service center would <em>only</em> have
+trouble-shooting software for Windows. In fact, every time I have taken the Dell
+in for a repair, I always boot them into Windows and leave them in there. So,
+   even though I was looking forward to nuking Windows and having a pure Ubuntu
+   single-boot machine, I decided to continue with Dual Boot. My concern of
+   Windows being at the top of the Grub screen had gone away since my last
+   install of Ubuntu and subsequent discovery that you can actually control the
+   order in which the operating systems show up on the Grub screen!</p>
+
+<p>Once the installation was done, I set about getting all the software that I considered
+essential. The last time I did this with the Macbook, I didn’t keep track of what commands I was
+running and this was a mistake. So, this time, I took <a href="https://gist.github.com/icyflame/1399a7462f4c56103f8417b26875f5c5">copius
+notes</a>.</p>
+
+<p><a href="https://twitter.com/_icyflame/status/1152417034115747841"><img src="/public/img/2019-07-20-twitter.png" alt="twitter-screenshot" /></a></p>
+
+<p>I also added this gist to my dotfiles, just in case I ever have to setup an Ubuntu computer from
+scratch again. (One of the steps I was fumbling at was linking the <code class="language-plaintext highlighter-rouge">.z*</code> inside <code class="language-plaintext highlighter-rouge">$ZDOTDIR</code>. I hadn’t
+linked these files and didn’t realize that prezto won’t work without them!)</p>
+
+<p>I have been using this Thinkpad for about 2 weeks now, and everything has been
+going well so far. WiFi, sound, the touch pad, brightness and volume controls
+everything seem to be working fine. I haven’t run into severe Ubuntu-Thinkpad
+compatibility issues yet. And hopefully, I won’t run into them far into the
+future!</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

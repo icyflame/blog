@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 88 - Query population with refPath works. What went wrong?" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="535 words about 100daysofwriting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/mongoose/javascript/work/2017/05/16/day-88/" property="og:url">
+  
+
+  
+  <meta content="2017-05-16T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 88 - Query population with refPath works. What went wrong? &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 88 - Query population with refPath works. What went wrong?</h1>
+  <span class="post-date">16 May 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#javascript">
+    javascript
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#mongoose">
+    mongoose
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#work">
+    work
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I have been delving into Mongoose and Lodash rather heavily in the past few
+days. A strange thing that I found with <a href="http://mongoosejs.com/docs/populate.html">Mongoose Query
+Population</a> was that the dynamic
+referencing of the model to populate from, to be done using <code class="language-plaintext highlighter-rouge">refPath</code> in the
+Schema, didn’t work for multiple documents. (or so I thought! Read on.)</p>
+
+<p>The same thing worked for a single document. I decided to conduct an isolated
+test to check if this was a problem, or if we were simply using it wrong. The
+test worked well, it isn’t a problem with mongoose. (I am still no closer to
+figuring out what the anomaly in the original use-case was)</p>
+
+<p>This was the javascript for the example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let db_conn_string = "mongodb://&lt;host&gt;:&lt;port&gt;/&lt;db&gt;";
+let options = { user: "&lt;username&gt;", pass: "&lt;password" };
+
+let mongoose = require('mongoose');
+mongoose.connect(db_conn_string, options);
+
+console.log("Connected to mongoose");
+
+let util = require('util');
+let async = require('async');
+let Schema = mongoose.Schema;
+let ObjectId = Schema.ObjectId;
+
+var PersonSchema = new Schema({
+  name: {
+    type: String
+  },
+  username: {
+    type: String,
+    required: true,
+    unique: true
+  }
+});
+
+var Person = mongoose.model('Person', PersonSchema);
+
+var p1 = new Person({ ... });
+var p2 = new Person({ ... });
+var p3 = new Person({ ... });
+
+var people = [p1, p2, p3];
+
+p1.save((err) =&gt; { ... });
+p1.save((err) =&gt; { ... });
+p1.save((err) =&gt; { ... });
+
+var ChatMessageSchema = new Schema({
+  message: {
+    type: String
+  },
+  author: {
+    type: ObjectId,
+    ref: 'Person'
+  }
+});
+
+var ChatMessage = mongoose.model('ChatMessage', ChatMessageSchema);
+
+var c1 = new ChatMessage({ ... });
+var c2 = new ChatMessage({ ... });
+var c3 = new ChatMessage({ ... });
+var c4 = new ChatMessage({ ... });
+
+var ReportAbuseSchema = new Schema({
+  message: {
+    type: String
+  },
+  resource: {
+    type: ObjectId,
+    refPath: 'entity'
+  },
+  entity: {
+    type: String // Can be either Person or ChatMessage
+  }
+});
+
+var ReportAbuse = mongoose.model('ReportAbuse', ReportAbuseSchema);
+
+var r1 = new ReportAbuse({ 
+                            message: "report a chat", 
+                            resource: "5798...", // This is a comment ID
+                            entity: "ChatMessage" 
+                        });
+
+var r2 = new ReportAbuse({ 
+                            message: "report a person", 
+                            resource: "5905...", // This is a PERSON ID
+                            entity: "Person" 
+                        });
+
+records = [c1, c2, c3, c4, r1, r2];
+
+let iterator = function (record, callback) {
+  record.save(function (error) {
+    if (error) {
+      console.error(error.stack);
+      process.exit();
+    } else {
+      console.log("Saved record!");
+      callback();
+    }
+  });
+};
+
+async.each(records, iterator, function (error) {
+  if (error) {
+    console.log(error.stack);
+  } else {
+    console.log("SUCCESS!");
+  }
+});
+</code></pre></div></div>
+
+<p>I ran the script once. Opened the DB and copied over the user IDs to put them in
+the comment and reportAbuse record creations.</p>
+
+<p>The above code didn’t work as is. There was an extremely weird <code class="language-plaintext highlighter-rouge">$author_1 dup
+error</code>. Now that I look at the code again, I wonder if it is because there are a
+few parallel <code class="language-plaintext highlighter-rouge">save</code> operations happening on the Database. I can’t be sure just
+yet, more updates to follow in the next few days. (I think)</p>
+
+<p>I ran it just by creating one comment, one person and 2 report abuses. And then
+querying all the report abuses and asking mongoose to populate <code class="language-plaintext highlighter-rouge">resource</code>. It
+worked as expected.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let query = ReportAbuse.find().populate("resource").lean().exec(...)
+</code></pre></div></div>
+
+<p><strong>POST #88 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

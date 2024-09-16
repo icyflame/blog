@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 19 - NPM woes; KGP Internet woes; Ubuntu 16.04 woes;" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="786 words about 100daysofwriting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/2017/03/08/day-19/" property="og:url">
+  
+
+  
+  <meta content="2017-03-08T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 19 - NPM woes; KGP Internet woes; Ubuntu 16.04 woes; &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 19 - NPM woes; KGP Internet woes; Ubuntu 16.04 woes;</h1>
+  <span class="post-date">08 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I had a weird experience with <code class="language-plaintext highlighter-rouge">npm install</code>, it’s absolutely weird. I wrote a
+series of tweets about it. Hear me out again anyway.</p>
+
+<p><a href="https://twitter.com/_icyflame/status/839529290760757249"><img src="/public/img/2017-03-09-twitter.png" alt="twitter-screenshot" /></a></p>
+
+<p>I have the proxy for Kharagpur’s network on my computer and in all my setups.
+NPM typically reads them, or so they say, it didn’t when I first tried <code class="language-plaintext highlighter-rouge">npm
+install</code>, sure, no problem. I do <code class="language-plaintext highlighter-rouge">npm config edit</code> it should start working.</p>
+
+<p>But over the past few days, the internet in IIT Kharagpur (more on this soon)
+has gone from okay to bad to absolutely worse. Right now, it’s probably at it’s
+worst point.</p>
+
+<p>So, I <code class="language-plaintext highlighter-rouge">npm install</code> <em>after</em> editing the config file. It doesn’t work because the
+network is too slow, and the connection gets reset by the peer. I was done with
+this, a 4G hotspot should solve my woes. This is where it gets weird.</p>
+
+<p>After connecting to the hotspot, I removed proxy declarations from my Ubuntu
+system settings. The Env variables are still there, but from step 1 it is clear
+that NPM doesn’t regard them, so I let them stay and ran <code class="language-plaintext highlighter-rouge">npm install</code> again. It
+didn’t work. It said that it couldn’t connect to the proxy. How weird is it that
+the proxy doesn’t work when you want it to work, and when you don’t want it to
+work, npm magically decides to take the env variables into account?</p>
+
+<p>I have all four versions of the variables set up correctly. Namely:
+<code class="language-plaintext highlighter-rouge">https_proxy</code>, <code class="language-plaintext highlighter-rouge">http_proxy</code>, <code class="language-plaintext highlighter-rouge">HTTP_PROXY</code> and <code class="language-plaintext highlighter-rouge">HTTPS_PROXY</code>. It’s not about
+that. It’s just some quirky behaviour.</p>
+
+<p>The internet in Kharagpur is through the <a href="http://workshop.nkn.in/2012/Document/slides/NKN%20Overview.pdf">National Knowledge
+Network</a>.
+Articles have been <a href="http://www.scholarsavenue.org/ga/internet-in-kgp-a-recent-take/">written about the internet
+speeds</a>. As
+this article says, Youtube is literally the only site which can be used with the
+least amount of pain. Other sites just keep dropping, it’s highly irritating. To
+say the least.</p>
+
+<p>Goodreads is perhaps one of the worst hit sites ever. I use Goodreads quite a
+bit, and it never seems to be able to load at all! Other CMS sites like
+TheAtlantic, Guardian, NDTV.com and all these news websites have also been hit.
+They tend to load their page at the second try.</p>
+
+<p>Coming to the command line, pip, npm, git clone from Github or Gitlab seems to
+hang up in the middle and just say <code class="language-plaintext highlighter-rouge">Connection reset by peer</code>. PIP has the
+caching ability with the <code class="language-plaintext highlighter-rouge">sudo -EH</code> flag, so that’s still manageable. NPM is
+just completely hopeless (so much so that it can’t even make the first <code class="language-plaintext highlighter-rouge">GET</code>
+request to the registry! Some really dark times, if it has come down to a GET
+request to a registry). git reports the same connection reset error. Pushing
+through ssh seems to have been barely affected, that I am grateful for!</p>
+
+<p>Since this post seems to be filled with rants about things that don’t work on my
+computer which has a BRAND NEW Ubuntu 16.04, I will also add this for good
+measure. 16.04 has given me a really really bad time, till now.</p>
+
+<ol>
+  <li>
+    <p>The mouse stops working for no reason at all. It is still pointing, but I
+can’t do anything else with it: no scroll, no clicking, etc. I have to
+restart the computer.</p>
+  </li>
+  <li>
+    <p>When I restart the computer and then play a song, it doesn’t play on the
+speakers connected to the headphone jack. I have to disconnect and reconnect
+them, for them to start working again.</p>
+  </li>
+  <li>
+    <p>The Internet is connected in a DHCP setting with an IP in the range 10.<em>.</em>.<em>,
+but weirdly, in between the IP changes to 192.168.</em>.* and stays there.
+Internet obviously doesn’t work because the other things like the Router IP
+have also changed. This needs the disconnection and reconnection of the
+Ethernet cable</p>
+  </li>
+</ol>
+
+<p>For some reason, this new Operating System isn’t playing well with my 2 year old
+Dell computer, and a 6 month old HP mouse. I am going to give this another shot,
+or just install Arch and be done with it. Maybe I will have better luck there!
+(Or something like Gnome or KDE or XFCE, which <em>might</em> solve the problems that I
+am having with the combination of compiz, X and Unity. <em>HUGE might</em>)</p>
+
+<p>The last two posts were about Big Little Lies, the book, the TV series, the
+work. It would be remiss of me to not mention that I have now caught up with the
+TV series, and am eagerly waiting for the next episodes of both Homeland and Big
+Little Lies.</p>
+
+<p><strong>POST #19 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

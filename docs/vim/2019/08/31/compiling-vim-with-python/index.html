@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Compiling vim with python3 support!" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1125 words about vim" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/vim/2019/08/31/compiling-vim-with-python/" property="og:url">
+  
+
+  
+  <meta content="2019-08-31T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="vim" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Compiling vim with python3 support! &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Compiling vim with python3 support!</h1>
+  <span class="post-date">31 Aug 2019</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vim">
+    vim
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><strong>TL;DR</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> python3-distutils python3-dev
+git clone https://github.com/vim/vim.git
+<span class="nb">cd </span>vim
+./configure <span class="nt">--prefix</span><span class="o">=</span>/usr/local <span class="se">\</span>
+     <span class="nt">--enable-python3interp</span> <span class="se">\</span>
+     <span class="nt">--with-python3-config-dir</span><span class="o">=</span>/usr/lib/python3.6/config-<span class="k">*</span>
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<h2 id="the-longer-version">The Longer Version</h2>
+
+<p><strong>Note:</strong> I put the commands at the top of the post because I hate it when
+people start with the story and the <code class="language-plaintext highlighter-rouge">TL;DR</code> comes at the end of the blog post. I
+<em>strongly</em> believe that the <code class="language-plaintext highlighter-rouge">TL;DR</code> of all blog posts and long text-filled posts
+should be at the top of the piece.</p>
+
+<!--more-->
+
+<p>I started compiling <code class="language-plaintext highlighter-rouge">vim</code> from source a few months ago. See, I needed to get an
+extension called <a href="https://github.com/voldikss/vim-search-me">vim-search-me</a>. This extension was calling a function
+called <code class="language-plaintext highlighter-rouge">trim()</code> but only newer versions of vim had this function. I opened a
+<a href="https://github.com/voldikss/vim-search-me/pull/8">PR</a> on the original repository to ensure that the call wasn’t made if the
+function didn’t exist, but I also wanted a version of vim which actually had
+this function so I could use the extension.</p>
+
+<p>Digging into the <code class="language-plaintext highlighter-rouge">vim</code> issues, pull requests and source code a little bit, I
+realized that the function was introduced in <a href="https://github.com/vim/vim/commit/295ac5ab5e840af6051bed5ec9d9acc3c73445de">a recent commit</a>. I wanted to
+build a version of vim which was newer or equal to this and would allow me to
+actually use this function.</p>
+
+<p>Surprisingly, the first time around, building <code class="language-plaintext highlighter-rouge">vim</code> was extremely easy. I
+downloaded the source code using <code class="language-plaintext highlighter-rouge">git clone</code>, switched to the appropriate
+release tag, configured the build with a prefix of <code class="language-plaintext highlighter-rouge">/usr/local</code> (<code class="language-plaintext highlighter-rouge">./configure
+--prefix=/usr/local</code>), <code class="language-plaintext highlighter-rouge">make</code> and <code class="language-plaintext highlighter-rouge">sudo make install</code>! Voila, I had a custom
+built version of vim! The part I probably “dig”-ed the most was that the <code class="language-plaintext highlighter-rouge">vim
+--version</code> output actualy printed the name of the computer and the date/time
+when I compiled it! This was pretty interesting and I realized that now I could
+get patches that were made on the original vim code base whenever I wanted.
+There was no need to depend on the <code class="language-plaintext highlighter-rouge">vim</code> that comes packaged inside the
+<code class="language-plaintext highlighter-rouge">apt-get</code> repositories or inside <code class="language-plaintext highlighter-rouge">macOS</code>.</p>
+
+<h3 id="requiring-python-support">Requiring Python support</h3>
+
+<p>At work, I write a lot of Go code and almost all the code has to have tests.
+The code coverage threshold is around 80%. So, adding any new function
+immediately necessitates the addition of a test for that function. Now, there’s
+a way that tests are written for Go functions and I was beginning to realize
+which pattern I liked and it turns out I was re-writing a lot of the templating
+code to set-up the test, every single time I started writing a new test.</p>
+
+<p><a href="https://github.com/sirver/UltiSnips">UltiSnips</a> is a vim extension that lets you store Language specific snippets
+which can be inserted into a file when the filetype matches the snippet you have
+stored. I heard good things about the extension from my co-workers and found it
+in some of their dotfiles repositories! I installed the extesnion and tried to
+start <code class="language-plaintext highlighter-rouge">vim</code> and it said that it needed <code class="language-plaintext highlighter-rouge">python</code> support! I hadn’t compiled <code class="language-plaintext highlighter-rouge">vim</code>
+with python support, so I had to find out how!</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vim <span class="nt">--version</span> | ag <span class="s2">"python"</span>
++cmdline_hist      +langmap           <span class="nt">-python</span>            +visual
++cmdline_info      +libcall           <span class="nt">-python3</span>           +visualextra
+</code></pre></div></div>
+
+<h3 id="finding-the-correct-configure-flags">Finding the correct <code class="language-plaintext highlighter-rouge">./configure</code> flags</h3>
+
+<p>The configuration script output prints all the flags, their values, and the
+output when the checks required to enable their inclusion in the build were
+performed. The python related flags were <code class="language-plaintext highlighter-rouge">--enable-pythoninterp</code> and
+<code class="language-plaintext highlighter-rouge">--enable-python3interp</code>. System python on both my work computer and my home
+computer was python 3.6, but I didn’t want to take a chance. So, I explicitly
+specified python3 and ran the configuration script.</p>
+
+<p>On my work computer (a Macbook Pro from last year), supplying just the
+<code class="language-plaintext highlighter-rouge">--enable-python3interp</code> to my configuration script made everything work fine. I
+didn’t actually realize that something else might be necessary because it worked
+fine. <code class="language-plaintext highlighter-rouge">make</code> and <code class="language-plaintext highlighter-rouge">sudo make install</code> and I had Python support in vim!</p>
+
+<p>On my home computer (a Thinkpad) with Ubuntu 18.04, things were slightly more
+involved.</p>
+
+<p>The first error I saw with just the <code class="language-plaintext highlighter-rouge">--enable-python3interp</code> flag was the
+configuration script’s inability to <code class="language-plaintext highlighter-rouge">import distutils.sysconfig</code> inside Python3.
+A couple StackOverflow answers later I realized that the <code class="language-plaintext highlighter-rouge">python3-distutils</code>
+package installed that python3 module.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>dpkg <span class="nt">-l</span> | ag <span class="s2">"python3-distutils"</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> python3-distutils
+<span class="nv">$ </span>python <span class="nt">-c</span> <span class="s2">"import distutils.sysconfig"</span>
+</code></pre></div></div>
+
+<p>This error being fixed now, I ran into my second error. This was a slightly
+weirder one. It said that it couldn’t find the configuration directory for my
+Python installation. <a href="https://stackoverflow.com/a/5293524">This</a> StackOverflow answer pointed me to a
+configuration script flag which allowed me to explicitly specify the path to my
+Python configuration directory.</p>
+
+<p>The third error I ran into was stranger:</p>
+
+<blockquote>
+  <p>Unable to find the Python.h file inside the python configuration directory</p>
+</blockquote>
+
+<p>And it was showing an <code class="language-plaintext highlighter-rouge">#include &lt;Python.h&gt;</code> line from some file containing C
+code. The above answer also had a line about having to install the <code class="language-plaintext highlighter-rouge">python2-dev</code>
+package using <code class="language-plaintext highlighter-rouge">apt-get</code> because it isn’t pre-packaged inside the Ubuntu
+installation.</p>
+
+<blockquote>
+  <p>On Ubuntu 10.04 you have to install ‘python2.6-dev’</p>
+</blockquote>
+
+<p>So, I installed the <code class="language-plaintext highlighter-rouge">python3-dev</code> package.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>dpkg <span class="nt">-l</span> | ag <span class="s2">"python3-dev"</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> python3-dev
+</code></pre></div></div>
+
+<p>After this, the <code class="language-plaintext highlighter-rouge">configure</code> command worked and succeeded! The python related
+lines were succinct, and didn’t <em>really</em> indicate success. But they didn’t
+indicate failure either. So, I ran <code class="language-plaintext highlighter-rouge">make</code>. <code class="language-plaintext highlighter-rouge">make</code> creates the binary inside the
+<code class="language-plaintext highlighter-rouge">vim/src</code> folder. Running the binary from there will immediately tell you if the
+feature is installed or not.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./src/vim <span class="nt">--version</span> | ag <span class="s2">"python"</span>
++cmdline_hist      +langmap           <span class="nt">-python</span>            +visual
++cmdline_info      +libcall           +python3           +visualextra
+</code></pre></div></div>
+
+<p>I had built <code class="language-plaintext highlighter-rouge">vim</code> with <code class="language-plaintext highlighter-rouge">python3</code> support! Now, the lines at the top of <code class="language-plaintext highlighter-rouge">vim
+--version</code> which tell you when <code class="language-plaintext highlighter-rouge">vim</code> was last built and who built it:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vim <span class="nt">--version</span> | <span class="nb">head</span> <span class="nt">-n4</span>
+VIM - Vi IMproved 8.1 <span class="o">(</span>2018 May 18, compiled Aug 31 2019 11:32:55<span class="o">)</span>
+Included patches: 1-1949
+Compiled by siddharth@home-thinkpad
+Huge version without GUI.  Features included <span class="o">(</span>+<span class="o">)</span> or not <span class="o">(</span>-<span class="o">)</span>:
+</code></pre></div></div>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

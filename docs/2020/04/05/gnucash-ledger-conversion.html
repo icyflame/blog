@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Converting GNUCash's XML file to Ledger's DAT format" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="875 words about accounting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2020/04/05/gnucash-ledger-conversion" property="og:url">
+  
+
+  
+  <meta content="2020-04-05T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="gnucash" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Converting GNUCash's XML file to Ledger's DAT format &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Converting GNUCash's XML file to Ledger's DAT format</h1>
+  <span class="post-date">05 Apr 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#accounting">
+    accounting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#finance">
+    finance
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#gnucash">
+    gnucash
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#personal">
+    personal
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><em>Note:</em> What follows is a meandering account of why I wrote a Perl script to
+convert GNUCash’s XML file to Ledger’s plaintext format. <a href="https://github.com/icyflame/gnucash-xml-to-ledger-dat">This script</a> was the
+result of this process.</p>
+
+<p>I have been using GNUCash to maintain my personal finances for about 4 years
+now, and especially since I started working, I have used a single GNUCash book
+for my expenses. Before that, I used to close my accounts every year or half
+    year and start a new book. Apparently, this is <em>not</em> the recommended way to
+    use GNUCash.</p>
+
+<p>The more I have used GNUCash, the more I have become familiar with the data
+entry system. In general, I try to enter all my transactions by saving receipts
+and categorizing everything appropriately. If ever I have the feeling that a
+particular month or quarter I spent too much on a given category (bought too
+many clothes / too much electronics shopping) I pull up the Expense barchart
+report that GNUCash has in built support for. The default report is pretty good,
+and gives one a good idea of how they are doing with their money.</p>
+
+<!--more-->
+
+<h3 id="the-ideal-flow">The Ideal Flow</h3>
+
+<p><a href="https://www.ledger-cli.org/">Ledger</a> came across my radar when I was researching for alternative tools that
+automate the entry process. In particular, the flow I had in mind was this:</p>
+
+<ol>
+  <li>Right after the transaction, enter the transaction in my phone into a note or
+send an email to myself</li>
+  <li>Some cronjob takes these emails and converts them into a file that GNUCash
+can parse</li>
+  <li>Import this file into GNUCash at the end of each week</li>
+</ol>
+
+<p>This might have been too ambitious, because I couldn’t find one easy to import
+format for GNUCash. I wanted some convenience features too. The major one was
+“Transaction Aliases”:</p>
+
+<p><code class="language-plaintext highlighter-rouge">CC F L RA 500</code> =&gt; Lunch at Restaurant A, 500 Yen,
+                =&gt; Debit from credit card, Credit to Expenses:Food:Lunch</p>
+
+<p>This was definitely not part of the MVP that I was envisioning, but I wanted to
+be able to build this at some point in time. I even dreamed up a fictional DML
+that would support both aliased transactions <em>and</em> new transactions. I am sad to
+say though that none of this ever became reality.</p>
+
+<h3 id="well-what-did-become-reality-then">Well, what did become reality then?</h3>
+
+<p>A script that converts the GNUCash’s XML formatted file into the file format
+that Ledger accepts as input. (A text file which commonly has the extension
+<code class="language-plaintext highlighter-rouge">.dat</code>)</p>
+
+<p>Ledger is a very interesting project. It attempts to be a complete accounting
+and finance monitoring tool (which can be used even by enterprises which have
+complex transactions) that’s based completely on a single text file.</p>
+
+<ul>
+  <li>There is a DML that defines transactions</li>
+  <li>There are no database type “IDs” that are attached to accounts or commodities</li>
+  <li>Every time you run Ledger, the whole file is parsed</li>
+  <li>Ledger doesn’t control the data entry. That is, you can enter data however you
+wish. You can export data from GNUCash to Ledger, or from a spreadsheet to
+Ledger, or write the Ledger entries by hand (very painful) or generate it from
+other structured format using a script</li>
+</ul>
+
+<p>All Ledger cares about is that <strong>your DAT file should have a bunch of
+transactions, and these transactions must balance</strong>.</p>
+
+<p>Now, if the DAT file has a set of transactions and they balance, then Ledger can
+generate a variety of reports for you. This is where things get interesting.</p>
+
+<p>(A little bit of accounting knowledge from a complete beginner) There are three
+accounting reports that you will find on every single company’s quarterly
+earnings reports. Apparently, these reports are big deals and tell everything
+one needs to know about the “financials” of a company. I don’t know much about
+why or how to read one and learn new information. I did want to generate these
+three for my own personal finances though.</p>
+
+<p>Ledger lets you do this extremely easily.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hledger <span class="nt">-f</span> simple.dat balancesheet
+</code></pre></div></div>
+
+<p>This prints a plaintext balancesheet. It lists all the assets that you have
+(bank balances, cash, stocks) and all your liabilities (credit card outstanding,
+loans). I found my balancesheet to be rather interesting. I didn’t learn
+anything particularly new, but it was a fun project.</p>
+
+<h3 id="why-perl-though">Why Perl though?</h3>
+
+<p>Perl has a pretty good XML parsing library. I have also read a bunch of blog
+posts that say that Perl is the best language for massaging text and moving it
+from one format to another format. I wanted to use Perl for a real world project
+and see what advantages it had and whether I would be able to really use it on a
+daily basis without having to look at <code class="language-plaintext highlighter-rouge">perldoc</code> every 10 seconds.</p>
+
+<p>I did’t really get too far with my actual Perl expertise, but I did learn a few
+great things about Perl itself. Such as the difference between scalars, arrays,
+hashes and references. And how Perl understands what context a variable is used
+in (i.e an array’s length is used if you compare it against 0 inside an <code class="language-plaintext highlighter-rouge">if</code>
+clause)</p>
+
+<p>In conclusion though, I wanted to try a new scripting language and this seemed
+as good a project as any other out there.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

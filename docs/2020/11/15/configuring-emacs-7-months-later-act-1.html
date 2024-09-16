@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Configuring Emacs - 7 months later - Act 1" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1128 words about tools" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2020/11/15/configuring-emacs-7-months-later-act-1" property="og:url">
+  
+
+  
+  <meta content="2020-11-15T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="emacs" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Configuring Emacs - 7 months later - Act 1 &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Configuring Emacs - 7 months later - Act 1</h1>
+  <span class="post-date">15 Nov 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#configuration">
+    configuration
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#editors">
+    editors
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#emacs">
+    emacs
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tools">
+    tools
+  </a>
+  
+  
+</span>
+
+
+  
+  <p><em>Note:</em> This is the first post in a series of 3 posts about my experience configuring Emacs over 7
+months, starting from scratch.</p>
+
+<ul>
+  <li><a href="/emacs/editors/tools/configuration/2020/11/15/configuring-emacs-7-months-later-act-1">Post 1: Fundamentals</a></li>
+  <li><a href="/emacs/editors/tools/configuration/2020/11/21/configuring-emacs-7-months-later-act-2">Post 2: Keybindings and Package Integration</a></li>
+  <li><a href="/emacs/editors/tools/configuration/2020/12/01/configuring-emacs-7-months-later-act-3">Post 3: Writing Emacs Lisp Functions</a></li>
+</ul>
+
+<p>My first commit to <a href="https://github.com/icyflame/.emacs.d">icyflame/.emacs.d</a>, the repository with my Emacs configuration, was in April this
+year (7 months ago). Now, I have reached a point at which I have cleaned up my configuration enough
+to feel okay about making it open source. In this post and the two posts after this one, I will go
+over some of the most important steps in my configuration’s evolution from scratch to it’s current
+form.</p>
+
+<p><a id="org7101517"></a></p>
+
+<h1 id="context">Context</h1>
+
+<p>I started my configuration from scratch with a vanilla Emacs installation. This is a personal
+preference; there are several configurations out there which allow people to start from a
+opinionated configuration which they can understand and tweak to their needs. (There are even Emacs
+distributions like <a href="https://github.com/bbatsov/prelude">Prelude</a> which have a lot of the plugins which I configured manually already
+installed!)</p>
+
+<!--more-->
+
+<p>This post is not really meant as a guide for the reader to get started with Emacs or copy my
+configuration and use it as is; that is not my goal anyway. My main goal here is to talk about the
+things in my configuration which feel obvious to me now, but were particularly difficult to figure
+out when I initially tried to figure it out. Along the way, I will also try to share some of the fun
+things I discovered about Emacs Lisp, a language that is equal parts fascinating and obscure.</p>
+
+<p>That said, if you plan to use parts of my configuration and are unable to figure out why something
+is not working, I would love to hear your questions and help with figuring out the reason!</p>
+
+<ul>
+  <li><a href="#org8b8b4a0">Act 1: Fundamentals</a>
+    <ul>
+      <li><a href="#orgc8426a7">Package Management</a></li>
+      <li><a href="#orgff92eb3">Evil mode and general.el</a></li>
+      <li><a href="#org9b39a7b">Don’t install Helm</a></li>
+      <li><a href="#org9dc088c">Org mode</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a id="org8b8b4a0"></a></p>
+
+<h1 id="act-1-fundamentals">Act 1: Fundamentals</h1>
+
+<p>Right after installing Emacs, I wanted to figure out a stable method to install new packages from
+using Emacs’ package management system. I wanted to ensure that this would be done using
+configuration, and not using ad-hoc commands. My motive for this requirement was mainly the ease of
+migrating this configuration between my personal and my work computer (I started using Emacs on my
+personal Linux machine at home; I use a Macbook Pro at work (from home)). For the 2 months between
+February and April, I was using Emacs everyday without any major changes to the base empty
+configuration that every installation comes with. This was not a very good experience, and I kept
+switching back to Vim whenever I had to do anything that was slightly more complicated than typing
+text.</p>
+
+<p><a id="orgc8426a7"></a></p>
+
+<h2 id="package-management">Package Management</h2>
+
+<p>I got the <code class="language-plaintext highlighter-rouge">require-package</code> function from <a href="https://github.com/purcell/emacs.d/blob/754a3ce1871f44c0c235887c18a32ac5dc799eb7/lisp/init-elpa.el#L29-L43">purcell/emacs.d</a>. Back then, I didn’t fully understand what
+this function was doing. But the promise of this function was that it would provide a portable way
+to install packages from Emacs’ package registry, <a href="https://melpa.org/#/">Melpa</a>.</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;;; from purcell/emacs.d</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">require-package</span> <span class="p">(</span><span class="nc">package</span> <span class="k">&amp;optional</span> <span class="nv">min-version</span> <span class="nv">no-refresh</span><span class="p">)</span>
+  <span class="s">"Install given PACKAGE, optionally requiring MIN-VERSION.
+If NO-REFRESH is non-nil, the available package lists will not be
+re-downloaded in order to locate PACKAGE."</span>
+  <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nv">package-installed-p</span> <span class="nc">package</span> <span class="nv">min-version</span><span class="p">)</span>
+	  <span class="no">t</span>
+	<span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">or</span> <span class="p">(</span><span class="nb">assoc</span> <span class="nc">package</span> <span class="nv">package-archive-contents</span><span class="p">)</span> <span class="nv">no-refresh</span><span class="p">)</span>
+		<span class="p">(</span><span class="nv">package-install</span> <span class="nc">package</span><span class="p">)</span>
+	  <span class="p">(</span><span class="k">progn</span>
+		<span class="p">(</span><span class="nv">package-refresh-contents</span><span class="p">)</span>
+		<span class="p">(</span><span class="nv">require-package</span> <span class="nc">package</span> <span class="nv">min-version</span> <span class="no">t</span><span class="p">)))))</span>
+</code></pre></div></div>
+
+<p><a id="orgff92eb3"></a></p>
+
+<h2 id="evil-mode-and-generalel">Evil mode and general.el</h2>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/4d083a63">4d083a63</a></p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; 12. Install general package</span>
+<span class="p">(</span><span class="nv">require-package</span> <span class="ss">'general</span><span class="p">)</span>
+
+<span class="c1">;; 13. Add key mappings for common actions using general</span>
+<span class="p">(</span><span class="nv">general-evil-setup</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">general-nmap</span>
+  <span class="s">"DEL"</span> <span class="ss">'evil-ex-nohighlight</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>After figuring how to install packages, the first package I installed was <code class="language-plaintext highlighter-rouge">evil</code>. This package
+brings in most of Vim’s keybindings. Installing this package right at the beginning is a
+double-edged knife, as it simultaneously makes Emacs more familiar <span class="underline">and</span> contributes to making
+configuring Emacs harder to figure out. Evil’s configuration options are, <span class="underline">for the most part</span>,
+exactly the same as Vim. But the parts that are different are hard to understand and I was flummoxed
+by these differences for about 2 months. During this period, <a href="https://github.com/noctuid/evil-guide">noctuid/evil-guide</a> was my main
+reference. The Readme of this repository is comprehensive and explains everything about Evil mode. I
+read this Readme several times to figure out exactly what was different, and how I could get rid of
+these differences completely.</p>
+
+<p>general.el was a harder choice because I was not quite sure what this package did, but it was highly
+rated and everyone seemed to be using it. evil-guide talked about this package with high regard, and
+claimed that it would make configuring Evil mode easier. So, I took a leap of faith and decided to
+install it.</p>
+
+<p><a id="org9b39a7b"></a></p>
+
+<h2 id="dont-install-helm">Don’t install Helm</h2>
+
+<p>Installing <a href="https://github.com/emacs-helm/helm">Helm</a> early on was a mistake. <a href="https://github.com/emacs-helm/helm">Helm</a> is an extremely powerful package, that is very hard to
+use and understand. It is often referred to as a replacement for <code class="language-plaintext highlighter-rouge">Ctrl-P</code>, but in reality, it has a
+lot more bells and whistles. These extra features make it very hard to understand where Helm ends
+and where Emacs begins. Using Helm within an editor whose keybindings you are not yet familiar with
+is hard. Personally, I think this was a big mistake and delayed my configuration efforts by about
+the 2 weeks that it took me to realize what was going on and uninstall Helm.</p>
+
+<p><a id="org9dc088c"></a></p>
+
+<h2 id="org-mode">Org mode</h2>
+
+<p><a href="https://github.com/icyflame/.emacs.d/commit/22187304">22187304</a></p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; 18. Org mode settings</span>
+<span class="c1">;;; Set the done time for a TODO item when moving it to DONE</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">org-log-done</span> <span class="ss">'time</span><span class="p">)</span>
+
+<span class="p">(</span><span class="k">setq</span> <span class="nv">org-todo-keywords</span>
+	  <span class="o">'</span><span class="p">((</span><span class="nc">sequence</span> <span class="s">"TODO(t)"</span> <span class="s">"WAITING(w@/!)"</span> <span class="s">"|"</span> <span class="s">"DONE(d!)"</span> <span class="s">"CANCELED(c@)"</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p>I started using Org mode around April 28 when I made a commit to introduce the TODO states that I
+wanted to have in my Org file. This was right after watching the <a href="https://www.youtube.com/watch?v=oJTwQvgfgMM">original talk about Org-mode</a>. I am
+glad that I started using this early on as I was able to understand a lot more about how Emacs works
+as an editor (For e.g.: keybinding maps per mode, the global mode, minor modes, mode hooks) by
+configuring Org-mode, a non-programming mode whose configuration is much easier to understand.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

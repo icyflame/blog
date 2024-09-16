@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 44 - Learning vim, installing plugins and spending time on tooling" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="740 words about technology" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/04/02/day-44" property="og:url">
+  
+
+  
+  <meta content="2017-04-02T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 44 - Learning vim, installing plugins and spending time on tooling &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 44 - Learning vim, installing plugins and spending time on tooling</h1>
+  <span class="post-date">02 Apr 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tools">
+    tools
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vim">
+    vim
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>So, yesterday I wrote a
+<a href="https://github.com/icyflame/blog/commit/1ce1137165731900a75b80545702c5568903efd8#diff-145d68ed88381f394a06584ba0c7522b">couple</a> 
+<a href="https://github.com/icyflame/blog/blob/1ce1137165731900a75b80545702c5568903efd8/next-post.sh">of
+scripts</a>. These are mainly to make the counting of the posts easier.
+Till now, in the month of march the post number was simply the date + 11, but
+now and going forward it will be pretty hard to keep track of this number and at
+the same time save a few keystrokes in opening the editor and typing the number
+in, removing the TODO tags from <a href="https://raw.githubusercontent.com/icyflame/blog/1ce1137165731900a75b80545702c5568903efd8/public/templates/100daysofwriting-template.md">the
+template</a>.
+Anyway, the ruby script was fun to implement. It probably doesn’t need to be
+this big(?), I just wanted to be sure that I would get the right date for the
+post on the first attempt itself and I won’t have to edit the name or something
+like that. <strong>You should keep working on tooling, until you feel good about
+everything that you have (which will never really happen)</strong></p>
+
+<p>This is exactly the approach I took to vim, I used to use Sublime Text full time
+until I decided to switch to vim. For the longest time (about 3 months), I used
+vim with absolutely vanilla settings, I spent <em>no time at all</em> on setting up my
+preferred keyboard shortcuts or installing plugins even though the vim plugin
+ecosystem was something everyone raved about.</p>
+
+<p>But eventually, I found <a href="http://vimawesome.com/">vimawesome</a>, which is a very
+pretty catalogue of all the plugins that are available for vim. I installed
+Vundle, then I installed each of the plugins that I now have. I think
+<code class="language-plaintext highlighter-rouge">nerdcommenter</code> is a plugin that I really needed but couldn’t figure out how to
+work for about a month, but then I scoured the readme, tried different key
+combinations and <strong>then</strong> I finally understood the readme. The fault was all
+mine really, I had no clue what the <code class="language-plaintext highlighter-rouge">&lt;leader&gt;</code> meant back then.</p>
+
+<p>There were some other plugins that came and went away quickly, <code class="language-plaintext highlighter-rouge">NerdFileTree</code>
+was one of them, although I liked that, it couldn’t <em>even</em> <strong>compete</strong> with the
+convenience and the sheer power of <code class="language-plaintext highlighter-rouge">CtrlP</code>. CtrlP is my second favourite vim
+plugin, and it’s also there everywhere else, any IDE, any text editor. A lot of
+people surprisingly don’t know about this particular functionality and spend
+quite a bit of time going around in their terminal or <em>even more</em> time
+navigating around Nautilus. <strong>CtrlP exists: USE IT, you will LOVE IT</strong></p>
+
+<p>Right after those two plugins, I am going to put
+<code class="language-plaintext highlighter-rouge">vim-system-copy</code> which I installed very very recently and
+<code class="language-plaintext highlighter-rouge">vim-multiple-cursors</code> which again is a plugin that’s been installed for quite
+some time, but I learned to use properly only a few months ago. Both these
+plugins have made life even more easy for me! (Especially inside <code class="language-plaintext highlighter-rouge">tmux</code> where
+the <code class="language-plaintext highlighter-rouge">tmux-yank</code> plugin has to be used to copy text. Yeah, unnecessary
+complexity, I am sure there’s a good reason for that to be the case.)</p>
+
+<p>Syntax highlighting, vertical and horizontal splitting of the screen into panes
+and all that common editor stuff is cool. TL; DR Spend a weekend getting vim to
+do what you want an editor to do for you, spend another weekend’s worth of time
+doing full time work with vim even if it is slow and painful as hell and
+requires a lot of <a href="https://duckduckgo.com">searches</a> in the browser, DO IT.
+Eventually, it will all be muscle memory and you will have picked up the amazing
+skill of being at ease no matter what computer is thrown at you.</p>
+
+<p>I actually wrote a lot of the above paragraphs in a cover letter that I
+submitted for an internship position at Basecamp, for Summer 2017. I didn’t get
+in, I did get a phone interview with Noah Lorang (who happens to be the Data
+team head. WHAT?!) and I wonder if the person who was screening the cover
+letters was influenced by the couple sentences I wrote about how vim made me all
+powerful when I sat down at a new computer or ssh-ed into a droplet somewhere.</p>
+
+<p>I have also had the pleasure / discomfort of using vanilla vim forcefully, I
+always keep a basic vim configuration handy at <a href="https://gist.githubusercontent.com/icyflame/2411178c028a074f47ca6e86623334cf/raw/">this
+gist</a>,
+who’s short URL is stored on my phone as a contact. You are probably thinking
+that this is too convoluted, but it’s a really convenient setup. (<code class="language-plaintext highlighter-rouge">wget short-url</code> when on a new computer)</p>
+
+<p><strong>POST #44 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

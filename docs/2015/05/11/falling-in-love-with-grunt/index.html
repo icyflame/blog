@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Falling in love with GruntJS" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="776 words about web-development" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2015/05/11/falling-in-love-with-grunt/" property="og:url">
+  
+
+  
+  <meta content="2015-05-11T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="web-development" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Falling in love with GruntJS &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Falling in love with GruntJS</h1>
+  <span class="post-date">11 May 2015</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#web-development">
+    web-development
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>So, after that marathon of two posts on the same day (which had a slight issue in formatting the first time I published it), this is my post about GruntJS, again!</p>
+
+<p>I posted about GruntJS once <a href="http://icyflame.github.io/blog/web-development/2015/03/30/grunt-js-is-awesome/">before</a>. That was the basic configuration that I had got going on the first time around. It didn’t do much. Just the basic plugins: prettifying the HTML, minifying the CSS and JavaScript and the Watch plugin, for automatic plugins.</p>
+
+<p>Soon after that, I realised that my builds were just taking too long, which was when a little bit of research led me to <a href="http://www.html5rocks.com/en/tutorials/tooling/supercharging-your-gruntfile/">this article</a>. That article was awesome!</p>
+
+<p>Reading the article, I was convinced that I just had to use the plugins mentioned here. I ended up using:</p>
+
+<ul>
+  <li>load grunt tasks</li>
+  <li>grunt concurrent</li>
+  <li>time-grunt</li>
+  <li>grunt newer</li>
+</ul>
+
+<p>So, these plugins were just the tip of the iceberg, but they reduced the buildtimes that I currently had (about 30 seconds per build) to a mere 10 seconds for slight changes in the HTML files. 10 seconds still feels a lot longer when sitting in front of a i5 4th Generation machine, but nonetheless, it works well with my workflow. In the time that it takes for either Grunt to run the tasks or for Git to push everything to the cloud, I can easily check my work emails, and Slack for any new messages, and revert back to them, if they need my attention. (It also works well, when I don’t really like the song that’s playing and want to change it!)</p>
+
+<p>So, let’s go through these plugins one-by-one.</p>
+
+<ol>
+  <li>
+    <p>load grunt tasks</p>
+
+    <p>This plugin loads all the plugins directly from the <code class="language-plaintext highlighter-rouge">package.json</code> file, this ensures that I don’t have to write the <code class="language-plaintext highlighter-rouge">loadNpmTasks</code> line in the GruntFile. (with more than 10 lines, that part of the file is really just a waste of SLOC). I integrated this plugin pretty fast, and it worked pretty well too, but as I already had the Gruntfile with the <code class="language-plaintext highlighter-rouge">loadNpmTasks</code> file, there was no significant change in the build time. Starting a new project, of course, this plugin will affect stuff a lot more.</p>
+  </li>
+  <li>
+    <p>grunt concurrent</p>
+
+    <p>This is the one plugin that improved built times a helluva lot. Using this plugin, you can basically run the tasks that are independent of each other concurrently. The prettifying, and the minification step of all the HTML, CSS, JS files are independent of each other and thus, these three can be done concurrently. The minification step is dependent on the concatenation of the files, and this meant that I had to run the concat step in the first cycle, and the minification in the second cycle. This cut my build time by a good 3-4 seconds.</p>
+  </li>
+  <li>
+    <p>time-grunt</p>
+
+    <p>This is a frontend plugin that is helping me make all the above comments about the time that the complete build and each part of the build takes. This was the first plugin that I included in the project, so I could see the improvement in the build-times. It puts out a good picture that the time that every part of a task took. The output looks something like this:</p>
+
+    <p><img src="http://i.imgur.com/wTA6efq.png" alt="Imgur" /></p>
+  </li>
+  <li>
+    <p>grunt newer</p>
+
+    <p>Once the above plugins are included in the project, the build time does improve, but even then, the above plugins run the same task again and again. For even a slight change (like a change in the background color), the whole build runs again. And this is a colossal waste of time. And this plugin takes care of that. It runs only the tasks that correspond to files that have been changed. With this, for slight changes like, adding an image tag, in one HTML file, I can get build times that are as low as 7 seconds.</p>
+  </li>
+</ol>
+
+<p>So, the above list of plugins is probably the list of plugins that I will be using in every frontend project that I take on from here on out.</p>
+
+<p>Apart from this, there’s this other integration that can be done in Sublime Text: Creating a build system!</p>
+
+<p>I created a build system for Grunt, and that was super easy. (Create build system -&gt; enter the command as <code class="language-plaintext highlighter-rouge">grunt</code> and you are done!)</p>
+
+<p>So, now, I don’t have to leave my editor to run the build. This works great when making small changes, you can build the project from there and switch to the browser (which I love keeping in another workspace), and check the output, and if that works well, commit and push the changes!</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

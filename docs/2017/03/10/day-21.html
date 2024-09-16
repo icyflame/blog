@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 21 - S3 Outage and Cloudbleed post mortems are out; Revenant!" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="533 words about computers" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2017/03/10/day-21" property="og:url">
+  
+
+  
+  <meta content="2017-03-10T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 21 - S3 Outage and Cloudbleed post mortems are out; Revenant! &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 21 - S3 Outage and Cloudbleed post mortems are out; Revenant!</h1>
+  <span class="post-date">10 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#computers">
+    computers
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#movies">
+    movies
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#post-mortems">
+    post-mortems
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I am happy to report that the MP3 files not being recognised by Rhythmbox was
+solved after <code class="language-plaintext highlighter-rouge">apt-get install ubuntu-restricted-extras</code>. I wonder what “extra”
+packages that package contains that need to be restricted. It definitely
+installed <code class="language-plaintext highlighter-rouge">ffmpeg</code> which is a great CLI utility to cut videos. Anyways, that
+problem is solved. I am still holding off on installing gnome-shell and trying
+that out because the mouse thing seems to have sorted itself out (?). It
+happened only once today.</p>
+
+<p><a href="https://www.theatlantic.com/technology/archive/2016/01/amazon-web-services-data-center/423147/?utm_source=mitfb">This great article about Amazon Data
+Centers</a>
+is right on point! This comes in the wake of that great S3 outage a few days
+back. The <a href="https://aws.amazon.com/message/41926/">post mortem for that outage</a>
+is out, and it was a mistake in passing an argument to an <em>established
+playbook</em>. Which is incredibly basic and could literally happen to any one. It’s
+like meaning to run <code class="language-plaintext highlighter-rouge">rm -rf ../basic</code> and then typing <code class="language-plaintext highlighter-rouge">TAB</code> after <code class="language-plaintext highlighter-rouge">rm -rf ../b</code>
+and pressing <code class="language-plaintext highlighter-rouge">ENTER</code> without checking if the basic was autocompleted or not.
+It’s so simple! It still happened, and that post mortem is definitely worth
+checking out if ever you write a script which has two conflicting, really close
+arguments, one of which might create some major problems. This is also a great
+lesson on designing parameter names in such a way as to make the <code class="language-plaintext highlighter-rouge">info</code> commands
+(like <code class="language-plaintext highlighter-rouge">ls</code>, <code class="language-plaintext highlighter-rouge">ps ax</code>) small, intuitive and incredibly fast but the <code class="language-plaintext highlighter-rouge">rm</code>-like
+commands like <code class="language-plaintext highlighter-rouge">rm</code>, <code class="language-plaintext highlighter-rouge">deluser</code> long and cumbersome (maybe not too much, but still
+something more than <code class="language-plaintext highlighter-rouge">rm</code>). I would definitely type <code class="language-plaintext highlighter-rouge">trash</code> instead of <code class="language-plaintext highlighter-rouge">rm</code> if
+that meant I will one day save myself from deleting an important directory.
+(This is like Minority Report!)</p>
+
+<p>Talking about post-mortems, lets talk about Cloudbleed. The <a href="https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/">incident
+report</a>
+came in very soon, and it was a terrible leak. A memory leak that just kept
+reading from memory because the HTML wasn’t formatted properly? COMMON! Who is
+going to be able to protect against stuff like that. More importantly, the bug
+itself aside, let’s talk about the steps that CF took to deal with it.</p>
+
+<blockquote>
+  <p>An additional problem was that Google (and other search engines) had cached some
+of the leaked memory through their normal crawling and caching processes. We
+wanted to ensure that this memory was scrubbed from search engine caches before
+the public disclosure of the problem so that third-parties would not be able to
+go hunting for sensitive information.</p>
+</blockquote>
+
+<p>For some reason, this insight into search engine caching and reducing the impact
+by directly talking to multiple search engines and getting these caches purged
+seemed like something that CF thought of on the fly and managed to nail! This is
+some great engineering stuff!</p>
+
+<blockquote>
+  <p>We also undertook other search expeditions looking for potentially leaked
+information on sites like Pastebin and did not find anything.</p>
+</blockquote>
+
+<p>AH HELL! They are so thorough. <strong>Incredible detail!</strong></p>
+
+<p>P.S. Revenant is on the watchlist. It’s a 2.5 hour movie, that’s some commitment
+right there. Gear up, get started!</p>
+
+<p><strong>POST #21 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

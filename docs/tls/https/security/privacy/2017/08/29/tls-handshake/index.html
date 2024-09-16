@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Understanding and Explaining the TLS Handshake" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="569 words about https" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/tls/https/security/privacy/2017/08/29/tls-handshake/" property="og:url">
+  
+
+  
+  <meta content="2017-08-29T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="tls" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Understanding and Explaining the TLS Handshake &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Understanding and Explaining the TLS Handshake</h1>
+  <span class="post-date">29 Aug 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#https">
+    https
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#privacy">
+    privacy
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#security">
+    security
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tls">
+    tls
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Yesterday, I open sourced
+<a href="https://www.siddharthkannan.in/tls-handshake/">tls-handshake</a>, a web page that
+tries to provide an over view of the TLS 1.2 handshake at an abstraction level
+that is appropriate for students who have taken basic cryptography courses
+either at the college or school level. It has been one hell of a ride!</p>
+
+<p>The idea came from my lack of understanding of the TLS 1.2 handshake, I really
+had very less of a clue about what was going on. I often checked certificates,
+especially on banking and merchant websites where I was entering sensitive
+credentials. This had become more of a habit. But I was only checking the trust
+chain of certificates, and the fingerprint and if the browser was giving me any
+warnings about it all. I didn’t really know <em>what was really</em> going on
+underneath everything, the math!</p>
+
+<p><a href="https://xkcd.com/1882/"><img src="/public/img/color_models.png" alt="xkcd" /></a></p>
+
+<p>There was one obvious place to start: <a href="https://tools.ietf.org/html/rfc5246">IETF RFC 5246: TLS
+1.2</a></p>
+
+<p>The spec is a dense 100-page document that goes over everything in
+implementation-level detail, i.e detail enough to ensure that any person who is
+implementing a TLS 1.2 client OR server faces absolutely no ambuiguity. The RFCs</p>
+
+<p>go through a long process in which the TLS Working Group makes updates to them,
+their mailing list is a great place to hang out if you have a few hours on your
+hand and want to spend them learning more about how the next HTTPS spec gets
+written.</p>
+
+<p>RFC 5246 is a great document, <strong>if</strong> you know a few basics that the document
+itself doesn’t touch on. These include some common cryptography concepts like
+asymmetric and symmetric cryptography, digital signature algorithms, the
+Diffie-Hellman Key exchange system. Apart from the mathematics of these which
+the RFC doesn’t attempt to explain or ellaborate over, the RFC is self
+sufficient.</p>
+
+<p>A <a href="https://www.siddharthkannan.in/tls-handshake/SAMPLE_NEW.html">simple new session packet
+capture</a> should be
+enough to tell you about the different set of messages.</p>
+
+<p>This screenshot from the RFC itself, which I noticed quite late in my reading
+will tell you the sequence in which these messages are sent:</p>
+
+<p><img src="/public/img/tls-handshake-overview.png" alt="img" /></p>
+
+<p>A few hours should be enough for you to understand the over-all flow of the
+information that is being exchanged and the different places that you might end
+up in, after each message is sent.</p>
+
+<p>That is when I was ready to start writing the webpage. After beating around for
+a few minutes about a good UI to show everything, I decided to stick to text and
+simple HTML as much as I could, and use Markdown to format everything!</p>
+
+<p>One thing I absolutely wanted to have was informal “Purpose” sentences for each
+message. Mainly because the TLS handshake is just a secure way for two people to
+talk, in a public place like a train or a bus station and without spelling it
+out, and share a message that they don’t want anyone else to know about. They
+have never met before. And both of them are pretty good at mathematics that
+involves huge primes, or elliptic curve points, whichever one is to your taste.</p>
+
+<p>That’s sort of my story behind the “TLS Handshake” explanation page! I posted it
+on r/https (which is a pretty dormant subreddit), I might post it on Hackernews
+soon, once I can take some time off and go back to read the whole thing and be
+sure that there’s nothing wrong that’s written there.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

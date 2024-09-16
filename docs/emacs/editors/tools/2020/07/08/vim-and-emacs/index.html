@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Using Emacs - A trial" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1294 words about editors" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/emacs/editors/tools/2020/07/08/vim-and-emacs/" property="og:url">
+  
+
+  
+  <meta content="2020-07-08T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="emacs" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Using Emacs - A trial &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Using Emacs - A trial</h1>
+  <span class="post-date">08 Jul 2020</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#editors">
+    editors
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#emacs">
+    emacs
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#tools">
+    tools
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I have been used Vim for a while now. In university, my Vim usage was mostly related to the work I
+did in student groups. This probably came out to about 20-25 hours a week, on average. I used it to
+write my bachelors and masters thesis in LaTeX, which was probably the smoothest workflow I could
+have had for writing something that was about 80 pages long. Once I started working, my usage
+increased to nearly 40-45 hours a week. I was writing notes and code in Vim every weekday.</p>
+
+<p>With this increased usage, the problems with Vim really started coming to the surface.</p>
+
+<!--more-->
+
+<h2 id="problems">Problems</h2>
+
+<h3 id="an-inability-to-understand-codebases">An inability to understand codebases</h3>
+
+<p>I was reading a huge PHP code base at work. I resorted to IntelliJ for PHP because IntelliJ IDEA
+really understands PHP code well, I couldn’t see how I would move around an unfamiliar code base on
+an editor that did not support it well enough. I tried ctags frontends, but they were not sufficient
+because switching to the function <code class="language-plaintext highlighter-rouge">getUser</code> on the line <code class="language-plaintext highlighter-rouge">$transaction-&gt;getUser()</code> using ctags would
+<em>not</em> lead to the <code class="language-plaintext highlighter-rouge">Transaction</code> class inside <code class="language-plaintext highlighter-rouge">models/</code>, instead going to <code class="language-plaintext highlighter-rouge">ACL::getUser</code> !?! (I later
+discovered that it is possible to switch between tag locations after the first jump; still not
+really very syntax aware)</p>
+
+<h3 id="an-inability-to-do-things-in-the-background">An inability to do things in the background</h3>
+
+<p>A lot of has been said about this. Neovim is one of the popular alternatives that fixes the
+problem. I switched over from Vim to Neovim in February. They are basically the same underlying
+program, so I didn’t notice a drastic change just from this switch.</p>
+
+<h3 id="poor-handling-of-nested-lists-within-markdown">Poor handling of nested lists within Markdown</h3>
+
+<p>I was writing all my notes in Markdown. This was working well. I had a file for each month and a
+heading for each day. Inside each heading, I started taking notes that were nested lists. This is a
+sample block that is typical of the notes I was taking: (made up)</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> Meeting: Some topic 1
+<span class="p">	-</span> Feature 1: Are we doing this?
+<span class="p">		-</span> Pros
+<span class="p">			-</span> Good for cats
+<span class="p">		-</span> Cons
+<span class="p">			-</span> Bad for cat food
+<span class="p">	-</span> Resources
+<span class="p">		-</span> New redis cache
+<span class="p">		-</span> New microservice?
+<span class="p">			-</span> Seems excessive for a prototype
+<span class="p">			-</span> Put logic in service A?
+<span class="p">				-</span> Service A has too much logic
+<span class="p">				-</span> <span class="sb">`internal/src/partner/logic.go`</span> =&gt; Too much unrelated logic in this file, this has
+				already caused a few incidents during release
+<span class="p">			-</span> Service B
+<span class="p">				-</span> sounds better
+<span class="p">				-</span> Traffic is high, no problems in the past few months
+<span class="p">	-</span> Technical discussion
+<span class="p">		-</span> Cache with TTL?
+		<span class="p">```</span><span class="nl">go
+</span>		<span class="c">// Write logic</span>
+		<span class="n">redis</span> <span class="o">:=</span> <span class="n">newRedis</span><span class="p">()</span>
+		<span class="n">redis</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="o">-</span><span class="m">1</span><span class="p">)</span> <span class="c">// -1 =&gt; No expiry</span>
+
+		<span class="c">// Read logic</span>
+		<span class="n">value</span> <span class="o">:=</span> <span class="n">redis</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+		<span class="n">json</span><span class="o">.</span><span class="n">Unmarshal</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">time</span><span class="o">.</span><span class="n">Now</span><span class="p">()</span><span class="o">.</span><span class="n">Since</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">CachedAt</span><span class="p">)</span> <span class="o">&gt;</span> <span class="m">5</span> <span class="o">*</span> <span class="n">time</span><span class="o">.</span><span class="n">Minute</span> <span class="p">{</span>
+			<span class="n">resp</span><span class="p">,</span> <span class="n">err</span> <span class="o">:=</span> <span class="n">callExternalService</span><span class="p">()</span>
+			<span class="k">if</span> <span class="n">err</span> <span class="o">!=</span> <span class="no">nil</span> <span class="p">{</span>
+				<span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">Response</span>
+			<span class="p">}</span>
+
+			<span class="k">return</span> <span class="n">resp</span>
+		<span class="p">}</span>
+		<span class="p">```</span>
+<span class="p">	-</span> Resolution
+<span class="p">		-</span> Feature 1 in next sprint
+<span class="p">		-</span> Logic in service B for now, move to microservice if prototype is successful
+</code></pre></div></div>
+
+<p>After the meeting was complete, I would look through it again and edit it to fix grammar or
+indentation and remove redundancies, elaborate things that weren’t immediately clear, make sure I
+didn’t miss anything. After this editing step, I would instinctively use <code class="language-plaintext highlighter-rouge">gqip</code> to reformat
+everything and make it look pretty again. This step would reformat the code block as if it was plain
+text! This was clearly a problem. The editor didn’t understand that this text is special and
+shouldn’t be touched when reformatting the text around it.</p>
+
+<p>As I started getting involved in more projects and my notes started becoming more complicated and
+the levels of nesting grew, this problem became worse.</p>
+
+<h2 id="theory">Theory</h2>
+
+<p>Vim doesn’t understand the text that is being edited.</p>
+
+<p>Think about any language that has a structure which allows identifiers to have the same name but
+have different meanings when used with different objects. <strong>Eg:</strong> PHP, Ruby (Inheritance, dynamic
+type), JavaScript (types, definitions not required), Markdown (freeform).</p>
+
+<p>Editing these languages in Vim is hard because simple text processing tools are NOT enough. There
+has to be a layer on top of the text processing that sits in between the text and the text processor
+and tells the text processor how to deal with each line of the text. This layer has the logic that
+is required to recognize that a line within a codeblock in Markdown shouldn’t be touched or (the
+much more involved interference) that the <code class="language-plaintext highlighter-rouge">getUser()</code> function called on a <code class="language-plaintext highlighter-rouge">Transaction</code> object is
+in <code class="language-plaintext highlighter-rouge">transaction.php</code>, not in <code class="language-plaintext highlighter-rouge">acl.php</code>.</p>
+
+<p>On the other hand, take an extremely well-formed language like Golang: It comes with an excellent
+set of tools that sit between the text and the editor.</p>
+
+<p><strong>Eg:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">gofmt</code> =&gt; Every time the user asks the editor to save a file, the editor sends the file to
+<code class="language-plaintext highlighter-rouge">gofmt</code> and saves the output instead!</li>
+  <li><code class="language-plaintext highlighter-rouge">gopls</code> / <code class="language-plaintext highlighter-rouge">guru</code> =&gt; When the user taps <code class="language-plaintext highlighter-rouge">C-]</code>, the editor passes the cursor location to <code class="language-plaintext highlighter-rouge">gopls</code> and
+loads the file and line, column number that <code class="language-plaintext highlighter-rouge">gopls</code> returns.</li>
+</ul>
+
+<p>If there were such tools for PHP, I am sure that PHP editing would be just as efficient as Go.</p>
+
+<p>This is not a novel theory, it has been put forth by other people, in other forms. I simply realized
+it all over again from my own experience.</p>
+
+<p><strong>P.S:</strong> <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> is a
+great project that aims to solve all these issues! I want to try PHP with it’s language server in
+Vim and in Emacs. (Emacs with Company in the LSP mode is actually a very powerful LSP frontend)</p>
+
+<h2 id="solution-trial">Solution (trial)</h2>
+
+<p>Switching editors seemed like the easiest solution to this problem. I wouldn’t be able to switch
+editors quickly; I started looking for alternatives anyway. Emacs stood out as the overwhelmingly
+popular and well-loved alternative. There were three talks that convinced me to start this trial:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc">Evil mode: How I learned to stop worry and love Emacs (5 years ago)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=oJTwQvgfgMM">Emacs Org mode - A system for notes taking and project planning (11 years ago)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=SzA2YODtgK4">Getting started with Org mode (4 years ago)</a></li>
+</ul>
+
+<p>The common thread in all these talks was that the speakers had become frustrated with the tools they
+were using and had decided to switch to another tool. They were not making an impassioned argument
+for any one tool, they were talking about how inefficient it can be to use the wrong tool. I had
+reached a similar point in my experience.</p>
+
+<p>I hope to get used to Emacs enough to be able to use it as my primary editor on local computers. For
+remote instances, I will stick to <code class="language-plaintext highlighter-rouge">vi</code>. My familiarity with the Vim keybindings is quite useful in
+this regard.</p>
+
+<hr />
+
+<p><a href="https://twitter.com/_icyflame/status/1253337750696157185"><img src="/public/img/2020-04-23-twitter.png" alt="twitter-screenshot" /></a></p>
+
+<hr />
+
+<p><a href="https://twitter.com/_icyflame/status/1253689496488439808"><img src="/public/img/2020-04-24-twitter.png" alt="twitter-screenshot" /></a></p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

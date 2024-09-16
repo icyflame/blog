@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Pragmatic GoLang Workshop - Follow-up" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="472 words about golang" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/2018/01/22/pragmatic-go-follow-up" property="og:url">
+  
+
+  
+  <meta content="2018-01-22T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="golang" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Pragmatic GoLang Workshop - Follow-up &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about">About</a>
+            <!-- about -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list">List of Posts</a>
+            <!-- list -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss">RSS</a>
+            <!-- rss -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Pragmatic GoLang Workshop - Follow-up</h1>
+  <span class="post-date">22 Jan 2018</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#golang">
+    golang
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#technology">
+    technology
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#workshop">
+    workshop
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>As part of the <a href="http://kwoc.kossiitkgp.in/summit">Kharagpur Open Source Summit
+2018</a>, there was a Pragmatic GoLang workshop
+on 20th January, for 3 hours.  <a href="https://github.com/kshitij10496">Kshitij</a>
+organized and ran it. By all accounts, it was a great success! He did a really
+good job with the <a href="http://slides.com/kshitij10496/pragmatic-go">slides</a> and with
+delivering the workshop! The workshop was originally scheduled for 3 hours but
+it ran for nearly 4 hours, and people sat patiently and programmed alongwith
+him.</p>
+
+<p>I was part of the team who was there helping him out with the doubts that
+everyone who came to the session had. These are some of the things I learnt in
+the workshop and some notes about GoLang for the future.</p>
+
+<ul>
+  <li>
+    <p>GoLang requires the opening brace of a function to be on the same line as the
+  closing parentheses of the function definition:</p>
+
+    <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c">// allowed</span>
+  <span class="k">func</span> <span class="n">Test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+      <span class="o">...</span>
+  <span class="p">}</span>
+
+  <span class="c">// not allowed</span>
+  <span class="k">func</span> <span class="n">Test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="kt">int</span><span class="p">)</span>
+  <span class="p">{</span>
+      <span class="o">...</span>
+  <span class="p">}</span>
+</code></pre></div>    </div>
+
+    <p>I remember reading about this in the Go “How to Format your Code” section
+  and thinking to myself that this is perfect because this is the style I
+  swear by whenever I write JavaScript!</p>
+  </li>
+  <li>
+    <p>Go doesn’t have a <code class="language-plaintext highlighter-rouge">float</code> type. It’s mentioned pretty clearly in the <a href="https://golang.org/ref/spec#Numeric_types">Types
+  RefSpec</a> but I ended up expecting
+  a similar construct to <code class="language-plaintext highlighter-rouge">int</code>. I should start using <code class="language-plaintext highlighter-rouge">int64</code> instead of just
+  <code class="language-plaintext highlighter-rouge">int</code> so that the code works on all architectures!</p>
+  </li>
+  <li>
+    <p>Go’s <code class="language-plaintext highlighter-rouge">switch</code> doesn’t suffer from fall-through, the thing that forms the
+  material for several of the trickiest questions about C++. This is GOOD!</p>
+  </li>
+  <li>
+    <p>Arrays can’t be resized. Slices are references to arrays. Slices work a lot of
+  like Vectors in C++, I now realize. Slices are a very convenient data
+  structure.</p>
+  </li>
+  <li>
+    <p>Functions are first-class objects in Go. With lambdas, functions being
+  first class objects, and closures being treated without a frown, Go achieves
+  several of the things that I love about JavaScript! (Go is such a mixture of
+  features from every paradigm of programming)</p>
+  </li>
+  <li>
+    <p>Channels can be closed. This enables iteration over the channel using the
+  <em>for-range</em> structure!</p>
+  </li>
+</ul>
+
+<p>All this stuff that I have learned about writing “Idiomatic Go” enables me to
+go back to <a href="https://github.com/icyflame/year-in-twitter">year-in-twitter</a> and
+<a href="https://github.com/icyflame/leprechaun">leprechaun</a> and do things <em>the Go way</em>.</p>
+
+<p><strong>Sidebar:</strong> I gave a
+<a href="http://archive.is/2018.01.16-063824/http://kwoc.kossiitkgp.in/summit/106">talk</a>
+titled <strong>Node.js, GoLang and Concurrency</strong> on 21st January! It went well (I
+think). The video should be up soon. I am working on an appropriate HTML page
+with the resources I would like to distribute with the talk. (slides, code,
+further reading)</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/31/wireguard-and-mtu-adventure">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/08/29/using-iphone-without-windows-or-apple">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/2024/06/12/book-review-delillo-white-noise">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

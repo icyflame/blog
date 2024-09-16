@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 12 - Ubuntu 14.04 LTS installation fails" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="904 words about environment" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/ubuntu/programming/environment/2017/03/01/day-12/" property="og:url">
+  
+
+  
+  <meta content="2017-03-01T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 12 - Ubuntu 14.04 LTS installation fails &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 12 - Ubuntu 14.04 LTS installation fails</h1>
+  <span class="post-date">01 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#environment">
+    environment
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#ubuntu">
+    ubuntu
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I run an <em>ancient</em> Ubuntu 14.04 LTS installation. I installed it in December
+2014, and I have faced problems in between but I have almost always tried to fix
+them without having to re-install the whole operating system because frankly,
+re-installing an operating system is an unbelievably pain. These are the steps
+that I can think of off-hand:</p>
+
+<ol>
+  <li>Accept the fact that you have to re-install your OS</li>
+  <li>Start preparing for the re-install, search all the directories like
+<code class="language-plaintext highlighter-rouge">~/Downloads</code> for files that you can’t afford to delete</li>
+  <li>Figure out what files you want to Back-up depending on how much extra storage
+you have. Almost everyone I know has exactly as much storage as they use. I
+am included in that list, I have very less crawl space</li>
+  <li>Back-up the files that you intended to back-up, make sure you don’t miss
+anything. Doing it now, I have found that using a paper for this step greatly
+eases the pain because then you don’t have to stare at your screen, strangely
+comforting.</li>
+  <li>Check the whole file-system once more, and take the plunge.</li>
+  <li>WHOA WAIT! If you lose a file, it might be nice to know what you lost
+atleast. So, let’s store the output to <code class="language-plaintext highlighter-rouge">tree /driveD</code> and <code class="language-plaintext highlighter-rouge">tree /home/</code> and
+<code class="language-plaintext highlighter-rouge">tree /driveO</code> etc to a text file and back that up as well. This
+unfortunately takes a <em>LOT LONGER</em> then one would expect. I ran <code class="language-plaintext highlighter-rouge">tree &gt;
+/dev/null</code> on a 350 GB NTFS partition, and it took 25 minutes for that
+command to complete executing. <em>Yup</em>.</li>
+  <li>Take the plunge. Forget everything that’s on the partitions you are going to
+delete and over-write now, and create the Bootable USB</li>
+  <li>Restart to Windows and use Rufus or something to create the USB (because
+nothing exists to create a Ubuntu Live USB that works with UEFI on Ubuntu,
+how ironic)</li>
+  <li>Restart, go to the Live USB. <em>START INSTALLATION</em>.</li>
+</ol>
+
+<p>That’s 9 steps to start the installation, partitioning etc are things to be
+dealt with after. RIGHT.</p>
+
+<p>Why did I come to the conclusion that a reinstall is long overdue?</p>
+
+<p>I started Google Chrome and VLC after a routine restart. It didn’t work. It said
+this:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VLC media player 2.2.4 Weatherwax <span class="o">(</span>revision 2.2.3-37-g888b7e89<span class="o">)</span>
+<span class="o">[</span>0000000000e241e8] core libvlc: Running vlc with the default interface. Use <span class="s1">'cvlc'</span> to use vlc without interface.
+
+<span class="o">(</span>process:11885<span class="o">)</span>: Gtk-WARNING <span class="k">**</span>: Locale not supported by C library.
+        Using the fallback <span class="s1">'C'</span> locale.
+vlc: symbol lookup error: /usr/lib/x86_64-linux-gnu/gtk-2.0/modules/liboverlay-scrollbar.so: undefined symbol: ubuntu_gtk_set_use_overlay_scrollbar
+</code></pre></div></div>
+
+<p>Same with Google Chrome Stable. I wasn’t really shocked or anything to see this
+error, I thought I could fix it. How naive I was, because this is not a common
+error that has been faced by a lot of people before. This is an error few people
+run into, and those who do, they never do fix it! A quick search proved that to
+me. More digging solidifed the point, and made a reinstall inevitable.</p>
+
+<p>I took the normal steps anyway: Removed the vlc, google-chrome-stable packages.
+Did a complete <code class="language-plaintext highlighter-rouge">sudo apt-get upgrade</code> which downloaded about 380 MB of packages
+and installed them. I then installed <code class="language-plaintext highlighter-rouge">vlc</code> and hoped it would work, it didn’t.</p>
+
+<p>I now use Firefox for browsing. Youtube doesn’t work Firefox. I am really not in
+any mood to debug that or figure it out. In my opinion, Youtube should just
+work. There used to be an option at <code class="language-plaintext highlighter-rouge">https://youtube.com/html5</code> where you could
+choose if you would prefer to use the Flash player or the HTML5 player, now they
+have removed it and it automatically tries to use the HTML5 player. I don’t know
+what’s going on here, and it’s extremely irritating that a basic website doesn’t
+work on the default browser that’s shipped with Ubuntu. Distributions are
+probably the reason Linux never made it big in the desktop market, it’s a sad
+state of affairs. But anyway, I have decided to take the plunge, and the only
+thing that remains now is the hope that somehow magically, the reinstall will go
+through smoothly and my computer will emerge from the ashes (ah, such BS) with
+Ubuntu 16.04 LTS being it’s new power horse.</p>
+
+<p>I just read the <a href="https://wiki.ubuntu.com/XenialXerus/ReleaseNotes/">Release Notes for Ubuntu 16.04
+LTS</a>, and I am surprised at
+the amount of changes that have happened in this release. Now, I do feel as if I
+should stay off the LTS versions, and instead go onto the 16.10 version and then
+re-install every year. That would be a major pain, but if I could figure out
+partitioning properly, and only have to over-write the <code class="language-plaintext highlighter-rouge">/</code> (root) partition,
+then this should be worth it. Probably not now, because I have to keep my
+machine in Dual Boot despite not using Windows at all for other reasons (read
+“National Instruments Drivers are only available for Windows”).</p>
+
+<p>I currently have the 3.13 kernel. That’s about 2 years old. I am pretty sure
+that there were a lot of security issues and bugs that were patched in these two
+years. There is most certainly a way to get the latest kernel without changing
+your distribution. There has to be, right? Okay. Mental note: find out that
+method and keep the kernel atleast on the latest stable build of the same major
+version.</p>
+
+<p><strong>POST #12 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

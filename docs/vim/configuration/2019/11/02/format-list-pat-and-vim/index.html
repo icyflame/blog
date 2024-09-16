@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="More about vim's formatlistpat, formatoptions and comments options" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="1411 words about configuration" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/vim/configuration/2019/11/02/format-list-pat-and-vim/" property="og:url">
+  
+
+  
+  <meta content="2019-11-02T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="vim" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    More about vim's formatlistpat, formatoptions and comments options &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">More about vim's formatlistpat, formatoptions and comments options</h1>
+  <span class="post-date">02 Nov 2019</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#configuration">
+    configuration
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#vim">
+    vim
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>I recently <a href="https://github.com/icyflame/dotfiles/commit/8b55363828e7794aa33166363c9ebdd51a46ebda#diff-2152fa38b4d8bb10c75d6339a959650dR344">changed</a> my vimrc file to set the <code class="language-plaintext highlighter-rouge">formatlistpat</code> variable
+explicitly for markdown files. Before making this change, I had to dive into the
+vim help pages and find out what option I really needed to change to get
+un-ordered lists to start working write.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>I like Markdown a lot. I take all my daily notes at work and at home in
+Markdown. It works well for me. Also, I recently discovered the Docker image
+that will help me convert from Markdown to any format effortlessly using a
+simple <a href="https://github.com/icyflame/oneliners/commit/0301348531dbc712815115a88f2767196858caf0#diff-04c6e90faac2675aa89e2176d2eec7d8R188-R191">docker oneliner</a> and the docker image <code class="language-plaintext highlighter-rouge">jagregory/pandoc-docker</code>.</p>
+
+<!--more-->
+
+<p>One of the things that’s literally a part of everything that I start writing is
+a list. My over-all file is structured as a list, so I care a lot about the
+indentation of list entries. Before I made the change I started this post with,
+my lists looked something like this:</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> This is a list item
+<span class="p">-</span> This is a very long list item that wraps
+to a second line
+<span class="p">-</span> This is another list item
+</code></pre></div></div>
+
+<p>See how the second item starts from the beginning of the file and <em>not</em> from the
+first alphabet in the previous line? I realized that this was strange when I
+wrote this:</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> Task 1
+<span class="p">2.</span> Task 2: Keep track of the changes you made
+   in Task 1
+<span class="p">3.</span> Task 3: Perform in parallel with Task 2;
+   Might need help from someone else
+</code></pre></div></div>
+
+<p>and indented it with vim’s <code class="language-plaintext highlighter-rouge">gq</code>. I realized that Vim was capable of
+understanding lists and formatting list items properly. Every time I have tried
+to indent an un-ordered list in Vim with <code class="language-plaintext highlighter-rouge">gq</code>, it absolutely fails and I just
+have to go around and do it myself. But this great behaviour with numbered lists
+showed me that there some option I could change to fix this.</p>
+
+<h2 id="the-deep-dive">The Deep Dive</h2>
+
+<p>First, I started looking for an add-on that unordered lists well. I started with
+<code class="language-plaintext highlighter-rouge">plasticboy/vim-markdown</code>. It is one of the most popular markdown plugins for
+vim and I have never really tested it properly. So, I started off with it.
+But it didn’t really solve the problem, I got the feeling that it even made it
+worse somehow. I started looking online for other people who had run into this
+problem and this is where I started reading about Vim options.</p>
+
+<p>I reached this incredibly enlightening <a href="https://github.com/plasticboy/vim-markdown/issues/232">vim-markdown issue</a>: <code class="language-plaintext highlighter-rouge">Rewrapping a bullet
+point inserts new bullet points</code> =&gt; This was happening to me every time I tried
+to write a multi-line list item and wrap it with <code class="language-plaintext highlighter-rouge">gq</code>.</p>
+
+<p>This issue had a few great <code class="language-plaintext highlighter-rouge">vim</code> options which were mentioned during the
+discussion around the bigger problem:</p>
+
+<ul>
+  <li><a href="https://github.com/plasticboy/vim-markdown/issues/232#issuecomment-392265461"><code class="language-plaintext highlighter-rouge">comments</code></a></li>
+  <li><a href="https://github.com/plasticboy/vim-markdown/issues/232#issuecomment-246173676"><code class="language-plaintext highlighter-rouge">formatlistpat</code></a></li>
+  <li><a href="https://github.com/plasticboy/vim-markdown/issues/232#issuecomment-246173676"><code class="language-plaintext highlighter-rouge">formatoptions</code></a></li>
+</ul>
+
+<p>All three options seemed to be somehow connected to lists and their automatic
+formatting when writing the text, and their formatting when explicitly
+formatting with <code class="language-plaintext highlighter-rouge">gq</code> over that part or the whole file.</p>
+
+<p>I started looking through vim options and trying to find where this difference
+between numbered and unordered lists stemmed from. The in-built <code class="language-plaintext highlighter-rouge">:help</code> command
+is really good and the descriptions of most of the configuration options are
+<em>not</em> confusing at all! Some of them are confusing, admittedly. But the
+descriptions for these three were at least fairly simple.</p>
+
+<blockquote>
+  <p>comments: A comma separated list of strings that can start a comment line</p>
+</blockquote>
+
+<p>For markdown, the only character that behaves even remotely like a comment is
+the <code class="language-plaintext highlighter-rouge">&gt;</code> character used to create a blockquote. Often when writing blockquotes
+which run multiple lines, it’s useful if the editor would just wrap the text and
+insert the <code class="language-plaintext highlighter-rouge">&gt; </code> characters at the beginning of each line as blockquotes tend to
+be a single paragraph and a quick <code class="language-plaintext highlighter-rouge">gqip</code> fixing that is very useful. So, this
+was the first option I changed. I changed it to be just <code class="language-plaintext highlighter-rouge">b:&gt;</code>. I don’t really
+undersatnd what the <code class="language-plaintext highlighter-rouge">b:</code> is, but this immediately fixed the formatting of
+numbered lists whenever I tried to do that! Unordered lists were still not
+working well.</p>
+
+<p><strong>Sidenote:</strong> Running <code class="language-plaintext highlighter-rouge">:put=&amp;comments</code> puts the value of the <code class="language-plaintext highlighter-rouge">comments</code>
+configuration into the current buffer! I found this extremely useful when trying
+to inspect the configuration value of a regex without having to stare at the
+bottom line where the values are generally displayed.</p>
+
+<blockquote>
+  <p>formatlistpat:  A pattern that is used to recognize a list header.  This is
+used for the “n” flag in ‘formatoptions’.
+default: “^\s<em>\d+[]:.)}\t ]\s</em>”</p>
+</blockquote>
+
+<p>Aha! <code class="language-plaintext highlighter-rouge">formatlistpat</code> and <code class="language-plaintext highlighter-rouge">formatoptions</code> are related! And the default regex is
+pretty easy to understand: it matches things of the form <code class="language-plaintext highlighter-rouge">1.</code> or <code class="language-plaintext highlighter-rouge">1)</code>; i.e.
+numbered lists only! WHAT! I checked the value of <code class="language-plaintext highlighter-rouge">formatlistpat</code> for the
+markdown buffer I was writing my notes through this dive in:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>^\s*\d+\.\s+|^[-*+]\s+|^[^\ze[^\]]+]:
+</code></pre></div></div>
+
+<p>I didn’t really understand this regex. I could see that it was trying to read
+numbered and unordered lists, but the third section in this regex with the <code class="language-plaintext highlighter-rouge">\ze</code>
+eluded me. In any case, I figured that if I could simplify this regex and write
+one myself which solved only the case that I cared about (unordered lists
+starting with a <code class="language-plaintext highlighter-rouge">-</code>), then I could change it later as I saw fit. So, I replaced
+it with just the middle part of the regex: <code class="language-plaintext highlighter-rouge">^\s*[-*+]\s</code>. I inserted the
+unlimited number of optional whitespaces at the beginning of the line because
+nested lists are definitely part of my note-taking style.</p>
+
+<p>Now, as I tried wrapping list items, I saw that it worked as I expected!</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> This is a list item
+<span class="p">-</span> This is a very long list item that wraps
+  to a second line
+<span class="p">-</span> This is another list item
+</code></pre></div></div>
+
+<p>I still didn’t quite understand the <code class="language-plaintext highlighter-rouge">formatoption</code> configuration though.</p>
+
+<blockquote>
+  <p>formatoptions: This is a sequence of letters which describes how automatic
+formatting is to be done.  See |fo-table|</p>
+</blockquote>
+
+<p>The <code class="language-plaintext highlighter-rouge">formatoptions</code> value in my editor was: <code class="language-plaintext highlighter-rouge">tcqln</code>. Looking at the <code class="language-plaintext highlighter-rouge">fo-table</code>,
+I saw that it did most of the things that I was taking for granted:</p>
+
+<ul>
+  <li>Auto-wrap at textwidth</li>
+  <li>Auto-wrap comments at textwidth but insert the comments character</li>
+  <li>Allow formatting with <code class="language-plaintext highlighter-rouge">gq</code></li>
+  <li>Leave long lines as is when entering Insert mode</li>
+  <li>When formatting texts recognizes lists using <code class="language-plaintext highlighter-rouge">formatlistpat</code> regex</li>
+</ul>
+
+<p>The meaning of the <code class="language-plaintext highlighter-rouge">n</code> option was particulary interesting to me. The help text
+clearly specifies that although the option is called <code class="language-plaintext highlighter-rouge">n</code> for “numbered list
+formatting”, lists are identified using <code class="language-plaintext highlighter-rouge">formatlistpat</code> which can identify any
+kind of list that you might come up with. (If you start your list items with
+letters, instead of hyphens or numbers, just set up <code class="language-plaintext highlighter-rouge">formatlistpat</code>!)</p>
+
+<p>At this point, I had two more things that I wanted to do:</p>
+
+<ol>
+  <li>Improve the regex to recognize numbered lists</li>
+  <li>Improve the regex to recognize lists of TODO items in markdown
+ ```sh
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Todo Item 1</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Todo Item 2: This is a long
+    todo item
+ ```</li>
+    </ul>
+  </li>
+</ol>
+
+<p>I am still working on the second part of this. For the point about numbered
+lists, I have really started re-evaluating if I even need numbered lists. I
+don’t ever write numbered lists if I can help it. (The ordering of lists is
+quite clear from the fact that we read text vertically downwards and it wouldn’t
+make sense for the third list entry to be the first point when writing the same
+list in an un-ordered format)</p>
+
+<hr />
+
+<p>Another on-going problem that has been slighlty more annoying has been vim’s
+strange formatting whenever the content inside a parentheses goes beyond a
+single line or I end the previous line with a <code class="language-plaintext highlighter-rouge">,</code> (comma). I am not yet sure
+which option is causing this particular problem, but whatever that option is, I
+am going to find it and I am going to change it.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

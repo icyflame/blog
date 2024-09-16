@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 16 - zsh, color schemes and auto-mounting partitions with an elegant password prompt" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="740 words about 100daysofwriting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/programming/ubuntu/installation/setup/2017/03/05/day-16/" property="og:url">
+  
+
+  
+  <meta content="2017-03-05T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 16 - zsh, color schemes and auto-mounting partitions with an elegant password prompt &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 16 - zsh, color schemes and auto-mounting partitions with an elegant password prompt</h1>
+  <span class="post-date">05 Mar 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#installation">
+    installation
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#programming">
+    programming
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#setup">
+    setup
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#ubuntu">
+    ubuntu
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>This is part 2 of the installation diary. While the backing up and install
+process was done, an installation is only complete <em>after</em> everything goes back
+to normal.</p>
+
+<p><strong>Step 1:</strong> shell, aliases, functions. I maintain a <strong>good</strong> dotfiles
+repository, which I have improved over time. The <a href="https://github.com/icyflame/dotfiles/blob/master/bootstrap.sh">bootstrap
+script</a> is a
+shell script that does a lot of stuff. I use it in my default User data on
+Digital Ocean droplets, when I create one, and it works really well! This will
+install my shell of choice: zsh, and will also install all the other basic
+things that are definitely required: ruby, node, vim. This gives a great point
+to start at for other packages that you also need but can do without for some
+time.</p>
+
+<p>There was a slight hiccup in the zsh installation, probably because something
+has changed in the zsh readme or setup (?), but I didn’t care to spend any more
+time there, so I quickly ran the script that was there on the readme, and zsh
+was installed with my favourite oh-my-zsh theme: ys. It’s a theme that uses only
+basic ASCII characters that ensures that it will work on all machines! I hate
+seeing boxes where tick marks should have been. The way <code class="language-plaintext highlighter-rouge">ys</code> shows an updated
+git tree with a green <code class="language-plaintext highlighter-rouge">o</code>. And un-updated trees are shown with a red <code class="language-plaintext highlighter-rouge">x</code>. Both
+of those choices are great, and completely compatible! So great.</p>
+
+<p><strong>Step 2:</strong> After this, comes the all important color scheme setup. The color scheme
+<strong>must</strong> be Solarized Dark. (Not really, I just love it a lot more than any
+other scheme. To each, their own!) I use base16 because there is a regression
+in the earlier one I used
+(<a href="https://github.com/Anthony25/gnome-terminal-colors-solarized/issues/32">gnome-terminal-solarized issue #32</a>)
+There has been extensive discussion on this issue and a related issue <a href="https://github.com/altercation/solarized/issues/220">solarized
+issue #220</a>. I first encountered
+this issue when I was switching to gnome-terminal-solarized from the default
+solarize option that is available in the preferences menu. Clearly, nothing has
+been fixed or updated since then! I couldn’t understand a lot of the discussion
+on that issue unfortunately. Anyway, base 16 provides a good dark 256 base which
+works pretty well! The solarized dark 16 color scheme doesn’t work because the
+color of the bold text used for listing executable files is almost the same as
+the background color and completely invisible. Examples ahead:</p>
+
+<p><img src="/public/img/day-16-1.png" alt="img" /></p>
+
+<p><em>Fig 1: see the <code class="language-plaintext highlighter-rouge">a.out</code> file’s color. It’s hardly visible</em></p>
+
+<p><img src="/public/img/day-16-2.png" alt="img" /></p>
+
+<p><em>Fig 2: ah, much better!</em></p>
+
+<p>(I zoomed into the terminal for taking those screenshots, and did that look
+gorgeous! :D And I am <em>only</em> on a 1080p ancient Samsung Matt finish monitor. I
+think it’s the Matt finish of the display that makes this look so great! If you
+have matt finish, then you probably know what I am talking about out. If not,
+well!)</p>
+
+<p><strong>Step 3:</strong> Partitions: Mounting the un-encrypted partitions AND the encrypted
+partitions, all at startup in a proper fail safe manner. No one should be able
+to read anything!</p>
+
+<p>This happened in two iterations because I made a mistake the first time around.
+I added this line to <code class="language-plaintext highlighter-rouge">/etc/crypttab</code>: <code class="language-plaintext highlighter-rouge">code UUID=...</code></p>
+
+<p>Restarted the computer. The boot failed. Booting from recovery and trying to get
+in dropped me into a root shell which thankfully had write-access to the disk. I
+removed the offending lines from the <code class="language-plaintext highlighter-rouge">crypttab</code> and restarted, and things were
+fine once more.</p>
+
+<p>The second time, I did it right: Thanks to <a href="https://evilshit.wordpress.com/2012/10/22/how-to-mount-a-luks-encrypted-partition-on-boot/">this
+tutorial</a>.
+I was a bit doubtful about this because it didn’t have a picture of how the
+interactive password prompt looked like (it actually looks really good!) and
+it’s 5 years old. Anyway, I took the plunge and it worked. On to the
+un-encrypted NTFS and FAT32 partitions.</p>
+
+<p><img src="https://pbs.twimg.com/media/C6LFBteVAAEaTF_.jpg:large" alt="img" /></p>
+
+<p>These were much simpler. I used <code class="language-plaintext highlighter-rouge">udisks</code> in Ubuntu 14.04. Now, that command has
+changed to a simple <code class="language-plaintext highlighter-rouge">udisksctl -b /dev/sda3</code> etc. Add this to the Startup
+Programs list that comes up when you search on the Dash, and you are done! Much
+easier.</p>
+
+<p>So, thus, I am more or less done with my installation. It was a pleasant process
+except for the backing up part which was a bit problematic because of the sheer
+lack of space! More stories tomorrow.</p>
+
+<p><strong>POST #16 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta content="https://icyflame.github.io/dp.jpg" property="og:image">
+
+  <meta content="Siddharth Kannan's Blog" property="og:site_name">
+
+  
+  <meta content="Day 52 - A Hexahedral mesh in Ansys; Reddit Android clients comparison" property="og:title">
+  
+
+  
+  <meta content="article" property="og:type">
+  
+
+  
+  <meta content="623 words about 100daysofwriting" property="og:description">
+  
+
+  
+  <meta content="https://blog.siddharthkannan.in/100daysofwriting/reddit/ansys/mechanical/latex/2017/04/10/day-52/" property="og:url">
+  
+
+  
+  <meta content="2017-04-10T00:00:00+00:00" property="article:published_time">
+  <meta content="https://blog.siddharthkannan.in/about/" property="article:author">
+  
+
+  
+  
+  <meta content="100daysofwriting" property="article:section">
+  
+  
+
+  
+  
+  
+
+  <title>
+    
+    Day 52 - A Hexahedral mesh in Ansys; Reddit Android clients comparison &middot; Siddharth Kannan's Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/poole.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/syntax.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/hyde.css">
+  <link rel="stylesheet" href="https://blog.siddharthkannan.in/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.siddharthkannan.in/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://blog.siddharthkannan.in/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1148465602033451",
+		enable_page_level_ads: true
+	});
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="https://blog.siddharthkannan.in/">
+          Siddharth Kannan's Blog
+        </a>
+      </h2>
+      <p class="lead">Programmer | Pianist <br/><a href="http://icyflame.github.io">@icyflame</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/about/">About</a>
+            <!-- about/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/list/">List of Posts</a>
+            <!-- list/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/tag/">List of Posts by Tag</a>
+            <!-- tag/ -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/series">List of Series</a>
+            <!-- series -->
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://blog.siddharthkannan.in/rss/">RSS</a>
+            <!-- rss/ -->
+          
+        
+      
+
+      <span class="sidebar-nav-item">Powered by <a href="https://jekyllrb.com">Jekyll</a>
+			  and <a href="https://github.com/poole/hyde">Hyde</a></span>
+      <span class="sidebar-nav-item">Hosted on <a href="https://github.com">Github</a></span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="post">
+  <h1 class="post-title">Day 52 - A Hexahedral mesh in Ansys; Reddit Android clients comparison</h1>
+  <span class="post-date">10 Apr 2017</span>
+
+  
+  <span class="post-date">
+  
+
+  
+  <a href="https://blog.siddharthkannan.in/tag/#100daysofwriting">
+    100daysofwriting
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#ansys">
+    ansys
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#latex">
+    latex
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#mechanical">
+    mechanical
+  </a>
+  
+    &middot;
+  
+  
+  <a href="https://blog.siddharthkannan.in/tag/#reddit">
+    reddit
+  </a>
+  
+  
+</span>
+
+
+  
+  <p>Today was almost like yesterday, continued. More LaTex editing, more Ansys
+simulations inside Static Structural. It’s been so long since I saw YouTube
+tutorials for things (I think the last thing I saw them was for figuring out how
+Python’s IDLE worked! That was 5 years ago, I guess. I had no clue about what
+a Python shell was.) It’s surprising how easy it is to find Ansys tutorials. It
+probably tells people that it’s an insanely complex software.</p>
+
+<p>I am sure it’s for good reason, but couldn’t it be made just a little bit
+easier? All I wanted was a fine hexahedral mesh. I had to watch 3 tutorials to
+figure it out, and it was actually a very simply fix. I got pulled into
+<code class="language-plaintext highlighter-rouge">MultiZone</code> meshing, and so on. I was able to figure it out, eventually though.
+And once I did, the stress distribution didn’t change as much as I thought it
+would. It changed a bit, I guess. I haven’t had the time to even look at the
+results properly yet.</p>
+
+<p>Which is also the reason I haven’t seen Homeland’s 6.12, Season 6 finale episode
+yet! I know it’s out, I don’t follow anyone who might give me spoilers about it,
+I read this one tweet that I am sure I will forget by tomorrow. I have stayed
+off of Twitter for this reason, I am bound to come up on a Gif made from the
+episode sooner or later.</p>
+
+<p>That also gives me a good chance to get on Reddit, but I didn’t realise that
+unlike Twitter which provides a feed that is impossible to get to the bottom of,
+Reddit’s feed is static until you refresh it. So, it’s like an article that’s
+constantly changing in the background but you can’t feel it at all. There are no
+obvious markers anywhere on any subreddit or any reddit android app.</p>
+
+<p>I tried a bunch of those today. I was using the Reddit official Android
+application for the past 3 days, and it was <em>fine</em>. There wasn’t anything crazy
+about it, it was definitely not as good as Relay at the speed that it was
+loading things at or in the intuitiveness of Reddit’s comment threads. Comment
+threads are some of the weirdest and hardest understand features on Reddit with
+things like “context”, “show parent” and “mark as read”. Every comment reply
+gets added as an unread message, it’s very confusing to me.</p>
+
+<p>I tried <a href="https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit">Boost for
+Reddit</a>
+which is another Reddit android client. I was liking it until I realised (about
+3 minutes in) that when I am looking at reply 3 to my comment, I can’t see reply
+1 or reply 2. The only way to do that is to go to the complete comments thread
+and then manually scroll down and find my comment somewhere and then dig into
+the replies.</p>
+
+<p>Of course, Relay for Reddit has the nifty “MINE” feature which lets me switch
+back and forth between the comments that I posted. This feature is probably the
+one that I use the most because always, after understanding a story and reading
+all the material, once I start discussing it’s only my comments and the replies
+to them and my replies to those replies that matter. Everything else is just
+background noise that I will catch up on <strong>later</strong>.</p>
+
+<p>This is a blatant plug for <a href="https://play.google.com/store/apps/details?id=free.reddit.news">Relay for
+Reddit</a>. I was
+around when the <a href="https://play.google.com/store/apps/details?id=com.reddit.frontpage">Reddit <em>official android
+app</em></a> was
+first released and they changed their API and barred everyone else from using
+the Reddit icon in their client icons. It was all very aggresive and all, but
+Relay is clearly still the better one amongst the two!</p>
+
+<p><strong>POST 52 is OVER</strong></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/internet/networking/linux/2024/08/31/wireguard-and-mtu-adventure/">
+          Adventures with Wireguard and MTU
+          <small>31 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/apple/linux/2024/08/29/using-iphone-without-windows-or-apple/">
+          Using an iPhone Without Windows or Apple Computers
+          <small>29 Aug 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="https://blog.siddharthkannan.in/book-review/capitalism/humor/2024/06/12/book-review-delillo-white-noise/">
+          Notes and Review - White Noise (DeLillo)
+          <small>12 Jun 2024</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+<!-- Disqus Thread -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'siddharthkannanblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2VZMP9F1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE2VZMP9F1');
+</script>
+
+
+  </body>
+</html>
