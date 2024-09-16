@@ -24,7 +24,3 @@ docker-build-image: ## Build Docker image for the blog
 .PHONY: clean
 clean: ## Clean-up temporary files (such as Emacs tmp files)
 	docker container rm -f $(CONTAINER_NAME)
-
-.PHONY: publish-single
-publish-single: ## Publish a single Org file
-	bash publish-single.sh $(FILENAME)
