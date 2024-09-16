@@ -1,9 +1,12 @@
 #!/bin/bash
 
-INPUT=$1
-if [[ -z "$INPUT" ]];
+set -euo pipefail
+
+INPUT=${1:-}
+OUTPUT_DIR=${2:-}
+if [[ -z "$INPUT" || -z "$OUTPUT_DIR" ]];
 then
-	echo "ERROR: Script needs atleast one argument: ./publish-single.sh <INPUT-ORG-FILE>"
+	echo "ERROR: Script needs atleast 2 arguments: ./publish-single.sh <INPUT-ORG-FILE> <OUTPUT-DIRECTORIES>"
 	exit 41
 fi
 
@@ -15,4 +18,4 @@ then
 fi
 
 $EMACS --batch -l ~/.emacs.d/init.el -l publish.el \
-    --eval '(kannan/publish "'"$INPUT"'")'
+    --eval '(kannan/publish "'"$INPUT"'" "'"$OUTPUT_DIR"'")'
